@@ -1,0 +1,109 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    //"height": 10, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 2, // Gaps between modules (4px)
+
+    // Choose the order of the modules
+    "modules-left": [ "hyprland/workspaces", "hyprland/submap" ],
+    "modules-center": [],
+    "modules-right": ["bluetooth", "network#wireguard", "network#tunnel", "network#ether", "network#wifi", "memory", "backlight", "pulseaudio", "battery", "clock", "tray"],
+
+    // Modules configuration
+    "clock": {
+        "interval": 1,
+        "format": "{:%F %a %H:%M:%S}",  
+    },
+    "tray": {
+        "icon-size": 12,
+        "spacing": 5,  
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}{id}{icon}",
+        "format-icons": {
+            "active": "*",
+            "urgent": "!",
+            "default": " "
+        },
+        "on-click": "active",
+        "sort-by-name": "true",
+        "all-outputs": "true"
+    },
+    "hyprland/submap": {
+        "format": "{}",  
+    },
+    "sway/mode": {
+        "format": "{}",
+        "max-length": 50,
+    },
+    "sway/workspaces":{
+        "all-outputs": true,
+        "format": "{icon}{name}",
+        "format-icons":{
+            "urgent": "*",
+            "focused": "^",
+            "default": " ",
+        },
+    },
+
+    "network#wireguard": {
+        "interface": "wg*",
+        "format": "{ifname} {bandwidthTotalBytes}",
+        "tooltip-format": "{ifname} {ipaddr} {bandwidthTotalBytes}",
+        "format-disconnected": "",
+    },
+
+    "network#tunnel": {
+        "interface": "t*",
+        "format": "{ifname} {bandwidthTotalBytes}",
+        "tooltip-format": "{ifname} {ipaddr} {bandwidthTotalBytes}",
+        "format-disconnected": "",
+    },
+
+    "network#ether": {
+        "interface": "e*",
+        "format-ethernet": "{ifname} {bandwidthTotalBytes}",
+        "tooltip-format-ethernet": "{ifname} {ipaddr} {bandwidthTotalBytes}",
+        "format-disconnected": "",
+    },
+
+    "network#wifi": {
+        "interface": "wl*",
+        "format": "{ifname}",
+        "format-wifi": "{ifname} {bandwidthTotalBytes}({signalStrength}%)",
+        "tooltip-format-wifi": "{ifname} {essid} {ipaddr} {bandwidthTotalBytes}({signalStrength}%)",
+        "format-disconnected": "",
+    },
+
+    "memory": {
+        "interval": 1,
+        "format": "M: {used:0.1f}G/{total:0.1f}G",
+    },
+
+    "backlight": {
+        "format": "BG: {percent}%",  
+    },
+
+    "bluetooth": {
+        "format": "BT: {status}",
+        "format-disabled": "",
+        "format-connected": "BT: {num_connections} connected",
+        "format-connected-battery": "BT: {num_connections}{device_battery_percentage}% connected",
+        "tooltip-format": "{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_battery_percentage}%",
+    },
+    "pulseaudio": {
+        "format": "V: {volume}",
+        "format-bluetooth": "V(BT): {volume}",  
+        "format-muted": "V: muted",
+        "scroll-step": 2,
+        "on-click": "pavucontrol",
+    },
+    "battery": {
+        "interval": 3,
+        "format": "B: {capacity}% {time}", 
+    },
+}
