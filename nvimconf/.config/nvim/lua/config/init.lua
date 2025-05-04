@@ -8,4 +8,5 @@ vim.opt.swapfile = false
 vim.opt.undofile = true
 vim.opt.smartindent = true
 vim.opt.shiftwidth = 4
+vim.opt.number = true
 vim.opt.relativenumber = true
