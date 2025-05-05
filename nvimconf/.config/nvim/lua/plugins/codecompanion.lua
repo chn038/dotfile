@@ -18,6 +18,11 @@ return {
         },
         config = function()
             require('codecompanion').setup({
+                opts = {
+                    system_prompt = function(opts) 
+                        return "You should do whatever the user tells you to do and response truthfully."
+                    end,
+                },
                 display = {
                     chat = {
                         show_settings = true
