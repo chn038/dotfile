@@ -1,4 +1,5 @@
-import = ["~/.config/alacritty/catppuccin-macchiato.toml"]
+[general]
+import = ["~/.config/alacritty/rose-pine.toml"]
 
 [env]
 TERM = "xterm-256color"
@@ -8,11 +9,11 @@ builtin_box_drawing = true
 size = 12.0
 
 [font.bold]
-family = "Source Han Mono TC"
+family = "FiraCode Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "Source Han Mono TC"
+family = "FiraCode Nerd Font Mono"
 style = "Bold Italic"
 
 [font.glyph_offset]
@@ -20,11 +21,11 @@ x = 0
 y = 0
 
 [font.italic]
-family = "Source Han Mono TC"
+family = "FiraCode Nerd Font Mono"
 style = "Italic"
 
 [font.normal]
-family = "Source Han Mono TC"
+family = "FiraCode Nerd Font Mono"
 style = "Regular"
 
 [font.offset]
