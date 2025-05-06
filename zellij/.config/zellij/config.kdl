@@ -3,6 +3,7 @@ keybinds {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         bind "Ctrl Shift c" { Copy; }
+        bind "Ctrl g" { Write 07; SwitchToMode "Locked"; }
     }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
@@ -263,7 +264,7 @@ simplified_ui true
 //   - true (default)
 //   - false
 //
-pane_frames true
+pane_frames false
 
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
