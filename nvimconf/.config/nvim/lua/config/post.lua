@@ -52,7 +52,6 @@ vim.keymap.set({'n', 'v'}, "<leader>de", function() require("dapui").eval() end,
 
 -- deal with git
 vim.keymap.set('n', '<leader>gg', "<cmd>Neogit<CR>", { desc = "Open Neogit" })
-vim.keymap.set('n', '<leader>gd', "<cmd>DiffviewOpen<CR>", { desc = "Open Diff" })
 
 -- deal with terminal
 vim.keymap.set({'n', 't'}, "<C-h><C-h>", "<cmd>ToggleTerm<CR>", { desc = "toggle terminal" })
