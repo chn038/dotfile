@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 vim.opt.colorcolumn = "80"
 vim.opt.expandtab = true
+vim.opt.smarttab = true
 vim.opt.splitright = true
 vim.opt.swapfile = false
 vim.opt.undofile = true
