@@ -29,6 +29,3 @@ vim.keymap.set({'n', 'v'}, "<leader>de", function() require("dapui").eval() end,
 vim.keymap.set('n', '<leader>gg', "<cmd>Neogit<CR>", { desc = "Open Neogit" })
 
 -- deal with ai, start with ta
-vim.keymap.set('n', "<leader>taa", "<cmd>CodeCompanionActions<CR>", { desc = "Call action pallet" })
-vim.keymap.set({'n', 'v'}, "<C-j><C-j>", "<cmd>CodeCompanionChat Toggle<CR>", { desc = "Toggle chat buffer"})
-vim.keymap.set({'n', 'v'}, "<C-j><C-i>", ":CodeCompanion", { desc = "Call inline assistant" })
