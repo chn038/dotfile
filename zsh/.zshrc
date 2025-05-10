@@ -105,5 +105,3 @@ export PATH=$PATH:$HOME/.emacs.d/bin/
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export ZELLIJ_AUTO_ATTACH=true
-eval "$(zellij setup --generate-auto-start zsh)"
