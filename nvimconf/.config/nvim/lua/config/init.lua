@@ -1,6 +1,5 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-vim.opt.cursorcolumn = true
 vim.opt.colorcolumn = "80"
 vim.opt.expandtab = true
 vim.opt.splitright = true
@@ -10,5 +9,4 @@ vim.opt.smartindent = true
 vim.opt.shiftwidth = 4
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.hlsearch = false
 vim.opt.incsearch = true

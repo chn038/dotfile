@@ -6,10 +6,7 @@ vim.keymap.set({'n', 'v'}, "<leader><leader>", " ", { desc = "just insert the sp
 -- deal with file
 vim.keymap.set('n', '<leader>ff', '<cmd>FzfLua files hidden=true<cr>', { desc = 'Open fzf file finder'})
 vim.keymap.set('n', '<leader>fg', '<cmd>FzfLua git_files hidden=true<cr>', { desc = 'Open fzf git file finder'})
-
--- deal with code, general
-vim.keymap.set('n', '<leader>cu', function() require('undotree').toggle() end, { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = 'trigger lsp code action' })
+vim.keymap.set('n', '<leader>fu', function() require('undotree').toggle() end, { noremap = true, silent = true })
 
 -- deal with code, molten, start with m
 vim.keymap.set("n", "<leader>mm", "<cmd>MoltenInit<CR>", { desc = "Initialize the plugin" })
