@@ -10,6 +10,9 @@ return {
             ollama = {
                 model = "gemma3:4b-it-qat"
             },
+            selector = {
+                provider = "fzf_lua"
+            }
         },
         -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
         build = "make",
