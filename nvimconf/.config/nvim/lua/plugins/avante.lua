@@ -9,7 +9,7 @@ return {
             provider = "ollama",
             ollama = {
                 model = "gemma3:4b-it-qat"
-            }
+            },
         },
         -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
         build = "make",
@@ -19,6 +19,7 @@ return {
             "stevearc/dressing.nvim",
             "nvim-lua/plenary.nvim",
             "MunifTanjim/nui.nvim",
+            "ibhagwan/fzf-lua",
         },
     }
 }
