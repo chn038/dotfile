@@ -1,7 +1,8 @@
 return {
     {
         'luk400/vim-jukit',
-        config = function()
-        end
+        keys = {
+            { "<leader>ju", "<leader>ju", { desc = "load vim-jukit" }}
+        }
     }
 }
