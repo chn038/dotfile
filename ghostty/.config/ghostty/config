@@ -43,3 +43,4 @@
 # resize-overlay-duration = 4s 200ms
 theme = rose-pine
 font-family = "Monoid Nerd Font"
+font-size = 11
