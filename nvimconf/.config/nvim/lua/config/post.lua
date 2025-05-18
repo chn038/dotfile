@@ -1,4 +1,4 @@
-vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme kanagawa")
 
 -- leader key fall back
 vim.keymap.set({'n', 'v'}, "<leader><leader>", " ", { desc = "just insert the space" })
