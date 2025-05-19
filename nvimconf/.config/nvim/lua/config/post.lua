@@ -26,17 +26,6 @@ vim.keymap.set('n', '<leader>ff', '<cmd>FzfLua files hidden=true<cr>', { desc = 
 vim.keymap.set('n', '<leader>fg', '<cmd>FzfLua git_files hidden=true<cr>', { desc = 'Open fzf git file finder'})
 vim.keymap.set('n', '<leader>fu', function() require('undotree').toggle() end, { noremap = true, silent = true })
 
--- deal with code, molten, start with m
-vim.keymap.set("n", "<leader>mm", "<cmd>MoltenInit<CR>", { desc = "Initialize the plugin" })
-vim.keymap.set("n", "<leader>me", "<cmd>MoltenEvaluateOperator<CR>", { desc = "run operator selection" })
-vim.keymap.set("n", "<leader>ml", "<cmd>MoltenEvaluateLine<CR>", { desc = "evaluate line" })
-vim.keymap.set("n", "<leader>mc", "<cmd>MoltenReevaluateCell<CR>", { desc = "re-evaluate cell" })
-vim.keymap.set("v", "<leader>m", ":<C-u>MoltenEvaluateVisual<CR>gv", { desc = "evaluate visual selection" })
-vim.keymap.set('n', "<leader>ma", "<cmd>MoltenReevaluateAll<CR>", { desc = "re evaluate all" })
-vim.keymap.set("n", "<leader>ms", "<cmd>MoltenExportOutput!<CR>", { desc = "export output" })
-vim.keymap.set("n", "<leader>mi", "<cmd>MoltenImportOutput<CR>", { desc = "import output" })
-vim.keymap.set("n", "<leader>mo", ":noautocmd MoltenEnterOutput<CR>", { desc = "enter output" })
-
 -- deal with code, debug adapter protocol, start with d
 vim.keymap.set('n', '<leader>db', function() require("dap").toggle_breakpoint() end, { desc = "Toggle breakpoint"})
 vim.keymap.set('n', '<leader>dn', function() require("dap").continue() end, { desc = "Toggle breakpoint"})
