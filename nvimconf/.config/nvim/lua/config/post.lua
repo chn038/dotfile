@@ -18,8 +18,6 @@ vim.keymap.set({'n', 'v'}, "<leader><leader>", " ", { desc = "just insert the sp
 -- "gO" is mapped in Normal mode to vim.lsp.buf.document_symbol()
 -- CTRL-S is mapped in Insert mode to vim.lsp.buf.signature_help()
 vim.keymap.set({'n'}, '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic in float window" })
-vim.keymap.set({'n'}, '<leader>q', function() vim.diagnostic.setqflist(vim.diagnostic.get_namespaces()) end, { desc = "move all diagnostic to quick fix list" })
-vim.keymap.set({'n'}, '<leader>l', function() vim.diagnostic.setloclist(vim.diagnostic.get(0)) end, { desc = "move all diagnostic to location list" })
 
 -- deal with file
 vim.keymap.set('n', '<leader>ff', '<cmd>FzfLua files hidden=true<cr>', { desc = 'Open fzf file finder'})
