@@ -8,7 +8,7 @@ return {
             -- for example
             provider = "ollama",
             ollama = {
-                model = "gemma3:4b-it-qat"
+                model = "gemma3:12b"
             },
             selector = {
                 provider = "fzf_lua"
