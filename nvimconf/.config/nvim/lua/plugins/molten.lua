@@ -6,9 +6,11 @@ return {
         build = ":UpdateRemotePlugins",
         init = function()
             -- these are examples, not defaults. Please see the readme
-            vim.g.molten_image_provider = "image.nvim"
+            vim.g.molten_image_provider = "wezterm"
             vim.g.molten_output_win_max_height = 20
             vim.g.molten_virt_text_output = true
+            vim.g.molten_output_virt_lines = true
+            vim.g.molten_auto_open_output = false
         end,
     },
     {
@@ -23,5 +25,9 @@ return {
             window_overlap_clear_enabled = true, -- toggles images when windows are overlapped
             window_overlap_clear_ft_ignore = { "cmp_menu", "cmp_docs", "" },
         },
+    },
+    {
+        'willothy/wezterm.nvim',
+        config = true
     }
 }
