@@ -7,6 +7,7 @@ config.color_scheme = 'kanagawabones'
 config.font = wezterm.font 'Terminess Nerd Font'
 config.font_size = 14
 config.use_ime = true
-config.xim_im_name = "fcitx"
+config.enable_tab_bar = false
+config.enable_wayland = false
 
 return config

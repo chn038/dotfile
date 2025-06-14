@@ -90,6 +90,7 @@ source $ZSH/oh-my-zsh.sh
 #
 export EDITOR='nvim'
 export PATH=$PATH:$HOME/.emacs.d/bin/
+export PYTHON_BASIC_REPL=1
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
