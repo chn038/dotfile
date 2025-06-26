@@ -1,15 +1,15 @@
 __build_info:
   rime_version: 1.12.0
   timestamps:
-    default: 1745981299
+    default: 1750272266
     default.custom: 0
     grammar: 0
-    key_bindings: 1745981299
+    key_bindings: 1750272266
     key_bindings.custom: 0
-    punctuation: 1745981299
+    punctuation: 1750272266
     punctuation.custom: 0
     terra_pinyin.custom: 0
-    terra_pinyin.schema: 1720897551
+    terra_pinyin.schema: 1750272308
 custom_phrase:
   db_class: stabledb
   dictionary: ""
@@ -19,7 +19,8 @@ custom_phrase:
   user_dict: custom_phrase
 engine:
   filters:
-    - simplifier
+    - "simplifier@zh_hans"
+    - "simplifier@zh_hant_tw"
     - uniquifier
   processors:
     - ascii_composer
@@ -235,10 +236,23 @@ switches:
     states: ["中文", "西文"]
   - name: full_shape
     states: ["半角", "全角"]
-  - name: simplification
-    states: ["漢字", "汉字"]
+  - options: [zh_hant, zh_hans, zh_hant_tw]
+    reset: 2
+    states: ["傳統漢字", "简化字", "臺灣字形"]
   - name: ascii_punct
     states: ["。，", "．，"]
+zh_hans:
+  excluded_types:
+    - reverse_lookup
+  opencc_config: t2s.json
+  option_name: zh_hans
+  tips: all
+zh_hant_tw:
+  excluded_types:
+    - reverse_lookup
+  opencc_config: t2tw.json
+  option_name: zh_hant_tw
+  tips: none
 translator:
   comment_format:
     - "xform ([aeiou])(ng?|r)([1234]) $1$3$2"
