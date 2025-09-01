@@ -1,0 +1,2795 @@
+# Rime user dictionary
+#@/db_name	terra_pinyin
+#@/db_type	userdb
+#@/rime_version	1.12.0
+#@/tick	9469
+#@/user_id	cd7a444b-bd10-4f36-b2f9-43f3afd34724
+a1 a1 a1 a1 	啊啊啊啊	c=0 d=0.0900325 t=9469
+a1 a1 a1 a1 a5 	啊啊啊啊啊	c=1 d=0.904837 t=9469
+a1 fu4 han4 	阿富汗	c=1 d=0.733447 t=9469
+a1 zhe4 	啊這	c=5 d=1.63742 t=9469
+a5 	啊	c=30 d=4.85746 t=9469
+ai1 	哎	c=1 d=0.814647 t=9469
+ai1 ya1 	哎呀	c=1 d=0.782705 t=9469
+ai4 	愛	c=2 d=1.1861 t=9469
+ai4 chi1 	愛喫	c=1 d=0.628135 t=9469
+ai4 xin1 	愛心	c=1 d=0.172907 t=9469
+an1 de2 	安德	c=1 d=0.481909 t=9469
+an1 pai2 	安排	c=1 d=0.737123 t=9469
+an1 quan2 	安全	c=3 d=1.03925 t=9469
+an3 	俺	c=5 d=1.07751 t=9469
+an4 	按	c=16 d=2.22295 t=9469
+an4 jian4 	按鍵	c=5 d=1.11363 t=9469
+an4 jian4 	案件	c=1 d=0.715338 t=9469
+an4 le5 	按了	c=2 d=1.08876 t=9469
+an4 niu3 	按鈕	c=5 d=1.85258 t=9469
+an4 zhi3 	暗指	c=1 d=0.995012 t=9469
+ba1 	吧	c=34 d=4.80863 t=9469
+ba2 dao1 	拔刀	c=1 d=0.464274 t=9469
+ba2 dao1 jian4 	拔刀劍	c=10 d=4.52837 t=9469
+ba2 dao1 zhan3 	拔刀斬	c=2 d=0.929947 t=9469
+ba3 	把	c=55 d=6.03576 t=9469
+ba3 ni3 	把你	c=1 d=0.97531 t=9469
+ba3 shou3 	把手	c=1 d=0.729789 t=9469
+ba3 ta1 	把它	c=1 d=0.839457 t=9469
+ba3 wo3 	把我	c=1 d=0.414783 t=9469
+bai2 	白	c=2 d=0.806388 t=9469
+bai2 bai2 	白白	c=1 d=0.946485 t=9469
+bai2 chi1 	白癡	c=1 d=0.0250972 t=9469
+bai2 hu2 	白狐	c=1 d=0.0399551 t=9469
+bai2 se4 	白色	c=2 d=0.138503 t=9469
+bai4 tuo1 	拜託	c=1 d=0.790571 t=9469
+ban1 	搬	c=3 d=1.69198 t=9469
+ban1 	班	c=3 d=0.759572 t=9469
+ban1 dao4 	搬到	c=1 d=0.168638 t=9469
+ban3 	版	c=1 d=0.913931 t=9469
+ban3 ben3 	版本	c=1 d=0.877569 t=9469
+ban3 yan2 	板岩	c=0 d=0.0737123 t=9469
+ban3 zi5 	板子	c=1 d=0.255381 t=9469
+ban4 	半	c=3 d=1.4261 t=9469
+ban4 	辦	c=1 d=0.960789 t=9469
+ban4 gong1 yi3 	辦公椅	c=1 d=0.970446 t=9469
+ban4 ni3 	辦你	c=1 d=0.666977 t=9469
+ban4 tiao2 ming4 	半條命	c=1 d=0.444858 t=9469
+ban4 zu3 	半組	c=2 d=1.36779 t=9469
+bang1 	幫	c=1 d=0.895834 t=9469
+bang1 mang2 	幫忙	c=1 d=0.802519 t=9469
+bang1 ni3 	幫你	c=2 d=0.67032 t=9469
+bang1 wo3 	幫我	c=2 d=0.818731 t=9469
+bang3 zhu4 	綁住	c=1 d=0.600496 t=9469
+bao1 	包	c=2 d=1.44784 t=9469
+bao1 bao1 	包包	c=2 d=0.179953 t=9469
+bao1 zhuang1 	包裝	c=1 d=0.65377 t=9469
+bao3 dian3 	寶典	c=1 d=0.882497 t=9469
+bao3 hu4 	保護	c=1 d=0.856415 t=9469
+bao3 lei3 	堡壘	c=0 d=0.0603506 t=9469
+bao3 liu2 	保留	c=1 d=0.465334 t=9469
+bao3 shi2 	寶石	c=1 d=0.349938 t=9469
+bao3 xian3 	保險	c=1 d=0.707616 t=9469
+bao4 	爆	c=2 d=0.114178 t=9469
+bao4 diao4 	爆掉	c=2 d=0.0613198 t=9469
+bao4 fu4 xing4 	報復性	c=1 d=0.923116 t=9469
+bao4 ji1 	暴擊	c=1 d=0.0096577 t=9469
+bao4 qian4 	抱歉	c=1 d=0.316637 t=9469
+bao4 zha4 	爆炸	c=3 d=1.18378 t=9469
+bei1 bao1 	背包	c=28 d=6.99137 t=9469
+bei1 hou4 	背後	c=1 d=0.0332068 t=9469
+bei3 	北	c=1 d=0.57695 t=9469
+bei4 	背	c=2 d=0.559898 t=9469
+bei4 	被	c=15 d=2.81611 t=9469
+bei4 dong4 	被動	c=1 d=0.666977 t=9469
+ben3 	本	c=1 d=0.0639279 t=9469
+ben3 lai2 	本來	c=2 d=0.635939 t=9469
+ben3 wo3 	本我	c=1 d=0.843665 t=9469
+bi1 	逼	c=1 d=0.694197 t=9469
+bi3 	比	c=4 d=1.99451 t=9469
+bi3 dian4 	筆電	c=5 d=4.31204 t=9469
+bi3 ji4 	筆記	c=4 d=1.22815 t=9469
+bi3 ji4 ben3 	筆記本	c=2 d=1.79223 t=9469
+bi3 jiao4 	比較	c=17 d=3.40358 t=9469
+bi3 ni3 	比你	c=2 d=0.683588 t=9469
+bi3 qi3 	比起	c=3 d=1.25127 t=9469
+bi3 shou3 	匕首	c=1 d=0.927743 t=9469
+bi3 wo3 	比我	c=1 d=0.822835 t=9469
+bi4 bi4 	比比	c=1 d=0.00918669 t=9469
+bi4 jing4 	畢竟	c=1 d=0.955997 t=9469
+bi4 mian3 	避免	c=1 d=0.0692522 t=9469
+bi4 miao3 	必秒	c=1 d=0.126818 t=9469
+bi4 xiu1 	必修	c=2 d=1.93707 t=9453
+bi4 yao1 	必要	c=2 d=0.695339 t=9469
+bi4 zui3 	閉嘴	c=1 d=0.358796 t=9469
+bian1 	編	c=1 d=0.951229 t=9469
+bian1 cheng2 	編程	c=1 d=0.516851 t=9469
+bian1 fu2 	蝙蝠	c=2 d=0.264477 t=9469
+bian1 jie4 	邊界	c=1 d=0.704688 t=9469
+bian1 xie3 	編寫	c=1 d=0.740818 t=9469
+bian1 yi4 	編譯	c=1 d=0.843665 t=9469
+bian1 yi4 qi4 	編譯器	c=1 d=0.50409 t=9469
+bian4 	便	c=2 d=1.35694 t=9469
+bian4 	變	c=4 d=2.08546 t=9469
+bian4 chang2 	變長	c=1 d=0.882497 t=9469
+bian4 cheng2 	變成	c=5 d=1.16695 t=9469
+bian4 da4 	變大	c=1 d=0.839457 t=9469
+bian4 di4 	遍地	c=1 d=0.71177 t=9469
+bian4 ke3 	便可	c=1 d=0.790571 t=9469
+bian4 shou4 	變瘦	c=1 d=0.882497 t=9469
+bian4 tai4 	變態	c=1 d=0.282239 t=9469
+biao3 shi4 	表示	c=1 d=0.790571 t=9469
+bie2 	別	c=5 d=1.50481 t=9469
+bie2 de5 	別的	c=2 d=0.236928 t=9469
+bie2 guan3 	別管	c=1 d=0.594521 t=9469
+bie2 qu4 	別去	c=1 d=0.609571 t=9469
+bie2 ren2 	別人	c=3 d=1.42468 t=9469
+bie2 shuo1 	別說	c=1 d=0.786628 t=9469
+bie2 yong4 	別用	c=1 d=0.579842 t=9469
+bie2 zai4 	別再	c=3 d=1.1705 t=9469
+bing1 kuai4 	冰塊	c=1 d=0.516851 t=9469
+bing1 shuang1 	冰霜	c=1 d=0.0593087 t=9469
+bing3 	餅	c=1 d=0.694197 t=9469
+bing4 	並	c=1 d=0.621885 t=9469
+bing4 	併	c=1 d=0.647265 t=9469
+bing4 bu4 shi4 	並不是	c=1 d=0.0639279 t=9469
+bing4 mei2 you3 	並沒有	c=1 d=0.818731 t=9469
+bo1 	波	c=1 d=0.07502 t=9469
+bo1 li2 ping2 	玻璃瓶	c=1 d=0.65377 t=9469
+bo2 	勃	c=1 d=0.752014 t=9469
+bo2 	薄	c=1 d=0.683861 t=9469
+bo2 jue2 	伯爵	c=1 d=0.188247 t=9469
+bo2 ru2 	伯儒	c=4 d=0.824504 t=9469
+bu2 dang4 	不當	c=1 d=0.594521 t=9469
+bu2 hui4 	不會	c=27 d=4.06136 t=9469
+bu2 shi4 	不是	c=35 d=5.43921 t=9469
+bu2 yao4 	不要	c=10 d=3.2425 t=9469
+bu2 zheng4 chang2 	不正常	c=1 d=0.657047 t=9469
+bu3 	補	c=5 d=1.89886 t=9469
+bu3 ban4 	補辦	c=1 d=0.548812 t=9469
+bu4 	不	c=17 d=4.33352 t=9469
+bu4 bu4 	不不	c=0 d=0.0937067 t=9469
+bu4 bu4 bu4 	不不不	c=1 d=0.941765 t=9469
+bu4 chang2 jian4 	不常見	c=1 d=0.519442 t=9469
+bu4 cuo4 	不錯	c=3 d=0.538848 t=9469
+bu4 da3 	不打	c=1 d=0.107528 t=9469
+bu4 dai4 biao3 	不代表	c=1 d=0.313486 t=9469
+bu4 dao4 	不到	c=1 d=1 t=9420
+bu4 diao4 	不掉	c=1 d=0.637628 t=9469
+bu4 dong3 	不懂	c=1 d=0.790571 t=9469
+bu4 duan4 	不斷	c=1 d=0.737123 t=9469
+bu4 dui4 	不對	c=1 d=0.733447 t=9469
+bu4 fen4 	部分	c=4 d=1.91961 t=9469
+bu4 gan3 	不敢	c=1 d=0.440432 t=9469
+bu4 gou4 	不夠	c=3 d=1.07965 t=9469
+bu4 hao3 wan2 	不好玩	c=2 d=1.08322 t=9469
+bu4 hao4 	不耗	c=2 d=0.657047 t=9469
+bu4 hui4 fei1 	不會飛	c=1 d=0.410656 t=9469
+bu4 hui4 zai4 	不會在	c=1 d=0.810584 t=9469
+bu4 jia1 	不加	c=2 d=0.94344 t=9469
+bu4 jian4 	部件	c=4 d=2.06473 t=9469
+bu4 jian4 le5 	不見了	c=1 d=0.169483 t=9469
+bu4 jiao1 	不交	c=1 d=0.71177 t=9469
+bu4 jiu4 	不就	c=4 d=1.43693 t=9469
+bu4 jiu4 shi4 	不就是	c=1 d=0.506617 t=9469
+bu4 kai1 fang4 	不開放	c=1 d=0.431711 t=9469
+bu4 ke3 	不可	c=1 d=0.0913686 t=9469
+bu4 ke3 neng2 	不可能	c=2 d=0.811748 t=9469
+bu4 ke3 po4 huai4 	不可破壞	c=1 d=0.0850088 t=9469
+bu4 lai2 	不來	c=1 d=0.831104 t=9469
+bu4 liao3 	不了	c=2 d=1.23288 t=9469
+bu4 liao4 	布料	c=2 d=0.0591996 t=9469
+bu4 neng2 	不能	c=8 d=2.59472 t=9469
+bu4 pa4 si3 	不怕死	c=1 d=0.99005 t=9469
+bu4 qi2 	不騎	c=1 d=0.790571 t=9469
+bu4 qu4 	不去	c=2 d=1.4236 t=9469
+bu4 que4 ding4 	不確定	c=1 d=0.985112 t=9469
+bu4 shua1 le5 	不刷了	c=1 d=0.985112 t=9469
+bu4 shuang3 	不爽	c=1 d=0.822835 t=9469
+bu4 shuo1 	不說	c=1 d=0.701173 t=9469
+bu4 suan4 	不算	c=4 d=2.08932 t=9469
+bu4 tai4 	不太	c=2 d=0.907369 t=9469
+bu4 tong2 	不同	c=3 d=1.62523 t=9469
+bu4 wei4 	部位	c=1 d=0.0227089 t=9469
+bu4 xiang3 	不想	c=3 d=1.18104 t=9469
+bu4 xiao3 xin1 	不小心	c=2 d=0.740818 t=9469
+bu4 xin4 	不信	c=1 d=1 t=9469
+bu4 xing2 	不行	c=8 d=2.46448 t=9469
+bu4 xu1 yao1 	不需要	c=2 d=1.33762 t=9469
+bu4 yi1 yang4 	不一樣	c=2 d=1.03951 t=9469
+bu4 ying1 gai1 	不應該	c=1 d=0.67032 t=9469
+bu4 yong4 	不用	c=16 d=3.33171 t=9469
+bu4 yong4 tiao2 	不用調	c=1 d=0.955997 t=9469
+bu4 yuan3 	不遠	c=1 d=0.29523 t=9469
+bu4 zai4 	不在	c=1 d=0.909373 t=9469
+bu4 zao4 	不躁	c=1 d=0.995012 t=9469
+bu4 zhi1 	不知	c=1 d=0.00932553 t=9469
+bu4 zhi1 dao4 	不知道	c=10 d=2.17939 t=9469
+cai2 	才	c=11 d=2.50398 t=9469
+cai2 hui4 	才會	c=4 d=1.80897 t=9469
+cai2 liao4 	材料	c=18 d=2.80903 t=9469
+cai2 neng2 	才能	c=9 d=1.99862 t=9469
+cai2 neng2 gou4 	才能夠	c=1 d=0.733447 t=9469
+cai2 shi4 	才是	c=4 d=1.43273 t=9469
+cai2 you3 	才有	c=3 d=0.827923 t=9469
+can1 	餐	c=2 d=1.47057 t=9469
+can1 jia1 	參加	c=2 d=0.67718 t=9469
+can1 kao3 	參考	c=2 d=0.164581 t=9469
+can2 hai2 	殘骸	c=3 d=0.786628 t=9469
+can2 xie3 	殘血	c=1 d=0.985112 t=9469
+can3 	慘	c=1 d=0.918512 t=9469
+cang2 	藏	c=2 d=0.629065 t=9469
+cao2 	槽	c=5 d=2.36674 t=9469
+cao3 	草	c=38 d=6.36448 t=9469
+ce4 	測	c=2 d=1.91683 t=9469
+ce4 guo4 	測過	c=1 d=0.937067 t=9469
+ce4 wan2 	測玩	c=1 d=0.618783 t=9469
+ceng2 	層	c=1 d=0.941765 t=9469
+ceng2 ji2 	層級	c=1 d=0.869358 t=9469
+ceng2 jing1 	曾經	c=1 d=0.618783 t=9469
+cha1 	差	c=1 d=0.869358 t=9469
+cha1 bie2 	差別	c=2 d=1.51325 t=9469
+cha1 bu4 duo1 le5 	差不多了	c=1 d=0.822835 t=9469
+cha2 	茶	c=1 d=1 t=9469
+cha2 kan4 	查看	c=1 d=0.418952 t=9469
+cha4 bu5 duo1 	差不多	c=2 d=0.854122 t=9469
+cha4 dian3 	差點	c=1 d=0.771052 t=9469
+chai1 	拆	c=3 d=0.855416 t=9469
+chai1 li3 wu4 	拆禮物	c=1 d=0.65377 t=9469
+chan3 sheng1 	產生	c=1 d=0.025223 t=9469
+chang2 	長	c=1 d=0.444858 t=9469
+chang2 an4 	長按	c=4 d=0.160463 t=9469
+chang2 shi4 	嘗試	c=2 d=0.973475 t=9469
+chang2 shi4 	常識	c=2 d=0.0167514 t=9469
+chang2 tai4 	常態	c=1 d=0.965605 t=9469
+chang3 	場	c=1 d=0.918512 t=9469
+chang4 ge1 	唱歌	c=1 d=0.628135 t=9469
+chao1 	抄	c=9 d=1.79603 t=9469
+chao1 	超	c=24 d=2.64307 t=9469
+chao1 duo1 	超多	c=2 d=0.892686 t=9469
+chao1 gao1 	超高	c=1 d=0.946485 t=9469
+chao1 hao3 wan2 	超好玩	c=1 d=0.57695 t=9469
+chao1 hao3 xiao4 	超好笑	c=1 d=0.722527 t=9469
+chao1 ji2 	超級	c=1 d=0.923116 t=9469
+chao1 jia1 	抄家	c=5 d=1.51658 t=9469
+chao1 kao4 bei1 	超靠背	c=1 d=0.140858 t=9469
+chao1 kuai4 	超快	c=1 d=0.946485 t=9469
+chao1 wo3 	超我	c=1 d=0.847894 t=9469
+chao2 gui4 	朝貴	c=1 d=0.0432828 t=9469
+che1 	車	c=1 d=0.579842 t=9469
+che1 huo4 	車禍	c=1 d=0.235746 t=9469
+chen1 chen1 	琛琛	c=1 d=0.0101022 t=9469
+chen2 	陳	c=1 d=0.995012 t=9469
+chen2 jin4 	沉浸	c=1 d=0.451581 t=9469
+chen2 mi2 	沉迷	c=1 d=0.591555 t=9469
+chen2 yi4 an1 	陳亦安	c=1 d=0.927743 t=9469
+cheng2 	成	c=8 d=1.76617 t=9469
+cheng2 dan1 	承擔	c=1 d=0.694197 t=9469
+cheng2 jiao1 	成交	c=0 d=0.0628135 t=9469
+cheng2 jie4 	懲戒	c=1 d=0.045502 t=9469
+cheng2 jiu4 	成就	c=3 d=1.54336 t=9469
+cheng2 li3 ren2 	城裏人	c=1 d=0.995012 t=9469
+cheng2 shi4 	城市	c=4 d=0.970446 t=9469
+cheng2 shi4 	程式	c=10 d=5.77803 t=9469
+cheng2 wei2 	成爲	c=1 d=0.179066 t=9469
+chi1 	喫	c=15 d=3.54671 t=9469
+chi1 dao4 	喫到	c=1 d=0.491644 t=9469
+chi1 gua1 	喫瓜	c=3 d=1.54279 t=9469
+chi1 ni4 	喫膩	c=0 d=0.0522046 t=9469
+chi1 ni4 li3 	喫膩裏	c=1 d=0.524663 t=9469
+chong1 tang2 	衝堂	c=1 d=0.431711 t=9469
+chong1 tu1 	衝突	c=2 d=1.02404 t=9469
+chong2 	重	c=2 d=0.992087 t=9469
+chong2 fu4 	重複	c=1 d=0.00640933 t=9469
+chong2 kai1 	重開	c=9 d=5.64906 t=9469
+chong2 xin1 	重新	c=3 d=1.06271 t=9469
+chong3 wu4 	寵物	c=2 d=0.985112 t=9469
+chou1 	抽	c=1 d=0.891366 t=9469
+chou1 dao4 	抽到	c=2 d=1.12594 t=9469
+chou4 	臭	c=3 d=0.57048 t=9469
+chou4 ren2 	臭人	c=1 d=0.179964 t=9469
+chu1 	出	c=1 d=0.264477 t=9469
+chu1 kou3 	出口	c=1 d=1 t=9469
+chu1 lai2 	出來	c=5 d=0.597743 t=9469
+chu1 lai2 le5 	出來了	c=1 d=0.0958472 t=9469
+chu1 men2 	出門	c=1 d=0.99005 t=9469
+chu1 qu4 	出去	c=2 d=1.33393 t=9469
+chu1 sheng1 	出生	c=1 d=0.694197 t=9469
+chu1 sheng1 di4 	出生地	c=1 d=0.299692 t=9469
+chu1 xian4 	出現	c=3 d=1.71299 t=9469
+chu2 cun2 	儲存	c=2 d=1.40039 t=9469
+chu2 fei1 	除非	c=3 d=1.47112 t=9469
+chu2 le5 	除了	c=2 d=1.43404 t=9469
+chu3 li3 	處理	c=7 d=1.7712 t=9469
+chu4 	處	c=1 d=0.0169075 t=9469
+chu4 	觸	c=2 d=0.0575708 t=9469
+chu4 fa1 	觸發	c=1 d=0.826959 t=9469
+chuan2 	傳	c=4 d=1.92712 t=9469
+chuan2 de5 	傳的	c=1 d=0.960789 t=9469
+chuan2 song4 	傳送	c=7 d=1.42997 t=9469
+chuan2 song4 men2 	傳送門	c=1 d=0.104874 t=9469
+chuan2 song4 shi2 	傳送石	c=1 d=0.362402 t=9469
+chuan2 tong3 	傳統	c=1 d=0.481909 t=9469
+chuang2 	牀	c=2 d=0.379218 t=9469
+chuang2 shang4 	牀上	c=1 d=0.431711 t=9469
+chuang3 	闖	c=1 d=0.0213864 t=9469
+chuang4 	創	c=1 d=0.995012 t=9469
+chui2 zi5 	錘子	c=6 d=2.69659 t=9469
+chun2 xie3 	純血	c=1 d=0.771052 t=9469
+chun3 	蠢	c=1 d=0.12307 t=9469
+ci4 	次	c=2 d=0.216774 t=9469
+ci4 ji1 	刺激	c=1 d=0.396531 t=9469
+cong2 	從	c=3 d=1.03373 t=9469
+cong2 lai2 	從來	c=1 d=0.946485 t=9469
+cong2 lai2 mei2 	從來沒	c=1 d=0.960789 t=9469
+cun1 	村	c=1 d=0.67032 t=9469
+cun1 min2 	村民	c=4 d=0.955997 t=9469
+cun1 zhuang1 	村莊	c=4 d=1.26159 t=9469
+cun2 qian2 	存錢	c=3 d=2.68348 t=9469
+cun2 zai4 	存在	c=1 d=0.937067 t=9469
+cuo4 guo4 	錯過	c=2 d=1.38857 t=9469
+cuo4 jue2 	錯覺	c=1 d=0.865022 t=9469
+cuo4 le5 	錯了	c=2 d=1.56622 t=9469
+da2 an4 	答案	c=1 d=0.715338 t=9469
+da3 	打	c=31 d=5.16078 t=9469
+da3 bai4 	打敗	c=0 d=0.022091 t=9469
+da3 bai4 le5 	打敗了	c=1 d=0.222017 t=9469
+da3 bu5 guo4 	打不過	c=2 d=0.900257 t=9469
+da3 dao4 	打到	c=3 d=0.697676 t=9469
+da3 guai4 	打怪	c=1 d=0.701173 t=9469
+da3 huo3 shi2 	打火石	c=1 d=0.501576 t=9469
+da3 kai1 	打開	c=1 d=0.718924 t=9469
+da3 kong3 ji1 	打孔機	c=2 d=1.4972 t=9469
+da3 le5 	打了	c=1 d=0.355226 t=9469
+da3 li3 	打理	c=1 d=0.909373 t=9469
+da3 mo2 	打磨	c=3 d=1.44513 t=9469
+da3 sao3 	打掃	c=1 d=0.737123 t=9469
+da3 si3 	打死	c=3 d=0.83527 t=9469
+da3 suan4 	打算	c=2 d=1.55475 t=9469
+da4 	大	c=7 d=2.66489 t=9469
+da4 ba3 	大把	c=1 d=0.444858 t=9469
+da4 bai4 	大敗	c=1 d=0.980199 t=9469
+da4 bao4 zha4 	大爆炸	c=1 d=0.88692 t=9469
+da4 bu4 fen4 	大部分	c=1 d=0.522046 t=9469
+da4 chui2 	大錘	c=1 d=0.839457 t=9469
+da4 er4 	大二	c=2 d=1.26592 t=9469
+da4 fan4 wei2 	大範圍	c=1 d=0.900325 t=9469
+da4 fu2 	大福	c=3 d=0.989217 t=9469
+da4 gai4 	大概	c=6 d=1.2252 t=9469
+da4 kan3 dao1 	大砍刀	c=2 d=0.817596 t=9469
+da4 men2 	大門	c=1 d=0.99005 t=9469
+da4 sheng4 	大乘	c=1 d=0.615697 t=9469
+da4 shi1 	大師	c=1 d=0.790571 t=9469
+da4 suan4 	大蒜	c=1 d=0.562705 t=9469
+da4 tui1 	大推	c=1 d=0.802519 t=9469
+da4 xiang1 zi3 	大箱子	c=1 d=0.733447 t=9469
+da4 xue2 	大學	c=2 d=0.980199 t=9469
+da4 yi1 	大一	c=2 d=0.934057 t=9469
+dai4 	代	c=1 d=0.690734 t=9469
+dai4 	帶	c=5 d=1.89534 t=9469
+dai4 biao3 	代表	c=3 d=1.43535 t=9469
+dai4 dao4 	帶到	c=1 d=0.416862 t=9469
+dai4 de5 	帶得	c=0 d=0.00550232 t=9469
+dai4 de5 zou3 	帶得走	c=1 d=0.055299 t=9469
+dai4 guo4 qu4 	帶過去	c=1 d=0.203926 t=9469
+dai4 hui4 	待會	c=2 d=1.4953 t=9469
+dai4 lai2 	帶來	c=2 d=0.972926 t=9469
+dai4 ti4 	代替	c=1 d=0.882497 t=9469
+dan1 xin1 	擔心	c=1 d=0.0655462 t=9469
+dan4 	但	c=73 d=5.51783 t=9469
+dan4 dao4 	彈道	c=2 d=1.8883 t=9469
+dan4 gao1 	蛋糕	c=0 d=0.066365 t=9469
+dan4 shi5 	但是	c=4 d=1.47411 t=9469
+dan4 wo3 	但我	c=2 d=0.618783 t=9469
+dang1 	當	c=6 d=1.97164 t=9469
+dang1 ran2 	當然	c=2 d=1.28965 t=9469
+dang1 shi2 	當時	c=2 d=1.16295 t=9469
+dang3 	檔	c=2 d=0.785475 t=9469
+dao1 	刀	c=69 d=9.43485 t=9469
+dao1 gong1 	刀工	c=1 d=0.771052 t=9469
+dao1 jia4 	刀架	c=2 d=0.904837 t=9469
+dao1 ren4 	刀刃	c=1 d=0.0146253 t=9469
+dao3 	倒	c=1 d=0.814647 t=9469
+dao3 chu1 	導出	c=1 d=0.946485 t=9469
+dao3 lun4 	導論	c=1 d=0.918512 t=9469
+dao3 ru4 	導入	c=1 d=0.965605 t=9469
+dao3 xia4 	倒下	c=1 d=0.782705 t=9469
+dao4 	到	c=30 d=3.61077 t=9469
+dao4 di3 	到底	c=1 d=0.362402 t=9469
+dao4 li3 	道理	c=1 d=0.909373 t=9469
+dao4 mu4 	盜墓	c=1 d=0.0515605 t=9469
+dao4 shi4 	倒是	c=2 d=1.55838 t=9469
+de2 	得	c=2 d=0.831961 t=9469
+de5 	地	c=2 d=0.843981 t=9469
+de5 	的	c=455 d=20.8873 t=9469
+de5 guo4 cheng2 	的過程	c=1 d=0.519442 t=9469
+de5 ke4 	的課	c=1 d=0.680451 t=9469
+dei3 	得	c=4 d=1.73423 t=9469
+dei3 qu4 	得去	c=1 d=0.88692 t=9469
+deng3 	等	c=7 d=1.09706 t=9469
+deng3 dao4 	等到	c=2 d=0.722527 t=9469
+deng3 deng3 	等等	c=1 d=0.496585 t=9469
+deng3 ji2 	等級	c=6 d=1.97029 t=9469
+deng3 jia4 jiao1 huan4 	等價交換	c=1 d=1 t=9469
+deng3 wo3 	等我	c=3 d=1.88094 t=9469
+deng3 yu2 	等於	c=1 d=0.591555 t=9469
+di1 	低	c=4 d=1.51245 t=9469
+di1 	滴	c=1 d=0.701173 t=9469
+di1 deng3 	低等	c=1 d=0.66365 t=9469
+di4 	地	c=1 d=0.697676 t=9469
+di4 	的	c=1 d=0.831104 t=9469
+di4 	第	c=1 d=0.0407622 t=9469
+di4 di3 	地底	c=1 d=0.377192 t=9469
+di4 di5 	弟弟	c=1 d=0.272532 t=9469
+di4 er4 	第二	c=3 d=1.47799 t=9469
+di4 er4 ge2 	第二格	c=1 d=0.0483156 t=9469
+di4 er4 ge4 	第二個	c=1 d=0.726149 t=9469
+di4 fang1 	地方	c=4 d=1.60372 t=9469
+di4 lao2 	地牢	c=3 d=1.01105 t=9469
+di4 lei2 	地雷	c=1 d=0.744532 t=9469
+di4 si4 	第四	c=0 d=0.0286505 t=9469
+di4 si4 ge2 	第四格	c=1 d=0.287941 t=9469
+di4 tu2 	地圖	c=7 d=1.80051 t=9469
+di4 xia4 	地下	c=2 d=0.443763 t=9469
+di4 xia4 shi4 	地下室	c=1 d=0.594521 t=9469
+di4 xing2 	地形	c=2 d=0.344728 t=9469
+di4 yi1 	第一	c=1 d=0.951229 t=9469
+di4 yi1 ge5 	第一個	c=2 d=1.54443 t=9469
+di4 yi1 tang2 	第一堂	c=2 d=1.95123 t=9422
+di4 yu4 	地獄	c=1 d=0.895834 t=9469
+di4 yu4 bao3 lei3 	地獄堡壘	c=1 d=0.606531 t=9469
+dian3 	點	c=15 d=3.26377 t=9469
+dian4 ai4 	電愛	c=1 d=0.763379 t=9469
+dian4 ji1 	電機	c=1 d=0.460704 t=9469
+dian4 jing4 	電競	c=1 d=0.759572 t=9469
+dian4 liang4 	電量	c=1 d=0.514274 t=9469
+dian4 nao3 	電腦	c=5 d=2.87761 t=9469
+dian4 suan4 	電算	c=1 d=0.726149 t=9469
+diao1 ling2 	凋零	c=4 d=0.884493 t=9469
+diao4 	掉	c=14 d=3.57161 t=9469
+diao4 chu1 	掉出	c=1 d=0.767206 t=9469
+diao4 de5 	掉的	c=1 d=0.955997 t=9469
+diao4 luo4 	掉落	c=2 d=1.62737 t=9469
+diao4 si3 gui3 	吊死鬼	c=1 d=0.50409 t=9469
+diao4 yu2 	釣魚	c=1 d=0.0536647 t=9469
+ding3 duo1 	頂多	c=2 d=0.860708 t=9469
+ding4 duo2 	定奪	c=1 d=0.763379 t=9469
+ding4 yi4 	定義	c=3 d=1.08378 t=9469
+diu1 	丟	c=11 d=3.13644 t=9469
+diu1 dao4 	丟到	c=3 d=1.00005 t=9469
+diu1 diao4 	丟掉	c=1 d=0.571209 t=9469
+diu1 gei3 	丟給	c=1 d=0.145148 t=9469
+diu1 le5 	丟了	c=1 d=0.932394 t=9469
+diu1 ren2 xian4 yan3 	丟人現眼	c=1 d=0.99005 t=9469
+diu1 zai4 	丟在	c=1 d=0.0232837 t=9469
+dong1 dong1 	東東	c=1 d=0.895834 t=9469
+dong1 xi1 	東西	c=24 d=3.81078 t=9469
+dong4 ci2 	動詞	c=1 d=0.927743 t=9469
+dong4 man4 	動漫	c=1 d=0.66034 t=9469
+dong4 wu4 	動物	c=1 d=0.00909528 t=9469
+dong4 xue4 	洞穴	c=1 d=0.108067 t=9469
+dou1 	都	c=41 d=4.67239 t=9469
+dou1 jiao4 	都叫	c=1 d=0.634448 t=9469
+dou1 ke3 yi3 	都可以	c=2 d=0.110915 t=9469
+dou1 mei2 	都沒	c=2 d=0.822624 t=9469
+dou1 shi4 	都是	c=9 d=2.11738 t=9469
+dou1 yao1 	都要	c=2 d=0.678622 t=9469
+dou1 yao1 zuo4 	都要做	c=1 d=0.767206 t=9469
+dou1 you3 	都有	c=1 d=0.273898 t=9469
+dou1 zai4 	都在	c=1 d=0.0216013 t=9469
+dou4 	鬥	c=1 d=0.562705 t=9469
+dou4 fen3 	豆粉	c=1 d=0.965605 t=9469
+dou4 zi5 	豆子	c=1 d=0.955997 t=9469
+du2 	毒	c=0 d=0.0106459 t=9469
+du2 	瀆	c=1 d=0.447088 t=9469
+du2 	讀	c=1 d=0.985112 t=9469
+du2 ma3 ling2 shu3 	毒馬鈴薯	c=1 d=0.106992 t=9469
+du2 tiao1 	獨挑	c=1 d=0.980199 t=9469
+duan3 zhan4 	短暫	c=1 d=0.264477 t=9469
+duan4 	斷	c=2 d=0.892151 t=9469
+duan4 	鍛	c=3 d=1.40192 t=9469
+duan4 dao1 	斷刀	c=2 d=0.870606 t=9469
+duan4 dao1 	鍛刀	c=4 d=1.47688 t=9469
+duan4 diao4 	斷掉	c=1 d=0.408608 t=9469
+duan4 duan4 	斷斷	c=1 d=0.00683978 t=9469
+duan4 le5 	斷了	c=1 d=0.83527 t=9469
+dui1 	堆	c=2 d=0.213312 t=9469
+dui4 	對	c=4 d=1.4823 t=9469
+dui4 ba1 	對吧	c=4 d=0.980199 t=9469
+dui4 de5 	對的	c=1 d=0.856415 t=9469
+dui4 hua4 	對話	c=3 d=2.15461 t=9469
+dui4 le5 	對了	c=3 d=0.677452 t=9469
+dui4 xiang4 	對象	c=1 d=0.339596 t=9469
+dui4 yao4 	對要	c=1 d=0.831104 t=9469
+dui4 ying4 	對應	c=1 d=0.810584 t=9469
+dun1 xia4 	蹲下	c=2 d=1.34078 t=9469
+dun4 pai2 	盾牌	c=6 d=0.912198 t=9469
+duo1 	多	c=15 d=2.73419 t=9469
+duo1 dao4 	多到	c=3 d=1.64774 t=9469
+duo1 de5 	多的	c=1 d=0.71177 t=9469
+duo1 ge5 	多個	c=2 d=0.980907 t=9469
+duo1 jia1 	多家	c=1 d=0.748264 t=9469
+duo1 le5 	多了	c=1 d=0.927743 t=9469
+duo1 shao3 	多少	c=1 d=0.235746 t=9469
+duo1 yu2 	多餘	c=1 d=0.941765 t=9469
+duo1 zuo4 	多做	c=1 d=0.273898 t=9469
+duo3 	躲	c=2 d=0.39098 t=9469
+duo3 bi4 	躲避	c=1 d=0.440432 t=9469
+duo4 le5 	剁了	c=1 d=0.909373 t=9469
+e2 	額	c=1 d=0.358796 t=9469
+e2 e2 	哦哦	c=0 d=0.0640824 t=9469
+e2 e2 wa2 wa5 	哦哦娃娃	c=1 d=0.644036 t=9469
+e2 wai4 	額外	c=1 d=0.618783 t=9469
+e3 xin1 	噁心	c=3 d=1.61294 t=9469
+e4 ji2 	惡疾	c=1 d=0.918512 t=9469
+e4 ye4 	惡業	c=1 d=0.856415 t=9469
+ei1 	誒	c=18 d=3.17456 t=9469
+ei1 si3 	誒死	c=1 d=0.615697 t=9469
+er2 	而	c=1 d=0.99005 t=9469
+er2 gui1 	而歸	c=1 d=0.985112 t=9469
+er2 qie3 	而且	c=8 d=3.28015 t=9469
+er2 yi3 	而已	c=4 d=1.82378 t=9469
+er4 	二	c=1 d=0.00960953 t=9469
+er4 xiang4 xing4 	二象性	c=1 d=0.918512 t=9469
+fa1 	發	c=3 d=2.43541 t=9469
+fa1 ge4 	發個	c=1 d=0.951229 t=9469
+fa1 guang1 	發光	c=1 d=0.107528 t=9469
+fa1 sheng1 	發生	c=1 d=0.806541 t=9469
+fa1 xian4 	發現	c=4 d=1.58883 t=9469
+fa1 yin1 	發音	c=1 d=0.683861 t=9469
+fa1 zhan3 	發展	c=1 d=0.301194 t=9469
+fa2 ni3 	罰你	c=1 d=0.640824 t=9469
+fa3 	法	c=1 d=0.286505 t=9469
+fa3 li4 	法力	c=2 d=0.505252 t=9469
+fa3 lun2 	法輪	c=2 d=1.56945 t=9469
+fa3 shi1 	法師	c=7 d=1.48613 t=9469
+fa3 shu4 	法術	c=11 d=1.8882 t=9469
+fa3 zhang4 	法杖	c=7 d=0.913607 t=9469
+fan1 	翻	c=8 d=2.34927 t=9469
+fan1 dao4 	翻到	c=1 d=0.822835 t=9469
+fan1 tian1 	翻天	c=1 d=0.543351 t=9469
+fan2 	煩	c=1 d=0.137381 t=9469
+fan2 zhi2 	繁殖	c=1 d=0.960789 t=9469
+fan3 zheng1 	反正	c=6 d=1.10137 t=9469
+fan4 	飯	c=1 d=0.634448 t=9469
+fan4 tong3 	范統	c=1 d=0.214381 t=9469
+fang1 bian4 	方便	c=2 d=0.936285 t=9469
+fang1 fa3 	方法	c=2 d=1.73676 t=9469
+fang1 kuai4 	方塊	c=1 d=0.831104 t=9469
+fang1 shi4 	方式	c=2 d=1.16388 t=9469
+fang1 zhou1 	方舟	c=1 d=0.826959 t=9469
+fang2 huo3 	防火	c=2 d=1.57472 t=9469
+fang2 jian1 	房間	c=1 d=0.794534 t=9469
+fang2 ju4 	防具	c=2 d=0.229294 t=9469
+fang2 zhi3 	防止	c=1 d=0.265803 t=9469
+fang2 zi5 	房子	c=1 d=0.913931 t=9469
+fang3 wen4 	訪問	c=4 d=3.85782 t=9469
+fang4 	放	c=22 d=1.78776 t=9469
+fang4 dao4 	放到	c=2 d=0.898051 t=9469
+fang4 de5 	放的	c=1 d=0.247833 t=9469
+fang4 ge4 	放個	c=1 d=0.99005 t=9469
+fang4 jia4 	放假	c=1 d=0.970446 t=9469
+fang4 qi4 	放棄	c=2 d=1.52678 t=9469
+fang4 zai4 	放在	c=9 d=2.17218 t=9469
+fei1 	非	c=2 d=0.81765 t=9469
+fei1 	飛	c=1 d=0.154896 t=9469
+fei1 chang2 	非常	c=2 d=1.34284 t=9469
+fei1 chuan2 	飛船	c=1 d=0.511709 t=9469
+fei1 gong1 kai1 	非公開	c=1 d=0.873716 t=9469
+fei4 wu4 	廢物	c=0 d=0.0650509 t=9469
+fen1 	分	c=2 d=1.15559 t=9469
+fen1 lei4 	分類	c=3 d=1.44425 t=9469
+fen1 shen1 	分身	c=1 d=0.0262523 t=9469
+fen1 zhong1 	分鐘	c=1 d=0.371577 t=9469
+feng1 	鋒	c=1 d=0.99005 t=9469
+feng1 	風	c=0 d=0.0995012 t=9469
+feng1 jing3 	風景	c=1 d=0.343009 t=9469
+feng1 kuang2 	瘋狂	c=1 d=0.718924 t=9469
+feng1 li4 	鋒利	c=2 d=1.2136 t=9469
+feng1 lin2 huo3 shan1 	風林火山	c=1 d=1 t=9469
+feng1 mian4 	封面	c=2 d=0.704688 t=9469
+fo2 fa3 	佛法	c=1 d=0.618783 t=9469
+fo2 jiao4 	佛教	c=1 d=0.597501 t=9469
+fo2 luo4 yi1 de2 	佛洛伊德	c=1 d=0.909373 t=9469
+fu1 	夫	c=1 d=0.486752 t=9469
+fu2 	服	c=0 d=0.0588605 t=9469
+fu2 di4 ting3 shen1 	伏地挺身	c=1 d=0.275271 t=9469
+fu2 lin2 	伏林	c=1 d=0.937067 t=9469
+fu2 wu4 qi4 	服務器	c=1 d=0.715338 t=9469
+fu3 	釜	c=1 d=0.878095 t=9469
+fu3 rou4 	腐肉	c=1 d=0.856415 t=9469
+fu3 tou5 	斧頭	c=3 d=1.88355 t=9469
+fu4 fei4 	付費	c=1 d=0.923116 t=9469
+fu4 huo2 	復活	c=1 d=0.04573 t=9469
+fu4 jin4 	附近	c=2 d=1.67321 t=9469
+fu4 mo2 	附魔	c=7 d=2.24332 t=9469
+fu4 mo2 shu1 	附魔書	c=2 d=0.443797 t=9469
+fu4 mo2 tai2 	附魔台	c=4 d=2.27418 t=9469
+fu4 qin1 	父親	c=2 d=1.08676 t=9469
+fu4 shou3 	副手	c=1 d=0.882497 t=9469
+fu4 yu4 	富裕	c=1 d=0.932394 t=9469
+gai1 	該	c=2 d=0.729789 t=9469
+gai1 bu4 hui4 	該不會	c=1 d=0.932394 t=9469
+gai3 	改	c=9 d=1.63007 t=9469
+gai3 bian4 	改變	c=1 d=0.366045 t=9469
+gai3 cheng2 	改成	c=3 d=1.72192 t=9469
+gai3 ming2 	改名	c=1 d=0.631284 t=9469
+gai3 wei2 	改爲	c=1 d=0.65377 t=9469
+gai3 yong4 	改用	c=1 d=0.591555 t=9469
+gai4 	蓋	c=8 d=2.98972 t=9469
+gai4 le5 	蓋了	c=1 d=0.937067 t=9469
+gai4 lun4 	概論	c=2 d=0.929571 t=9469
+gai4 nian4 	概念	c=1 d=0.980199 t=9469
+gan1 	杆	c=1 d=0.852144 t=9469
+gan1 	肝	c=10 d=2.37429 t=9469
+gan1 cao3 dui1 	乾草堆	c=1 d=0.506617 t=9469
+gan1 jing4 	乾淨	c=4 d=1.76251 t=9469
+gan1 ku1 	乾枯	c=1 d=0.927743 t=9469
+gan3 	趕	c=1 d=0.826959 t=9469
+gan3 dao4 	感到	c=1 d=0.71177 t=9469
+gan3 jue2 	感覺	c=7 d=1.32769 t=9469
+gan3 jue2 dao4 	感覺到	c=1 d=0.895834 t=9469
+gan3 jue2 hui4 	感覺會	c=1 d=0.501576 t=9469
+gan3 jue2 jiu4 	感覺就	c=1 d=0.873716 t=9469
+gan3 ke4 	趕課	c=1 d=0.755784 t=9469
+gan3 lan3 shu4 	橄欖樹	c=2 d=1.26266 t=9469
+gan3 lu4 	趕路	c=1 d=0.465334 t=9469
+gan3 qing2 	感情	c=1 d=0.305746 t=9469
+gan3 ran3 	感染	c=1 d=0.50409 t=9469
+gan3 xiang3 	感想	c=1 d=0.477114 t=9469
+gan4 	幹	c=18 d=2.76704 t=9469
+gan4 diao4 	幹掉	c=1 d=0.718924 t=9469
+gang1 	剛	c=3 d=1.24307 t=9469
+gang1 	鋼	c=9 d=0.516842 t=9469
+gang1 gang1 	剛剛	c=2 d=0.760575 t=9469
+gang1 hao3 	剛好	c=2 d=0.975391 t=9469
+gao1 	高	c=6 d=2.31784 t=9469
+gao1 deng3 	高等	c=1 d=0.752014 t=9469
+gao1 du4 	高度	c=2 d=1.00165 t=9469
+gao1 ji2 	高級	c=2 d=1.45705 t=9469
+gao1 jie1 	高階	c=1 d=0.904837 t=9469
+gao1 li2 cai4 	高麗菜	c=1 d=0.628135 t=9469
+gao1 su4 	高速	c=1 d=0.755784 t=9469
+gao1 ta3 	高塔	c=1 d=0.121238 t=9469
+gao3 	搞	c=5 d=1.45705 t=9469
+gao3 	鎬	c=1 d=0.722527 t=9469
+gao3 tou2 	鎬頭	c=1 d=0.018968 t=9469
+gao3 zi5 	稿子	c=4 d=0.826959 t=9469
+gao4 su4 	告訴	c=1 d=0.0776922 t=9469
+ge2 	格	c=4 d=1.39158 t=9469
+ge2 ming4 	革命	c=1 d=0.398519 t=9469
+ge2 shi4 	格式	c=1 d=0.941765 t=9469
+ge4 	個	c=44 d=7.19901 t=9469
+ge4 	各	c=1 d=0.704688 t=9469
+ge4 wei4 	各位	c=4 d=0.953908 t=9469
+ge4 yang4 	各樣	c=1 d=0.609571 t=9469
+ge4 yue4 	個月	c=1 d=0.377192 t=9469
+ge4 zhong3 	各種	c=1 d=0.440432 t=9469
+gei3 	給	c=5 d=1.12985 t=9469
+gei3 li4 	給力	c=1 d=0.951229 t=9469
+gei3 ni3 	給你	c=2 d=0.894393 t=9469
+gei3 wo3 	給我	c=3 d=0.995012 t=9469
+gen1 	跟	c=54 d=4.10794 t=9469
+gen1 ben3 	根本	c=5 d=2.13656 t=9469
+gen1 wo3 	跟我	c=1 d=0.0480747 t=9469
+gen2 	哏	c=2 d=1.06812 t=9469
+geng1 jiu3 	更久	c=1 d=0.782705 t=9469
+geng1 kuai4 	更快	c=1 d=0.554327 t=9469
+geng1 lao3 	更老	c=1 d=0.532592 t=9469
+geng1 xin1 	更新	c=1 d=0.900325 t=9469
+geng4 	更	c=6 d=2.06036 t=9469
+geng4 duo1 	更多	c=2 d=1.33605 t=9469
+geng4 hao3 	更好	c=1 d=0.484325 t=9469
+geng4 wo3 	更我	c=1 d=0.0478349 t=9469
+gong1 	弓	c=7 d=1.53269 t=9469
+gong1 ce4 	公廁	c=1 d=0.594521 t=9469
+gong1 de2 	功德	c=1 d=0.0523397 t=9469
+gong1 gao4 	公告	c=1 d=0.713454 t=9469
+gong1 gao4 qu3 	公告取	c=1 d=0.697676 t=9469
+gong1 ji2 	攻擊	c=3 d=0.927743 t=9469
+gong1 jian4 	弓箭	c=1 d=0.965605 t=9469
+gong1 ju4 	工具	c=5 d=2.5499 t=9469
+gong1 jue2 	公爵	c=1 d=0.980199 t=9469
+gong1 kai1 	公開	c=1 d=0.537944 t=9469
+gong1 neng2 	功能	c=3 d=1.84425 t=9469
+gong1 yuan2 	公園	c=1 d=0.591555 t=9469
+gong1 zuo4 tai2 	工作臺	c=1 d=0.690734 t=9469
+gong4 wan2 	貢丸	c=2 d=1.59937 t=9469
+gong4 xian4 	貢獻	c=1 d=0.29671 t=9469
+gou1 suo3 	鉤索	c=1 d=0.937067 t=9469
+gou3 	狗	c=3 d=0.83131 t=9469
+gou4 	夠	c=2 d=1.29983 t=9469
+gou4 le5 	夠了	c=1 d=0.0997588 t=9469
+gu1 	孤	c=1 d=0.771052 t=9469
+gu1 r5 	孤兒	c=1 d=0.71177 t=9469
+gu2 tou5 	骨頭	c=5 d=0.629648 t=9469
+gu3 	鈷	c=6 d=0.471317 t=9469
+gu3 hui1 tan2 	骨灰罈	c=1 d=0.0415857 t=9469
+gu3 sui3 	骨髓	c=1 d=0.701173 t=9469
+gu3 zhuang1 	古裝	c=1 d=0.23457 t=9469
+gu4 shi4 	故事	c=2 d=1.22238 t=9469
+gua1 	瓜	c=2 d=1.01711 t=9469
+gua3 	寡	c=1 d=0.778801 t=9469
+gua4 ji1 	掛機	c=1 d=0.951229 t=9469
+guai1 guai1 	乖乖	c=1 d=0.557106 t=9469
+guai4 	怪	c=3 d=0.67368 t=9469
+guai4 guai4 	怪怪	c=1 d=0.559898 t=9469
+guai4 wu4 	怪物	c=5 d=1.36423 t=9469
+guan1 	觀	c=1 d=0.210136 t=9469
+guan1 	關	c=5 d=3.29059 t=9469
+guan1 cai5 	棺材	c=4 d=1.42819 t=9469
+guan1 diao4 	關掉	c=1 d=0.970446 t=9469
+guan1 le5 	關了	c=2 d=0.847894 t=9469
+guan1 shang5 	關上	c=1 d=1 t=9469
+guan1 xi4 	關係	c=6 d=1.43657 t=9469
+guan4 chuan1 	貫穿	c=1 d=0.955997 t=9469
+guan4 tou5 	罐頭	c=1 d=0.737123 t=9469
+guan4 zi5 	罐子	c=1 d=0.733447 t=9469
+guang1 	光	c=1 d=0.11475 t=9469
+guang1 bo1 	光波	c=1 d=0.126186 t=9469
+guang1 xian1 	光纖	c=1 d=0.759572 t=9469
+guang1 ying3 	光影	c=2 d=1.41524 t=9469
+guang4 jie1 	逛街	c=1 d=0.88692 t=9469
+gui1 	龜	c=2 d=1.83739 t=9469
+gui1 ding4 	規定	c=2 d=1.18827 t=9469
+gui1 ze2 	規則	c=1 d=0.985112 t=9469
+gui3 	鬼	c=2 d=1.55258 t=9469
+gui3 hun2 	鬼魂	c=1 d=0.0117371 t=9469
+gui3 zhuan3 	鬼轉	c=1 d=0.737123 t=9469
+gui4 	貴	c=6 d=1.66916 t=9469
+gui4 de5 	貴的	c=1 d=0.0186856 t=9469
+gun3 	滾	c=2 d=1.06891 t=9469
+gun3 tong3 	滾筒	c=1 d=0.951229 t=9469
+guo1 	鍋	c=4 d=1.40004 t=9469
+guo2 	國	c=1 d=0.687289 t=9469
+guo2 xue2 	國學	c=1 d=0.0081887 t=9469
+guo3 	果	c=1 d=0.394554 t=9469
+guo4 	過	c=6 d=2.31893 t=9469
+guo4 cheng2 	過程	c=0 d=0.0516851 t=9469
+guo4 di1 	過低	c=1 d=0.516851 t=9469
+guo4 lai2 	過來	c=4 d=1.41136 t=9469
+guo4 lao2 	過勞	c=2 d=1.33313 t=9469
+guo4 le5 	過了	c=1 d=0.657047 t=9469
+guo4 qu4 	過去	c=2 d=1.41263 t=9469
+ha1 	哈	c=1 d=0.900325 t=9469
+ha1 ha1 	哈哈	c=1 d=0.65377 t=9469
+hai2 	還	c=9 d=2.11934 t=9469
+hai2 bu4 	還不	c=1 d=0.226502 t=9469
+hai2 de2 	還得	c=1 d=0.951229 t=9469
+hai2 hao3 	還好	c=3 d=1.11225 t=9469
+hai2 ke3 yi3 	還可以	c=1 d=0.839457 t=9469
+hai2 mei2 	還沒	c=7 d=2.12161 t=9469
+hai2 mei2 gei3 ni3 	還沒給你	c=1 d=0.028297 t=9469
+hai2 shi4 	還是	c=31 d=4.82533 t=9469
+hai2 xing2 	還行	c=1 d=0.00806679 t=9469
+hai2 yao1 	還要	c=1 d=0.640824 t=9469
+hai2 yi3 wei2 	還以爲	c=1 d=0.843665 t=9469
+hai2 you3 	還有	c=21 d=3.43646 t=9469
+hai2 zai4 	還在	c=3 d=1.0085 t=9469
+hai3 di3 	海底	c=2 d=0.57695 t=9469
+hai3 wai4 	海外	c=1 d=0.718924 t=9469
+hai3 yang2 	海洋	c=5 d=1.42216 t=9469
+hai4 	害	c=1 d=0.798516 t=9469
+han2 bing1 	寒冰	c=2 d=0.671916 t=9469
+han2 shu4 	函數	c=1 d=0.860708 t=9469
+han2 xun4 	寒訓	c=1 d=0.600496 t=9469
+han4 bao3 	漢堡	c=1 d=0.268474 t=9469
+hao2 shuang3 	豪爽	c=1 d=0.50409 t=9469
+hao3 	好	c=40 d=5.17129 t=9469
+hao3 ba1 	好吧	c=1 d=0.891366 t=9469
+hao3 can3 	好慘	c=1 d=0.818731 t=9469
+hao3 chang2 	好長	c=1 d=0.628135 t=9469
+hao3 chi1 	好喫	c=1 d=0.625002 t=9469
+hao3 chu3 	好處	c=2 d=1.0715 t=9469
+hao3 de5 	好的	c=1 d=0.408608 t=9469
+hao3 duo1 	好多	c=1 d=0.147342 t=9469
+hao3 ei1 	好誒	c=6 d=1.45431 t=9469
+hao3 fan2 	好煩	c=1 d=0.937067 t=9469
+hao3 hao3 	好好	c=2 d=0.97531 t=9469
+hao3 hao3 wan2 	好好玩	c=4 d=1.24708 t=9469
+hao3 he1 	好喝	c=1 d=0.985112 t=9469
+hao3 hen3 	好狠	c=2 d=0.969131 t=9469
+hao3 jiu3 	好久	c=1 d=0.327915 t=9469
+hao3 ka3 	好卡	c=1 d=0.965605 t=9469
+hao3 ke3 ai4 	好可愛	c=1 d=0.0658748 t=9469
+hao3 kong3 bu4 	好恐怖	c=1 d=0.543351 t=9469
+hao3 le5 	好了	c=15 d=2.63978 t=9469
+hao3 le5 ma5 	好了嗎	c=1 d=0.0497871 t=9469
+hao3 lei3 	好累	c=0 d=0.0941765 t=9469
+hao3 ma2 fan2 	好麻煩	c=2 d=0.99005 t=9469
+hao3 ma5 	好嗎	c=1 d=0.900325 t=9469
+hao3 se4 	好色	c=2 d=1.78674 t=9469
+hao3 se4 o1 	好色噢	c=2 d=1 t=9469
+hao3 wan2 	好玩	c=6 d=1.66922 t=9469
+hao3 xi3 huan1 	好喜歡	c=1 d=0.923116 t=9469
+hao3 xiang4 	好像	c=24 d=4.64444 t=9469
+hao3 xiao1 xi5 	好消息	c=1 d=0.367879 t=9469
+hao3 xiao4 	好笑	c=4 d=1.72543 t=9469
+hao3 xiao4 ma5 	好笑嗎	c=1 d=0.416862 t=9469
+hao3 xiong1 	好凶	c=1 d=0.99005 t=9469
+hao3 yong4 	好用	c=2 d=1.09811 t=9469
+hao3 you3 	好友	c=2 d=1.03984 t=9469
+hao3 zan4 	好讚	c=2 d=0.352522 t=9469
+hao4 	耗	c=4 d=1.17535 t=9469
+hao4 qi2 	好奇	c=1 d=0.771052 t=9469
+he1 	喝	c=1 d=0.748264 t=9469
+he2 	和	c=4 d=1.48152 t=9469
+he2 fa1 	核發	c=3 d=1.33339 t=9469
+he2 jin1 	合金	c=16 d=1.65335 t=9469
+he2 xin1 	核心	c=2 d=0.895751 t=9469
+he2 zai4 	合在	c=1 d=0.778801 t=9469
+he2 zhe5 	合着	c=1 d=0.640824 t=9469
+he2 zi3 fan3 ying4 	核子反應	c=0 d=0.0440432 t=9469
+he2 zi3 fan3 ying4 qi4 	核子反應器	c=1 d=0.442639 t=9469
+he4 	賀	c=0 d=0.0628135 t=9469
+he4 cheng2 jiao1 	賀成交	c=1 d=0.631284 t=9469
+hei1 se4 	黑色	c=2 d=0.97531 t=9469
+hei1 shi2 	黑石	c=2 d=1.66223 t=9469
+hei1 yao4 	黑耀	c=1 d=0.650509 t=9469
+hei1 yao4 sheng1 	黑耀生	c=1 d=0.798516 t=9469
+hei1 yao4 shi2 	黑曜石	c=4 d=1.37451 t=9469
+hen3 	很	c=26 d=5.71708 t=9469
+hen3 	狠	c=2 d=0.299149 t=9469
+hen3 chang2 yong4 	很常用	c=1 d=0.752014 t=9469
+hen3 di1 	很低	c=1 d=1 t=9469
+hen3 duo1 	很多	c=11 d=1.47583 t=9469
+hen3 gan3 	很敢	c=1 d=0.970446 t=9469
+hen3 gui4 	很貴	c=1 d=0.729789 t=9469
+hen3 hao3 	很好	c=3 d=1.33353 t=9469
+hen3 jian3 dan1 	很簡單	c=1 d=0.0280154 t=9469
+hen3 jiu3 	很久	c=1 d=0.88692 t=9469
+hen3 kuai4 	很快	c=1 d=0.00733572 t=9469
+hen3 lao3 	很老	c=1 d=0.722527 t=9469
+hen3 lei3 	很累	c=1 d=0.744532 t=9469
+hen3 liang4 	很亮	c=1 d=0.565525 t=9469
+hen3 nan2 	很難	c=1 d=0.00831246 t=9469
+hen3 nan2 guo4 	很難過	c=1 d=0.600496 t=9469
+hen3 qi2 guai4 	很奇怪	c=0 d=0.0970446 t=9469
+hen3 qiang2 	很強	c=1 d=0.798516 t=9469
+hen3 shao3 	很少	c=1 d=0.247833 t=9469
+hen3 shi4 he2 	很適合	c=1 d=0.0639279 t=9469
+hen3 tong4 	很痛	c=1 d=0.66365 t=9469
+hen3 xiang4 	很像	c=1 d=0.839457 t=9469
+hen3 you3 	很有	c=3 d=1.56412 t=9469
+heng1 	哼	c=1 d=0.895834 t=9469
+heng1 heng1 	哼哼	c=1 d=0.891366 t=9469
+hong2 deng1 	紅燈	c=9 d=2.98455 t=9469
+hong2 yu4 	紅玉	c=3 d=0.701173 t=9469
+hou4 	後	c=18 d=4.27573 t=9469
+hou4 mian4 	後面	c=5 d=1.45236 t=9469
+hu2 	狐	c=1 d=0.0297478 t=9469
+hu4 chi1 	互喫	c=1 d=0.995012 t=9469
+hu4 xiang1 	互相	c=1 d=0.511709 t=9469
+hua1 	花	c=4 d=1.85313 t=9469
+hua1 dao1 	花刀	c=1 d=0.786628 t=9469
+hua1 fei4 	花費	c=1 d=0.687289 t=9469
+hua1 le5 	花了	c=1 d=0.565525 t=9469
+hua1 qian2 	花錢	c=1 d=0.25284 t=9469
+hua2 shu3 	滑鼠	c=3 d=1.25641 t=9469
+hua4 	化	c=1 d=0.951229 t=9469
+hua4 	畫	c=1 d=0.344728 t=9469
+hua4 	話	c=13 d=2.80038 t=9469
+hua4 feng1 	畫風	c=1 d=0.856415 t=9469
+hua4 ti2 	話題	c=1 d=0.416862 t=9469
+huai4 	壞	c=6 d=2.22327 t=9469
+huai4 xiao1 xi1 	壞消息	c=1 d=0.379083 t=9469
+huan2 wo3 	還我	c=1 d=0.0293049 t=9469
+huan4 	換	c=7 d=1.99153 t=9469
+huan4 cheng2 	換成	c=2 d=0.173864 t=9469
+huan4 ying3 	幻影	c=1 d=0.358656 t=9469
+huan4 ying3 jian4 	幻影劍	c=2 d=0.778801 t=9469
+huang2 se4 	黃色	c=1 d=0.0632918 t=9469
+hui2 	回	c=4 d=0.179677 t=9469
+hui2 dao4 	回到	c=2 d=0.970446 t=9469
+hui2 fu4 	回復	c=4 d=0.882497 t=9469
+hui2 lai5 	回來	c=5 d=2.01128 t=9469
+hui2 qu5 	回去	c=3 d=1.69992 t=9469
+hui2 sheng1 	回聲	c=3 d=0.21893 t=9469
+hui3 mie4 zhe3 	毀滅者	c=1 d=0.57695 t=9469
+hui4 	會	c=63 d=6.52875 t=9469
+hui4 diao4 	會掉	c=1 d=0.913931 t=9469
+hui4 gen1 	會跟	c=1 d=0.970446 t=9469
+hui4 shi4 	會是	c=1 d=0.722527 t=9469
+hui4 si3 	會死	c=1 d=0.822835 t=9469
+hui4 you3 	會有	c=4 d=1.57176 t=9469
+hun2 	魂	c=9 d=2.40279 t=9469
+hun4 luan4 	混亂	c=2 d=0.980347 t=9469
+huo2 	活	c=1 d=0.904837 t=9469
+huo2 dong4 	活動	c=4 d=1.53582 t=9469
+huo3 	火	c=10 d=1.86107 t=9469
+huo3 gong1 	火攻	c=1 d=0.386741 t=9469
+huo3 shan1 	火山	c=0 d=0.0995012 t=9469
+huo3 yan4 	火焰	c=6 d=1.29278 t=9469
+huo3 yao4 	火藥	c=1 d=0.0366992 t=9469
+huo4 	或	c=5 d=1.78706 t=9469
+huo4 de2 	獲得	c=2 d=0.798516 t=9469
+huo4 zhe3 	或者	c=13 d=2.08956 t=9469
+ji1 	機	c=2 d=1.52582 t=9469
+ji1 ben3 	基本	c=2 d=1.42898 t=9469
+ji1 ben3 shang4 	基本上	c=2 d=0.782705 t=9469
+ji1 chu3 	基礎	c=1 d=0.447088 t=9469
+ji1 e4 	飢餓	c=1 d=0.810584 t=9469
+ji1 guan1 	機關	c=2 d=0.848892 t=9469
+ji1 huang1 	饑荒	c=1 d=0.869358 t=9469
+ji1 lv4 	幾率	c=2 d=0.595918 t=9469
+ji1 lv4 	機率	c=4 d=2.47275 t=9469
+ji1 qi4 	機器	c=2 d=1.49411 t=9469
+ji1 sha1 	擊殺	c=0 d=0.040657 t=9469
+ji1 sha1 shu4 	擊殺樹	c=1 d=0.408608 t=9469
+ji1 yi4 	機翼	c=1 d=0.722527 t=9469
+ji2 	級	c=1 d=0.697676 t=9469
+ji2 bai4 	擊敗	c=2 d=0.591449 t=9469
+ji2 duan1 	極端	c=1 d=0.810584 t=9469
+ji2 qi2 	集齊	c=1 d=0.336216 t=9469
+ji2 xian4 	極限	c=1 d=0.603506 t=9469
+ji3 	幾	c=2 d=0.907776 t=9469
+ji3 dian3 	幾點	c=1 d=0.394554 t=9469
+ji3 tian1 	幾天	c=1 d=0.97531 t=9469
+ji3 zhang1 	幾張	c=1 d=0.17552 t=9469
+ji4 de5 	記得	c=7 d=1.50431 t=9469
+ji4 gai4 	計概	c=1 d=0.806541 t=9469
+ji4 jie2 	計結	c=1 d=0.826959 t=9469
+ji4 lu4 	記錄	c=1 d=0.67368 t=9469
+ji4 neng2 	技能	c=9 d=1.98756 t=9469
+ji4 ran2 	既然	c=1 d=0.701173 t=9469
+ji4 shi4 gan3 	既視感	c=1 d=0.519442 t=9469
+ji4 suan4 	計算	c=1 d=0.458406 t=9469
+ji4 suan4 ji1 	計算機	c=2 d=0.896438 t=9469
+ji4 tan2 	祭壇	c=2 d=0.655034 t=9469
+ji4 xu4 	繼續	c=1 d=0.101537 t=9469
+ji4 xu4 kan4 	繼續看	c=1 d=0.603506 t=9469
+ji4 yi4 ti3 	記憶體	c=2 d=0.679764 t=9469
+ji4 yu2 	鯽魚	c=1 d=0.690734 t=9469
+ji4 zhang4 	記賬	c=1 d=0.771052 t=9469
+ji4 zhe5 	記着	c=1 d=0.321422 t=9469
+jia1 	加	c=22 d=5.51773 t=9469
+jia1 	夾	c=3 d=1.73024 t=9469
+jia1 	家	c=10 d=2.01706 t=9469
+jia1 bao4 	家暴	c=2 d=1.08683 t=9469
+jia1 chang2 	家常	c=1 d=0.436049 t=9469
+jia1 cheng2 	加成	c=2 d=1.04977 t=9469
+jia1 cheng2 de5 	加成的	c=1 d=0.748264 t=9469
+jia1 huo5 	傢伙	c=1 d=1 t=9469
+jia1 le5 	加了	c=4 d=2.1865 t=9469
+jia1 li5 	家裏	c=4 d=1.82372 t=9469
+jia1 qian1 	加簽	c=1 d=1 t=9425
+jia1 ru4 	加入	c=3 d=2.23796 t=9469
+jia1 su4 	加速	c=1 d=0.847894 t=9469
+jia1 ting2 	家庭	c=1 d=0.937067 t=9469
+jia1 you2 	加油	c=2 d=0.54586 t=9469
+jia3 	甲	c=1 d=0.748264 t=9469
+jia3 de5 	假的	c=2 d=1.04985 t=9469
+jia4 	架	c=2 d=1.28443 t=9469
+jia4 gou4 	架構	c=2 d=1.34079 t=9469
+jia4 qian5 	價錢	c=1 d=0.246597 t=9469
+jia4 zhi2 	價值	c=1 d=0.209088 t=9469
+jian1 ai4 	兼愛	c=1 d=0.582748 t=9469
+jian1 ci4 	尖刺	c=3 d=0.371321 t=9469
+jian1 jin4 	監禁	c=2 d=1.79169 t=9469
+jian1 yu4 	監獄	c=1 d=0.546074 t=9469
+jian3 	減	c=1 d=0.241714 t=9469
+jian3 ce4 	檢測	c=1 d=0.955997 t=9469
+jian3 cha2 	檢查	c=1 d=0.458406 t=9469
+jian3 dan1 	簡單	c=3 d=0.990218 t=9469
+jian4 	劍	c=13 d=2.30786 t=9469
+jian4 	賤	c=2 d=0.937067 t=9469
+jian4 bing3 	劍柄	c=2 d=0.0853631 t=9469
+jian4 guo4 	見過	c=1 d=0.965605 t=9469
+jian4 mian4 	見面	c=1 d=0.402524 t=9469
+jian4 ren4 	劍刃	c=3 d=1.43424 t=9469
+jian4 shi3 	箭矢	c=1 d=0.0982736 t=9469
+jian4 tou2 	箭頭	c=3 d=0.834633 t=9469
+jian4 yi4 	建議	c=16 d=4.39124 t=9469
+jian4 zhu2 	建築	c=2 d=0.990077 t=9469
+jiang1 	漿	c=1 d=0.826959 t=9469
+jiang1 jun1 	將軍	c=1 d=0.216536 t=9469
+jiang1 shi1 	僵尸	c=2 d=0.965279 t=9469
+jiang3 	講	c=3 d=1.59317 t=9469
+jiang4 	降	c=1 d=0.895834 t=9469
+jiang4 hun2 	匠魂	c=1 d=0.900325 t=9469
+jiao1 	交	c=2 d=0.999058 t=9469
+jiao1 	澆	c=2 d=0.257947 t=9469
+jiao1 da4 	交大	c=2 d=1.20098 t=9469
+jiao1 hei1 	焦黑	c=1 d=0.932394 t=9469
+jiao1 ni3 	教你	c=1 d=0.774916 t=9469
+jiao1 wang3 	交往	c=2 d=1.03403 t=9469
+jiao1 xiang3 yue4 	交響樂	c=1 d=0.839457 t=9469
+jiao1 yi4 	交易	c=6 d=1.49262 t=9469
+jiao1 zhu4 	澆築	c=3 d=1.71437 t=9469
+jiao3 ben3 	腳本	c=1 d=0.680451 t=9469
+jiao3 luo4 	角落	c=1 d=0.927743 t=9469
+jiao3 se4 	角色	c=1 d=0.66365 t=9469
+jiao3 ta4 che1 	腳踏車	c=1 d=0.806541 t=9469
+jiao4 	叫	c=5 d=1.63593 t=9469
+jiao4 	教	c=5 d=2.43312 t=9469
+jiao4 ke1 shu1 	教科書	c=1 d=0.932394 t=9469
+jiao4 shou4 	教授	c=1 d=0.865022 t=9469
+jiao4 wo3 	叫我	c=1 d=0.913931 t=9469
+jiao4 wu4 zhu3 ren4 	教務主任	c=1 d=0.501576 t=9469
+jiao4 zuo4 	叫做	c=4 d=1.99831 t=9469
+jie1 	接	c=2 d=0.486449 t=9469
+jie1 	階	c=2 d=0.0948208 t=9469
+jie1 ceng2 	階層	c=0 d=0.0946485 t=9469
+jie1 chu4 	接觸	c=1 d=0.621885 t=9469
+jie1 jin4 	接近	c=2 d=1.41207 t=9469
+jie1 ta1 	接她	c=1 d=0.301194 t=9469
+jie2 gou4 	結構	c=2 d=0.912899 t=9469
+jie2 guo3 	結果	c=5 d=2.42975 t=9469
+jie2 shu4 	結束	c=1 d=0.369723 t=9469
+jie2 yun4 	捷運	c=1 d=0.970446 t=9469
+jie3 	解	c=1 d=0.794534 t=9469
+jie3 kai1 	解開	c=1 d=0.348192 t=9469
+jie3 suo3 	解鎖	c=1 d=0.927743 t=9469
+jie3 ya1 suo1 	解壓縮	c=1 d=0.99005 t=9469
+jie4 	戒	c=1 d=1 t=9469
+jie4 fu2 he2 	界伏盒	c=1 d=0.00891518 t=9469
+jie4 mian4 	界面	c=2 d=1.85508 t=9469
+jie4 shao4 	介紹	c=1 d=0.995012 t=9469
+jie4 wo3 	借我	c=1 d=0.0728029 t=9469
+jie4 zhi3 	戒指	c=4 d=0.722094 t=9469
+jin1 	金	c=2 d=0.654822 t=9469
+jin1 nian2 	今年	c=1 d=0.814647 t=9469
+jin1 tian1 	今天	c=3 d=0.874667 t=9469
+jin4 	近	c=2 d=1.22876 t=9469
+jin4 	進	c=2 d=0.918512 t=9469
+jin4 bu4 lai2 	進不來	c=1 d=0.904837 t=9469
+jin4 lai2 	進來	c=1 d=0.085435 t=9469
+jin4 qu4 	進去	c=3 d=1.65209 t=9469
+jin4 zhan4 	近戰	c=2 d=0.9785 t=9469
+jing1 	精	c=1 d=0.779663 t=9469
+jing1 	經	c=1 d=0.433874 t=9469
+jing1 chang2 	經常	c=1 d=0.782705 t=9469
+jing1 pian4 	晶片	c=1 d=0.865022 t=9469
+jing1 xi3 	驚喜	c=1 d=0.680451 t=9469
+jing4 tai4 	靜態	c=0 d=0.045612 t=9469
+jing4 tai4 zhan3 	靜態展	c=1 d=0.458406 t=9469
+jiu1 	揪	c=1 d=0.980199 t=9469
+jiu3 	久	c=3 d=1.3843 t=9469
+jiu3 	九	c=1 d=0.332871 t=9469
+jiu3 ceng2 ta3 	九層塔	c=1 d=0.551563 t=9469
+jiu4 	就	c=92 d=8.8886 t=9469
+jiu4 	救	c=4 d=1.75474 t=9469
+jiu4 	舊	c=1 d=0.56836 t=9469
+jiu4 bei4 	就被	c=0 d=0.0371577 t=9469
+jiu4 bu4 hui4 	就不會	c=1 d=0.774916 t=9469
+jiu4 de5 	舊的	c=3 d=2.61092 t=9469
+jiu4 hao3 	就好	c=6 d=1.73438 t=9469
+jiu4 hui4 	就會	c=4 d=2.4657 t=9469
+jiu4 jing4 	究竟	c=2 d=0.780434 t=9469
+jiu4 ke3 yi3 	就可以	c=2 d=1.19393 t=9469
+jiu4 ke3 yi3 le5 	就可以了	c=0 d=0.00072265 t=9469
+jiu4 ke3 yi3 le5 ba3 	就可以了把	c=1 d=0.00726273 t=9469
+jiu4 ke3 yi3 you3 	就可以有	c=1 d=0.965605 t=9469
+jiu4 kuai4 	就快	c=1 d=0.156453 t=9469
+jiu4 neng2 	就能	c=4 d=0.99005 t=9469
+jiu4 ni3 	救你	c=1 d=0.806541 t=9469
+jiu4 qu4 	就去	c=1 d=0.826959 t=9469
+jiu4 shi4 	就是	c=24 d=8.41892 t=9469
+jiu4 shuo1 	就說	c=1 d=0.449668 t=9469
+jiu4 suan4 le5 	就算了	c=1 d=0.247833 t=9469
+jiu4 suan4 ni3 	就算你	c=1 d=1 t=9455
+jiu4 xing2 	就行	c=6 d=1.10129 t=9469
+jiu4 yao1 	就要	c=1 d=0.932394 t=9469
+jiu4 you3 	就有	c=1 d=0.212248 t=9469
+jiu4 zai4 	就在	c=1 d=0.559898 t=9469
+jiu4 zhe4 yang4 	就這樣	c=2 d=1.72447 t=9469
+ju1 ran2 	居然	c=3 d=0.939326 t=9469
+ju1 shu4 	拘束	c=0 d=0.0588605 t=9469
+ju1 shu4 fu2 	拘束服	c=1 d=0.591555 t=9469
+ju2 	局	c=3 d=1.50176 t=9469
+ju3 ban4 	舉辦	c=1 d=0.771052 t=9469
+ju4 da4 	巨大	c=1 d=0.965605 t=9469
+ju4 li2 	距離	c=1 d=0.873716 t=9469
+ju4 mi2 	聚醚	c=1 d=0.810584 t=9469
+ju4 zai4 	聚在	c=1 d=0.941765 t=9469
+juan4 zhou2 	卷軸	c=16 d=2.74507 t=9469
+jue2 de5 	覺得	c=7 d=2.35538 t=9469
+jue2 ding4 	決定	c=1 d=0.0564161 t=9469
+jue2 dui4 	絕對	c=1 d=0.0109436 t=9469
+ka1 fei1 	咖啡	c=2 d=1.9459 t=9469
+ka3 	卡	c=2 d=0.955997 t=9469
+ka3 you2 fan4 	卡油飯	c=1 d=0.484325 t=9469
+kai1 	開	c=22 d=6.05762 t=9469
+kai1 dao4 	開到	c=1 d=0.901711 t=9469
+kai1 de5 	開的	c=1 d=0.895834 t=9469
+kai1 hui4 	開會	c=1 d=0.603506 t=9469
+kai1 kuo4 	開闊	c=1 d=0.429557 t=9469
+kai1 le5 	開了	c=5 d=2.7213 t=9469
+kai1 qi3 	開啓	c=2 d=1.33002 t=9469
+kai1 shi3 	開始	c=3 d=0.873412 t=9469
+kai1 xue2 	開學	c=6 d=4.31481 t=9469
+kai1 yuan2 	開源	c=1 d=0.948631 t=9469
+kai1 yuan2 she4 	開源社	c=1 d=0.546074 t=9469
+kan1 bu4 dao4 	看不到	c=1 d=0.66365 t=9469
+kan1 dao4 	看到	c=10 d=2.39599 t=9469
+kan1 de2 dao4 	看得到	c=1 d=0.131994 t=9469
+kan1 de5 	看的	c=1 d=0.418952 t=9469
+kan1 guo4 	看過	c=4 d=1.1122 t=9469
+kan1 kan1 	看看	c=4 d=1.52601 t=9469
+kan1 le5 	看了	c=1 d=0.985112 t=9469
+kan3 	砍	c=1 d=0.657047 t=9469
+kan3 dao1 	砍刀	c=1 d=0.523408 t=9469
+kan3 shu4 	砍樹	c=1 d=0.814647 t=9469
+kan4 	看	c=31 d=3.06957 t=9469
+kan4 jian4 	看見	c=1 d=0.26982 t=9469
+kan4 lai2 	看來	c=3 d=1.67306 t=9469
+kan4 shu1 	看書	c=1 d=0.527292 t=9469
+kang4 huo3 	抗火	c=2 d=0.810584 t=9469
+kang4 jun1 	抗菌	c=1 d=0.32628 t=9469
+kao3 da3 	拷打	c=1 d=0.38868 t=9469
+kao3 lv4 	考慮	c=4 d=1.27901 t=9469
+kao3 wan2 	烤完	c=1 d=0.759572 t=9469
+kao4 bei1 	靠背	c=0 d=0.0140156 t=9469
+kao4 yao1 	靠腰	c=1 d=0.923116 t=9469
+ke1 	顆	c=2 d=0.314949 t=9469
+ke1 mu4 	科目	c=1 d=0.0271874 t=9469
+ke2 	咳	c=1 d=1 t=9469
+ke2 ke2 	咳咳	c=2 d=1.68708 t=9469
+ke3 	可	c=2 d=0.734153 t=9469
+ke3 ai4 	可愛	c=1 d=0.995012 t=9469
+ke3 bu5 shi4 	可不是	c=1 d=0.909373 t=9469
+ke3 jia1 	可嘉	c=1 d=0.379083 t=9469
+ke3 mei2 	可沒	c=2 d=0.573997 t=9469
+ke3 neng2 	可能	c=11 d=3.72476 t=9469
+ke3 neng2 xing4 	可能性	c=1 d=0.514274 t=9469
+ke3 pa4 	可怕	c=2 d=0.240725 t=9469
+ke3 shi4 	可是	c=15 d=2.59883 t=9469
+ke3 wu4 	可惡	c=3 d=0.713269 t=9469
+ke3 yi3 	可以	c=88 d=5.69077 t=9469
+ke4 	刻	c=1 d=0.964847 t=9469
+ke4 	課	c=7 d=2.69225 t=9469
+ke4 ben3 	課本	c=1 d=0.951229 t=9469
+ke4 cheng2 	課程	c=1 d=0.826959 t=9469
+ken3 ding4 	肯定	c=3 d=1.98795 t=9469
+kong1 	空	c=1 d=0.869358 t=9469
+kong1 jian1 	空間	c=5 d=2.25003 t=9469
+kong1 le5 	空了	c=1 d=0.960789 t=9469
+kong3 bu4 	恐怖	c=7 d=2.19567 t=9469
+kong3 bu4 si3 le5 	恐怖死了	c=2 d=1.38236 t=9469
+kong4 dao3 	空島	c=1 d=0.744532 t=9469
+kou3 hai1 	口嗨	c=1 d=0.331211 t=9469
+kou4 	扣	c=2 d=0.19916 t=9469
+ku1 	哭	c=1 d=0.640824 t=9469
+ku1 le5 	哭了	c=4 d=0.893734 t=9469
+ku1 lou2 	骷髏	c=3 d=0.443828 t=9469
+ku3 li4 	苦力	c=0 d=0.0336216 t=9469
+ku3 li4 pa4 	苦力怕	c=3 d=0.798455 t=9469
+ku4 xuan4 	酷炫	c=0 d=0.0946485 t=9469
+ku4 xuan4 de5 	酷炫的	c=1 d=0.951229 t=9469
+kuai4 	塊	c=1 d=0.995012 t=9469
+kuai4 	快	c=7 d=1.88094 t=9469
+kuai4 chi1 	快喫	c=2 d=0.962734 t=9469
+kuai4 le4 	快樂	c=3 d=0.948886 t=9469
+kuai4 le5 e2 	快了哦	c=1 d=0.128735 t=9469
+kuai4 su4 	快速	c=1 d=0.918512 t=9469
+kuan3 	款	c=1 d=0.759572 t=9469
+kuang4 	礦	c=2 d=1.23906 t=9469
+kuang4 mai4 	礦脈	c=1 d=0.873716 t=9469
+kuang4 wu4 	礦物	c=4 d=0.470011 t=9469
+kui3 lei3 	傀儡	c=0 d=0.0782705 t=9469
+kun3 bang3 	捆綁	c=1 d=0.937067 t=9469
+kun4 nan5 	困難	c=1 d=0.683861 t=9469
+la1 gan1 	拉杆	c=2 d=0.836071 t=9469
+la1 man3 	拉滿	c=1 d=0.882497 t=9469
+la5 	啦	c=3 d=1.3238 t=9469
+lai2 	來	c=7 d=1.29113 t=9469
+lai2 dou1 	來都	c=1 d=0.418952 t=9469
+lai2 le5 	來了	c=1 d=0.421052 t=9469
+lai2 shuo1 	來說	c=1 d=0.0695994 t=9469
+lai2 zi4 	來自	c=2 d=1.51311 t=9469
+lan2 	欄	c=1 d=0.0672055 t=9469
+lan2 	蘭	c=0 d=0.088692 t=9469
+lan2 lan2 	藍藍	c=1 d=0.13068 t=9469
+lan2 lan2 	蘭蘭	c=1 d=0.12938 t=9469
+lan2 se4 	藍色	c=7 d=1.17623 t=9469
+lan2 ya2 er3 ji1 	藍牙耳機	c=1 d=0.532592 t=9469
+lan3 	懶	c=1 d=0.0531307 t=9469
+lan3 de2 	懶得	c=1 d=0.105399 t=9469
+lan4 	爛	c=2 d=1.33073 t=9469
+lang4 fei4 	浪費	c=5 d=0.820417 t=9469
+lao3 	老	c=6 d=1.53579 t=9469
+lao3 hu3 	老虎	c=1 d=0.650509 t=9469
+lao3 po2 	老婆	c=1 d=0.644036 t=9469
+lao3 shi1 	老師	c=2 d=1.55956 t=9469
+le4 	樂	c=1 d=0.208045 t=9469
+le4 se4 	垃圾	c=3 d=1.86191 t=9469
+le4 zi5 	樂子	c=1 d=0.909914 t=9469
+le4 zi5 ren2 	樂子人	c=1 d=0.172045 t=9469
+le5 	了	c=158 d=12.3356 t=9469
+le5 e2 	了哦	c=0 d=0.0128093 t=9469
+le5 ma5 	了嗎	c=1 d=0.442639 t=9469
+lei2 sheng1 	雷聲	c=1 d=0.585669 t=9469
+lei4 	淚	c=1 d=0.344728 t=9469
+lei4 	累	c=1 d=0.71177 t=9469
+lei4 si4 	類似	c=1 d=0.955997 t=9469
+leng3 que4 	冷卻	c=1 d=0.0788664 t=9469
+leng3 xiao4 hua4 	冷笑話	c=1 d=0.923116 t=9469
+li2 	離	c=1 d=0.900325 t=9469
+li3 	裏	c=13 d=1.71703 t=9469
+li3 bai4 	禮拜	c=1 d=0.202909 t=9469
+li3 bai4 liu4 	禮拜六	c=1 d=0.737123 t=9469
+li3 gong1 	理工	c=2 d=1.95072 t=9469
+li3 lun4 shang4 	理論上	c=5 d=1.69113 t=9469
+li3 mian4 	裏面	c=30 d=4.84701 t=9469
+li3 wu4 	禮物	c=1 d=0.712314 t=9469
+li3 you2 	理由	c=2 d=0.55891 t=9469
+li3 you3 	裏有	c=4 d=0.558071 t=9469
+li3 zhi4 	理智	c=3 d=2.15569 t=9469
+li4 liang5 	力量	c=1 d=0.759572 t=9469
+li4 ru2 	例如	c=2 d=0.875502 t=9469
+li4 zhu4 	立柱	c=1 d=0.980199 t=9469
+li4 zi5 	例子	c=1 d=0.683861 t=9469
+lian2 	連	c=2 d=1.13574 t=9469
+lian2 dao4 	連到	c=1 d=0.609571 t=9469
+lian2 ji1 	聯機	c=6 d=2.09568 t=9469
+lian2 jie1 	連接	c=2 d=1.33562 t=9469
+lian2 jie2 	連結	c=7 d=3.71313 t=9469
+lian2 suo3 	連鎖	c=3 d=2.53958 t=9469
+lian2 xian4 	連線	c=4 d=2.56176 t=9469
+lian2 yi4 	聯誼	c=1 d=0.690734 t=9469
+lian2 zhao1 	連招	c=1 d=0.0459593 t=9469
+lian3 hei1 	臉黑	c=1 d=0.579842 t=9469
+liang3 	兩	c=1 d=0.937067 t=9469
+liang3 bian1 	兩邊	c=1 d=0.802519 t=9469
+liang3 ceng2 	兩層	c=1 d=0.127454 t=9469
+liang3 ci4 	兩次	c=1 d=0.396531 t=9469
+liang3 ge4 	兩個	c=21 d=3.2513 t=9469
+liang3 ge4 ren2 	兩個人	c=1 d=0.509156 t=9469
+liang3 kuan3 	兩款	c=1 d=0.740818 t=9469
+liang3 tian1 	兩天	c=1 d=0.718924 t=9469
+liang3 zhi1 	兩隻	c=2 d=0.131336 t=9469
+liang3 zhong3 	兩種	c=2 d=0.786628 t=9469
+liang4 	量	c=1 d=0.0257325 t=9469
+liao2 	聊	c=3 d=0.779852 t=9469
+liao2 tian1 	聊天	c=1 d=0.843665 t=9469
+liao3 	了	c=1 d=0.474734 t=9469
+liao4 	料	c=2 d=0.937067 t=9469
+liao4 li3 	料理	c=2 d=0.262408 t=9469
+lie4 ren2 	獵人	c=5 d=2.92413 t=9469
+lie4 yan4 	烈焰	c=6 d=2.66336 t=9469
+lie4 yan4 shi3 zhe3 	烈焰使者	c=1 d=0.612626 t=9469
+lin2 	林	c=0 d=0.0995012 t=9469
+ling2 	靈	c=0 d=0.0323033 t=9469
+ling2 jian4 	零件	c=1 d=0.778801 t=9469
+ling2 yi4 	靈異	c=1 d=0.239309 t=9469
+ling3 qu3 	領取	c=1 d=0.26054 t=9469
+ling4 yi1 ge4 	另一個	c=5 d=0.960789 t=9469
+ling4 yi4 zhong3 	另一種	c=1 d=1 t=9469
+liu2 	流	c=1 d=0.444858 t=9469
+liu2 	留	c=2 d=0.67032 t=9469
+liu2 bai2 	留白	c=1 d=0.965605 t=9469
+liu2 zai4 	留在	c=1 d=0.985112 t=9469
+liu2 zhe5 	留着	c=4 d=2.49789 t=9469
+long2 	籠	c=3 d=1.58194 t=9469
+long2 tou2 	龍頭	c=1 d=0.697676 t=9469
+long2 xian2 xiang1 	龍涎香	c=1 d=1 t=9469
+lou2 ceng2 	樓層	c=1 d=0.496585 t=9469
+lou2 ding3 	樓頂	c=1 d=0.767206 t=9469
+lou2 xia4 	樓下	c=4 d=0.247361 t=9469
+lu2 zi5 	爐子	c=7 d=0.265469 t=9469
+lu3 dan4 	滷蛋	c=2 d=1.98506 t=9469
+lu3 dan4 	魯蛋	c=3 d=2.98012 t=9469
+lu4 	路	c=1 d=0.0862936 t=9469
+lu4 biao1 	路標	c=1 d=0.0121552 t=9469
+lu4 jing4 	路徑	c=1 d=0.873716 t=9469
+lu4 kou3 	路口	c=1 d=0.346456 t=9469
+lu4 nu4 zheng4 	路怒症	c=1 d=0.38868 t=9469
+lu4 shang4 	路上	c=1 d=0.697676 t=9469
+luan4 	亂	c=2 d=0.647265 t=9469
+luan4 shuo1 	亂說	c=1 d=0.955997 t=9469
+lun2 	輪	c=1 d=0.806541 t=9469
+lun4 wen2 	論文	c=2 d=0.858092 t=9469
+luo2 ji2 	邏輯	c=1 d=0.771052 t=9469
+luo2 pan2 	羅盤	c=1 d=0.0195457 t=9469
+lv4 	綠	c=1 d=0.994434 t=9469
+lv4 bao3 shi2 	綠寶石	c=3 d=1.07624 t=9469
+lv4 se4 	綠色	c=4 d=2.78937 t=9469
+lv4 xian4 	綠線	c=1 d=0.597501 t=9469
+lve4 duo2 	掠奪	c=3 d=0.0252636 t=9469
+ma1 	媽	c=1 d=0.0658748 t=9469
+ma1 dan4 	媽蛋	c=1 d=0.927743 t=9469
+ma1 de5 	媽的	c=3 d=1.10806 t=9469
+ma2 fan5 	麻煩	c=6 d=1.20293 t=9469
+ma3 	馬	c=0 d=0.0882497 t=9469
+ma3 ling2 shu3 	馬鈴薯	c=0 d=0.0106459 t=9469
+ma3 lu4 	馬路	c=1 d=0.308819 t=9469
+ma3 yi3 	螞蟻	c=1 d=0.634448 t=9469
+ma3 yu4 lin2 	馬玉林	c=1 d=0.88692 t=9469
+ma5 	嗎	c=72 d=11.4805 t=9469
+mai3 	買	c=5 d=1.49611 t=9469
+mai4 dang1 lao2 	麥當勞	c=1 d=0.524663 t=9469
+mai4 diao4 	賣掉	c=1 d=0.97531 t=9469
+man3 	滿	c=12 d=3.64496 t=9469
+man3 chu1 lai2 	滿出來	c=1 d=0.937067 t=9469
+man4 	慢	c=1 d=0.951229 t=9469
+man4 ba1 	曼巴	c=1 d=0.744532 t=9469
+man4 yan2 	蔓延	c=1 d=0.066205 t=9469
+man4 you2 	漫遊	c=1 d=0.891366 t=9469
+mang2 	忙	c=1 d=0.631284 t=9469
+mang2 ren2 	盲人	c=1 d=0.733447 t=9469
+mao4 	冒	c=1 d=0.172045 t=9469
+me5 	麼	c=9 d=2.94519 t=9469
+mei2 	沒	c=36 d=3.50415 t=9469
+mei2 ban4 fa3 	沒辦法	c=2 d=1.40851 t=9469
+mei2 bao4 	沒爆	c=1 d=0.67032 t=9469
+mei2 bian4 	沒變	c=1 d=0.882497 t=9469
+mei2 cha1 	沒差	c=1 d=0.341298 t=9469
+mei2 cuo4 	沒錯	c=2 d=1.2603 t=9469
+mei2 da3 	沒打	c=1 d=0.0103063 t=9469
+mei2 gan3 jue2 	沒感覺	c=1 d=0.683861 t=9469
+mei2 guan1 xi5 	沒關係	c=4 d=1.77105 t=9469
+mei2 gui5 	玫瑰	c=1 d=0.013327 t=9469
+mei2 gui5 jin1 	玫瑰金	c=2 d=0.0557521 t=9469
+mei2 guo3 	梅果	c=1 d=0.255381 t=9469
+mei2 kuang4 	煤礦	c=1 d=0.637628 t=9469
+mei2 le5 	沒了	c=2 d=0.628559 t=9469
+mei2 po4 	沒破	c=1 d=0.748264 t=9469
+mei2 ren2 	沒人	c=6 d=1.63838 t=9469
+mei2 ren2 lai2 	沒人來	c=1 d=0.625002 t=9469
+mei2 sha2 	沒啥	c=2 d=1.41655 t=9469
+mei2 sha2 yong4 	沒啥用	c=1 d=0.273898 t=9469
+mei2 shi4 	沒事	c=2 d=0.515472 t=9469
+mei2 shi4 guo4 	沒試過	c=1 d=0.852144 t=9469
+mei2 yong4 	沒用	c=1 d=0.909373 t=9469
+mei2 you3 	沒有	c=57 d=4.85584 t=9469
+mei2 you3 kan4 	沒有看	c=1 d=0.913931 t=9469
+mei2 you3 ren2 	沒有人	c=1 d=0.418952 t=9469
+mei2 zai4 	沒在	c=1 d=0.802519 t=9469
+mei2 zhuang1 	沒裝	c=1 d=0.425283 t=9469
+mei2 zuo4 guo4 	沒做過	c=1 d=0.909373 t=9469
+mei3 ci4 	每次	c=2 d=1.5199 t=9469
+mei3 ge4 	每個	c=2 d=1.35285 t=9469
+mei3 ge4 yue4 	每個月	c=1 d=0.67032 t=9469
+mei3 ge5 ren2 	每個人	c=1 d=0.272532 t=9469
+mei3 gu3 	每股	c=0 d=0.0251579 t=9469
+mei3 gu3 o1 	每股噢	c=1 d=0.25284 t=9469
+mei3 ri4 	每日	c=1 d=0.386741 t=9469
+mei3 shi2 	美食	c=0 d=0.0790571 t=9469
+men2 	門	c=2 d=0.152089 t=9469
+men5 	們	c=7 d=3.20721 t=9469
+meng4 hui2 	夢迴	c=1 d=0.597501 t=9469
+meng4 xiang3 	夢想	c=1 d=0.985112 t=9469
+meng4 yan3 	夢魘	c=1 d=0.965605 t=9469
+mi3 	米	c=1 d=0.621885 t=9469
+mi3 jin1 	米津	c=1 d=0.744532 t=9469
+mi4 du4 	密度	c=1 d=0.831104 t=9469
+mi4 ma3 	密碼	c=1 d=0.810584 t=9469
+mian3 fei4 	免費	c=1 d=0.786628 t=9469
+mian3 shang1 	免傷	c=1 d=0.22313 t=9469
+mian3 si3 	免死	c=1 d=0.0558548 t=9469
+mian4 	面	c=1 d=0.913931 t=9469
+mian4 qian2 	面前	c=1 d=0.171187 t=9469
+mian4 shu2 	面熟	c=1 d=0.371577 t=9469
+miao3 	秒	c=2 d=1.00067 t=9469
+miao4 chan2 	妙禪	c=1 d=0.591555 t=9469
+miao4 li3 	廟裏	c=1 d=0.628135 t=9469
+ming2 cheng1 	名稱	c=1 d=0.631284 t=9469
+ming2 dao1 	名刀	c=1 d=0.927743 t=9469
+ming2 ri4 	明日	c=1 d=0.822835 t=9469
+ming2 tian1 	明天	c=2 d=0.849528 t=9469
+ming2 zi4 	名字	c=1 d=0.474734 t=9469
+mo2 	魔	c=1 d=0.0266491 t=9469
+mo2 ban3 	模板	c=1 d=0.852144 t=9469
+mo2 fa3 	魔法	c=19 d=2.62933 t=9469
+mo2 fa3 shu1 	魔法書	c=5 d=1.36754 t=9469
+mo2 fa3 shu4 	魔法樹	c=1 d=0.0254765 t=9469
+mo2 he2 	磨合	c=2 d=1.03112 t=9469
+mo2 li4 	魔力	c=2 d=0.139227 t=9469
+mo2 ren2 	磨人	c=1 d=0.0261214 t=9469
+mo2 shu4 	魔術	c=3 d=0.830289 t=9469
+mo2 zhang4 	魔杖	c=2 d=0.0647869 t=9469
+mo2 zu3 	模組	c=30 d=7.61875 t=9469
+mo4 jia1 	墨家	c=1 d=0.621885 t=9469
+mo4 jing4 	墨鏡	c=2 d=0.525003 t=9469
+mo4 shui3 	墨水	c=10 d=1.70012 t=9469
+mu4 	木	c=3 d=0.028527 t=9469
+mu4 ban3 	木板	c=1 d=0.33454 t=9469
+mu4 di4 	墓地	c=2 d=0.44635 t=9469
+mu4 di4 	目的	c=1 d=0.752014 t=9469
+mu4 di4 di4 	目的地	c=1 d=0.0590129 t=9469
+mu4 qian2 	目前	c=2 d=0.148919 t=9469
+mu4 se4 	暮色	c=1 d=0.878095 t=9469
+mu4 shi1 	牧師	c=6 d=1.1687 t=9469
+mu4 tou5 	木頭	c=10 d=2.45008 t=9469
+na2 	拿	c=33 d=2.63734 t=9469
+na2 chu1 	拿出	c=1 d=0.118245 t=9469
+na2 chu1 lai2 	拿出來	c=1 d=0.822835 t=9469
+na2 dao4 	拿到	c=9 d=3.34011 t=9469
+na2 ge4 	拿個	c=2 d=0.718924 t=9469
+na2 lai2 	拿來	c=2 d=0.563363 t=9469
+na2 qu4 	拿去	c=2 d=0.646715 t=9469
+na2 zhe5 	拿着	c=6 d=0.881664 t=9469
+na2 zou3 	拿走	c=5 d=1.63856 t=9469
+na3 ba3 	哪把	c=2 d=1.12168 t=9469
+na3 ge5 	哪個	c=1 d=0.559898 t=9469
+na3 lai2 	哪來	c=1 d=0.0104621 t=9469
+na3 li3 	哪裏	c=1 d=0.891366 t=9469
+na3 shi4 	哪是	c=1 d=0.548812 t=9469
+na3 zhong4 	哪種	c=1 d=1 t=9469
+na4 	那	c=9 d=1.01796 t=9469
+na4 ba3 	那把	c=5 d=3.80429 t=9469
+na4 bian5 	那邊	c=10 d=1.54621 t=9469
+na4 ge2 	那格	c=1 d=0.0518189 t=9469
+na4 ge5 	那個	c=78 d=6.8689 t=9469
+na4 jia1 	那家	c=2 d=1.09505 t=9469
+na4 jiu4 	那就	c=6 d=1.03974 t=9469
+na4 ke3 	那可	c=0 d=0.0790571 t=9469
+na4 ke3 shi4 	那可是	c=1 d=0.794534 t=9469
+na4 lai2 	那來	c=1 d=0.0753961 t=9469
+na4 li3 	那裏	c=1 d=0.865022 t=9469
+na4 me5 	那麼	c=9 d=2.05232 t=9469
+na4 quan1 	那圈	c=1 d=0.852144 t=9469
+na4 qun2 	那羣	c=1 d=0.985112 t=9469
+na4 sha2 	那啥	c=1 d=0.955997 t=9469
+na4 shi4 	那是	c=11 d=2.74227 t=9469
+na4 wo3 	那我	c=2 d=0.980199 t=9469
+na4 xie1 	那些	c=3 d=1.24784 t=9469
+na4 yang4 	那樣	c=3 d=1.75046 t=9469
+na4 ye3 	那也	c=1 d=0.0963276 t=9469
+na4 zhe4 	那這	c=0 d=0.0704688 t=9469
+na4 zhe4 yang4 	那這樣	c=1 d=0.70822 t=9469
+na4 zhi1 	那隻	c=2 d=0.846411 t=9469
+na4 zhong3 	那種	c=8 d=2.68146 t=9469
+na4 zui4 lao3 	那最老	c=1 d=0.865022 t=9469
+nai4 jiu3 	耐久	c=18 d=3.87785 t=9469
+nan2 	男	c=4 d=2.49198 t=9469
+nan2 	難	c=4 d=1.57742 t=9469
+nan2 da4 	南大	c=1 d=0.873716 t=9469
+nan2 fang1 	男方	c=1 d=0.694197 t=9469
+nan2 guo4 	難過	c=2 d=0.589003 t=9469
+nan2 jue2 	男爵	c=1 d=0.190139 t=9469
+nan2 mian3 	難免	c=1 d=0.178173 t=9469
+nan2 ren2 	男人	c=2 d=1.24664 t=9469
+nao2 	撓	c=2 d=1.97025 t=9469
+nao4 	鬧	c=1 d=0.362402 t=9469
+ne5 	呢	c=8 d=2.27802 t=9469
+nei4 	內	c=3 d=1.15348 t=9469
+neng2 	能	c=8 d=2.07843 t=9469
+neng2 bu4 	能不	c=0 d=0.0344728 t=9469
+neng2 bu4 neng2 	能不能	c=2 d=1.06527 t=9469
+neng2 gou4 	能夠	c=10 d=1.45133 t=9469
+neng2 jian4 du4 	能見度	c=1 d=0.918512 t=9469
+neng2 xie3 	能寫	c=1 d=0.546074 t=9469
+neng2 yong4 	能用	c=1 d=0.0119742 t=9469
+neng2 zuo4 	能做	c=1 d=0.806541 t=9469
+ni2 tu3 	泥土	c=1 d=1 t=9469
+ni3 	你	c=89 d=6.41852 t=9469
+ni3 ba3 	你把	c=1 d=0.0350844 t=9469
+ni3 bu4 neng2 	你不能	c=1 d=0.362402 t=9469
+ni3 bu4 shi4 	你不是	c=3 d=2.06574 t=9469
+ni3 bu4 yao1 	你不要	c=1 d=0.970446 t=9469
+ni3 bu4 yong4 	你不用	c=1 d=0.0593087 t=9469
+ni3 chao1 	你超	c=1 d=0.0428521 t=9469
+ni3 chao1 huai4 	你超壞	c=1 d=0.190139 t=9469
+ni3 de5 	你的	c=14 d=3.08857 t=9469
+ni3 hai2 	你還	c=1 d=0.782705 t=9469
+ni3 hai2 shi4 	你還是	c=1 d=0.271173 t=9469
+ni3 hao3 	你好	c=5 d=1.47046 t=9469
+ni3 hao3 lao3 	你好老	c=1 d=0.29671 t=9469
+ni3 jia1 	你家	c=1 d=0.0670793 t=9469
+ni3 jia1 you3 	你家有	c=1 d=0.511709 t=9469
+ni3 jiao4 	你叫	c=1 d=0.67032 t=9469
+ni3 jiu4 	你就	c=1 d=0.0122773 t=9469
+ni3 jiu4 shuo1 	你就說	c=1 d=0.238115 t=9469
+ni3 kan1 	你看	c=4 d=0.947514 t=9469
+ni3 ke3 yi3 	你可以	c=7 d=1.11864 t=9469
+ni3 ma1 	你媽	c=1 d=0.67368 t=9469
+ni3 men5 	你們	c=29 d=4.79378 t=9469
+ni3 men5 hen3 qi2 guai4 	你們很奇怪	c=1 d=0.97531 t=9469
+ni3 neng2 	你能	c=1 d=0.621885 t=9469
+ni3 qu4 	你去	c=5 d=0.733373 t=9469
+ni3 que4 ding4 	你確定	c=1 d=0.249075 t=9469
+ni3 ru2 guo3 	你如果	c=1 d=0.579842 t=9469
+ni3 shuo1 	你說	c=1 d=0.427415 t=9469
+ni3 shuo1 de2 dui4 	你說得對	c=2 d=0.510787 t=9469
+ni3 si3 wo3 huo2 	你死我活	c=1 d=0.941765 t=9469
+ni3 ta1 	你他	c=1 d=0.70822 t=9469
+ni3 wei2 sha2 	你爲啥	c=1 d=0.644036 t=9469
+ni3 xian1 	你先	c=3 d=0.733043 t=9469
+ni3 xiang3 	你想	c=1 d=0.301194 t=9469
+ni3 xiang3 yao1 	你想要	c=1 d=0.302704 t=9469
+ni3 yao1 	你要	c=15 d=2.65279 t=9469
+ni3 yao1 bu4 yao1 	你要不要	c=2 d=0.871246 t=9469
+ni3 yao1 de5 	你要的	c=1 d=0.83527 t=9469
+ni3 yao1 qu4 	你要去	c=1 d=0.70822 t=9469
+ni3 ye3 	你也	c=2 d=0.966666 t=9469
+ni3 yi1 ding4 	你一定	c=1 d=0.540641 t=9469
+ni3 yi1 zhi2 	你一直	c=1 d=0.913931 t=9469
+ni3 yong4 	你用	c=2 d=1.46047 t=9469
+ni3 you3 	你有	c=5 d=1.42493 t=9469
+ni3 zai4 	你再	c=2 d=1.21363 t=9469
+ni3 zai4 	你在	c=2 d=0.683861 t=9469
+ni3 zhe4 	你這	c=1 d=0.621885 t=9469
+ni3 zhi1 dao4 	你知道	c=3 d=0.750008 t=9469
+ni3 zhi2 jie1 	你直接	c=1 d=0.909373 t=9469
+ni3 zui4 gao1 	你最高	c=1 d=0.729789 t=9469
+ni4 	膩	c=1 d=0.733447 t=9469
+ni4 si3 	溺死	c=2 d=0.712491 t=9469
+nian2 	年	c=1 d=0.341298 t=9469
+nian2 qing1 	年輕	c=1 d=0.537944 t=9469
+nian2 tu3 	粘土	c=2 d=0.891366 t=9469
+niao3 jiao4 	鳥叫	c=1 d=0.923116 t=9469
+niao3 yong4 	鳥用	c=1 d=0.798516 t=9469
+ning2 yuan4 	寧願	c=1 d=0.715338 t=9469
+niu2 bi1 	牛逼	c=3 d=0.538503 t=9469
+niu2 nai3 	牛奶	c=2 d=1.68729 t=9469
+nong2 	農	c=2 d=1.00651 t=9469
+nong2 ye4 	農業	c=1 d=0.386741 t=9469
+nong4 bao4 	弄爆	c=1 d=0.463013 t=9469
+nong4 le5 	弄了	c=1 d=0.67368 t=9469
+nong4 si3 	弄死	c=1 d=0.158817 t=9469
+nu3 	弩	c=4 d=1.36262 t=9469
+nv3 	女	c=1 d=0.722527 t=9469
+nv3 fang1 	女方	c=1 d=0.701173 t=9469
+nv3 sheng1 	女生	c=1 d=0.740818 t=9469
+o1 	噢	c=50 d=8.11276 t=9469
+ou3 	偶	c=1 d=0.0345647 t=9469
+ou3 he2 	耦合	c=2 d=1.31007 t=9469
+pa4 	怕	c=2 d=0.752014 t=9469
+pai1 shou3 	拍手	c=1 d=0.946485 t=9469
+pai2 dui4 	排隊	c=1 d=0.683861 t=9469
+pai4 	派	c=1 d=1 t=9469
+pai4 bie2 	派別	c=1 d=1 t=9469
+pai4 dui4 	派對	c=1 d=0.687289 t=9469
+pai4 xi4 	派系	c=1 d=0.831104 t=9469
+pan2 yi1 	盤一	c=1 d=0.0325493 t=9469
+pang2 	旁	c=2 d=0.815953 t=9469
+pang2 bian1 	旁邊	c=5 d=1.08875 t=9469
+pang2 guan1 	旁觀	c=1 d=0.873716 t=9469
+pang2 guan1 zhe3 	旁觀者	c=1 d=0.131336 t=9469
+pang4 	胖	c=1 d=0.909373 t=9469
+pao1 mian4 	泡麪	c=4 d=3.30294 t=9469
+pao3 	跑	c=2 d=0.67368 t=9469
+pao3 ku4 	跑酷	c=1 d=0.115903 t=9469
+pao3 qu4 	跑去	c=1 d=0.97531 t=9469
+pao3 tai4 kong1 	跑太空	c=1 d=0.733447 t=9469
+pao3 tu3 	跑土	c=1 d=0.806541 t=9469
+pao4 	泡	c=1 d=0.970446 t=9469
+pei2 	陪	c=1 d=0.373439 t=9469
+pei2 wan2 	陪玩	c=1 d=0.869358 t=9469
+pei4 	配	c=1 d=0.377192 t=9469
+pei4 he2 	配合	c=2 d=0.401776 t=9469
+pen1 zui3 	噴嘴	c=2 d=1.03532 t=9469
+peng2 you3 	朋友	c=2 d=1.57467 t=9469
+peng4 dao4 	碰到	c=5 d=2.17755 t=9469
+peng4 peng4 hu2 	碰碰胡	c=1 d=0.995012 t=9469
+pi1 ping2 	批評	c=1 d=0.628135 t=9469
+pi2 ge2 	皮革	c=3 d=1.53314 t=9469
+pi3 hao4 	癖好	c=1 d=0.286505 t=9469
+pi4 	屁	c=1 d=0.798516 t=9469
+pian1 pian1 	偏偏	c=1 d=0.0300468 t=9469
+pian2 yi5 	便宜	c=5 d=2.16783 t=9469
+pian4 	騙	c=1 d=0.891366 t=9469
+pian4 ren2 	騙人	c=1 d=0.839457 t=9469
+piao1 zhe5 	飄着	c=1 d=0.364219 t=9469
+pin1 	拼	c=1 d=0.337902 t=9469
+pin2 dao4 	頻道	c=3 d=0.944928 t=9469
+pin2 lv4 	頻率	c=3 d=1.25746 t=9469
+pin3 	品	c=1 d=0.88692 t=9469
+ping2 	平	c=1 d=0.25284 t=9469
+ping2 	瓶	c=1 d=0.501576 t=9469
+ping2 ban3 	平板	c=3 d=2.7713 t=9469
+ping2 chang2 	平常	c=5 d=1.97849 t=9469
+ping2 fen1 	評分	c=2 d=0.618783 t=9469
+ping2 jun1 	平均	c=1 d=0.460704 t=9469
+ping2 xing2 	平行	c=1 d=0.460704 t=9469
+ping2 zi5 	瓶子	c=2 d=0.090952 t=9469
+po2 	婆	c=1 d=0.852144 t=9469
+po4 fang2 	破防	c=9 d=2.00399 t=9469
+po4 huai4 	破壞	c=2 d=0.621885 t=9469
+po4 jin4 	迫近	c=1 d=0.904837 t=9469
+pu3 	普	c=1 d=0.157237 t=9469
+pu3 tong1 	普通	c=5 d=4.56592 t=9469
+qi1 fu4 	欺負	c=1 d=0.657047 t=9469
+qi1 fu4 ren2 	欺負人	c=1 d=0.514274 t=9469
+qi2 	奇	c=2 d=1.66641 t=9469
+qi2 	騎	c=1 d=0.802519 t=9469
+qi2 guai4 	奇怪	c=6 d=2.16579 t=9469
+qi2 shi2 	其實	c=18 d=3.44086 t=9469
+qi2 shi4 	騎士	c=2 d=0.617156 t=9469
+qi2 ta1 	其他	c=10 d=1.83006 t=9469
+qi2 ta1 ren2 	其他人	c=4 d=1.8331 t=9469
+qi2 ta1 shi4 	其他是	c=1 d=0.0356146 t=9469
+qi2 xian4 	期限	c=1 d=0.396531 t=9469
+qi3 bu4 shi4 	豈不是	c=1 d=0.612626 t=9469
+qi3 dong4 	啓動	c=3 d=0.99005 t=9469
+qi3 lai2 	起來	c=3 d=0.414675 t=9469
+qi3 ma3 	起碼	c=1 d=0.213312 t=9469
+qi3 zuo4 	起坐	c=1 d=0.278037 t=9469
+qi4 	器	c=1 d=0.458824 t=9469
+qi4 fen1 	氣氛	c=1 d=0.878095 t=9469
+qi4 pao1 	氣泡	c=1 d=0.67032 t=9469
+qian1 	簽	c=3 d=2.87648 t=9442
+qian1 che3 	牽扯	c=1 d=0.83527 t=9469
+qian2 	前	c=5 d=1.57326 t=9469
+qian2 bao1 	錢包	c=1 d=0.913931 t=9469
+qian2 mian4 	前面	c=2 d=1.49611 t=9469
+qian2 ti2 	前提	c=1 d=0.704688 t=9469
+qian2 ti2 xia4 	前提下	c=1 d=0.839457 t=9469
+qian2 wang3 	前往	c=1 d=0.0605068 t=9469
+qian2 zhui4 	前綴	c=1 d=0.895834 t=9469
+qiang2 	強	c=11 d=1.90504 t=9469
+qiang2 bi4 	牆壁	c=1 d=0.396531 t=9469
+qiang2 da4 	強大	c=1 d=0.207008 t=9469
+qiang2 hua4 	強化	c=1 d=0.687289 t=9469
+qiang2 li4 	強力	c=3 d=0.909373 t=9469
+qiang2 lie4 	強烈	c=2 d=0.0329817 t=9469
+qiang2 zhi4 	強制	c=2 d=1.08482 t=9469
+qiang3 	搶	c=1 d=0.514274 t=9469
+qiang3 le5 	強了	c=1 d=0.188247 t=9469
+qiao1 	敲	c=3 d=1.13613 t=9469
+qiao3 miao4 	巧妙	c=1 d=0.540641 t=9469
+qiao4 	翹	c=1 d=0.319819 t=9469
+qiao4 chi4 	鞘翅	c=1 d=0.396531 t=9469
+qie1 	切	c=4 d=0.874754 t=9469
+qie1 dan4 gao1 	切蛋糕	c=1 d=0.666977 t=9469
+qie1 dao4 	切到	c=1 d=0.744532 t=9469
+qie1 shou3 	切手	c=1 d=0.759572 t=9469
+qin2 	秦	c=1 d=0.860708 t=9469
+qing1 	輕	c=1 d=0.923116 t=9469
+qing1 da4 	清大	c=3 d=1.22013 t=9469
+qing1 hua2 	清華	c=1 d=0.97531 t=9469
+qing1 jin1 	青金	c=1 d=0.0112206 t=9469
+qing1 jin1 shi2 	青金石	c=1 d=1 t=9469
+qing1 xiang4 	傾向	c=1 d=0.759572 t=9469
+qing2 gan3 	情感	c=1 d=0.400517 t=9469
+qing2 kuang4 	情況	c=1 d=0.722527 t=9469
+qing2 ren2 	情人	c=1 d=0.1764 t=9469
+qing2 shi3 	情史	c=2 d=0.481131 t=9469
+qing3 	請	c=4 d=1.55555 t=9469
+qing3 ke4 	請客	c=1 d=0.308819 t=9469
+qiu2 	求	c=1 d=0.856415 t=9469
+qiu2 	球	c=4 d=1.51013 t=9469
+qu1 	區	c=1 d=0.701173 t=9469
+qu1 dong4 	驅動	c=2 d=1 t=9469
+qu1 gong1 suo3 	區公所	c=2 d=1.1004 t=9469
+qu3 	取	c=0 d=0.0694197 t=9469
+qu3 dai4 	取代	c=1 d=0.913931 t=9469
+qu4 	去	c=50 d=5.40073 t=9469
+qu4 guo4 	去過	c=2 d=0.695169 t=9469
+qu4 kan1 	去看	c=1 d=0.904837 t=9469
+qu4 zuo4 	去做	c=1 d=0.71177 t=9469
+quan1 	圈	c=1 d=0.814647 t=9469
+quan2 	全	c=1 d=0.774916 t=9469
+quan2 bu4 	全部	c=4 d=1.0575 t=9469
+quan2 bu4 dou1 	全部都	c=1 d=0.394554 t=9469
+quan2 bu4 ren2 	全部人	c=2 d=0.916101 t=9469
+quan2 cun1 	全村	c=1 d=0.697676 t=9469
+quan2 kao4 	全靠	c=1 d=0.499074 t=9469
+quan2 tao4 	全套	c=1 d=0.955997 t=9469
+quan2 xian4 	權限	c=1 d=0.794534 t=9469
+quan2 xin1 	全新	c=0 d=0.0331211 t=9469
+quan2 xin1 ban3 ben3 	全新版本	c=1 d=0.332871 t=9469
+quan2 zi4 dong4 	全自動	c=1 d=0.856415 t=9469
+que4 	卻	c=1 d=0.985112 t=9469
+que4 ding4 	確定	c=6 d=1.96048 t=9469
+que4 ren4 	確認	c=2 d=0.853147 t=9469
+que4 shi2 	確實	c=5 d=1.90874 t=9469
+qun2 	羣	c=1 d=0.909373 t=9469
+ran2 	然	c=1 d=0.687289 t=9469
+ran2 hou4 	然後	c=20 d=2.69568 t=9469
+ran2 liao4 	燃料	c=6 d=2.52223 t=9469
+ran2 shao1 	燃燒	c=1 d=0.843665 t=9469
+ran3 	染	c=1 d=0.037068 t=9469
+ran3 liao4 	染料	c=1 d=0.57695 t=9469
+rang4 	讓	c=5 d=1.21443 t=9469
+rang4 ni3 	讓你	c=2 d=0.364219 t=9469
+rang4 wo3 	讓我	c=5 d=2.14918 t=9469
+rao4 	繞	c=1 d=0.869358 t=9469
+rao4 quan1 	繞圈	c=1 d=0.0672055 t=9469
+re4 men2 	熱門	c=1 d=0.946485 t=9469
+ren2 	人	c=9 d=2.00717 t=9469
+ren2 ci2 	仁慈	c=1 d=0.23457 t=9469
+ren2 gong1 	人工	c=1 d=0.904837 t=9469
+ren2 he2 	任何	c=2 d=0.794534 t=9469
+ren2 jia1 	人家	c=2 d=1.41919 t=9469
+ren2 lei4 	人類	c=1 d=0.733447 t=9469
+ren2 li4 	人力	c=1 d=0.755784 t=9469
+ren2 she4 	人社	c=0 d=0.0869358 t=9469
+ren2 she4 	人設	c=1 d=0.970446 t=9469
+ren2 she4 yuan4 	人社院	c=2 d=1.76508 t=9469
+ren2 shu4 	人數	c=1 d=0.83527 t=9469
+ren2 wu4 	人物	c=3 d=0.701173 t=9469
+ren2 yin1 	人因	c=1 d=0.980199 t=9469
+ren4 wei2 	認爲	c=1 d=0.927743 t=9469
+ren4 wu4 	任務	c=1 d=0.980199 t=9469
+ren4 zhen1 	認真	c=1 d=0.806541 t=9469
+rong2 	溶	c=2 d=0.743281 t=9469
+rong2 	融	c=1 d=0.755784 t=9469
+rong2 lian4 	熔鍊	c=1 d=0.900325 t=9469
+rong2 yan2 	熔岩	c=1 d=0.798516 t=9469
+rong2 yan2 qiu2 	熔岩球	c=2 d=0.715821 t=9469
+rong2 yi4 	容易	c=2 d=1.10092 t=9469
+rong2 yuan2 	蠑螈	c=1 d=0.0623495 t=9469
+rou4 	肉	c=2 d=1.32414 t=9469
+ru2 	如	c=1 d=0.995012 t=9469
+ru2 ci3 	如此	c=2 d=0.704688 t=9469
+ru2 guo3 	如果	c=24 d=4.89204 t=9469
+ru2 he2 	如何	c=1 d=0.733447 t=9469
+ru2 jia1 	儒家	c=1 d=0.615697 t=9469
+ruan3 ti3 	軟體	c=7 d=2.25889 t=9469
+sa1 jiao1 	撒嬌	c=3 d=2.17869 t=9469
+sai1 	塞	c=2 d=0.987613 t=9469
+sai1 man3 	塞滿	c=1 d=0.980199 t=9469
+sai4 	賽	c=1 d=0.729789 t=9469
+sai4 bo2 	賽博	c=4 d=0.95048 t=9469
+san1 	三	c=1 d=0.941765 t=9469
+san1 cha1 ji3 	三叉戟	c=1 d=0.937067 t=9469
+san1 jian4 tao4 	三件套	c=1 d=0.440432 t=9469
+san1 xiao3 	三小	c=2 d=0.973042 t=9469
+san3 	傘	c=1 d=0.00697795 t=9469
+se4 	色	c=5 d=1.28093 t=9469
+sen1 lin2 	森林	c=1 d=0.882497 t=9469
+sha1 	殺	c=13 d=2.48909 t=9469
+sha1 guang1 	殺光	c=1 d=1 t=9469
+sha1 le5 	殺了	c=1 d=0.357007 t=9469
+sha1 mo4 	沙漠	c=2 d=0.144186 t=9469
+sha1 si3 	殺死	c=3 d=1.40077 t=9469
+sha1 wo3 	殺我	c=1 d=0.362402 t=9469
+sha1 zi5 	沙子	c=1 d=0.0222592 t=9469
+sha2 	啥	c=15 d=2.84433 t=9469
+sha2 gui3 	啥鬼	c=1 d=0.995012 t=9469
+shan1 	刪	c=1 d=0.786628 t=9469
+shan3 dian4 	閃電	c=2 d=0.990718 t=9469
+shan4 ye4 	善業	c=1 d=0.852144 t=9469
+shang1 	傷	c=3 d=0.986828 t=9469
+shang1 dian4 	商店	c=1 d=0.179066 t=9469
+shang1 hai4 	傷害	c=9 d=3.03079 t=9469
+shang4 	上	c=20 d=3.03832 t=9469
+shang4 ban1 	上班	c=1 d=0.810584 t=9469
+shang4 ci4 	上次	c=1 d=0.847894 t=9469
+shang4 di4 	上帝	c=2 d=0.515921 t=9469
+shang4 gu3 	上古	c=1 d=0.683861 t=9469
+shang4 ke4 	上課	c=3 d=1.44103 t=9469
+shang4 lai5 	上來	c=1 d=0.548812 t=9469
+shang4 le5 	上了	c=1 d=0.379083 t=9469
+shang4 mian5 	上面	c=14 d=2.05832 t=9469
+shang4 qu5 	上去	c=2 d=1.19387 t=9469
+shang4 shou3 	上手	c=1 d=0.88692 t=9469
+shang4 ta1 	上他	c=1 d=0.650509 t=9469
+shang4 xian2 	上弦	c=1 d=0.923116 t=9469
+shang4 xue2 qi1 	上學期	c=1 d=0.965605 t=9469
+shao1 	燒	c=4 d=1.48162 t=9469
+shao1 si3 	燒死	c=1 d=0.782705 t=9469
+shao3 	少	c=1 d=0.484325 t=9469
+shao3 chi1 	少喫	c=1 d=0.449329 t=9469
+shao4 zhan4 	哨站	c=1 d=0.120032 t=9469
+she2 	蛇	c=1 d=0.025223 t=9469
+she4 	社	c=1 d=0.780244 t=9469
+she4 	設	c=2 d=1.32215 t=9469
+she4 ding4 	設定	c=5 d=3.16786 t=9469
+she4 ji4 	設計	c=4 d=2.29638 t=9469
+she4 jiao1 	社交	c=1 d=0.423162 t=9469
+she4 qun2 	社羣	c=2 d=0.453316 t=9469
+she4 she4 	射射	c=1 d=0.075774 t=9469
+she4 tuan2 	社團	c=1 d=0.744532 t=9469
+she4 zai4 	射在	c=1 d=0.625002 t=9469
+she4 zhi4 	設置	c=3 d=1.88945 t=9469
+shei2 	誰	c=2 d=0.600496 t=9469
+shei2 yao1 	誰要	c=1 d=0.084163 t=9469
+shen1 	深	c=1 d=0.808762 t=9469
+shen1 ban3 yan2 	深板岩	c=1 d=0.740818 t=9469
+shen1 du4 	深度	c=1 d=0.557106 t=9469
+shen1 hai3 	深海	c=1 d=0.904837 t=9469
+shen1 shang4 	身上	c=4 d=1.33888 t=9469
+shen1 shou3 	伸手	c=1 d=0.32628 t=9469
+shen1 ti3 	身體	c=1 d=0.786628 t=9469
+shen2 	神	c=1 d=0.904837 t=9469
+shen2 dian4 	神殿	c=2 d=1.19136 t=9469
+shen2 fa2 	神罰	c=1 d=0.634448 t=9469
+shen2 li4 	神力	c=1 d=0.900325 t=9469
+shen2 me5 	什麼	c=24 d=3.1273 t=9469
+shen2 mi4 	神祕	c=1 d=0.822835 t=9469
+shen2 qi4 	神器	c=1 d=0.467666 t=9469
+shen2 sheng4 	神聖	c=3 d=0.890364 t=9469
+shen4 zhi4 	甚至	c=4 d=1.61884 t=9469
+sheng1 	升	c=1 d=0.690734 t=9469
+sheng1 	生	c=3 d=1.41262 t=9469
+sheng1 	聲	c=1 d=0.574072 t=9469
+sheng1 cheng2 	生成	c=3 d=0.826959 t=9469
+sheng1 cheng2 shi4 	生成式	c=1 d=0.900325 t=9469
+sheng1 cun2 	生存	c=1 d=0.748264 t=9469
+sheng1 guai4 	生怪	c=6 d=2.96268 t=9469
+sheng1 huo2 	生活	c=4 d=1.32883 t=9469
+sheng1 huo2 le5 	生活了	c=1 d=1 t=9469
+sheng1 ji2 	升級	c=11 d=3.06353 t=9469
+sheng1 ri4 	生日	c=2 d=1.57178 t=9469
+sheng1 wu4 	生物	c=1 d=0.852144 t=9469
+sheng1 yin1 	聲音	c=3 d=0.933239 t=9469
+sheng1 zai4 	生在	c=1 d=0.927743 t=9469
+sheng2 jie2 	繩結	c=2 d=1.62609 t=9469
+sheng4 jing1 	聖經	c=1 d=0.621885 t=9469
+sheng4 li4 	勝利	c=1 d=0.946485 t=9469
+sheng4 xia5 	剩下	c=1 d=0.064894 t=9469
+shi1 	師	c=4 d=1.34179 t=9469
+shi1 bai4 	失敗	c=2 d=0.0650587 t=9469
+shi2 	十	c=1 d=0.865022 t=9469
+shi2 	時	c=1 d=0.357007 t=9469
+shi2 	石	c=6 d=0.789545 t=9469
+shi2 bei1 	石碑	c=5 d=1.47163 t=9469
+shi2 hou4 	時候	c=9 d=1.97358 t=9469
+shi2 hua4 	實話	c=1 d=0.860708 t=9469
+shi2 ji4 shang4 	實際上	c=3 d=0.798583 t=9469
+shi2 jian1 	時間	c=8 d=2.32067 t=9469
+shi2 li4 	實力	c=1 d=0.193013 t=9469
+shi2 ti3 	實體	c=1 d=0.980199 t=9469
+shi2 tou5 	石頭	c=2 d=1.28177 t=9469
+shi2 ying1 	石英	c=3 d=1.61407 t=9469
+shi2 zai4 shi4 	實在是	c=1 d=0.923116 t=9469
+shi3 	使	c=1 d=0.744532 t=9469
+shi3 	始	c=2 d=0.866041 t=9469
+shi3 lai2 mu3 	史萊姆	c=14 d=3.56892 t=9469
+shi3 wo3 	使我	c=3 d=1.34293 t=9469
+shi3 yong4 	使用	c=3 d=1.62563 t=9469
+shi3 zhe3 	使者	c=4 d=1.4226 t=9469
+shi4 	事	c=2 d=0.845283 t=9469
+shi4 	式	c=1 d=0.955997 t=9469
+shi4 	是	c=135 d=10.4414 t=9469
+shi4 	試	c=3 d=1.0095 t=9469
+shi4 bu4 shi4 	是不是	c=5 d=0.991134 t=9469
+shi4 de5 	是的	c=1 d=0.447088 t=9469
+shi4 fang4 	釋放	c=2 d=0.49086 t=9469
+shi4 ge4 	是個	c=1 d=0.215456 t=9469
+shi4 jie4 	世界	c=5 d=1.64844 t=9469
+shi4 pin3 	飾品	c=3 d=1.42309 t=9469
+shi4 qing2 	事情	c=3 d=1.11388 t=9469
+shi4 shei2 	是誰	c=1 d=0.506617 t=9469
+shi4 shi2 hou4 	是時候	c=2 d=1.20988 t=9469
+shi4 shi5 	試試	c=3 d=1.14501 t=9469
+shi4 xun4 	視訊	c=1 d=0.516851 t=9469
+shi4 you3 	室友	c=2 d=0.824611 t=9469
+shi4 zai4 	是在	c=1 d=0.327915 t=9469
+shi4 zhe5 	試着	c=5 d=2.20823 t=9469
+shou1 	收	c=1 d=0.99005 t=9469
+shou1 ge1 	收割	c=1 d=1 t=9469
+shou1 rong2 	收容	c=1 d=0.951229 t=9469
+shou1 rong2 jian1 	收容間	c=1 d=0.265803 t=9469
+shou3 	手	c=6 d=1.97614 t=9469
+shou3 bing3 	手柄	c=1 d=0.0198411 t=9469
+shou3 dong4 	手動	c=2 d=0.895834 t=9469
+shou3 ji1 	手機	c=2 d=1.68921 t=9469
+shou3 ji1 xuan3 zi4 	手機選字	c=1 d=0.839457 t=9469
+shou3 shang4 	手上	c=1 d=0.557106 t=9469
+shou3 wan4 	手腕	c=1 d=0.427415 t=9469
+shou3 wei4 	守衛	c=1 d=0.909373 t=9469
+shou4 bu4 liao3 	受不了	c=1 d=0.790571 t=9469
+shou4 dao4 	受到	c=1 d=0.227638 t=9469
+shou4 dian3 	受點	c=0 d=0.0826959 t=9469
+shou4 dian3 shang1 	受點傷	c=1 d=0.831104 t=9469
+shou4 nve4 	受虐	c=0 d=0.0946485 t=9469
+shou4 nve4 yu4 	受虐欲	c=1 d=0.951229 t=9469
+shu1 	書	c=19 d=2.34593 t=9469
+shu1 	輸	c=1 d=0.806541 t=9469
+shu1 gui4 	書櫃	c=1 d=0.470011 t=9469
+shu1 yuan4 	書院	c=2 d=1.26055 t=9469
+shu1 zhuo1 	書桌	c=1 d=0.0505395 t=9469
+shu2 xi1 	熟悉	c=2 d=1.57958 t=9469
+shu4 	數	c=1 d=0.410656 t=9469
+shu4 	樹	c=10 d=2.1018 t=9469
+shu4 	術	c=1 d=0.470011 t=9469
+shu4 miao2 	樹苗	c=1 d=0.802519 t=9469
+shu4 zhi2 	數值	c=1 d=0.856415 t=9469
+shua1 	刷	c=9 d=3.34673 t=9469
+shua1 dao4 	刷到	c=1 d=0.985112 t=9469
+shua1 le5 	刷了	c=1 d=0.213312 t=9469
+shua1 wan2 	刷完	c=1 d=0.729789 t=9469
+shuai1 si3 	摔死	c=1 d=0.421052 t=9469
+shuang3 	爽	c=3 d=0.973909 t=9469
+shui3 	水	c=1 d=0.66034 t=9469
+shui3 jiao3 	水餃	c=1 d=0.985112 t=9469
+shui3 long2 tou2 	水龍頭	c=1 d=0.946485 t=9469
+shui4 jiao4 	睡覺	c=5 d=1.41387 t=9469
+shun4 bian4 	順便	c=7 d=2.87107 t=9469
+shun4 xu4 	順序	c=1 d=0.40657 t=9469
+shuo1 	說	c=24 d=5.7047 t=9469
+shuo1 chu1 	說出	c=1 d=0.965605 t=9469
+shuo1 ci2 	說詞	c=2 d=1.46691 t=9469
+shuo1 de5 	說的	c=3 d=1.44958 t=9469
+shuo1 hua4 	說話	c=1 d=0.367879 t=9469
+shuo1 ming2 	說明	c=1 d=0.57695 t=9469
+shuo1 shi2 hua4 	說實話	c=2 d=0.612049 t=9469
+shuo1 zhen1 de5 	說真的	c=1 d=0.755784 t=9469
+shuo4 	碩	c=1 d=0.609571 t=9469
+si1 chou2 	絲綢	c=3 d=1.04592 t=9469
+si1 ji1 	司機	c=2 d=0.84248 t=9469
+si1 liao2 	私聊	c=1 d=0.995012 t=9469
+si3 	死	c=5 d=1.23345 t=9469
+si3 diao4 	死掉	c=2 d=0.562705 t=9469
+si3 ding4 	死定	c=1 d=0.852144 t=9469
+si3 hou4 	死後	c=1 d=0.045502 t=9469
+si3 le5 	死了	c=4 d=0.742991 t=9469
+si3 ling2 	死靈	c=2 d=0.987836 t=9469
+si3 ling2 fa3 shi1 	死靈法師	c=2 d=1.36526 t=9469
+si3 wang2 	死亡	c=1 d=0.110251 t=9469
+si3 xian4 	死線	c=1 d=0.900325 t=9469
+si3 zai4 	死在	c=1 d=0.343009 t=9469
+si4 ding3 	四頂	c=1 d=0.847894 t=9469
+si4 fu2 qi4 	伺服器	c=6 d=3.18245 t=9469
+si4 hu1 	似乎	c=1 d=0.603506 t=9469
+si4 miao4 	寺廟	c=1 d=0.579842 t=9469
+si4 ye4 cao3 	四葉草	c=1 d=0.0125254 t=9469
+song4 le5 	送了	c=1 d=0.40657 t=9469
+sou1 wan2 	搜玩	c=1 d=0.690734 t=9469
+su4 du4 	速度	c=1 d=0.0072265 t=9469
+su4 she4 	宿舍	c=2 d=0.993024 t=9469
+suan4 	算	c=3 d=1.97354 t=9469
+suan4 	蒜	c=1 d=0.540641 t=9469
+suan4 shi4 	算是	c=1 d=0.597501 t=9469
+sui1 ran2 	雖然	c=10 d=2.10124 t=9469
+sui2 bian4 	隨便	c=3 d=0.796225 t=9469
+sui2 ji1 	隨機	c=3 d=1.67955 t=9469
+sui2 ji1 ke4 	隨機刻	c=1 d=0.304221 t=9469
+sui2 shi2 	隨時	c=2 d=0.931867 t=9469
+sui4 	歲	c=2 d=1.90727 t=9469
+sui4 pian4 	碎片	c=3 d=0.220027 t=9469
+sui4 shi2 	碎石	c=1 d=0.470011 t=9469
+suo1 fang4 	縮放	c=1 d=0.83527 t=9469
+suo1 quan1 	縮圈	c=1 d=0.774916 t=9469
+suo3 	所	c=2 d=0.669445 t=9469
+suo3 wei4 	所謂	c=1 d=0.600496 t=9469
+suo3 yi3 	所以	c=33 d=4.39652 t=9469
+suo3 yi3 qu4 	所以去	c=1 d=0.540641 t=9469
+suo3 yi3 wo3 	所以我	c=1 d=0.806541 t=9469
+suo3 you3 	所有	c=4 d=1.6549 t=9469
+ta1 	他	c=67 d=6.40422 t=9469
+ta1 de5 	他的	c=6 d=2.18787 t=9469
+ta1 hui4 	他會	c=0 d=0.0559898 t=9469
+ta1 hui4 fang4 	他會放	c=1 d=0.562705 t=9469
+ta1 jiu4 	他就	c=1 d=0.421052 t=9469
+ta1 ma1 	他媽	c=2 d=1.28259 t=9469
+ta1 men5 	他們	c=6 d=2.22906 t=9469
+ta1 shi4 	他是	c=2 d=1.24091 t=9469
+ta1 shi4 bu2 shi4 	他是不是	c=1 d=0.970446 t=9469
+ta1 shi4 zai4 	他是在	c=1 d=0.810584 t=9469
+ta1 yao1 	他要	c=3 d=1.35133 t=9469
+ta1 you3 	他有	c=1 d=0.444478 t=9469
+ta1 you3 shuo1 	他有說	c=1 d=1 t=9469
+ta1 zai4 	他在	c=1 d=0.774916 t=9469
+ta1 zuo4 	他做	c=1 d=0.0146986 t=9469
+ta3 	塔	c=6 d=1.91307 t=9469
+tai2 	台	c=1 d=0.714383 t=9469
+tai2 	臺	c=1 d=0.701173 t=9469
+tai2 wan1 	臺灣	c=1 d=0.634448 t=9469
+tai2 zi5 	檯子	c=1 d=0.203926 t=9469
+tai4 	太	c=12 d=2.22031 t=9469
+tai4 duo1 	太多	c=2 d=0.913931 t=9469
+tai4 gui4 	太貴	c=1 d=0.631284 t=9469
+tai4 jiu3 	太久	c=1 d=0.00790705 t=9469
+tai4 kong1 	太空	c=0 d=0.0729789 t=9469
+tan1 	貪	c=1 d=0.965605 t=9469
+tan2 lun4 	談論	c=1 d=0.767206 t=9469
+tan4 suo3 	探索	c=1 d=0.22091 t=9469
+tang2 	堂	c=1 d=0.557106 t=9469
+tao1 kong1 	掏空	c=1 d=0.594521 t=9469
+tao3 ren2 yan4 	討人厭	c=1 d=0.0728029 t=9469
+tao3 yan4 	討厭	c=0 d=0.0718924 t=9469
+tao3 yan4 ni3 	討厭你	c=1 d=0.796609 t=9469
+tao4 	套	c=1 d=0.918512 t=9469
+tao4 jian4 	套件	c=1 d=0.677057 t=9469
+te4 bie2 	特別	c=5 d=1.44315 t=9469
+te4 ding4 	特定	c=4 d=1.51673 t=9469
+te4 se4 	特色	c=1 d=0.995012 t=9469
+te4 shu1 	特殊	c=1 d=0.0152985 t=9469
+ti2 gong1 	提供	c=1 d=0.694197 t=9469
+ti2 sheng1 	提升	c=2 d=0.789261 t=9469
+ti2 xing3 	提醒	c=1 d=0.955997 t=9469
+ti3 hui4 	體會	c=1 d=0.83527 t=9469
+ti3 yan4 	體驗	c=1 d=0.45612 t=9469
+ti4 shen1 	替身	c=1 d=0.99005 t=9469
+tian1 	天	c=3 d=0.677452 t=9469
+tian1 hua1 ban3 	天花板	c=2 d=0.718383 t=9469
+tian1 tang2 	天堂	c=4 d=1.06943 t=9469
+tiao2 	條	c=2 d=0.990446 t=9469
+tiao2 	調	c=2 d=1.69598 t=9469
+tiao2 kan3 	調侃	c=1 d=0.367879 t=9469
+tiao2 li4 	條例	c=2 d=0.964303 t=9469
+tiao3 	挑	c=4 d=0.807283 t=9469
+tiao4 	跳	c=1 d=0.0889216 t=9469
+tiao4 guo4 	跳過	c=1 d=0.554327 t=9469
+tiao4 lian3 	跳臉	c=1 d=0.960789 t=9469
+tie1 	貼	c=1 d=0.198891 t=9469
+tie1 dao4 	貼到	c=1 d=0.458406 t=9469
+tie3 	鐵	c=8 d=2.74983 t=9469
+tie3 bei1 bao1 	鐵背包	c=1 d=0.860708 t=9469
+tie3 de5 	鐵的	c=1 d=0.0361528 t=9469
+tie3 gao3 	鐵搞	c=1 d=0.562705 t=9469
+tie3 jian4 	鐵劍	c=1 d=0.951229 t=9469
+tie3 kui3 lei3 	鐵傀儡	c=1 d=0.786628 t=9469
+tie3 tong3 	鐵桶	c=1 d=0.0605068 t=9469
+tie3 zhen1 	鐵砧	c=1 d=0.782705 t=9469
+tie3 zhuan1 	鐵磚	c=1 d=0.174645 t=9469
+ting1 	聽	c=5 d=1.57506 t=9469
+ting1 dong3 	聽懂	c=1 d=0.882497 t=9469
+ting1 hua4 	聽話	c=1 d=0.970446 t=9469
+ting1 qi5 lai5 	聽起來	c=1 d=0.904837 t=9469
+ting3 bu4 cuo4 	挺不錯	c=0 d=0.0519442 t=9469
+ting3 bu4 cuo4 de5 	挺不錯的	c=1 d=0.522046 t=9469
+ting3 hao3 	挺好	c=1 d=0.923116 t=9469
+ting3 hao3 de5 	挺好的	c=1 d=0.484325 t=9469
+tong1 	通	c=1 d=0.0229371 t=9469
+tong1 chang2 	通常	c=2 d=1.34373 t=9469
+tong1 shi4 	通識	c=3 d=1.27216 t=9469
+tong1 shi4 ke4 	通識課	c=1 d=0.527292 t=9469
+tong1 zhi1 	通知	c=1 d=0.522046 t=9469
+tong2 	同	c=1 d=0.484325 t=9469
+tong2 	童	c=1 d=0.606531 t=9469
+tong2 	銅	c=6 d=3.28106 t=9469
+tong2 bu4 	同步	c=2 d=1.46555 t=9469
+tong2 ding4 	銅錠	c=1 d=0.0114473 t=9469
+tong2 yi1 ge4 	同一個	c=1 d=0.790571 t=9469
+tong3 	桶	c=1 d=0.856415 t=9469
+tong4 	痛	c=2 d=0.0455315 t=9469
+tong4 ku3 	痛苦	c=1 d=0.715338 t=9469
+tou1 	偷	c=1 d=0.307279 t=9469
+tou1 lan3 	偷懶	c=1 d=0.955997 t=9469
+tou2 	頭	c=4 d=1.31572 t=9469
+tou2 	骰	c=1 d=0.818731 t=9469
+tou2 lu2 	頭顱	c=3 d=0.677057 t=9469
+tu2 	圖	c=3 d=1.10001 t=9469
+tu2 an4 	圖案	c=3 d=0.149704 t=9469
+tu3 	土	c=1 d=0.941765 t=9469
+tu3 le5 	吐了	c=1 d=1 t=9469
+tu4 xie3 	吐血	c=1 d=0.970446 t=9469
+tui1 de5 	推的	c=1 d=0.612626 t=9469
+tui1 jian4 	推薦	c=2 d=1.29644 t=9469
+tui4 chu1 	退出	c=2 d=0.987865 t=9469
+tun1 	吞	c=2 d=1.12926 t=9469
+wa1 	挖	c=21 d=2.89495 t=9469
+wa1 dao4 	挖到	c=1 d=0.23457 t=9469
+wa1 jue2 	挖掘	c=1 d=0.600496 t=9469
+wa1 kuang4 	挖礦	c=4 d=1.01075 t=9469
+wa1 le5 	挖了	c=3 d=0.878095 t=9469
+wa1 xia4 	挖下	c=1 d=0.0184074 t=9469
+wa2 wa5 	娃娃	c=1 d=0.701709 t=9469
+wa3 jie3 	瓦解	c=1 d=0.763379 t=9469
+wa3 luo2 	瓦羅	c=0 d=0.088692 t=9469
+wa3 luo2 lan2 	瓦羅蘭	c=2 d=1.75058 t=9469
+wai1 	歪	c=1 d=0.67368 t=9469
+wai3 ni2 	崴泥	c=1 d=0.767206 t=9469
+wai4 bu4 	外部	c=1 d=0.67368 t=9469
+wai4 gua4 	外掛	c=1 d=0.647265 t=9469
+wai4 mian4 	外面	c=6 d=1.51999 t=9469
+wai4 wang3 	外網	c=2 d=1.02389 t=9469
+wan2 	完	c=5 d=2.21241 t=9469
+wan2 	玩	c=19 d=4.15639 t=9469
+wan2 dan4 	完蛋	c=1 d=0.980199 t=9469
+wan2 duo1 	玩多	c=1 d=0.524663 t=9469
+wan2 jia1 	玩家	c=2 d=1.00997 t=9469
+wan2 le5 	完了	c=2 d=0.341526 t=9469
+wan2 quan2 	完全	c=11 d=2.61552 t=9469
+wan2 shou3 ji1 	玩手機	c=1 d=0.509156 t=9469
+wan2 yi4 	玩意	c=2 d=0.757444 t=9469
+wan2 you2 xi4 	玩遊戲	c=1 d=0.733447 t=9469
+wan3 can1 	晚餐	c=3 d=1.22399 t=9469
+wan3 shang5 	晚上	c=3 d=1.61139 t=9469
+wan3 shui4 	晚睡	c=1 d=0.826959 t=9469
+wan4 fa3 	玩法	c=2 d=1.21105 t=9469
+wan4 neng2 	萬能	c=1 d=0.290835 t=9469
+wang2 	王	c=1 d=0.865022 t=9469
+wang3 	網	c=2 d=0.961024 t=9469
+wang3 lu4 	網路	c=5 d=1.7877 t=9469
+wang3 you3 	網友	c=1 d=0.224249 t=9469
+wang3 zhan4 	網站	c=1 d=0.818731 t=9469
+wang4 ji4 	忘記	c=1 d=0.0647265 t=9469
+wang4 le5 	忘了	c=3 d=1.31104 t=9469
+wei1 cun2 	微存	c=1 d=0.843665 t=9469
+wei2 	爲	c=3 d=1.55502 t=9469
+wei2 sha2 	爲啥	c=7 d=1.63583 t=9469
+wei2 yi1 	唯一	c=1 d=0.744532 t=9469
+wei4 	味	c=1 d=0.99005 t=9469
+wei4 lai2 	未來	c=1 d=0.83527 t=9469
+wei4 le5 	爲了	c=4 d=1.61815 t=9469
+wei4 shen2 me5 	爲什麼	c=4 d=2.02531 t=9469
+wei4 zhi4 	位置	c=1 d=0.0221482 t=9469
+wen2 bi3 	文筆	c=1 d=0.532592 t=9469
+wen2 jian4 	文件	c=1 d=0.831104 t=9469
+wen2 ming2 	文明	c=1 d=0.704688 t=9469
+wen2 shu1 	文書	c=1 d=0.847894 t=9469
+wen2 xue2 	文學	c=1 d=0.995012 t=9469
+wen3 	吻	c=1 d=1 t=9469
+wen3 ding4 	穩定	c=1 d=0.752014 t=9469
+wen4 	問	c=1 d=0.923116 t=9469
+wen4 ti2 	問題	c=5 d=1.74902 t=9469
+wo3 	我	c=201 d=12.2084 t=9469
+wo3 ba3 	我把	c=5 d=1.54725 t=9469
+wo3 bu4 gan3 	我不敢	c=1 d=0.458406 t=9469
+wo3 bu4 ren4 shi2 	我不認識	c=1 d=0.980199 t=9469
+wo3 bu4 shi4 	我不是	c=2 d=0.99005 t=9469
+wo3 bu4 xiang3 	我不想	c=1 d=0.66365 t=9469
+wo3 bu4 yao1 	我不要	c=1 d=0.33454 t=9469
+wo3 bu4 zhi1 dao4 	我不知道	c=1 d=0.319819 t=9469
+wo3 chong2 	我重	c=1 d=0.0107269 t=9469
+wo3 dao4 	我到	c=1 d=0.873716 t=9469
+wo3 de5 	我的	c=6 d=1.46534 t=9469
+wo3 dou1 	我都	c=1 d=0.786628 t=9469
+wo3 fei1 chang2 	我非常	c=1 d=0.579842 t=9469
+wo3 gan3 jiao4 	我感覺	c=1 d=0.794534 t=9469
+wo3 gen1 	我跟	c=1 d=0.380983 t=9469
+wo3 guan1 	我關	c=1 d=0.865022 t=9469
+wo3 hai2 	我還	c=1 d=0.535261 t=9469
+wo3 hai2 yi3 wei2 	我還以爲	c=1 d=0.786628 t=9469
+wo3 hen3 	我很	c=1 d=0.315058 t=9469
+wo3 ji4 de2 	我記得	c=6 d=1.57672 t=9469
+wo3 jiu4 	我就	c=1 d=0.101774 t=9469
+wo3 jiu4 bei4 	我就被	c=1 d=0.373439 t=9469
+wo3 jue2 de2 	我覺得	c=5 d=1.57607 t=9469
+wo3 kai1 dao4 	我開到	c=1 d=0.024972 t=9469
+wo3 kai1 le5 	我開了	c=1 d=0.865022 t=9469
+wo3 kuai4 	我快	c=1 d=0.83527 t=9469
+wo3 mei2 you3 	我沒有	c=1 d=0.891366 t=9469
+wo3 mei3 ci4 	我每次	c=1 d=0.726149 t=9469
+wo3 men5 	我們	c=14 d=3.3814 t=9469
+wo3 neng2 bu4 	我能不	c=1 d=0.346456 t=9469
+wo3 pa4 	我怕	c=1 d=0.402524 t=9469
+wo3 qu4 	我去	c=2 d=1.0195 t=9469
+wo3 sheng1 	我生	c=1 d=0.0992613 t=9469
+wo3 shi4 	我是	c=2 d=0.720501 t=9469
+wo3 shi4 yong4 	我是用	c=1 d=0.99005 t=9469
+wo3 shuo1 	我說	c=5 d=1.43145 t=9469
+wo3 shuo1 de5 	我說的	c=1 d=0.559898 t=9469
+wo3 sui2 bian4 	我隨便	c=1 d=0.941765 t=9469
+wo3 tao3 yan4 	我討厭	c=1 d=0.752014 t=9469
+wo3 tao3 yan4 ni3 	我討厭你	c=1 d=0.744532 t=9469
+wo3 tu1 ran2 	我突然	c=1 d=0.690734 t=9469
+wo3 wang4 ji4 	我忘記	c=1 d=0.650509 t=9469
+wo3 xian1 	我先	c=3 d=1.65993 t=9469
+wo3 xiang3 	我想	c=1 d=0.748264 t=9469
+wo3 xiang3 nian4 	我想念	c=1 d=0.289384 t=9469
+wo3 xu1 yao1 	我需要	c=1 d=0.358796 t=9469
+wo3 yao1 	我要	c=5 d=2.17021 t=9469
+wo3 ye3 	我也	c=3 d=1.69382 t=9469
+wo3 ye3 jue2 de2 	我也覺得	c=1 d=0.650509 t=9469
+wo3 ye3 mei2 you3 	我也沒有	c=1 d=0.980199 t=9469
+wo3 ye3 xiang3 	我也想	c=1 d=0.985112 t=9469
+wo3 yi3 wei2 	我以爲	c=1 d=0.506617 t=9469
+wo3 ying1 gai1 	我應該	c=1 d=0.970446 t=9469
+wo3 you4 	我又	c=5 d=1.03166 t=9469
+wo3 zai4 	我在	c=3 d=1.00354 t=9469
+wo3 zhao3 dao4 	我找到	c=2 d=0.879817 t=9469
+wo3 zhe4 	我這	c=1 d=0.0158434 t=9469
+wo3 zhi1 dao4 	我知道	c=1 d=0.878095 t=9469
+wu1 nei4 	屋內	c=1 d=0.57695 t=9469
+wu1 shi1 	巫師	c=5 d=2.2907 t=9469
+wu1 wu1 wu1 	嗚嗚嗚	c=1 d=1 t=9469
+wu2 fa3 	無法	c=2 d=0.618783 t=9469
+wu2 guan1 	無關	c=1 d=0.794534 t=9469
+wu2 ming2 	無名	c=2 d=1.1924 t=9469
+wu2 shi4 	無視	c=1 d=0.594521 t=9469
+wu2 xian4 	無限	c=1 d=0.960789 t=9469
+wu2 zhuan1 	無磚	c=1 d=0.891366 t=9469
+wu2 zhuan1 ta3 	無磚塔	c=1 d=0.421052 t=9469
+wu3 qi4 	武器	c=7 d=2.26513 t=9469
+wu4 	物	c=1 d=0.995012 t=9469
+wu4 li3 	物理	c=1 d=0.955997 t=9469
+wu4 pin3 	物品	c=3 d=1.43315 t=9469
+wu4 ti3 	物體	c=1 d=0.767206 t=9469
+xi1 	吸	c=5 d=0.685196 t=9469
+xi1 fang1 	西方	c=1 d=0.612626 t=9469
+xi1 men2 	西門	c=1 d=0.603506 t=9469
+xi1 xie3 	吸血	c=1 d=0.00975476 t=9469
+xi1 xie3 gui3 	吸血鬼	c=5 d=1.37157 t=9469
+xi2 guan4 le5 	習慣了	c=1 d=0.149569 t=9469
+xi3 diao4 	洗掉	c=1 d=0.97531 t=9469
+xi3 huan1 	喜歡	c=1 d=1.04669 t=9469
+xi3 huan1 de5 	喜歡的	c=1 d=0.774916 t=9469
+xi3 yi1 	洗衣	c=0 d=0.032628 t=9469
+xi3 yi1 jing1 	洗衣精	c=1 d=0.327915 t=9469
+xi4 	系	c=2 d=1.3046 t=9469
+xi4 jie2 	細節	c=1 d=0.491644 t=9469
+xi4 shang4 	系上	c=1 d=0.644036 t=9469
+xi4 tong3 	系統	c=4 d=2.60319 t=9469
+xi4 tong3 cheng2 shi4 	系統程式	c=1 d=0.467666 t=9469
+xi4 xue2 hui4 	系學會	c=2 d=1.17325 t=9469
+xia4 	下	c=10 d=2.46242 t=9469
+xia4 ci4 	下次	c=1 d=0.625002 t=9469
+xia4 de5 	嚇得	c=1 d=0.913931 t=9469
+xia4 ge4 	下個	c=2 d=0.909373 t=9469
+xia4 hao3 	下好	c=0 d=0.070822 t=9469
+xia4 hao3 li2 shou3 	下好離手	c=1 d=0.71177 t=9469
+xia4 ke4 le5 	下課了	c=1 d=0.895834 t=9469
+xia4 mian4 	下面	c=4 d=0.808022 t=9469
+xia4 pao3 	嚇跑	c=1 d=0.729789 t=9469
+xia4 qu5 	下去	c=2 d=0.878095 t=9469
+xia4 shui3 dao4 	下水道	c=0 d=0.0198891 t=9469
+xia4 shui3 dao4 de5 	下水道的	c=1 d=0.199888 t=9469
+xia4 xian4 	下線	c=1 d=0.995012 t=9469
+xia4 yi1 	下一	c=1 d=0.120963 t=9469
+xia4 yi1 ba3 	下一把	c=1 d=0.941765 t=9469
+xia4 yi1 jie1 	下一階	c=1 d=0.759572 t=9469
+xia4 yi1 jie1 ceng2 	下一階層	c=1 d=0.951229 t=9469
+xia4 yi4 shi4 	下意識	c=1 d=0.150318 t=9469
+xia4 zai3 	下載	c=1 d=0.449329 t=9469
+xian1 	先	c=19 d=3.94445 t=9469
+xian1 ba3 	先把	c=3 d=0.878095 t=9469
+xian1 ren2 tiao4 	仙人跳	c=1 d=0.0131019 t=9469
+xian3 ka3 	顯卡	c=1 d=0.771052 t=9469
+xian3 ran2 	顯然	c=2 d=1.36354 t=9469
+xian4 	現	c=1 d=0.0566989 t=9469
+xian4 	線	c=2 d=0.347696 t=9469
+xian4 dong4 	現動	c=1 d=0.373439 t=9469
+xian4 dong4 	限動	c=1 d=0.891366 t=9469
+xian4 ru4 	陷入	c=1 d=0.715338 t=9469
+xian4 zai4 	現在	c=22 d=2.95736 t=9469
+xian4 zhi4 	限制	c=2 d=1.16893 t=9469
+xiang1 chu3 	相處	c=1 d=0.666977 t=9469
+xiang1 ge2 	相隔	c=1 d=0.305746 t=9469
+xiang1 tong2 	相同	c=4 d=1.29596 t=9469
+xiang1 xin4 	相信	c=4 d=1.09926 t=9469
+xiang1 zi5 	箱子	c=33 d=3.85336 t=9469
+xiang2 xi4 	詳細	c=1 d=0.895834 t=9469
+xiang3 	想	c=14 d=3.79712 t=9469
+xiang3 ba3 	想把	c=1 d=0.609571 t=9469
+xiang3 dao4 	想到	c=4 d=1.2196 t=9469
+xiang3 de2 dao4 	想得到	c=1 d=0.292293 t=9469
+xiang3 de5 	想的	c=1 d=0.65377 t=9469
+xiang3 nian4 	想念	c=0 d=0.0287941 t=9469
+xiang3 qu4 	想去	c=1 d=0.802519 t=9469
+xiang3 shui4 	想睡	c=2 d=1.92741 t=9469
+xiang3 shuo1 	想說	c=1 d=0.647265 t=9469
+xiang3 wan2 	想玩	c=1 d=0.822835 t=9469
+xiang3 xiang5 	想想	c=2 d=1.21971 t=9469
+xiang3 yao1 	想要	c=4 d=1.02995 t=9469
+xiang3 yong4 	想用	c=1 d=1 t=9469
+xiang4 	像	c=3 d=1.29832 t=9469
+xiang4 lian4 	項鍊	c=1 d=0.232236 t=9469
+xiang4 mu4 	項目	c=1 d=0.904837 t=9469
+xiang4 shi4 	像是	c=5 d=1.52023 t=9469
+xiao1 hao4 	消耗	c=3 d=0.933337 t=9469
+xiao1 shi1 	消失	c=1 d=0.199888 t=9469
+xiao3 	小	c=2 d=1.12268 t=9469
+xiao3 nv3 hai2 	小女孩	c=1 d=0.279431 t=9469
+xiao3 shi2 	小時	c=4 d=1.33292 t=9469
+xiao3 shi2 hou4 	小時候	c=1 d=0.582748 t=9469
+xiao3 wa1 	小挖	c=1 d=0.369723 t=9469
+xiao3 xiao3 	小小	c=0 d=0.0524663 t=9469
+xiao3 xiao3 lv4 	小小綠	c=7 d=2.59519 t=9469
+xiao4 	笑	c=2 d=1.44092 t=9469
+xiao4 fei4 wu4 	笑廢物	c=1 d=0.65377 t=9469
+xiao4 guo3 	效果	c=4 d=1.04733 t=9469
+xiao4 hua4 	笑話	c=1 d=0.0587185 t=9469
+xiao4 men2 kou3 	校門口	c=1 d=0.535261 t=9469
+xiao4 neng2 	效能	c=2 d=1.53964 t=9469
+xiao4 si3 	笑死	c=3 d=1.45782 t=9469
+xiao4 wu4 	校務	c=3 d=2.41008 t=9469
+xie1 	些	c=5 d=1.76621 t=9469
+xie3 	寫	c=4 d=0.64438 t=9469
+xie3 	血	c=9 d=3.15507 t=9469
+xie3 cao2 	血槽	c=1 d=0.010889 t=9469
+xie3 le5 	寫了	c=1 d=1 t=9435
+xie3 ping2 	血瓶	c=2 d=0.681779 t=9469
+xie4 zhi2 qiang1 	泄殖腔	c=1 d=0.99005 t=9469
+xin1 	心	c=7 d=1.13873 t=9469
+xin1 	新	c=3 d=0.810647 t=9469
+xin1 de5 	新的	c=1 d=0.909373 t=9469
+xin1 ku3 	辛苦	c=1 d=0.0593087 t=9469
+xin1 li3 	心理	c=1 d=0.941765 t=9469
+xin1 li5 	心裏	c=1 d=0.937067 t=9469
+xin1 shi4 jie4 	新世界	c=1 d=0.980199 t=9469
+xin1 shou3 	新手	c=1 d=0.900325 t=9469
+xin1 you3 	心有	c=1 d=0.759572 t=9469
+xin1 zhu2 	新竹	c=1 d=0.818731 t=9469
+xin4 	信	c=1 d=0.57695 t=9469
+xing1 	星	c=1 d=0.180866 t=9469
+xing1 hong2 	猩紅	c=1 d=0.111359 t=9469
+xing1 kong1 	星空	c=0 d=0.0701173 t=9469
+xing1 lu4 gu3 	星露谷	c=1 d=0.474734 t=9469
+xing2 	型	c=2 d=0.449655 t=9469
+xing2 	行	c=9 d=2.80142 t=9469
+xing2 ba1 	行吧	c=1 d=0.609571 t=9469
+xing2 bu4 xing2 	行不行	c=1 d=0.970446 t=9469
+xing2 dong4 	行動	c=1 d=0.00755912 t=9469
+xing2 le5 	行了	c=1 d=0.0645703 t=9469
+xing2 li3 	行李	c=1 d=0.995012 t=9469
+xing2 shi4 li4 	行事曆	c=2 d=1.5408 t=9469
+xing2 xiong1 	行兇	c=1 d=0.427415 t=9469
+xing2 zheng4 	行政	c=1 d=0.790571 t=9469
+xing3 	醒	c=2 d=1.59161 t=9469
+xing4 	性	c=2 d=1.41262 t=9469
+xing4 jia4 bi3 	性價比	c=1 d=0.748264 t=9469
+xing4 neng2 	性能	c=1 d=0.0175097 t=9469
+xing4 qu4 	興趣	c=1 d=0.571209 t=9469
+xing4 yu4 	性慾	c=1 d=0.960789 t=9469
+xing4 yun4 	幸運	c=3 d=0.0517434 t=9469
+xiong1 jia3 	胸甲	c=1 d=0.0202419 t=9469
+xiong1 shou3 	兇手	c=7 d=2.43581 t=9469
+xiu1 	休	c=1 d=0.995012 t=9469
+xiu1 	修	c=2 d=1.51424 t=9469
+xiu1 bu3 	修補	c=1 d=0.0808629 t=9469
+xiu1 guo4 	修過	c=1 d=0.839457 t=9469
+xiu1 hao3 	修好	c=1 d=0.726149 t=9469
+xiu4 dao1 	繡刀	c=3 d=0.873972 t=9469
+xu1 bu4 xu1 yao1 	需不需要	c=1 d=0.995012 t=9469
+xu1 qiu2 	需求	c=1 d=0.822835 t=9469
+xu1 yao1 	需要	c=10 d=3.10383 t=9469
+xu3 yuan4 	許願	c=1 d=0.704688 t=9469
+xu4 	序	c=1 d=0.75916 t=9469
+xu4 xu4 	續續	c=1 d=0.00687406 t=9469
+xuan2 zhuan3 	旋轉	c=1 d=0.965605 t=9469
+xuan3 	選	c=3 d=1.21793 t=9469
+xuan3 dian3 	選點	c=1 d=0.228779 t=9469
+xuan3 ke4 	選課	c=1 d=0.759572 t=9469
+xuan3 xiu1 	選修	c=2 d=0.817379 t=9469
+xuan3 ze2 	選擇	c=1 d=0.07502 t=9469
+xuan3 zi4 	選字	c=2 d=1.03339 t=9469
+xue2 	學	c=2 d=1.04218 t=9469
+xue2 can1 	學餐	c=1 d=0.802519 t=9469
+xue2 de5 	學的	c=1 d=0.0383884 t=9469
+xue2 qi2 	學期	c=1 d=1 t=9451
+xue2 sheng1 	學生	c=2 d=1.12176 t=9469
+xue2 sheng5 hui4 	學生會	c=1 d=0.767206 t=9469
+xue2 shu4 xing4 	學術性	c=1 d=0.740818 t=9469
+xue2 xi2 	學習	c=2 d=1.11146 t=9469
+xue2 xiao4 	學校	c=3 d=1.70004 t=9469
+xue2 xiao4 de5 	學校的	c=1 d=0.310367 t=9469
+xue2 zhang3 	學長	c=3 d=0.839054 t=9469
+xue3 	血	c=1 d=0.932394 t=9469
+xue3 	雪	c=1 d=0.438235 t=9469
+xue3 bao4 	雪豹	c=1 d=0.511709 t=9469
+xue3 di4 	雪地	c=1 d=0.571209 t=9469
+xue3 qiu2 	雪球	c=1 d=1 t=9469
+xun2 chou2 	尋仇	c=1 d=0.637628 t=9469
+xun2 zhao3 	尋找	c=2 d=1.39231 t=9469
+ya1 dao3 xing4 	壓倒性	c=1 d=0.937067 t=9469
+ya1 li4 	壓力	c=3 d=1.55606 t=9469
+ya1 suo1 	壓縮	c=3 d=1.58007 t=9469
+ya2 chi3 	牙齒	c=1 d=0.628135 t=9469
+yai2 	崖	c=1 d=0.276651 t=9469
+yan1 huo3 	煙火	c=6 d=2.32165 t=9469
+yan2 ge2 	嚴格	c=1 d=0.985112 t=9469
+yan2 jiang1 	岩漿	c=4 d=2.58528 t=9469
+yan3 jiang3 	演講	c=1 d=0.680451 t=9469
+yan3 suan4 fa3 	演算法	c=4 d=2.26151 t=9469
+yang2 cong1 	洋蔥	c=6 d=2.94618 t=9469
+yang2 guang1 	陽光	c=1 d=0.00748391 t=9469
+yang2 mao2 	羊毛	c=1 d=0.348192 t=9469
+yang2 shou4 	陽壽	c=0 d=0.0677057 t=9469
+yang2 shou4 ren2 	陽壽人	c=1 d=0.680451 t=9469
+yang3 jing1 xu4 rui4 	養精蓄銳	c=1 d=0.951229 t=9469
+yang3 lao3 	養老	c=1 d=0.690734 t=9469
+yang3 wang4 	仰望	c=0 d=0.0701173 t=9469
+yang3 wang4 xing1 kong1 	仰望星空	c=1 d=0.704688 t=9469
+yang3 wo4 	仰臥	c=1 d=0.276651 t=9469
+yang4 	樣	c=0 d=0.0704688 t=9469
+yang4 zi5 	樣子	c=4 d=1.68865 t=9469
+yao1 	邀	c=1 d=0.543351 t=9469
+yao1 bu4 	要不	c=1 d=0.683861 t=9469
+yao1 bu4 ran2 	要不然	c=3 d=1.16938 t=9469
+yao1 bu4 yao1 	要不要	c=3 d=0.913383 t=9469
+yao1 chi1 	要喫	c=1 d=0.946485 t=9469
+yao1 dao4 	要到	c=1 d=0.778801 t=9469
+yao1 jia1 	要加	c=1 d=0.231078 t=9469
+yao1 le5 	邀了	c=1 d=0.382893 t=9469
+yao1 qiu2 	要求	c=3 d=0.970446 t=9469
+yao1 qu4 	要去	c=2 d=0.843665 t=9469
+yao1 si3 	要死	c=1 d=0.537944 t=9469
+yao1 yong4 	要用	c=2 d=0.966991 t=9469
+yao1 you3 	要有	c=2 d=0.564968 t=9469
+yao4 	要	c=89 d=7.73047 t=9469
+yao4 de5 	要的	c=3 d=1.52153 t=9469
+yao4 hun2 shu4 	耀魂數	c=1 d=0.0306538 t=9469
+yao4 la5 	要啦	c=1 d=0.425283 t=9469
+yao4 shi4 	要是	c=1 d=0.486752 t=9469
+yao4 shi5 	鑰匙	c=1 d=0.0889216 t=9469
+yao4 wan2 	要玩	c=1 d=0.904837 t=9469
+yao4 wan2 de5 	要玩的	c=1 d=0.181772 t=9469
+ye3 	也	c=11 d=2.69916 t=9469
+ye3 bu4 	也不	c=1 d=0.865022 t=9469
+ye3 bu4 yong4 	也不用	c=1 d=0.900325 t=9469
+ye3 hai2 hao3 	也還好	c=1 d=0.637628 t=9469
+ye3 hen3 duo1 	也很多	c=1 d=0.99005 t=9469
+ye3 hui4 	也會	c=3 d=1.93391 t=9469
+ye3 hui4 shi4 	也會是	c=1 d=0.0261214 t=9469
+ye3 jiu4 shi4 	也就是	c=2 d=1.28468 t=9469
+ye3 ke3 	也可	c=1 d=0.687289 t=9469
+ye3 ke3 yi3 	也可以	c=1 d=0.00657159 t=9469
+ye3 kuai4 	也快	c=1 d=0.701173 t=9469
+ye3 lian4 lu2 	冶煉爐	c=1 d=0.960789 t=9469
+ye3 mei2 yong4 	也沒用	c=1 d=0.45612 t=9469
+ye3 qu4 	也去	c=1 d=0.618783 t=9469
+ye3 sheng1 	野生	c=1 d=0.718924 t=9469
+ye3 shi4 	也是	c=1 d=0.625002 t=9469
+ye3 suan4 	也算	c=6 d=2.57722 t=9469
+ye3 suan4 shi4 	也算是	c=1 d=0.65377 t=9469
+ye3 tai4 	也太	c=1 d=0.882497 t=9469
+ye3 xing2 	也行	c=3 d=0.935769 t=9469
+ye3 yao1 	也要	c=1 d=0.99005 t=9469
+ye3 you3 	也有	c=6 d=1.75837 t=9469
+ye3 zai4 	也在	c=1 d=0.97531 t=9469
+ye4 ji1 	業績	c=1 d=0.557106 t=9469
+ye4 mei4 	夜魅	c=2 d=1.70882 t=9469
+ye4 ti3 	液體	c=1 d=0.88692 t=9469
+yi1 	一	c=1 d=0.88692 t=9469
+yi1 ba3 	一把	c=3 d=1.12888 t=9469
+yi1 ben3 	一本	c=3 d=0.778312 t=9469
+yi1 chang2 	一場	c=1 d=0.810584 t=9469
+yi1 chi2 	一匙	c=0 d=0.0323033 t=9469
+yi1 chi2 ling2 	一匙靈	c=1 d=0.324652 t=9469
+yi1 ci4 	一次	c=9 d=3.19216 t=9469
+yi1 da4 dui1 	一大堆	c=1 d=0.562705 t=9469
+yi1 dian3 	一點	c=5 d=1.17239 t=9469
+yi1 ding4 	一定	c=6 d=2.13155 t=9469
+yi1 duan4 	一段	c=1 d=0.400517 t=9469
+yi1 dui1 	一堆	c=7 d=0.552672 t=9469
+yi1 fu5 	衣服	c=1 d=0.227638 t=9469
+yi1 ge4 ren2 	一個人	c=1 d=0.154896 t=9469
+yi1 ge4 yue4 	一個月	c=1 d=0.597501 t=9469
+yi1 jian4 	一件	c=1 d=0.697676 t=9469
+yi1 ke1 	一顆	c=1 d=0.718924 t=9469
+yi1 lu4 	一路	c=1 d=0.900325 t=9469
+yi1 lv4 	一律	c=1 d=0.211189 t=9469
+yi1 qi3 	一起	c=4 d=1.61749 t=9469
+yi1 tang2 	一堂	c=1 d=0.519442 t=9469
+yi1 tao4 	一套	c=1 d=0.722527 t=9469
+yi1 xia4 	一下	c=9 d=1.93484 t=9469
+yi1 xie1 	一些	c=2 d=0.9423 t=9469
+yi1 xue2 qi1 	一學期	c=1 d=0.514274 t=9469
+yi1 xue2 xi4 	醫學系	c=1 d=0.740818 t=9469
+yi1 yang4 	一樣	c=9 d=2.0268 t=9469
+yi1 yuan4 	醫院	c=1 d=1 t=9416
+yi1 zhang1 	一張	c=1 d=0.194952 t=9469
+yi1 zhi1 	一隻	c=2 d=0.364394 t=9469
+yi1 zhi1 shou3 	一隻手	c=1 d=0.913931 t=9469
+yi1 zhi2 	一直	c=3 d=1.97148 t=9469
+yi1 zu3 	一組	c=4 d=0.987481 t=9469
+yi2 bei4 zi5 	一輩子	c=2 d=0.543823 t=9469
+yi2 dao4 	移到	c=1 d=0.421052 t=9469
+yi2 ge4 	一個	c=47 d=6.27958 t=9469
+yi2 hai2 	遺骸	c=10 d=2.97249 t=9469
+yi2 he2 	宜和	c=7 d=5.48399 t=9469
+yi2 wu4 	遺物	c=1 d=0.878095 t=9469
+yi3 	以	c=2 d=1.16515 t=9469
+yi3 he2 	以和	c=1 d=0.778801 t=9469
+yi3 ji2 	以及	c=1 d=0.831104 t=9469
+yi3 jing1 	已經	c=8 d=1.06319 t=9469
+yi3 qian2 	以前	c=2 d=0.927529 t=9469
+yi3 si3 	已死	c=2 d=0.256661 t=9469
+yi3 wei2 	以爲	c=3 d=1.38213 t=9469
+yi4 	奕	c=1 d=0.932394 t=9469
+yi4 ban1 	一般	c=5 d=2.03174 t=9469
+yi4 ben3 	譯本	c=2 d=1.19506 t=9469
+yi4 shu4 	藝術	c=1 d=0.460704 t=9469
+yi4 si5 	意思	c=2 d=0.994539 t=9469
+yi4 tai4 	液態	c=1 d=0.856415 t=9469
+yi4 ti3 	液體	c=1 d=0.878095 t=9469
+yi4 zhong3 	一種	c=2 d=0.600496 t=9469
+yin1 	因	c=1 d=0.355226 t=9469
+yin1 	音	c=1 d=0.759572 t=9469
+yin1 bo1 	音波	c=1 d=0.141564 t=9469
+yin1 wei4 	因爲	c=24 d=3.54218 t=9469
+yin1 yuan2 	因緣	c=1 d=0.860708 t=9469
+yin1 yue4 	音樂	c=1 d=0.116484 t=9469
+yin3 cang2 	隱藏	c=1 d=0.358796 t=9469
+yin3 liao4 	飲料	c=2 d=0.454076 t=9469
+ying1 	應	c=1 d=0.431711 t=9469
+ying1 gai1 	應該	c=28 d=3.63068 t=9469
+ying1 gai1 mei2 you3 	應該沒有	c=1 d=0.231078 t=9469
+ying1 gai1 shi4 	應該是	c=2 d=0.505627 t=9469
+ying1 wen2 	英文	c=1 d=0.640824 t=9469
+ying1 ying1 	嚶嚶	c=0 d=0.0980199 t=9469
+ying1 ying1 jiao4 	嚶嚶叫	c=1 d=0.985112 t=9469
+ying1 yong4 	應用	c=4 d=2.62827 t=9469
+ying2 di4 	營地	c=2 d=1.4756 t=9469
+ying2 guang1 	螢光	c=0 d=0.00480747 t=9469
+ying2 guang1 shi2 	螢光石	c=1 d=0.0483156 t=9469
+ying3 pian4 	影片	c=1 d=0.802519 t=9469
+ying3 xiang3 	影響	c=2 d=0.99005 t=9469
+ying4 	硬	c=4 d=1.36257 t=9469
+ying4 gang1 	硬剛	c=2 d=1 t=9469
+ying4 yao1 	硬要	c=0 d=0.0913931 t=9469
+ying4 yao1 shuo1 	硬要說	c=1 d=0.918512 t=9469
+yo5 ou3 	喲偶	c=1 d=0.0411719 t=9469
+yong1 you3 	擁有	c=1 d=0.694197 t=9469
+yong3 gan3 	勇敢	c=1 d=0.644036 t=9469
+yong3 jiu3 	永久	c=2 d=1.65021 t=9469
+yong3 qi4 	勇氣	c=1 d=0.377192 t=9469
+yong4 	用	c=53 d=4.49781 t=9469
+yong4 chu5 	用處	c=1 d=0.133989 t=9469
+yong4 de5 	用的	c=1 d=0.900325 t=9469
+yong4 guo4 	用過	c=2 d=0.968837 t=9469
+yong4 hu4 	用戶	c=1 d=0.802519 t=9469
+yong4 lai2 	用來	c=2 d=0.737123 t=9469
+yong4 le5 	用了	c=1 d=0.722527 t=9469
+yong4 tu2 	用途	c=2 d=1.60107 t=9469
+you1 ge2 	優格	c=1 d=0.985112 t=9469
+you1 ling2 	幽靈	c=1 d=0.341298 t=9469
+you2 biao1 	遊標	c=1 d=0.621885 t=9469
+you2 cun2 	猶存	c=1 d=0.0132336 t=9469
+you2 fan4 	油飯	c=0 d=0.0481909 t=9469
+you2 xi4 	遊戲	c=9 d=2.03544 t=9469
+you2 yong3 	游泳	c=2 d=1.31839 t=9469
+you2 yu2 	魷魚	c=1 d=0.588605 t=9469
+you3 	友	c=1 d=0.369723 t=9469
+you3 	有	c=166 d=7.77619 t=9469
+you3 a1 	有啊	c=1 d=0.0916297 t=9469
+you3 de5 	有的	c=2 d=1.3606 t=9469
+you3 dian3 	有點	c=3 d=1.64341 t=9469
+you3 ge4 	有個	c=11 d=1.06279 t=9469
+you3 gou4 	有夠	c=0 d=0.0436049 t=9469
+you3 gou4 nan2 	有夠難	c=1 d=0.438235 t=9469
+you3 ke3 neng2 	有可能	c=1 d=0.0254765 t=9469
+you3 le5 	有了	c=2 d=1.14414 t=9469
+you3 mei2 you3 	有沒有	c=4 d=1.49683 t=9469
+you3 qian2 	有錢	c=1 d=0.591555 t=9469
+you3 qian2 ren2 	有錢人	c=1 d=0.657047 t=9469
+you3 ren2 	有人	c=7 d=1.07281 t=9469
+you3 shen2 me5 	有什麼	c=1 d=0.970446 t=9469
+you3 shi2 hou5 	有時候	c=1 d=0.955997 t=9469
+you3 xi4 	有戲	c=1 d=0.869358 t=9469
+you3 xie1 	有些	c=2 d=1.35931 t=9469
+you3 yong4 	有用	c=1 d=1 t=9469
+you3 zai4 	有在	c=1 d=0.83527 t=9469
+you3 zhe4 ge4 	有這個	c=1 d=0.70822 t=9469
+you4 	又	c=11 d=3.3083 t=9469
+you4 	鼬	c=1 d=0.790571 t=9469
+you4 bei4 	又被	c=1 d=0.162838 t=9469
+you4 bian1 	右邊	c=4 d=0.177622 t=9469
+you4 feng1 	又瘋	c=1 d=0.941765 t=9469
+you4 jian4 	右鍵	c=4 d=0.306676 t=9469
+you4 shang4 jiao3 	右上角	c=1 d=0.535261 t=9469
+you4 xia4 	右下	c=1 d=0.491644 t=9469
+yu2 	於	c=1 d=0.0308074 t=9469
+yu2 	魚	c=4 d=1.49131 t=9469
+yu3 	與	c=1 d=0.697676 t=9469
+yu3 	語	c=1 d=0.66034 t=9469
+yu3 yan2 	語言	c=2 d=1.16886 t=9469
+yu3 yan2 xue2 	語言學	c=2 d=0.924935 t=9469
+yu3 zhou4 	宇宙	c=1 d=0.951229 t=9469
+yu4 	欲	c=1 d=1.04113 t=9469
+yu4 dao4 	遇到	c=1 d=0.367879 t=9469
+yu4 lin2 	玉林	c=0 d=0.0882497 t=9469
+yu4 miao2 	預瞄	c=1 d=0.690734 t=9469
+yuan1 yuan2 	淵源	c=1 d=0.733447 t=9469
+yuan2 ban3 	原版	c=1 d=0.217621 t=9469
+yuan2 ben3 	原本	c=1 d=0.955997 t=9469
+yuan2 lai2 	原來	c=2 d=1.10258 t=9469
+yuan2 shi3 ren2 	原始人	c=1 d=0.369723 t=9469
+yuan2 su4 	元素	c=1 d=0.895834 t=9469
+yuan3 gu3 	遠古	c=12 d=3.29825 t=9469
+yuan4 	院	c=0 d=0.0869358 t=9469
+yue1 hui4 	約會	c=3 d=0.82908 t=9469
+yue4 	月	c=3 d=1.45215 t=9469
+yue4 	越	c=1 d=0.0129715 t=9469
+yun4 qi4 	運氣	c=3 d=0.971713 t=9469
+yun4 suan4 	運算	c=1 d=0.465334 t=9469
+zai3 	載	c=1 d=0.273898 t=9469
+zai4 	再	c=35 d=9.10378 t=9469
+zai4 	在	c=63 d=5.84233 t=9469
+zai4 chang2 	在場	c=1 d=0.806541 t=9469
+zai4 di4 	在地	c=0 d=0.0790571 t=9469
+zai4 di4 mei3 shi2 	在地美食	c=1 d=0.794534 t=9469
+zai4 ni3 	在你	c=1 d=0.170333 t=9469
+zai4 wo3 	在我	c=1 d=0.554327 t=9469
+zai4 yu2 	在於	c=2 d=1.06905 t=9469
+zai4 zhe4 li3 	在這裏	c=1 d=1 t=9469
+zan4 	讚	c=1 d=0.00625109 t=9469
+zao1 	糟	c=3 d=0.932394 t=9469
+zao3 can1 	早餐	c=1 d=0.860708 t=9469
+zao3 shang5 	早上	c=1 d=0.612626 t=9469
+zao4 	躁	c=1 d=0.960789 t=9469
+zao4 cheng2 	造成	c=1 d=0.0175975 t=9469
+zao4 xing2 	造型	c=1 d=0.932394 t=9469
+zao4 zhi3 	造紙	c=1 d=0.467666 t=9469
+ze2 	則	c=1 d=1 t=9417
+zen3 ban4 	怎辦	c=1 d=0.66365 t=9469
+zen3 me5 	怎麽	c=2 d=0.755784 t=9469
+zen3 mo4 	怎末	c=6 d=0.877032 t=9469
+zen3 yang4 	怎樣	c=1 d=0.865022 t=9469
+zha2 	炸	c=3 d=1.01543 t=9469
+zha2 kai1 	炸開	c=1 d=0.412714 t=9469
+zha4 dan4 	炸彈	c=3 d=1.57292 t=9469
+zhan3 	展	c=0 d=0.045612 t=9469
+zhan3 	斬	c=0 d=0.0225373 t=9469
+zhan4 	佔	c=2 d=1.49291 t=9469
+zhan4 	戰	c=2 d=1.0206 t=9469
+zhang1 	張	c=1 d=0.718924 t=9469
+zhang3 	長	c=1 d=0.0953692 t=9469
+zhang3 cheng2 	長成	c=1 d=0.640824 t=9469
+zhang4 peng2 	帳篷	c=2 d=0.949032 t=9469
+zhao1 dai4 	招待	c=1 d=0.588605 t=9469
+zhao3 	找	c=19 d=2.20133 t=9469
+zhao3 dao4 	找到	c=9 d=3.59112 t=9469
+zhao3 ze2 	沼澤	c=2 d=0.585669 t=9469
+zhe4 	這	c=40 d=5.33845 t=9469
+zhe4 ba3 	這把	c=4 d=1.15361 t=9469
+zhe4 bi3 	這比	c=1 d=0.559898 t=9469
+zhe4 bian1 	這邊	c=7 d=3.28745 t=9469
+zhe4 bu4 	這不	c=2 d=0.137449 t=9469
+zhe4 bu4 jiu4 	這不就	c=1 d=0.726149 t=9469
+zhe4 ge5 	這個	c=35 d=3.50246 t=9469
+zhe4 hao3 lei3 	這好累	c=1 d=0.946485 t=9469
+zhe4 hen3 	這很	c=1 d=1 t=9469
+zhe4 jiu4 shi4 	這就是	c=4 d=2.24541 t=9469
+zhe4 ju4 	這句	c=2 d=1.4059 t=9469
+zhe4 li3 	這裏	c=6 d=2.09981 t=9469
+zhe4 me5 	這麼	c=1 d=0.606531 t=9469
+zhe4 neng2 	這能	c=1 d=0.740818 t=9469
+zhe4 shei2 	這誰	c=1 d=0.955997 t=9469
+zhe4 shi2 hou4 	這時候	c=1 d=0.460704 t=9469
+zhe4 xie1 	這些	c=2 d=1.38556 t=9469
+zhe4 yang4 	這樣	c=12 d=3.5325 t=9469
+zhe4 ye3 	這也	c=2 d=0.875966 t=9469
+zhe4 ye3 shi4 	這也是	c=1 d=0.891366 t=9469
+zhe4 zhao1 	這招	c=1 d=0.418952 t=9469
+zhe5 	着	c=1 d=0.865022 t=9469
+zhen1 	真	c=4 d=2.22681 t=9469
+zhen1 ce4 qi4 	偵測器	c=1 d=0.941765 t=9469
+zhen1 de5 	真的	c=19 d=3.50823 t=9469
+zhen1 hui4 	真會	c=0 d=0.0995012 t=9469
+zhen1 hui4 wan2 	真會玩	c=1 d=1 t=9469
+zhen1 shi4 	真是	c=1 d=0.767206 t=9469
+zhen1 wo3 	真我	c=1 d=0.839457 t=9469
+zhen1 zheng1 	真正	c=2 d=0.641065 t=9469
+zhen4 jing4 ji4 	鎮靜劑	c=1 d=0.621885 t=9469
+zhen4 wang2 	陣亡	c=1 d=0.778801 t=9469
+zheng1 chang2 	正常	c=2 d=0.995012 t=9469
+zheng1 fu2 	征服	c=1 d=0.941765 t=9469
+zheng3 he2 	整合	c=1 d=0.843665 t=9469
+zheng3 tiao2 	整條	c=1 d=0.162026 t=9469
+zheng4 	證	c=2 d=1.92669 t=9469
+zheng4 da4 	政大	c=1 d=0.790571 t=9469
+zheng4 jing1 	正經	c=1 d=0.323033 t=9469
+zheng4 ming2 	証明	c=1 d=1 t=9469
+zheng4 zhao4 	證照	c=2 d=0.874744 t=9469
+zhi1 	之	c=8 d=1.46503 t=9469
+zhi1 	支	c=1 d=0.657047 t=9469
+zhi1 	隻	c=2 d=0.955997 t=9469
+zhi1 dao4 	知道	c=4 d=1.58602 t=9469
+zhi1 hou4 	之後	c=5 d=1.82666 t=9469
+zhi1 ji4 	之際	c=1 d=0.985112 t=9469
+zhi1 jian1 	之間	c=1 d=0.67368 t=9469
+zhi1 lei4 	之類	c=0 d=0.0960789 t=9469
+zhi1 lei4 de5 	之類的	c=5 d=1.83044 t=9469
+zhi1 qian2 	之前	c=3 d=0.740818 t=9469
+zhi1 shi4 	芝士	c=1 d=0.509156 t=9469
+zhi1 ti3 	肢體	c=1 d=0.618783 t=9469
+zhi1 xin1 	之心	c=3 d=1.42383 t=9469
+zhi1 yu3 	支語	c=1 d=0.628135 t=9469
+zhi1 zhu1 wang3 	蜘蛛網	c=2 d=0.0558996 t=9469
+zhi2 	值	c=2 d=1.55061 t=9469
+zhi2 bai2 	直白	c=1 d=0.559898 t=9469
+zhi2 jie1 	直接	c=17 d=2.46972 t=9469
+zhi2 jie1 bei4 	直接被	c=1 d=0.726149 t=9469
+zhi3 	只	c=3 d=1.00863 t=9469
+zhi3 	紙	c=2 d=0.796904 t=9469
+zhi3 ding4 	指定	c=1 d=0.904837 t=9469
+zhi3 hui4 	只會	c=1 d=0.909373 t=9469
+zhi3 hui4 you3 	只會有	c=1 d=0.737123 t=9469
+zhi3 ling4 	指令	c=3 d=0.99005 t=9469
+zhi3 neng2 	只能	c=4 d=0.492184 t=9469
+zhi3 pian4 	紙片	c=1 d=0.826959 t=9469
+zhi3 shi4 	只是	c=7 d=1.57899 t=9469
+zhi3 xu1 yao1 	只需要	c=1 d=0.0199405 t=9469
+zhi3 yao1 wo3 	只要我	c=1 d=0.410656 t=9469
+zhi3 yao4 	只要	c=2 d=0.933714 t=9469
+zhi3 you3 	只有	c=7 d=1.52849 t=9469
+zhi4 hui4 	智慧	c=1 d=0.913931 t=9469
+zhi4 shao3 	至少	c=4 d=1.43105 t=9469
+zhi4 yuan4 	志願	c=2 d=1.32396 t=9469
+zhi4 yuan4 xu4 	志願序	c=2 d=0.912796 t=9469
+zhong1 	鍾	c=1 d=0.985112 t=9469
+zhong1 duan4 	中斷	c=1 d=0.529935 t=9469
+zhong1 guo2 	中國	c=1 d=0.57695 t=9469
+zhong1 jian1 	中間	c=0 d=0.0358796 t=9469
+zhong1 jian1 you3 	中間有	c=1 d=0.360595 t=9469
+zhong1 jie4 	終界	c=7 d=3.22347 t=9469
+zhong1 jie4 long2 	終界籠	c=3 d=1.12192 t=9469
+zhong1 ru3 shi2 	鐘乳石	c=2 d=1.69613 t=9469
+zhong1 wen2 	中文	c=5 d=1.33101 t=9469
+zhong1 wu3 	中午	c=1 d=0.677057 t=9469
+zhong1 yang1 	中央	c=1 d=0.97531 t=9469
+zhong3 	種	c=4 d=1.19031 t=9469
+zhong3 lei4 	種類	c=2 d=0.839457 t=9469
+zhong3 zai4 	種在	c=1 d=0.609571 t=9469
+zhong3 zi3 	種子	c=1 d=0.554327 t=9469
+zhong4 	重	c=4 d=1.43397 t=9469
+zhong4 du2 	中毒	c=1 d=0.10383 t=9469
+zhong4 feng1 	重鋒	c=3 d=2.32333 t=9469
+zhong4 ken3 	中肯	c=1 d=0.516851 t=9469
+zhong4 yao4 	重要	c=3 d=1.19601 t=9469
+zhou1 fang3 	周昉	c=1 d=0.843665 t=9469
+zhou1 wei2 	周圍	c=1 d=0.843665 t=9469
+zhou4 yu3 	咒語	c=1 d=0.0105145 t=9469
+zhu2 guang1 	竹光	c=1 d=0.687289 t=9469
+zhu3 	主	c=3 d=1.02036 t=9469
+zhu3 bo4 	主播	c=2 d=1.61197 t=9469
+zhu3 bo4 zhu3 bo4 	主播主播	c=1 d=0.740818 t=9469
+zhu3 dong4 	主動	c=1 d=0.66365 t=9469
+zhu3 guan3 	主管	c=2 d=0.844658 t=9469
+zhu3 guan3 ji1 guan1 	主管機關	c=1 d=0.386741 t=9469
+zhu3 hua4 mian4 	主畫面	c=1 d=0.818731 t=9469
+zhu3 shi4 jie4 	主世界	c=1 d=0.818731 t=9469
+zhu3 yao1 shi4 	主要是	c=1 d=0.489192 t=9469
+zhu4 	住	c=1 d=0.88692 t=9469
+zhu4 	柱	c=1 d=0.873716 t=9469
+zhu4 jiao4 	助教	c=1 d=0.158025 t=9469
+zhu4 yi4 	注意	c=1 d=0.529935 t=9469
+zhu4 zi5 	柱子	c=1 d=0.995012 t=9469
+zhua1 	抓	c=1 d=0.0682212 t=9469
+zhua1 dao4 	抓到	c=1 d=0.546074 t=9469
+zhua1 le5 	抓了	c=1 d=0.062662 t=9469
+zhua3 	爪	c=1 d=0.99005 t=9469
+zhuan1 	磚	c=5 d=1.92922 t=9469
+zhuan1 men2 	專門	c=1 d=0.522046 t=9469
+zhuan1 zhu4 	專注	c=1 d=0.856415 t=9469
+zhuan3 huan4 	轉換	c=1 d=0.965605 t=9469
+zhuan4 	賺	c=1 d=0.597501 t=9469
+zhuan4 qian2 	賺錢	c=3 d=1.49939 t=9469
+zhuang1 	裝	c=16 d=3.5877 t=9469
+zhuang1 bei4 	裝備	c=3 d=0.726149 t=9469
+zhuang1 bu4 xia4 	裝不下	c=1 d=0.0106202 t=9469
+zhuang1 jia3 	裝甲	c=1 d=0.132655 t=9469
+zhuang1 jin4 	裝進	c=1 d=0.562705 t=9469
+zhuang1 le5 	裝了	c=1 d=0.83527 t=9469
+zhuang1 shi4 	裝飾	c=1 d=0.740818 t=9469
+zhuang1 xia4 	裝下	c=1 d=0.99005 t=9469
+zhuang4 tai4 	狀態	c=2 d=0.81815 t=9469
+zhui1 	追	c=1 d=0.377192 t=9469
+zhui1 sha1 	追殺	c=1 d=0.748264 t=9469
+zhun3 	準	c=1 d=0.847894 t=9469
+zhun3 bei4 	準備	c=1 d=0.946485 t=9469
+zhuo1 	桌	c=1 d=0.970446 t=9469
+zhuo1 ji1 	桌機	c=1 d=0.729789 t=9469
+zhuo2 shao1 	灼燒	c=1 d=1 t=9469
+zi1 gong1 	資工	c=2 d=0.913931 t=9469
+zi1 liao4 	資料	c=4 d=1.73452 t=9469
+zi1 liao4 jia1 	資料夾	c=1 d=1 t=9469
+zi1 xun4 	資訊	c=3 d=2.42216 t=9469
+zi3 gong1 jing3 ai2 	子宮頸癌	c=1 d=0.511709 t=9469
+zi3 se4 	紫色	c=3 d=0.047588 t=9469
+zi3 se4 de5 	紫色的	c=1 d=0.0389686 t=9469
+zi3 shui3 jing1 	紫水晶	c=2 d=0.938636 t=9469
+zi4 	字	c=2 d=1.86223 t=9469
+zi4 dai4 	自帶	c=1 d=0.873716 t=9469
+zi4 dong4 	自動	c=6 d=0.878095 t=9469
+zi4 ji3 	自己	c=23 d=4.95325 t=9469
+zi4 nve4 	自虐	c=2 d=1.48193 t=9469
+zi4 ran2 	自然	c=3 d=1.16303 t=9469
+zi4 wo3 	自我	c=1 d=0.759572 t=9469
+zi4 xue2 	自學	c=1 d=0.878095 t=9469
+zi4 you2 	自由	c=2 d=0.872108 t=9469
+zong1 jiao4 	宗教	c=2 d=1.76502 t=9469
+zong1 miao4 	宗廟	c=1 d=0.640824 t=9469
+zong1 se4 	棕色	c=2 d=0.891366 t=9469
+zong3 zhi1 	總之	c=2 d=1.26354 t=9469
+zou3 	走	c=2 d=0.789141 t=9469
+zou3 cuo4 	走錯	c=1 d=0.0858632 t=9469
+zou3 dao4 	走到	c=1 d=0.585669 t=9469
+zou3 lu4 	走路	c=1 d=0.744532 t=9469
+zou3 ren2 	走人	c=1 d=1 t=9469
+zu1 	租	c=1 d=0.918512 t=9469
+zu3 	組	c=2 d=0.729789 t=9469
+zuan4 gao3 	鑽搞	c=1 d=0.715338 t=9469
+zuan4 shi2 	鑽石	c=6 d=0.854195 t=9469
+zui3 	嘴	c=1 d=0.83527 t=9469
+zui4 	最	c=8 d=2.72194 t=9469
+zui4 bao3 xian3 	最保險	c=1 d=0.606531 t=9469
+zui4 da4 	最大	c=3 d=1.27664 t=9469
+zui4 gao1 	最高	c=3 d=1.1906 t=9469
+zui4 gao1 ji2 	最高級	c=2 d=0.699235 t=9469
+zui4 gui4 	最貴	c=1 d=0.0434998 t=9469
+zui4 hao3 	最好	c=2 d=1.22914 t=9469
+zui4 hou4 	最後	c=3 d=1.23024 t=9469
+zui4 jia1 	最佳	c=2 d=1.61704 t=9469
+zui4 jia1 ou3 	最佳偶	c=1 d=0.0119742 t=9469
+zui4 jin4 	最近	c=1 d=0.946485 t=9469
+zui4 lao3 	最老	c=2 d=1.28922 t=9469
+zui4 pa4 	最怕	c=1 d=0.554327 t=9469
+zui4 qian2 mian4 	最前面	c=1 d=0.904837 t=9469
+zui4 xia4 mian4 	最下面	c=1 d=0.0160027 t=9469
+zui4 you3 yong4 	最有用	c=1 d=0.0295994 t=9469
+zui4 zhong1 	最終	c=1 d=0.0880368 t=9469
+zuo2 tian1 	昨天	c=1 d=0.852144 t=9469
+zuo3 bian5 	左邊	c=7 d=0.960803 t=9469
+zuo3 jian4 	左鍵	c=1 d=0.822835 t=9469
+zuo3 shang4 jiao3 	左上角	c=3 d=0.70822 t=9469
+zuo3 you4 	左右	c=2 d=0.690734 t=9469
+zuo4 	做	c=47 d=4.80823 t=9469
+zuo4 	坐	c=1 d=0.965605 t=9469
+zuo4 chu1 	做出	c=1 d=0.946485 t=9469
+zuo4 chu1 le5 	做出了	c=1 d=0.683861 t=9469
+zuo4 de5 	做的	c=1 d=0.13466 t=9469
+zuo4 dian3 	做點	c=1 d=0.16696 t=9469
+zuo4 fa3 	做法	c=1 d=0.282239 t=9469
+zuo4 ge4 	做個	c=1 d=0.0378169 t=9469
+zuo4 guo4 	做過	c=0 d=0.0904837 t=9469
+zuo4 hao3 	做好	c=1 d=0.0401553 t=9469
+zuo4 le5 	做了	c=1 d=0.491644 t=9469
+zuo4 wu4 	作物	c=1 d=0.615697 t=9469
+zuo4 ye4 	作業	c=3 d=0.961948 t=9469
+zuo4 zhe3 	作者	c=1 d=0.166127 t=9469

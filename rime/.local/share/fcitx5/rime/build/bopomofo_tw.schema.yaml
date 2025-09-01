@@ -2,9 +2,9 @@ __build_info:
   rime_version: 1.12.0
   timestamps:
     bopomofo.custom: 0
-    bopomofo.schema: 1720896734
+    bopomofo.schema: 1720897326
     bopomofo_tw.custom: 0
-    bopomofo_tw.schema: 1720896734
+    bopomofo_tw.schema: 1720897326
     default: 1750272266
     default.custom: 0
     grammar: 0
@@ -12,7 +12,7 @@ __build_info:
     key_bindings.custom: 0
     punctuation: 1750272266
     punctuation.custom: 0
-    zhuyin: 1720896734
+    zhuyin: 1720897326
     zhuyin.custom: 0
 custom_phrase:
   db_class: stabledb

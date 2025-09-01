@@ -9,7 +9,7 @@ __build_info:
     punctuation: 1750272266
     punctuation.custom: 0
     terra_pinyin.custom: 0
-    terra_pinyin.schema: 1750272308
+    terra_pinyin.schema: 1750272737
 custom_phrase:
   db_class: stabledb
   dictionary: ""
@@ -239,8 +239,6 @@ switches:
   - options: [zh_hant, zh_hans, zh_hant_tw]
     reset: 2
     states: ["傳統漢字", "简化字", "臺灣字形"]
-  - name: ascii_punct
-    states: ["。，", "．，"]
 zh_hans:
   excluded_types:
     - reverse_lookup
