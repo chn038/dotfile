@@ -20,8 +20,8 @@ vim.keymap.set({'n', 'v'}, "<leader><leader>", " ", { desc = "just insert the sp
 vim.keymap.set({'n'}, '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic in float window" })
 
 -- grapple
-vim.keymap.set("n", "<leader>m", require("grapple").toggle)
-vim.keymap.set("n", "<leader>M", require("grapple").toggle_tags)
+vim.keymap.set("n", "<leader>aa", require("grapple").toggle)
+vim.keymap.set("n", "<leader>ae", require("grapple").toggle_tags)
 vim.keymap.set("n", "<leader>q", "<cmd>Grapple select index=1<cr>")
 vim.keymap.set("n", "<leader>w", "<cmd>Grapple select index=2<cr>")
 vim.keymap.set("n", "<leader>e", "<cmd>Grapple select index=3<cr>")
