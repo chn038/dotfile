@@ -2,17 +2,17 @@ __build_info:
   rime_version: 1.12.0
   timestamps:
     bopomofo.custom: 0
-    bopomofo.schema: 1720897326
+    bopomofo.schema: 1756845568
     bopomofo_tw.custom: 0
-    bopomofo_tw.schema: 1720897326
-    default: 1750272266
+    bopomofo_tw.schema: 1756845568
+    default: 1756842505
     default.custom: 0
     grammar: 0
-    key_bindings: 1750272266
+    key_bindings: 1756842505
     key_bindings.custom: 0
-    punctuation: 1750272266
+    punctuation: 1756842505
     punctuation.custom: 0
-    zhuyin: 1720897326
+    zhuyin: 1756845568
     zhuyin.custom: 0
 custom_phrase:
   db_class: stabledb
@@ -157,7 +157,8 @@ recognizer:
     url: "^(www[.]|https?:|ftp:|mailto:).*$"
 reverse_lookup:
   comment_format:
-    - "xform/e?r5$/er5/"
+    - "xform/^m(\\d)$/mu$1/"
+    - "xform/^r5$/er5/"
     - "xform/iu/iou/"
     - "xform/ui/uei/"
     - "xform/ong/ung/"
@@ -166,9 +167,10 @@ reverse_lookup:
     - "xform/iu/v/"
     - "xform/^([jqx])u/$1v/"
     - "xform/([iuv])n/$1en/"
-    - "xform/zh/Z/"
-    - "xform/ch/C/"
-    - "xform/sh/S/"
+    - "xform/^zhi?/Z/"
+    - "xform/^chi?/C/"
+    - "xform/^shi?/S/"
+    - "xform/^([zcsr])i/$1/"
     - "xform/ai/A/"
     - "xform/ei/I/"
     - "xform/ao/O/"
