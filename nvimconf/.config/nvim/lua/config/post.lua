@@ -20,12 +20,12 @@ vim.keymap.set({'n', 'v'}, "<leader><leader>", " ", { desc = "just insert the sp
 vim.keymap.set({'n'}, '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic in float window" })
 
 -- grapple
-vim.keymap.set("n", "<leader>aa", require("grapple").toggle)
-vim.keymap.set("n", "<leader>ae", require("grapple").toggle_tags)
-vim.keymap.set("n", "<leader>q", "<cmd>Grapple select index=1<cr>")
-vim.keymap.set("n", "<leader>w", "<cmd>Grapple select index=2<cr>")
-vim.keymap.set("n", "<leader>e", "<cmd>Grapple select index=3<cr>")
-vim.keymap.set("n", "<leader>r", "<cmd>Grapple select index=4<cr>")
+vim.keymap.set("n", "<leader>mm", require("grapple").toggle)
+vim.keymap.set("n", "<leader>ml", require("grapple").toggle_tags)
+vim.keymap.set("n", "<leader>mq", "<cmd>Grapple select index=1<cr>")
+vim.keymap.set("n", "<leader>mw", "<cmd>Grapple select index=2<cr>")
+vim.keymap.set("n", "<leader>me", "<cmd>Grapple select index=3<cr>")
+vim.keymap.set("n", "<leader>mr", "<cmd>Grapple select index=4<cr>")
 
 -- deal with file
 vim.keymap.set('n', '<leader>ff', '<cmd>FzfLua files hidden=true<cr>', { desc = 'Open fzf file finder'})
