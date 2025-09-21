@@ -40,3 +40,12 @@ vim.keymap.set({'n', 'v'}, "<leader>de", function() require("dapui").eval() end,
 
 -- deal with git
 vim.keymap.set('n', '<leader>gg', "<cmd>Neogit<CR>", { desc = "Open Neogit" })
+
+-- deal with molten
+vim.keymap.set('n', '<leader>rr', "<cmd>MoltenInit<CR>", { desc = "Initialize molten" })
+vim.keymap.set('n', '<leader>ro', "<cmd>MoltenExportOutput<CR>", { desc = "Export output" })
+vim.keymap.set('n', '<leader>ri', "<cmd>MoltenImportOutput<CR>", { desc = "Import output" })
+vim.keymap.set('v', '<leader>sc', ":<C-u>MoltenEvaluateVisual<CR>gv", { desc = "Eval visual" })
+vim.keymap.set('n', '<leader>ss', "<cmd>MoltenReevaluateCell<CR>", { desc = "Eval cell" })
+vim.keymap.set('n', '<leader>sa', "<cmd>MoltenReevaluateAll<CR>", { desc = "Eval cell" })
+vim.keymap.set('n', '<leader>so', ":noautocmd MoltenEnterOutput<CR>", { desc = "Enter output" })
