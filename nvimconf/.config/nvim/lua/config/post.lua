@@ -52,5 +52,5 @@ vim.keymap.set('n', '<leader>so', ":noautocmd MoltenEnterOutput<CR>", { desc = "
 
 -- deal with ai
 vim.keymap.set({'n', 'v'}, "<leader>oo", ":Gen<CR>", { desc = "gen"})
-vim.keymap.set({'n', 'v'}, "<leader>oc", ":Gen chat<CR>", { desc = "gen chat"})
+vim.keymap.set({'n', 'v'}, "<leader>oc", ":Gen Chat<CR>", { desc = "gen chat"})
 vim.keymap.set('n', "<leader>os", require('gen').select_model, { desc = "gen select model"})
