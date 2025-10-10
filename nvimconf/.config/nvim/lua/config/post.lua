@@ -43,6 +43,7 @@ vim.keymap.set('n', '<leader>gg', "<cmd>Neogit<CR>", { desc = "Open Neogit" })
 
 -- deal with molten
 vim.keymap.set('n', '<leader>rr', "<cmd>MoltenInit<CR>", { desc = "Initialize molten" })
+vim.keymap.set('n', '<leader>rk', "<cmd>MoltenDeinit<CR>", { desc = "Deinitialize molten" })
 vim.keymap.set('n', '<leader>ro', "<cmd>MoltenExportOutput<CR>", { desc = "Export output" })
 vim.keymap.set('n', '<leader>ri', "<cmd>MoltenImportOutput<CR>", { desc = "Import output" })
 vim.keymap.set('v', '<leader>sc', ":<C-u>MoltenEvaluateVisual<CR>gv", { desc = "Eval visual" })
