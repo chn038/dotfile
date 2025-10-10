@@ -50,6 +50,7 @@ vim.keymap.set('n', "<leader>os", require('gen').select_model, { desc = "gen sel
 vim.keymap.set('n', "<leader>rS", ":JupyniumStartAndAttachToServer<cr>", { desc = "attach to server" })
 vim.keymap.set('n', "<leader>rs", ":JupyniumStartSync<cr>", { desc = "start syncing" })
 vim.keymap.set('n', "<leader>ri", ":JupyniumSaveIpynb<cr>", { desc = "save ipynb" })
+vim.keymap.set('n', "<leader>rI", ":JupyniumDownloadIpynb ", { desc = "download ipynb" })
 vim.keymap.set('n', "<leader>sc", ":JupyniumExecuteSelectedCells<cr>", { desc = "run cell"})
 vim.keymap.set('n', "<leader>sC", ":JupyniumClearSelectedCellsOutputs<cr>", { desc = "clear cell" })
 vim.keymap.set('n', "<leader>rr", ":JupyniumKernelRestart<cr>", { desc = "restart kernel" })
