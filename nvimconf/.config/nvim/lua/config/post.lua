@@ -49,6 +49,8 @@ vim.keymap.set('v', '<leader>sc', ":<C-u>MoltenEvaluateVisual<CR>gv", { desc = "
 vim.keymap.set('n', '<leader>ss', "<cmd>MoltenReevaluateCell<CR>", { desc = "Eval cell" })
 vim.keymap.set('n', '<leader>sa', "<cmd>MoltenReevaluateAll<CR>", { desc = "Eval cell" })
 vim.keymap.set('n', '<leader>so', ":noautocmd MoltenEnterOutput<CR>", { desc = "Enter output" })
+vim.keymap.set('n', '<leader>sk', "<cmd>MoltenInterrupt<CR>", { desc = "Interrupt" })
+vim.keymap.set('n', '<leader>sp', '<cmd>MoltenImagePopup<CR>', { desc = "Pop up image" })
 
 -- deal with ai
 vim.keymap.set({'n', 'v'}, "<leader>oo", ":Gen<CR>", { desc = "gen"})
