@@ -1,5 +1,4 @@
-vim.cmd("colorscheme gruvbox")
-
+vim.cmd("colorscheme rose-pine-moon")
 -- leader key fall back
 vim.keymap.set({'n', 'v'}, "<leader><leader>", " ", { desc = "just insert the space" })
 
