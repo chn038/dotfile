@@ -44,3 +44,11 @@ vim.keymap.set('n', '<leader>gg', "<cmd>Neogit<CR>", { desc = "Open Neogit" })
 vim.keymap.set({'n', 'v'}, "<leader>oo", ":Gen<CR>", { desc = "gen"})
 vim.keymap.set({'n', 'v'}, "<leader>oc", ":Gen Chat<CR>", { desc = "gen chat"})
 vim.keymap.set('n', "<leader>os", require('gen').select_model, { desc = "gen select model"})
+
+-- deal with jupynium
+vim.keymap.set('n', "<leader>ra", ':JupyniumStartAndAttachToServer<CR>', { desc = "attach" })
+vim.keymap.set('n', "<leader>rs", ':JupyniumStartSync<CR>', { desc = "attach" })
+vim.keymap.set('n', "<leader>sc", ':JupyniumExecuteSelectedCells<CR>', { desc = "execute" })
+vim.keymap.set('n', "<leader>rR", ':JupyniumKernelRestart<CR>', { desc = "restart" })
+vim.keymap.set('n', "<leader>rI", ':JupyniumKernelInterrupt<CR>', { desc = "Interrupt" })
+vim.keymap.set('n', "<leader>rc", ':JupyniumKernelSelect<CR>', { desc = "select kernel" })

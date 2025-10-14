@@ -1,95 +1,138 @@
 return {
     {
-        'Vigemus/iron.nvim',
-        config = function ()
-            local iron = require("iron.core")
-            local view = require("iron.view")
-            local common = require("iron.fts.common")
+        "kiyoon/jupynium.nvim",
+        -- build = "uv pip install . --python=$HOME/.virtualenvs/jupynium/bin/python",
+        -- build = "conda run --no-capture-output -n jupynium pip install .",
+        config = function()
+            require("jupynium").setup({
+                --- For Conda environment named "jupynium",
+                -- python_host = { "conda", "run", "--no-capture-output", "-n", "jupynium", "python" },
+                python_host = vim.g.python3_host_prog or "python3",
 
-            iron.setup {
-                config = {
-                    -- Whether a repl should be discarded or not
-                    scratch_repl = true,
-                    -- Your repl definitions come here
-                    repl_definition = {
-                        sh = {
-                            -- Can be a table or a function that
-                            -- returns a table (see below)
-                            command = {"zsh"}
-                        },
-                        python = {
-                            command = { 'uv', 'run', 'ipython', '--no-autoindent' },  -- or { "ipython", "--no-autoindent" }
-                            format = common.bracketed_paste_python,
-                            block_dividers = { "# %%", "#%%" },
-                            env = {PYTHON_BASIC_REPL = "1"} --this is needed for python3.13 and up.
-                        }
-                    },
-                    -- set the file type of the newly created repl to ft
-                    -- bufnr is the buffer id of the REPL and ft is the filetype of the 
-                    -- language being used for the REPL. 
-                    repl_filetype = function(bufnr, ft)
-                        return ft
-                        -- or return a string name such as the following
-                        -- return "iron"
-                    end,
-                    -- Send selections to the DAP repl if an nvim-dap session is running.
-                    dap_integration = true,
-                    -- How the repl window will be displayed
-                    -- See below for more information
-                    repl_open_cmd = view.split.vertical.rightbelow("48%"),
+                default_notebook_URL = "localhost:8888/nbclassic",
 
-                    -- repl_open_cmd can also be an array-style table so that multiple 
-                    -- repl_open_commands can be given.
-                    -- When repl_open_cmd is given as a table, the first command given will
-                    -- be the command that `IronRepl` initially toggles.
-                    -- Moreover, when repl_open_cmd is a table, each key will automatically
-                    -- be available as a keymap (see `keymaps` below) with the names 
-                    -- toggle_repl_with_cmd_1, ..., toggle_repl_with_cmd_k
-                    -- For example,
-                    -- 
-                    -- repl_open_cmd = {
-                        --   view.split.vertical.rightbelow("%40"), -- cmd_1: open a repl to the right
-                        --   view.split.rightbelow("%25")  -- cmd_2: open a repl below
-                        -- }
+                -- Write jupyter command but without "notebook"
+                -- When you call :JupyniumStartAndAttachToServer and no notebook is open,
+                -- then Jupynium will open the server for you using this command. (only when notebook_URL is localhost)
+                jupyter_command = "jupyter",
+                --- For Conda, maybe use base environment
+                --- then you can `conda install -n base nb_conda_kernels` to switch environment in Jupyter Notebook
+                -- jupyter_command = { "conda", "run", "--no-capture-output", "-n", "base", "jupyter" },
 
-                    },
-                    -- Iron doesn't set keymaps by default anymore.
-                    -- You can set them here or manually add keymaps to the functions in iron.core
-                    keymaps = {
-                        toggle_repl = "<space>rr", -- toggles the repl open and closed.
-                        -- If repl_open_command is a table as above, then the following keymaps are
-                        -- available
-                        -- toggle_repl_with_cmd_1 = "<space>rv",
-                        -- toggle_repl_with_cmd_2 = "<space>rh",
-                        restart_repl = "<space>rR", -- calls `IronRestart` to restart the repl
-                        send_motion = "<space>sc",
-                        visual_send = "<space>sc",
-                        send_file = "<space>sf",
-                        send_line = "<space>sl",
-                        send_paragraph = "<space>sp",
-                        send_until_cursor = "<space>su",
-                        send_mark = "<space>sm",
-                        send_code_block = "<space>sb",
-                        send_code_block_and_move = "<space>sn",
-                        mark_motion = "<space>mc",
-                        mark_visual = "<space>mc",
-                        remove_mark = "<space>md",
-                        cr = "<space>s<cr>",
-                        interrupt = "<space>s<space>",
-                        exit = "<space>sq",
-                        clear = "<space>cl",
-                    },
-                    -- If the highlight is on, you can change how it looks
-                    -- For the available options, check nvim_set_hl
-                    highlight = {
-                        italic = true
-                    },
-                    ignore_blank_lines = true, -- ignore blank lines when sending visual select lines
-                }
+                -- Used when notebook is launched by using jupyter_command.
+                -- If nil or "", it will open at the git directory of the current buffer,
+                -- but still navigate to the directory of the current buffer. (e.g. localhost:8888/nbclassic/tree/path/to/buffer)
+                notebook_dir = nil,
 
-                -- iron also has a list of commands, see :h iron-commands for all available commands
-                vim.keymap.set('n', '<space>rf', '<cmd>IronFocus<cr>')
-                vim.keymap.set('n', '<space>rh', '<cmd>IronHide<cr>')
-            end
-        }
-    }
+                -- Used to remember the last session (password etc.).
+                -- e.g. '~/.mozilla/firefox/profiles.ini'
+                -- or '~/snap/firefox/common/.mozilla/firefox/profiles.ini'
+                firefox_profiles_ini_path = nil,
+                -- nil means the profile with Default=1
+                -- or set to something like 'default-release'
+                firefox_profile_name = nil,
+
+                -- Open the Jupynium server if it is not already running
+                -- which means that it will open the Selenium browser when you open this file.
+                -- Related command :JupyniumStartAndAttachToServer
+                auto_start_server = {
+                    enable = false,
+                    file_pattern = { "*.ju.*" },
+                },
+
+                -- Attach current nvim to the Jupynium server
+                -- Without this step, you can't use :JupyniumStartSync
+                -- Related command :JupyniumAttachToServer
+                auto_attach_to_server = {
+                    enable = true,
+                    file_pattern = { "*.ju.*", "*.md" },
+                },
+
+                -- Automatically open an Untitled.ipynb file on Notebook
+                -- when you open a .ju.py file on nvim.
+                -- Related command :JupyniumStartSync
+                auto_start_sync = {
+                    enable = false,
+                    file_pattern = { "*.ju.*", "*.md" },
+                },
+
+                -- Automatically keep filename.ipynb copy of filename.ju.py
+                -- by downloading from the Jupyter Notebook server.
+                -- WARNING: this will overwrite the file without asking
+                -- Related command :JupyniumDownloadIpynb
+                auto_download_ipynb = true,
+
+                -- Automatically close tab that is in sync when you close buffer in vim.
+                auto_close_tab = true,
+
+                -- Always scroll to the current cell.
+                -- Related command :JupyniumScrollToCell
+                autoscroll = {
+                    enable = true,
+                    mode = "always", -- "always" or "invisible"
+                    cell = {
+                        top_margin_percent = 20,
+                    },
+                },
+
+                scroll = {
+                    page = { step = 0.5 },
+                    cell = {
+                        top_margin_percent = 20,
+                    },
+                },
+
+                -- Files to be detected as a jupynium file.
+                -- Add highlighting, keybindings, commands (e.g. :JupyniumStartAndAttachToServer)
+                -- Modify this if you already have lots of files in Jupytext format, for example.
+                jupynium_file_pattern = { "*.ju.*" },
+
+                use_default_keybindings = false,
+                textobjects = {
+                    use_default_keybindings = true,
+                },
+
+                syntax_highlight = {
+                    enable = true,
+                },
+
+                -- Dim all cells except the current one
+                -- Related command :JupyniumShortsightedToggle
+                shortsighted = false,
+
+                -- Configure floating window options
+                -- Related command :JupyniumKernelHover
+                kernel_hover = {
+                    floating_win_opts = {
+                        max_width = 84,
+                        border = "none",
+                    },
+                },
+
+                notify = {
+                    ignore = {
+                        -- "download_ipynb",
+                        -- "error_download_ipynb",
+                        -- "attach_and_init",
+                        -- "error_close_main_page",
+                        -- "notebook_closed",
+                    },
+                },
+            })
+
+            -- You can link highlighting groups.
+            -- This is the default (when colour scheme is unknown)
+            -- Try with CursorColumn, Pmenu, Folded etc.
+            vim.cmd [[
+hi! link JupyniumCodeCellSeparator CursorLine
+hi! link JupyniumMarkdownCellSeparator CursorLine
+hi! link JupyniumMarkdownCellContent CursorLine
+hi! link JupyniumMagicCommand Keyword
+]]
+
+            -- Please share your favourite settings on other colour schemes, so I can add defaults.
+            -- Currently, tokyonight is supported.
+        end
+    },
+    "stevearc/dressing.nvim", -- optional, UI for :JupyniumKernelSelect
+}
