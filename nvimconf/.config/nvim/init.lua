@@ -51,7 +51,6 @@ later(function()
     require('mini.snippets').setup()
     require('mini.diff').setup()
     require('mini.git').setup()
-    require('mini.clue').setup()
     require('mini.pick').setup()
     require('mini.fuzzy').setup()
 end)
@@ -288,22 +287,27 @@ later(function()
 end)
 
 later(function()
+    local mini_pick_hidden = function()
+        MiniPick.builtin.cli({
+            command = { 'fd', '--hidden', '--type', 'f', '--type', 'd' }
+        })
+    end
     -- leader key fall back
     vim.keymap.set({'n', 'v'}, "<leader><leader>", " ", { desc = "just insert the space" })
 
     vim.keymap.set({'n'}, '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic in float window" })
 
     -- grapple
-    vim.keymap.set("n", "<leader>mm", require("grapple").toggle)
-    vim.keymap.set("n", "<leader>ml", require("grapple").toggle_tags)
-    vim.keymap.set("n", "<leader>mq", "<cmd>Grapple select index=1<cr>")
-    vim.keymap.set("n", "<leader>mw", "<cmd>Grapple select index=2<cr>")
-    vim.keymap.set("n", "<leader>me", "<cmd>Grapple select index=3<cr>")
-    vim.keymap.set("n", "<leader>mr", "<cmd>Grapple select index=4<cr>")
+    vim.keymap.set("n", "<leader>mm", require("grapple").toggle, { desc = "toggle grapple here" })
+    vim.keymap.set("n", "<leader>ml", require("grapple").toggle_tags, { desc = "show the tag list" })
+    vim.keymap.set("n", "<leader>mq", "<cmd>Grapple select index=1<cr>", { desc = "goto first tag" })
+    vim.keymap.set("n", "<leader>mw", "<cmd>Grapple select index=2<cr>", { desc = "goto second tag" })
+    vim.keymap.set("n", "<leader>me", "<cmd>Grapple select index=3<cr>", { desc = "goto third tag" })
+    vim.keymap.set("n", "<leader>mr", "<cmd>Grapple select index=4<cr>", { desc = "goto forth tag" })
 
     -- deal with file
-    vim.keymap.set('n', '<leader>ff', MiniPick.builtin.files, { desc = 'Open file finder'})
-    vim.keymap.set('n', '<leader>fu', ':UndotreeToggle<cr>', { noremap = true, silent = true })
+    vim.keymap.set('n', '<leader>ff', mini_pick_hidden, { desc = 'Open file finder'})
+    vim.keymap.set('n', '<leader>fu', ':UndotreeToggle<cr>', { desc = 'Open undotree', silent = true })
 
     -- deal with git
     vim.keymap.set('n', '<leader>gg', ':Git ', { desc = "Open git" })
@@ -320,4 +324,51 @@ later(function()
     vim.keymap.set('n', "<leader>rR", ':JupyniumKernelRestart<CR>', { desc = "restart" })
     vim.keymap.set('n', "<leader>rI", ':JupyniumKernelInterrupt<CR>', { desc = "Interrupt" })
     vim.keymap.set('n', "<leader>rc", ':JupyniumKernelSelect<CR>', { desc = "select kernel" })
+end)
+
+later(function()
+    local miniclue = require('mini.clue')
+    require('mini.clue').setup({
+        triggers = {
+            -- Leader triggers
+            { mode = 'n', keys = '<Leader>' },
+            { mode = 'x', keys = '<Leader>' },
+
+            -- Built-in completion
+            { mode = 'i', keys = '<C-x>' },
+
+            -- `g` key
+            { mode = 'n', keys = 'g' },
+            { mode = 'x', keys = 'g' },
+
+            -- Marks
+            { mode = 'n', keys = "'" },
+            { mode = 'n', keys = '`' },
+            { mode = 'x', keys = "'" },
+            { mode = 'x', keys = '`' },
+
+            -- Registers
+            { mode = 'n', keys = '"' },
+            { mode = 'x', keys = '"' },
+            { mode = 'i', keys = '<C-r>' },
+            { mode = 'c', keys = '<C-r>' },
+
+            -- Window commands
+            { mode = 'n', keys = '<C-w>' },
+
+            -- `z` key
+            { mode = 'n', keys = 'z' },
+            { mode = 'x', keys = 'z' },
+        },
+
+        clues = {
+            -- Enhance this by adding descriptions for <Leader> mapping groups
+            miniclue.gen_clues.builtin_completion(),
+            miniclue.gen_clues.g(),
+            miniclue.gen_clues.marks(),
+            miniclue.gen_clues.registers(),
+            miniclue.gen_clues.windows(),
+            miniclue.gen_clues.z(),
+        },
+    })
 end)
