@@ -43,7 +43,7 @@ now(function()
         source = 'rose-pine/neovim',
         name = 'rose-pine'
     })
-    vim.cmd('colorscheme rose-pine-moon')
+    vim.cmd('colorscheme rose-pine')
 end)
 
 later(function()
