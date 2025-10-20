@@ -40,10 +40,10 @@ now(function()
     require('mini.icons').setup()
 
     add({
-        source = 'rose-pine/neovim',
-        name = 'rose-pine'
+        source = 'catppuccin/nvim',
+        name = 'catppuccin'
     })
-    vim.cmd('colorscheme rose-pine')
+    vim.cmd('colorscheme catppuccin-mocha')
 end)
 
 later(function()
