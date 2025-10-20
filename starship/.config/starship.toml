@@ -1,134 +1,250 @@
-[bun]
-format = "via [$symbol]($style)"
+palette = "catppuccin_mocha"
 
-[buf]
-format = "via [$symbol]($style)"
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
 
-[cmake]
-format = "via [$symbol]($style)"
+## FIRST LINE/ROW: Info & Status
+[username]
+format = " [$user]($style)@"
+show_always = true
+style_root = "bold red"
+style_user = "bold mauve"
 
-[cobol]
-format = "via [$symbol]($style)"
+[hostname]
+disabled = false
+format = "[$hostname]($style) in "
+ssh_only = false
+style = "bold maroon"
+ssh_symbol = " "
 
-[crystal]
-format = "via [$symbol]($style)"
+[directory]
+style = "bold peach"
+truncate_to_repo = true
+truncation_length = 0
+truncation_symbol = "repo: "
+read_only = ""
 
-[daml]
-format = "via [$symbol]($style)"
+[git_metrics]
+disabled = false
+added_style = 'bold green'
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
 
-[dart]
-format = "via [$symbol]($style)"
+[sudo]
+disabled = false
 
-[deno]
-format = "via [$symbol]($style)"
+[git_status]
+ahead = "${count}"
+behind = "${count}"
+deleted = "x"
+diverged = "${ahead_count}${behind_count}"
+style = "text"
 
-[dotnet]
-format = "[$symbol(🎯 $tfm )]($style)"
+[git_branch]
+symbol = " "
+style = "bold green"
 
-[elixir]
-format = 'via [$symbol]($style)'
+[nix_shell]
+format = 'via [$symbol(($name))]($style) '
+symbol = " "
 
-[elm]
-format = 'via [$symbol]($style)'
+[cmd_duration]
+disabled = false
+style="bold flamingo"
+format = "took [$duration]($style)"
+show_milliseconds = true
+show_notifications = true
+min_time_to_notify = 30_000
 
-[erlang]
-format = 'via [$symbol]($style)'
+## SECOND LINE/ROW: Prompt
+[battery]
+charging_symbol = ""
+disabled = true
+discharging_symbol = ""
+full_symbol = ""
 
-[fennel]
-format = 'via [$symbol]($style)'
+[[battery.display]] # "bold red" style when capacity is between 0% and 15%
+disabled = false
+style = "bold red"
+threshold = 15
 
-[gleam]
-format = 'via [$symbol]($style)'
+[[battery.display]] # "bold peach" style when capacity is between 15% and 50%
+disabled = true
+style = "bold peach"
+threshold = 50
+
+[[battery.display]] # "bold green" style when capacity is between 50% and 90%
+disabled = true
+style = "bold green"
+threshold = 90
+
+[status]
+disabled = false
+format = '[\[$symbol$status_common_meaning$status_signal_name$status_maybe_int\]]($style)'
+map_symbol = true
+pipestatus = true
+symbol = "✖"
+not_executable_symbol = ""
+not_found_symbol = ""
+sigint_symbol = "󰟾"
+signal_symbol = ""
+
+[os]
+disabled = false
+format = ' [$symbol]($style)'
+style = "bold mauve"
+
+[character]
+error_symbol = ""
+success_symbol = "❯(bold green)"
+
+# SYMBOLS
+[git_commit]
+tag_symbol = '  '
 
 [golang]
-format = 'via [$symbol]($style)'
+symbol = " "
 
-[gradle]
-format = 'via [$symbol]($style)'
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
 
 [haxe]
-format = 'via [$symbol]($style)'
+symbol = " "
 
-[helm]
-format = 'via [$symbol]($style)'
+[hg_branch]
+symbol = " "
 
 [java]
-format = 'via [$symbol]($style)'
+symbol = " "
 
 [julia]
-format = 'via [$symbol]($style)'
+symbol = " "
 
 [kotlin]
-format = 'via [$symbol]($style)'
+symbol = " "
 
 [lua]
-format = 'via [$symbol]($style)'
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
 
 [meson]
-format = 'via [$symbol]($style)'
+symbol = "󰔷 "
 
 [nim]
-format = 'via [$symbol]($style)'
+symbol = "󰆥 "
 
 [nodejs]
-format = 'via [$symbol]($style)'
+symbol = " "
 
 [ocaml]
-format = 'via [$symbol(\($switch_indicator$switch_name\) )]($style)'
+symbol = " "
 
-[opa]
-format = 'via [$symbol]($style)'
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
 
 [perl]
-format = 'via [$symbol]($style)'
-
-[pixi]
-format = 'via [$symbol($environment )]($style)'
+symbol = " "
 
 [php]
-format = 'via [$symbol]($style)'
+symbol = " "
 
-[pulumi]
-format = 'via [$symbol$stack]($style)'
-
-[purescript]
-format = 'via [$symbol]($style)'
+[pijul_channel]
+symbol = " "
 
 [python]
-format = 'via [$symbol]($style)'
-
-[quarto]
-format = 'via [$symbol]($style)'
-
-[raku]
-format = 'via [$symbol]($style)'
-
-[red]
-format = 'via [$symbol]($style)'
+symbol = " "
 
 [rlang]
-format = 'via [$symbol]($style)'
+symbol = "󰟔 "
 
 [ruby]
-format = 'via [$symbol]($style)'
+symbol = " "
 
 [rust]
-format = 'via [$symbol]($style)'
+symbol = "󱘗 "
 
-[solidity]
-format = 'via [$symbol]($style)'
-
-[typst]
-format = 'via [$symbol]($style)'
+[scala]
+symbol = " "
 
 [swift]
-format = 'via [$symbol]($style)'
-
-[vagrant]
-format = 'via [$symbol]($style)'
-
-[vlang]
-format = 'via [$symbol]($style)'
+symbol = " "
 
 [zig]
-format = 'via [$symbol]($style)'
+symbol = " "
+
+[gradle]
+symbol = " "
