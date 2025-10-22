@@ -40,16 +40,17 @@ now(function()
     require('mini.icons').setup()
 
     add({
-        source = 'haize-uwu/sweet.nvim',
-        name = 'sweet'
+        source = 'catppuccin/nvim',
+        name = 'catppuccin'
     })
-    vim.cmd('colorscheme sweet')
+    vim.cmd('colorscheme catppuccin-mocha')
 end)
 
 later(function()
     require('mini.completion').setup()
     require('mini.snippets').setup()
     require('mini.diff').setup()
+    require('mini.git').setup()
     require('mini.pick').setup()
     require('mini.fuzzy').setup()
 end)
