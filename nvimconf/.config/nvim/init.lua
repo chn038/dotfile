@@ -29,7 +29,6 @@ now(function()
     vim.opt.smartindent = true
     vim.opt.shiftwidth = 4
     vim.opt.number = true
-    vim.opt.relativenumber = true
     vim.opt.incsearch = true
 end)
 
@@ -40,10 +39,10 @@ now(function()
     require('mini.icons').setup()
 
     add({
-        source = 'catppuccin/nvim',
-        name = 'catppuccin'
+        source = 'haize-uwu/sweet.nvim',
+        name = 'sweet'
     })
-    vim.cmd('colorscheme catppuccin-mocha')
+    vim.cmd('colorscheme sweet')
 end)
 
 later(function()
