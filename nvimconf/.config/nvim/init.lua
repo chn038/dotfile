@@ -29,6 +29,7 @@ now(function()
     vim.opt.smartindent = true
     vim.opt.shiftwidth = 4
     vim.opt.number = true
+    vim.opt.relativenumber = true
     vim.opt.incsearch = true
 end)
 
@@ -49,7 +50,6 @@ later(function()
     require('mini.completion').setup()
     require('mini.snippets').setup()
     require('mini.diff').setup()
-    require('mini.git').setup()
     require('mini.pick').setup()
     require('mini.fuzzy').setup()
 end)
