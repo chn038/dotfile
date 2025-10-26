@@ -289,7 +289,7 @@ end)
 later(function()
     local mini_pick_hidden = function()
         MiniPick.builtin.cli({
-            command = { 'fd', '--hidden', '--type', 'f', '--type', 'd' }
+            command = { 'fd', '--hidden', '--type', 'f', '--type', 'd', '-I', '-i' }
         })
     end
     -- leader key fall back
