@@ -1,5 +1,3 @@
-#!/bin/bash
-
 stow -v -R *
 mkdir $HOME/.ssh
 cp ssh/.ssh/* $HOME/.ssh

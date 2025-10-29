@@ -1,2 +1,1 @@
-export PATH=$PATH:/home/herochen/.config/emacs/bin
-eval "$(starship init zsh)"
+eval $(starship init zsh)
