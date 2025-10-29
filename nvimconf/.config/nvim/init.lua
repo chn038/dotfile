@@ -287,6 +287,16 @@ later(function()
 end)
 
 later(function()
+    add({
+        source = "https://codeberg.org/esensar/nvim-dev-container",
+        depends = {
+            "nvim-treesitter/nvim-treesitter"
+        }
+    })
+    require("devcontainer").setup{}
+end)
+
+later(function()
     local mini_pick_hidden = function()
         MiniPick.builtin.cli({
             command = { 'fd', '--hidden', '--type', 'f', '--type', 'd', '-I', '-i' }
