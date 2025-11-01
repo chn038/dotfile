@@ -73,6 +73,12 @@ later(function()
     })
     require("mason").setup()
     require("mason-lspconfig").setup()
+
+    vim.lsp.enable("clangd")
+    vim.lsp.enable("pylsp")
+    vim.lsp.enable("rnix")
+    vim.lsp.enable("lua_ls")
+    vim.lsp.enable("texlab")
 end)
 
 later(function()

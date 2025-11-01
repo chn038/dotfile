@@ -1,5 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, lib, ... }:
@@ -7,8 +5,8 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./cachix.nix
+      /etc/nixos/hardware-configuration.nix
+      /etc/nixos/cachix.nix
     ];
 
   fonts.packages = with pkgs; [
@@ -23,8 +21,8 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  # Use latest zen kernel.
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -62,7 +60,7 @@
       waylandFrontend = true;
       addons = with pkgs; [
       fcitx5-rime
-      fcitx5-rose-pine
+      catppuccin-fcitx5
       ];
     };
   };
@@ -130,11 +128,11 @@
     neovim
     vesktop
     librewolf-bin
-    gcc
+    gcc glibc_multi glib glibtool
     tree-sitter
     fd ripgrep bat
     uv
-    cachix
+    cachix direnv
     btop-cuda
     lazygit ansible
     stow
@@ -142,6 +140,11 @@
     unzip
     cargo
     zsh starship
+    zellij
+    clang clang-tools luajitPackages.lua-lsp python3Packages.python-lsp-server
+    steam-run
+    wl-clipboard
+    nodejs
   ];
 
   environment.variables = {
@@ -169,6 +172,18 @@
     syntaxHighlighting.enable = true;
   };
 
+  programs.nix-ld.enable = true;
+
+  services.envfs.enable = true;
+  services.flatpak.enable = true;
+  systemd.services.flatpak-repo = {
+    wantedBy = [ "multi-user.target" ];
+    path = [ pkgs.flatpak ];
+    script = ''
+      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    '';
+  };
+
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
@@ -179,6 +194,8 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
+
+  hardware.bluetooth.enable = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
