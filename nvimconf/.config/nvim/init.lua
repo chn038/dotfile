@@ -1,3 +1,5 @@
+-- open all fold by zn and undo by zi
+-- toggle fold by hovering and pressing za
 -- Clone 'mini.nvim' manually in a way that it gets managed by 'mini.deps'
 local path_package = vim.fn.stdpath('data') .. '/site/'
 local mini_path = path_package .. 'pack/deps/start/mini.nvim'
@@ -17,6 +19,7 @@ require('mini.deps').setup({ path = { package = path_package } })
 
 local add, now, later = MiniDeps.add, MiniDeps.now, MiniDeps.later
 
+-- general settings
 now(function()
     vim.g.mapleader = " "
     vim.g.maplocalleader = "\\"
@@ -33,6 +36,7 @@ now(function()
     vim.opt.incsearch = true
 end)
 
+-- initial call
 now(function()
     require('mini.statusline').setup()
     require('mini.tabline').setup()
@@ -68,6 +72,7 @@ now(function()
     vim.cmd('colorscheme gruvbox')
 end)
 
+-- regarding to mini
 later(function()
     require('mini.completion').setup()
     require('mini.snippets').setup()
@@ -77,12 +82,14 @@ later(function()
     require('mini.fuzzy').setup()
 end)
 
+-- undotree
 later(function()
     add({
         source = 'mbbill/undotree'
     })
 end)
 
+-- lsp config
 later(function()
     add({
         source = "williamboman/mason.nvim"
@@ -103,6 +110,7 @@ later(function()
     vim.lsp.enable("texlab")
 end)
 
+-- gen.nvim
 later(function()
     add({
         source = "David-Kunz/gen.nvim",
@@ -137,6 +145,7 @@ later(function()
     require('gen').setup(opts)
 end)
 
+-- jupynium.nvim
 later(function()
     add({
         source = 'kiyoon/jupynium.nvim',
@@ -271,6 +280,7 @@ later(function()
     -- Currently, tokyonight is supported.
 end)
 
+-- nvim-treesitter
 later(function()
     add({
         source = "nvim-treesitter/nvim-treesitter",
@@ -305,6 +315,7 @@ later(function()
     }
 end)
 
+-- grapple
 later(function()
     add({
         source = "cbochs/grapple.nvim",
@@ -314,16 +325,7 @@ later(function()
     })
 end)
 
-later(function()
-    add({
-        source = "https://codeberg.org/esensar/nvim-dev-container",
-        depends = {
-            "nvim-treesitter/nvim-treesitter"
-        }
-    })
-    require("devcontainer").setup{}
-end)
-
+-- keybindings
 later(function()
     local mini_pick_hidden = function()
         MiniPick.builtin.cli({
@@ -364,6 +366,7 @@ later(function()
     vim.keymap.set('n', "<leader>rc", ':JupyniumKernelSelect<CR>', { desc = "select kernel" })
 end)
 
+-- mini.clue
 later(function()
     local miniclue = require('mini.clue')
     require('mini.clue').setup({
