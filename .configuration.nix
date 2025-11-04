@@ -165,11 +165,14 @@
     enableSSHSupport = true;
   };
 
-  programs.starship.enable = true;
   programs.zsh = {
     enable = true;
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
+    ohMyZsh = {
+      enable = true;
+      theme = "avit";
+    };
   };
 
   programs.nix-ld.enable = true;
