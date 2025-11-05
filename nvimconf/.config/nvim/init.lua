@@ -34,6 +34,9 @@ now(function()
     vim.opt.number = true
     vim.opt.relativenumber = true
     vim.opt.incsearch = true
+    vim.opt.cursorline = true
+    vim.opt.cursorcolumn = true
+    vim.opt.scrolloff = 20
 end)
 
 -- initial call
