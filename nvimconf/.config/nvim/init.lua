@@ -362,7 +362,7 @@ later(function()
 
     -- deal with jupynium
     vim.keymap.set('n', "<leader>ra", ':JupyniumStartAndAttachToServer<CR>', { desc = "attach" })
-    vim.keymap.set('n', "<leader>rl", ':JupyniumLoadFromIpynbTab ', { desc = "load from tab" })
+    vim.keymap.set('n', "<leader>rl", ':JupyniumLoadFromIpynbTabAndStartSync ', { desc = "load from tab" })
     vim.keymap.set('n', "<leader>rs", ':JupyniumStartSync<CR>', { desc = "attach" })
     vim.keymap.set('n', "<leader>sc", ':JupyniumExecuteSelectedCells<CR>', { desc = "execute" })
     vim.keymap.set('n', "<leader>rR", ':JupyniumKernelRestart<CR>', { desc = "restart" })
