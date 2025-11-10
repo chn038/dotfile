@@ -15,6 +15,9 @@
    noto-fonts-color-emoji
    nerd-fonts.terminess-ttf
    ttf-tw-moe
+   corefonts
+   vista-fonts
+   vista-fonts-cht
   ];
 
   # Bootloader.
@@ -59,7 +62,7 @@
     fcitx5 = {
       waylandFrontend = true;
       addons = with pkgs; [
-      fcitx5-rime
+      kdePackages.fcitx5-chinese-addons
       catppuccin-fcitx5
       ];
     };
@@ -110,6 +113,7 @@
     packages = with pkgs; [
       # kdePackages.kate
       thunderbird
+      libreoffice-qt-fresh
     ];
   };
 
