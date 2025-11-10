@@ -62,8 +62,11 @@
     fcitx5 = {
       waylandFrontend = true;
       addons = with pkgs; [
+      fcitx5-pinyin-zhwiki
+      fcitx5-pinyin-moegirl
       kdePackages.fcitx5-chinese-addons
-      catppuccin-fcitx5
+      kdePackages.fcitx5-configtool
+      fcitx5-mellow-themes
       ];
     };
   };
