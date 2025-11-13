@@ -105,9 +105,20 @@ later(function()
     })
     require("mason").setup()
     require("mason-lspconfig").setup()
+    vim.lsp.config('pylsp', {
+        settings = {
+            pylsp = {
+                plugins = {
+                    ruff = {
+                        enabled = true,
+                    },
+                }
+            }
+        }
+    })
 
     vim.lsp.enable("clangd")
-    vim.lsp.enable("pylyzer")
+    vim.lsp.enable("pylsp")
     vim.lsp.enable("rnix")
     vim.lsp.enable("lua_ls")
     vim.lsp.enable("texlab")

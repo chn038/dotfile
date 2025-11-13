@@ -151,7 +151,9 @@
     cargo
     zsh starship
     zellij
-    clang clang-tools luajitPackages.lua-lsp pylyzer # python lsp
+    clang clang-tools luajitPackages.lua-lsp
+    # python lsp
+    python3Packages.python-lsp-server python3Packages.python-lsp-ruff ruff
     steam-run
     wl-clipboard
     nodejs
