@@ -153,7 +153,7 @@
     zellij
     clang clang-tools luajitPackages.lua-lsp
     # python lsp
-    python3Packages.python-lsp-server python3Packages.python-lsp-ruff ruff
+    python3Packages.python-lsp-server python3Packages.python-lsp-ruff ruff black
     steam-run
     wl-clipboard
     nodejs
