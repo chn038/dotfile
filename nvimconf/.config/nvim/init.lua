@@ -46,33 +46,17 @@ now(function()
     require('mini.notify').setup()
     require('mini.icons').setup()
     add({
-        source = "ellisonleao/gruvbox.nvim",
-        name = "gruvbox"
+        source = "shaunsingh/nord.nvim",
+        name = "nord"
     })
-    require("gruvbox").setup({
-        terminal_colors = true, -- add neovim terminal colors
-        undercurl = true,
-        underline = true,
-        bold = true,
-        italic = {
-            strings = true,
-            emphasis = true,
-            comments = true,
-            operators = false,
-            folds = true,
-        },
-        strikethrough = true,
-        invert_selection = false,
-        invert_signs = true,
-        invert_tabline = false,
-        inverse = true, -- invert background for search, diffs, statuslines and errors
-        contrast = "hard", -- can be "hard", "soft" or empty string
-        palette_overrides = {},
-        overrides = {},
-        dim_inactive = true,
-        transparent_mode = false,
-    })
-    vim.cmd('colorscheme gruvbox')
+    vim.g.nord_contrast = false
+    vim.g.nord_borders = true
+    vim.g.nord_disable_background = false
+    vim.g.nord_cursorline_transparent = false
+    vim.g.nord_italic = true
+    vim.g.nord_uniform_diff_background = true
+    vim.g.nord_bold = true
+    vim.cmd('colorscheme nord')
 end)
 
 -- regarding to mini

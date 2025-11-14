@@ -157,6 +157,9 @@
     steam-run
     wl-clipboard
     nodejs
+
+    nordic
+    papirus-nord
   ];
 
   environment.variables = {
