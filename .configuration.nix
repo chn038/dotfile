@@ -66,7 +66,9 @@
       fcitx5-pinyin-moegirl
       kdePackages.fcitx5-chinese-addons
       kdePackages.fcitx5-configtool
-      fcitx5-mellow-themes
+      (catppuccin-fcitx5.override {
+          withRoundedCorners = true;
+      })
       ];
     };
   };
@@ -158,8 +160,25 @@
     wl-clipboard
     nodejs
 
-    nordic
-    papirus-nord
+    (catppuccin.override {
+        accent = "mauve";
+    })
+    (catppuccin-kde.override {
+        flavour = ["macchiato"];
+        accents = [ "mauve" ];
+    })
+    (catppuccin-gtk.override {
+        variant = "macchiato";
+        accents = [ "mauve" ];
+    })
+    (catppuccin-sddm.override {
+        flavor = "macchiato";
+    })
+    catppuccin-cursors.macchiatoMauve
+    (catppuccin-papirus-folders.override {
+        flavor = "macchiato";
+        accent = "mauve";
+    })
   ];
 
   environment.variables = {
@@ -191,6 +210,8 @@
   };
 
   programs.nix-ld.enable = true;
+
+  programs.coolercontrol.enable = true;
 
   services.envfs.enable = true;
   services.flatpak.enable = true;
