@@ -160,6 +160,7 @@
     wl-clipboard
     nodejs
 
+    lm_sensors liquidctl
     (catppuccin.override {
         accent = "mauve";
     })
