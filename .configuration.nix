@@ -180,6 +180,12 @@
         flavor = "macchiato";
         accent = "mauve";
     })
+
+    p7zip
+    wineWowPackages.stable
+    wineWowPackages.waylandFull
+    winetricks
+    lutris
   ];
 
   environment.variables = {
