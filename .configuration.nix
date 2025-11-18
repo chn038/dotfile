@@ -220,6 +220,8 @@
 
   programs.coolercontrol.enable = true;
 
+  programs.kdeconnect.enable = true;
+
   services.envfs.enable = true;
   services.flatpak.enable = true;
   systemd.services.flatpak-repo = {
