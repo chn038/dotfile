@@ -136,6 +136,14 @@ later(function()
     require('gen').setup(opts)
 end)
 
+-- render-markdown.nvim
+later(function()
+    add({
+    source = 'MeanderingProgrammer/render-markdown.nvim',
+    depends = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.nvim' },            -- if you use the mini.nvim suite
+    })
+end)
+
 -- jupynium.nvim
 later(function()
     add({
