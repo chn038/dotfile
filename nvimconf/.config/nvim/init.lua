@@ -329,12 +329,12 @@ later(function()
     vim.keymap.set({'n'}, '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic in float window" })
 
     -- grapple
-    vim.keymap.set("n", "<leader>mm", require("grapple").toggle, { desc = "toggle grapple here" })
-    vim.keymap.set("n", "<leader>ml", require("grapple").toggle_tags, { desc = "show the tag list" })
-    vim.keymap.set("n", "<leader>mq", "<cmd>Grapple select index=1<cr>", { desc = "goto first tag" })
-    vim.keymap.set("n", "<leader>mw", "<cmd>Grapple select index=2<cr>", { desc = "goto second tag" })
-    vim.keymap.set("n", "<leader>me", "<cmd>Grapple select index=3<cr>", { desc = "goto third tag" })
-    vim.keymap.set("n", "<leader>mr", "<cmd>Grapple select index=4<cr>", { desc = "goto forth tag" })
+    vim.keymap.set("n", "<leader>m", require("grapple").toggle, { desc = "toggle grapple here" })
+    vim.keymap.set("n", "<leader>l", require("grapple").toggle_tags, { desc = "show the tag list" })
+    vim.keymap.set("n", "<leader>1", "<cmd>Grapple select index=1<cr>", { desc = "goto first tag" })
+    vim.keymap.set("n", "<leader>2", "<cmd>Grapple select index=2<cr>", { desc = "goto second tag" })
+    vim.keymap.set("n", "<leader>3", "<cmd>Grapple select index=3<cr>", { desc = "goto third tag" })
+    vim.keymap.set("n", "<leader>4", "<cmd>Grapple select index=4<cr>", { desc = "goto forth tag" })
 
     -- deal with file
     vim.keymap.set('n', '<leader>ff', mini_pick_hidden, { desc = 'Open file finder'})
@@ -345,7 +345,7 @@ later(function()
 
     -- deal with ai
     vim.keymap.set({'n', 'v'}, "<leader>oo", ":Gen<CR>", { desc = "gen"})
-    vim.keymap.set({'n', 'v'}, "<leader>oc", ":Gen Chat<CR>", { desc = "gen chat"})
+    vim.keymap.set({'n', 'v'}, "<leader>c", ":Gen Chat<CR>", { desc = "gen chat"})
     vim.keymap.set('n', "<leader>os", require('gen').select_model, { desc = "gen select model"})
 
     -- deal with jupynium
