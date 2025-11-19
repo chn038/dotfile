@@ -156,6 +156,8 @@
     clang clang-tools luajitPackages.lua-lsp
     # python lsp
     python3Packages.python-lsp-server python3Packages.python-lsp-ruff ruff black
+    # nix lsp
+    nixd
     steam-run
     wl-clipboard
     nodejs
