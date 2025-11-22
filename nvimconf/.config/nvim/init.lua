@@ -243,7 +243,7 @@ later(function()
 
         -- Dim all cells except the current one
         -- Related command :JupyniumShortsightedToggle
-        shortsighted = false,
+        shortsighted = true,
 
         -- Configure floating window options
         -- Related command :JupyniumKernelHover
@@ -364,6 +364,8 @@ later(function()
     vim.keymap.set('n', "<leader>rR", ':JupyniumKernelRestart<CR>', { desc = "restart" })
     vim.keymap.set('n', "<leader>ri", ':JupyniumKernelInterrupt<CR>', { desc = "Interrupt" })
     vim.keymap.set('n', "<leader>rc", ':JupyniumKernelSelect<CR>', { desc = "select kernel" })
+    vim.keymap.set('n', "<leader>sk", ':JupyniumScrollUp<CR>', { desc = "scroll up" })
+    vim.keymap.set('n', "<leader>sj", ':JupyniumScrollDown<CR>', { desc = "scroll down" })
 end)
 
 -- mini.clue
