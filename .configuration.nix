@@ -155,7 +155,7 @@
     zellij
     clang clang-tools luajitPackages.lua-lsp
     # python lsp
-    python3Packages.python-lsp-server python3Packages.python-lsp-ruff ruff black
+    python3Packages.python-lsp-server black
     # nix lsp
     nixd
     steam-run
@@ -245,7 +245,16 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
-  hardware.bluetooth.enable = true;
+  hardware.bluetooth = {
+      enable = true;
+      settings = {
+          General = {
+              MultiProfile = "multiple";
+              FastConnectable = "true";
+              JustWorksRepairing = "confirm";
+          };
+      };
+  };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
