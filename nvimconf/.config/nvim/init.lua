@@ -209,9 +209,9 @@ later(function()
         },
 
         scroll = {
-            page = { step = 0.5 },
+            page = { step = 0.2 },
             cell = {
-                top_margin_percent = 20,
+                top_margin_percent = 5,
             },
         },
 
@@ -228,10 +228,6 @@ later(function()
         syntax_highlight = {
             enable = true,
         },
-
-        -- Dim all cells except the current one
-        -- Related command :JupyniumShortsightedToggle
-        shortsighted = true,
 
         -- Configure floating window options
         -- Related command :JupyniumKernelHover
