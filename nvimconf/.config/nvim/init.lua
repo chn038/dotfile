@@ -46,10 +46,11 @@ now(function()
     require('mini.notify').setup()
     require('mini.icons').setup()
     add({
-        source = "catppuccin/nvim",
-        name = "catppuccin"
+        source = "rebelot/kanagawa.nvim",
+        name = "kanagawa"
     })
-    vim.cmd('colorscheme catppuccin-macchiato')
+    vim.cmd('colorscheme kanagawa-dragon')
+
 end)
 
 -- regarding to mini
