@@ -46,10 +46,10 @@ now(function()
     require('mini.notify').setup()
     require('mini.icons').setup()
     add({
-        source = "rebelot/kanagawa.nvim",
-        name = "kanagawa"
+        source = "uhs-robert/oasis.nvim",
+        name = "oasis"
     })
-    vim.cmd('colorscheme kanagawa-dragon')
+    vim.cmd('colorscheme oasis-dune')
 
 end)
 
