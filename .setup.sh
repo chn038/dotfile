@@ -7,5 +7,6 @@ echo "Decrypting id_rsa"
 ansible-vault decrypt $HOME/.ssh/id_rsa
 echo "Decrypting id_rsa_1"
 ansible-vault decrypt $HOME/.ssh/id_rsa_1
-echo "Copying emoji"
-wget https://raw.githubusercontent.com/rainlime/fcitx-quick-phrase-emoji/master/QuickPhrase.mb && cat ./QuickPhrase.mb >> ~/.config/fcitx/data/QuickPhrase.mb && rm ./QuickPhrase.mb
+echo "Installing oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
