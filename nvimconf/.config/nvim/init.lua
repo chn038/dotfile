@@ -274,14 +274,16 @@ later(function()
         -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
         install_dir = vim.fn.stdpath('data') .. '/site'
     }
-    require'nvim-treesitter'.install { 'python', 'c', 'cpp', 'cuda', 'lua' }
+    require'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown', 'markdown-inline'}, {generate=true, summary=true})
     vim.api.nvim_create_autocmd('FileType', {
-      pattern = { '.py', '.c', '.cc', 'cpp', 'cu', 'lua' },
-      callback = function() vim.treesitter.start() end,
+      pattern = { 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
+      callback = function()
+          vim.treesitter.start()
+          vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+          vim.wo[0][0].foldmethod = 'expr'
+          vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+      end,
     })
-    vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
-    vim.wo[0][0].foldmethod = 'expr'
-    vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
 end)
 
 -- grapple
