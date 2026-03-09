@@ -1,0 +1,6 @@
+.setup.sh
+.gitignore
+.default.custom.yaml
+nvimconf/.config/nvim/lazy-lock.json
+.configuration.nix
+.sec

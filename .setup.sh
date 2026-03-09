@@ -1,0 +1,12 @@
+#!/bin/bash
+stow -v -R *
+mkdir $HOME/.ssh
+cp ssh/.ssh/* $HOME/.ssh
+
+echo "Decrypting id_rsa"
+ansible-vault decrypt $HOME/.ssh/id_rsa
+echo "Decrypting id_rsa_1"
+ansible-vault decrypt $HOME/.ssh/id_rsa_1
+echo "Copying secret and decrypting"
+cp .sec $HOME/.sec
+ansible-vault decrypt $HOME/.sec

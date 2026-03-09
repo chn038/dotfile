@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "Rosé Pine",
+    "editor.fontFamily": "'FiraCode Nerd Font Mono', monospace",
+    "workbench.sideBar.location": "right",
+    "editor.autoClosingComments": "never",
+    "editor.autoClosingDelete": "never",
+    "editor.autoClosingOvertype": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.codeLens": false,
+    "editor.minimap.enabled": false,
+    "workbench.editor.showTabs": "single"
+}

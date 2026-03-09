@@ -1,0 +1,7 @@
+[user]
+	email = chenhero940830@gmail.com
+	name = chn038
+[pull]
+	rebase = false
+[merge]
+	tool = nvimdiff
