@@ -2,5 +2,8 @@
 .gitignore
 .default.custom.yaml
 nvimconf/.config/nvim/lazy-lock.json
+helix/.config/helix/runtime/
 .configuration.nix
 .sec
+gpg/.pub.key
+gpg/.prv.key
