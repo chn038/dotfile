@@ -7,3 +7,8 @@ indent = {	tab-width = 4,	unit = "\t"}
 name = "rust"
 auto-format = false
 indent = {	tab-width = 4,	unit = "\t"}
+
+[[language]]
+name = "python"
+formatter = { command = "ruff", args = ["format", "--line-length", "88", "-"] }
+auto-format = true
