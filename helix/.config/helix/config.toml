@@ -1,7 +1,22 @@
 theme = "rose_pine"
 
-[keys.normal]
-C-h = "jump_view_left"
-C-j = "jump_view_down"
-C-k = "jump_view_up"
-C-l = "jump_view_right"
+[editor]
+line-number = "relative"
+completion-replace = true
+completion-trigger-len = 1
+rulers = [80]
+popup-border = "all"
+end-of-line-diagnostics = "hint"
+
+[editor.file-picker]
+hidden = false
+git-ignore = false
+
+[editor.search]
+smart-case = false
+
+[editor.soft-wrap]
+enable = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
