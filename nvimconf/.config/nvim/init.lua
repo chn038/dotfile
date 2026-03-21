@@ -4,14 +4,14 @@
 local path_package = vim.fn.stdpath('data') .. '/site/'
 local mini_path = path_package .. 'pack/deps/start/mini.nvim'
 if not vim.loop.fs_stat(mini_path) then
-  vim.cmd('echo "Installing `mini.nvim`" | redraw')
-  local clone_cmd = {
-    'git', 'clone', '--filter=blob:none',
-    'https://github.com/nvim-mini/mini.nvim', mini_path
-  }
-  vim.fn.system(clone_cmd)
-  vim.cmd('packadd mini.nvim | helptags ALL')
-  vim.cmd('echo "Installed `mini.nvim`" | redraw')
+    vim.cmd('echo "Installing `mini.nvim`" | redraw')
+    local clone_cmd = {
+        'git', 'clone', '--filter=blob:none',
+        'https://github.com/nvim-mini/mini.nvim', mini_path
+    }
+    vim.fn.system(clone_cmd)
+    vim.cmd('packadd mini.nvim | helptags ALL')
+    vim.cmd('echo "Installed `mini.nvim`" | redraw')
 end
 
 -- Set up 'mini.deps' (customize to your liking)
@@ -50,7 +50,6 @@ now(function()
         name = "rose-pine"
     })
     vim.cmd('colorscheme rose-pine')
-
 end)
 
 -- regarding to mini
@@ -73,37 +72,38 @@ end)
 -- lsp config
 later(function()
     vim.lsp.config("clangd", {
-        cmd = {'clangd'},
-        filetypes = {'c', 'cpp'},
+        cmd = { 'clangd' },
+        filetypes = { 'c', 'cpp' },
         root_markers = {},
-        })
+    })
     vim.lsp.config("zuban", {
-        cmd = {'zuban', 'server'},
-        filetypes = {'python'},
-        root_markers = {'pyproject.toml'},
+        cmd = { 'zuban', 'server' },
+        filetypes = { 'python' },
+        root_markers = { 'pyproject.toml' },
     })
     vim.lsp.config("ruff", {
-        cmd = {'ruff', 'check'},
-        filetypes = {'python'},
-        root_markers = {'pyproject.toml'},
+        cmd = { 'ruff', 'check' },
+        filetypes = { 'python' },
+        root_markers = { 'pyproject.toml' },
     })
     vim.lsp.config("lua_ls", {
-        cmd = {'lua-language-server'},
-        filetypes = {'lua'},
+        cmd = { 'lua-language-server' },
+        filetypes = { 'lua' },
         root_markers = {}
     })
     vim.lsp.config("texlab", {
-        cmd = {'texlab'},
-        filetypes = {'tex'},
+        cmd = { 'texlab' },
+        filetypes = { 'tex' },
         root_markers = {}
     })
     vim.lsp.config("jdtls", {
-        cmd = {'jdtls'},
-        filetypes = {'java'},
+        cmd = { 'jdtls' },
+        filetypes = { 'java' },
         root_markers = {}
     })
     vim.lsp.enable("clangd")
     vim.lsp.enable("zuban")
+    vim.lsp.enable("ruff")
     vim.lsp.enable("lua_ls")
     vim.lsp.enable("texlab")
     vim.lsp.enable("jdtls")
@@ -118,19 +118,20 @@ end)
 later(function()
     add({
         source = "nvim-treesitter/nvim-treesitter",
-        hooks = { post_checkout = function() vim.cmd("TSUpdate") end}
+        hooks = { post_checkout = function() vim.cmd("TSUpdate") end }
     })
-    require'nvim-treesitter'.setup {
+    require 'nvim-treesitter'.setup {
         -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
         install_dir = vim.fn.stdpath('data') .. '/site'
     }
-    require'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown', 'markdown-inline'}, {generate=true, summary=true})
+    require 'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown', 'markdown-inline' },
+        { generate = true, summary = true })
     vim.api.nvim_create_autocmd('FileType', {
-      pattern = { 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
-      callback = function()
-          vim.treesitter.start()
-          vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-      end,
+        pattern = { 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
+        callback = function()
+            vim.treesitter.start()
+            vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+        end,
     })
 end)
 
@@ -152,9 +153,9 @@ later(function()
         })
     end
     -- leader key fall back
-    vim.keymap.set({'n', 'v'}, "<leader><leader>", " ", { desc = "just insert the space" })
+    vim.keymap.set({ 'n', 'v' }, "<leader><leader>", " ", { desc = "just insert the space" })
 
-    vim.keymap.set({'n'}, '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic in float window" })
+    vim.keymap.set({ 'n' }, '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic in float window" })
 
     -- grapple
     vim.keymap.set("n", "<leader>m", require("grapple").toggle, { desc = "toggle grapple here" })
@@ -165,7 +166,7 @@ later(function()
     vim.keymap.set("n", "<leader>4", "<cmd>Grapple select index=4<cr>", { desc = "goto forth tag" })
 
     -- deal with file
-    vim.keymap.set('n', '<leader>ff', mini_pick_hidden, { desc = 'Open file finder'})
+    vim.keymap.set('n', '<leader>ff', mini_pick_hidden, { desc = 'Open file finder' })
     vim.keymap.set('n', '<leader>fu', ':UndotreeToggle<cr>', { desc = 'Open undotree', silent = true })
 
     -- deal with git
