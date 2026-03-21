@@ -82,6 +82,11 @@ later(function()
         filetypes = {'python'},
         root_markers = {'pyproject.toml'},
     })
+    vim.lsp.config("ruff", {
+        cmd = {'ruff', 'check'},
+        filetypes = {'python'},
+        root_markers = {'pyproject.toml'},
+    })
     vim.lsp.config("lua_ls", {
         cmd = {'lua-language-server'},
         filetypes = {'lua'},
@@ -102,6 +107,11 @@ later(function()
     vim.lsp.enable("lua_ls")
     vim.lsp.enable("texlab")
     vim.lsp.enable("jdtls")
+    vim.api.nvim_create_autocmd("BufWritePre", {
+        callback = function()
+            vim.lsp.buf.format({ async = false })
+        end,
+    })
 end)
 
 -- nvim-treesitter
