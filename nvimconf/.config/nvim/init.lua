@@ -115,7 +115,7 @@ later(function()
         install_dir = vim.fn.stdpath('data') .. '/site'
     }
     require'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown', 'markdown-inline'}, {generate=true, summary=true})
-    vim.api.nvim_create_aumd('FileType', {
+    vim.api.nvim_create_autocmd('FileType', {
       pattern = { 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
       callback = function()
           vim.treesitter.start()
