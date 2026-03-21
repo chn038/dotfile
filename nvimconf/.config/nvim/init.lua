@@ -72,65 +72,36 @@ end)
 
 -- lsp config
 later(function()
-    add({
-        source = "williamboman/mason.nvim"
+    vim.lsp.config("clangd", {
+        cmd = {'clangd'},
+        filetypes = {'c', 'cpp'},
+        root_markers = {},
+        })
+    vim.lsp.config("zuban", {
+        cmd = {'zuban', 'server'},
+        filetypes = {'python'},
+        root_markers = {'pyproject.toml'},
     })
-    add({
-        source = "williamboman/mason-lspconfig.nvim"
+    vim.lsp.config("lua_ls", {
+        cmd = {'lua-language-server'},
+        filetypes = {'lua'},
+        root_markers = {}
     })
-    add({
-        source = "neovim/nvim-lspconfig"
+    vim.lsp.config("texlab", {
+        cmd = {'texlab'},
+        filetypes = {'tex'},
+        root_markers = {}
     })
-    require("mason").setup()
-    require("mason-lspconfig").setup()
+    vim.lsp.config("jdtls", {
+        cmd = {'jdtls'},
+        filetypes = {'java'},
+        root_markers = {}
+    })
     vim.lsp.enable("clangd")
-    vim.lsp.enable("pylsp")
-    vim.lsp.enable("nixd")
+    vim.lsp.enable("zuban")
     vim.lsp.enable("lua_ls")
     vim.lsp.enable("texlab")
-end)
-
--- gen.nvim
-later(function()
-    add({
-        source = "David-Kunz/gen.nvim",
-    })
-    local opts = {
-        model = "gemma3n:e4b", -- The default model to use.
-        quit_map = "q", -- set keymap to close the response window
-        retry_map = "<c-r>", -- set keymap to re-send the current prompt
-        accept_map = "<c-cr>", -- set keymap to replace the previous selection with the last result
-        host = "localhost", -- The host running the Ollama service.
-        port = "11434", -- The port on which the Ollama service is listening.
-        display_mode = "vertical-split", -- The display mode. Can be "float" or "split" or "horizontal-split" or "vertical-split".
-        show_prompt = true, -- Shows the prompt submitted to Ollama. Can be true (3 lines) or "full".
-        show_model = true, -- Displays which model you are using at the beginning of your chat session.
-        no_auto_close = true, -- Never closes the window automatically.
-        file = true, -- Write the payload to a temporary file to keep the command short.
-        hidden = false, -- Hide the generation window (if true, will implicitly set `prompt.replace = true`), requires Neovim >= 0.10
-        init = function(options) pcall(io.popen, "ollama serve > /dev/null 2>&1 &") end,
-        -- Function to initialize Ollama
-        command = function(options)
-            local body = {model = options.model, stream = true}
-            return "curl --silent --no-buffer -X POST http://" .. options.host .. ":" .. options.port .. "/api/chat -d $body"
-        end,
-        -- The command for the Ollama service. You can use placeholders $prompt, $model and $body (shellescaped).
-        -- This can also be a command string.
-        -- The executed command must return a JSON object with { response, context }
-        -- (context property is optional).
-        -- list_models = '<omitted lua function>', -- Retrieves a list of model names
-        result_filetype = "markdown", -- Configure filetype of the result buffer
-        debug = false -- Prints errors and the command which is run.
-    }
-    require('gen').setup(opts)
-end)
-
--- render-markdown.nvim
-later(function()
-    add({
-    source = 'MeanderingProgrammer/render-markdown.nvim',
-    depends = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.nvim' },            -- if you use the mini.nvim suite
-    })
+    vim.lsp.enable("jdtls")
 end)
 
 -- nvim-treesitter
@@ -144,12 +115,10 @@ later(function()
         install_dir = vim.fn.stdpath('data') .. '/site'
     }
     require'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown', 'markdown-inline'}, {generate=true, summary=true})
-    vim.api.nvim_create_autocmd('FileType', {
+    vim.api.nvim_create_aumd('FileType', {
       pattern = { 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
       callback = function()
           vim.treesitter.start()
-          vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
-          vim.wo[0][0].foldmethod = 'expr'
           vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
       end,
     })
@@ -191,12 +160,6 @@ later(function()
 
     -- deal with git
     vim.keymap.set('n', '<leader>gg', ':Git ', { desc = "Open git" })
-
-    -- deal with ai
-    vim.keymap.set({'n', 'v'}, "<leader>oo", ":Gen<CR>", { desc = "gen"})
-    vim.keymap.set({'n', 'v'}, "<leader>c", ":Gen Chat<CR>", { desc = "gen chat"})
-    vim.keymap.set('n', "<leader>os", require('gen').select_model, { desc = "gen select model"})
-
 end)
 
 -- mini.clue
