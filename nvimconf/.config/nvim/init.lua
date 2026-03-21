@@ -82,7 +82,7 @@ later(function()
         root_markers = { 'pyproject.toml' },
     })
     vim.lsp.config("ruff", {
-        cmd = { 'ruff', 'check' },
+        cmd = { 'ruff', 'server' },
         filetypes = { 'python' },
         root_markers = { 'pyproject.toml' },
     })
