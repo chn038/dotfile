@@ -158,19 +158,20 @@ later(function()
     vim.keymap.set({ 'n' }, '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic in float window" })
 
     -- grapple
-    vim.keymap.set("n", "<leader>m", require("grapple").toggle, { desc = "toggle grapple here" })
-    vim.keymap.set("n", "<leader>l", require("grapple").toggle_tags, { desc = "show the tag list" })
+    vim.keymap.set("n", "<leader>a", require("grapple").toggle, { desc = "toggle grapple here" })
+    vim.keymap.set("n", "<leader>e", require("grapple").toggle_tags, { desc = "show the tag list" })
     vim.keymap.set("n", "<leader>1", "<cmd>Grapple select index=1<cr>", { desc = "goto first tag" })
     vim.keymap.set("n", "<leader>2", "<cmd>Grapple select index=2<cr>", { desc = "goto second tag" })
     vim.keymap.set("n", "<leader>3", "<cmd>Grapple select index=3<cr>", { desc = "goto third tag" })
     vim.keymap.set("n", "<leader>4", "<cmd>Grapple select index=4<cr>", { desc = "goto forth tag" })
 
     -- deal with file
-    vim.keymap.set('n', '<leader>ff', mini_pick_hidden, { desc = 'Open file finder' })
-    vim.keymap.set('n', '<leader>fu', ':UndotreeToggle<cr>', { desc = 'Open undotree', silent = true })
+    vim.keymap.set('n', '<leader>f', mini_pick_hidden, { desc = 'Open file finder' })
+    vim.keymap.set('n', '<leader>u', ':UndotreeToggle<cr>', { desc = 'Open undotree', silent = true })
+    vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
 
     -- deal with git
-    vim.keymap.set('n', '<leader>gg', ':Git ', { desc = "Open git" })
+    vim.keymap.set('n', '<leader>g', ':Git ', { desc = "Open git" })
 end)
 
 -- mini.clue
