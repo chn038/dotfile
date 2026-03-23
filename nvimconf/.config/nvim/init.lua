@@ -74,32 +74,32 @@ later(function()
     vim.lsp.config("clangd", {
         cmd = { 'clangd' },
         filetypes = { 'c', 'cpp' },
-        root_markers = {},
+        root_markers = { '.git' },
     })
     vim.lsp.config("zuban", {
         cmd = { 'zuban', 'server' },
         filetypes = { 'python' },
-        root_markers = { 'pyproject.toml' },
+        root_markers = { 'pyproject.toml', '.git' },
     })
     vim.lsp.config("ruff", {
         cmd = { 'ruff', 'server' },
         filetypes = { 'python' },
-        root_markers = { 'pyproject.toml' },
+        root_markers = { 'pyproject.toml', '.git' },
     })
     vim.lsp.config("lua_ls", {
         cmd = { 'lua-language-server' },
         filetypes = { 'lua' },
-        root_markers = {}
+        root_markers = { '.git' }
     })
     vim.lsp.config("texlab", {
         cmd = { 'texlab' },
         filetypes = { 'tex' },
-        root_markers = {}
+        root_markers = { '.git' }
     })
     vim.lsp.config("jdtls", {
         cmd = { 'jdtls' },
         filetypes = { 'java' },
-        root_markers = {}
+        root_markers = { '.git' }
     })
     vim.lsp.enable("clangd")
     vim.lsp.enable("zuban")
