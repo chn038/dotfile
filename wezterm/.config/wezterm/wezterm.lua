@@ -5,9 +5,11 @@ local config = wezterm.config_builder()
 config.color_scheme = 'Rosé Pine (Gogh)'
 
 config.font = wezterm.font 'FiraCode Nerd Font Mono'
-config.font_size = 12
+config.font_size = 10
 config.use_ime = true
 config.enable_tab_bar = false
-config.enable_wayland = false
+config.enable_wayland = true
+
+config.scrollback_lines = 10000
 
 return config
