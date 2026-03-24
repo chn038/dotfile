@@ -62,6 +62,13 @@ later(function()
     require('mini.fuzzy').setup()
 end)
 
+-- leap.nvim
+later(function()
+    add({
+        source = 'https://codeberg.org/andyg/leap.nvim'
+    })
+end)
+
 -- undotree
 later(function()
     add({
@@ -154,6 +161,10 @@ later(function()
     end
     -- leader key fall back
     vim.keymap.set({ 'n', 'v' }, "<leader><leader>", " ", { desc = "just insert the space" })
+
+    -- leap
+    vim.keymap.set({ 'n', 'x', 'o' }, 's', '<Plug>(leap)', { desc = "leap" })
+    vim.keymap.set('n', 'S', '<Plug>(leap-from-window)', { desc = "leap from window" })
 
     vim.keymap.set({ 'n' }, '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic in float window" })
 
