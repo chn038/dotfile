@@ -36,7 +36,6 @@ now(function()
     vim.opt.incsearch = true
     vim.opt.cursorline = true
     vim.opt.cursorcolumn = true
-    vim.opt.scrolloff = 20
 end)
 
 -- initial call
