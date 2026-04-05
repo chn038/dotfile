@@ -99,7 +99,7 @@ later(function()
     })
     vim.lsp.config("texlab", {
         cmd = { 'texlab' },
-        filetypes = { 'tex' },
+        filetypes = { 'tex', 'plaintex' },
         root_markers = { '.git' }
     })
     vim.lsp.config("jdtls", {
