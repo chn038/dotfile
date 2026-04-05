@@ -45,10 +45,10 @@ now(function()
     require('mini.notify').setup()
     require('mini.icons').setup()
     add({
-        source = "rose-pine/neovim",
-        name = "rose-pine"
+        source = "shaunsingh/nord.nvim",
+        name = "nord"
     })
-    vim.cmd('colorscheme rose-pine')
+    vim.cmd('colorscheme nord')
 end)
 
 -- regarding to mini
