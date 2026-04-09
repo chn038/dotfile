@@ -1,233 +1,164 @@
--- open all fold by zn and undo by zi
--- toggle fold by hovering and pressing za
--- Clone 'mini.nvim' manually in a way that it gets managed by 'mini.deps'
-local path_package = vim.fn.stdpath('data') .. '/site/'
-local mini_path = path_package .. 'pack/deps/start/mini.nvim'
-if not vim.loop.fs_stat(mini_path) then
-    vim.cmd('echo "Installing `mini.nvim`" | redraw')
-    local clone_cmd = {
-        'git', 'clone', '--filter=blob:none',
-        'https://github.com/nvim-mini/mini.nvim', mini_path
-    }
-    vim.fn.system(clone_cmd)
-    vim.cmd('packadd mini.nvim | helptags ALL')
-    vim.cmd('echo "Installed `mini.nvim`" | redraw')
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+vim.opt.colorcolumn = "80"
+vim.opt.expandtab = true
+vim.opt.smarttab = true
+vim.opt.splitright = true
+vim.opt.swapfile = false
+vim.opt.undofile = true
+vim.opt.smartindent = true
+vim.opt.shiftwidth = 4
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.incsearch = true
+vim.opt.cursorline = true
+vim.opt.cursorcolumn = true
+
+vim.pack.add({
+    { src = "https://github.com/shaunsingh/nord.nvim" },
+    { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
+    { src = "https://github.com/cbochs/grapple.nvim" },
+    { src = "https://github.com/nvim-tree/nvim-web-devicons" },
+    { src = "https://github.com/ibhagwan/fzf-lua" },
+    {
+        src = "https://github.com/saghen/blink.cmp",
+        version = vim.version.range('1.*')
+    },
+    { src = "https://github.com/rafamadriz/friendly-snippets" },
+})
+
+-- hooks
+vim.api.nvim_create_autocmd('PackChanged', {
+    callback = function(ev)
+        local name, kind = ev.data.spec.name, ev.data.kind
+        if name == 'nvim-treesitter' and kind == 'update' then
+            if not ev.data.active then vim.cmd.packadd('nvim-treesitter') end
+            vim.cmd('TSUpdate')
+        end
+    end
+})
+
+vim.cmd('colorscheme nord')
+
+vim.lsp.config("clangd", {
+    cmd = { 'clangd' },
+    filetypes = { 'c', 'cpp' },
+    root_markers = { '.git' },
+})
+vim.lsp.config("zuban", {
+    cmd = { 'zuban', 'server' },
+    filetypes = { 'python' },
+    root_markers = { 'pyproject.toml', '.git' },
+})
+vim.lsp.config("ruff", {
+    cmd = { 'ruff', 'server' },
+    filetypes = { 'python' },
+    root_markers = { 'pyproject.toml', '.git' },
+})
+vim.lsp.config("lua_ls", {
+    cmd = { 'lua-language-server' },
+    filetypes = { 'lua' },
+    root_markers = { '.git' }
+})
+vim.lsp.config("texlab", {
+    cmd = { 'texlab' },
+    filetypes = { 'tex', 'plaintex' },
+    root_markers = { '.git' }
+})
+vim.lsp.config("jdtls", {
+    cmd = { 'jdtls' },
+    filetypes = { 'java' },
+    root_markers = { '.git' }
+})
+vim.lsp.enable("clangd")
+vim.lsp.enable("zuban")
+vim.lsp.enable("ruff")
+vim.lsp.enable("lua_ls")
+vim.lsp.enable("texlab")
+vim.lsp.enable("jdtls")
+vim.api.nvim_create_autocmd("BufWritePre", {
+    callback = function()
+        vim.lsp.buf.format({ async = false })
+    end,
+})
+
+-- setups
+require 'nvim-treesitter'.setup {
+    -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
+    install_dir = vim.fn.stdpath('data') .. '/site'
+}
+
+require 'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
+    { generate = true, summary = true })
+vim.api.nvim_create_autocmd('FileType', {
+    pattern = { 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
+    callback = function()
+        vim.treesitter.start()
+        vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+    end,
+})
+
+require 'fzf-lua'.setup {
+    files = {
+        hidden = true,
+        no_ignore = true
+    },
+}
+
+require 'blink.cmp'.setup {
+    keymap = { preset = 'super-tab' },
+    appearance = { nerd_font_variant = "mono" },
+    completion = { documentation = { auto_show = true } },
+    sources = {
+        default = { 'lsp', 'path', 'snippets', 'buffer' },
+    },
+    opts_extend = { "sources.default" }
+}
+
+local CleanPackage = function()
+    local unused_packages = vim.iter(vim.pack.get())
+        :filter(function(x) return not x.active end)
+        :map(function(x)
+            return x.spec.name
+        end)
+        :totable()
+    vim.pack.del(unused_packages)
+    local pack_list = ""
+    for _, pack in pairs(unused_packages) do
+        pack_list = pack_list .. pack .. "\n"
+    end
+    print("Delete the following packages:\n", pack_list)
 end
 
--- Set up 'mini.deps' (customize to your liking)
-require('mini.deps').setup({ path = { package = path_package } })
-
-local add, now, later = MiniDeps.add, MiniDeps.now, MiniDeps.later
-
--- general settings
-now(function()
-    vim.g.mapleader = " "
-    vim.g.maplocalleader = "\\"
-    vim.opt.colorcolumn = "80"
-    vim.opt.expandtab = true
-    vim.opt.smarttab = true
-    vim.opt.splitright = true
-    vim.opt.swapfile = false
-    vim.opt.undofile = true
-    vim.opt.smartindent = true
-    vim.opt.shiftwidth = 4
-    vim.opt.number = true
-    vim.opt.relativenumber = true
-    vim.opt.incsearch = true
-    vim.opt.cursorline = true
-    vim.opt.cursorcolumn = true
-end)
-
--- initial call
-now(function()
-    require('mini.statusline').setup()
-    require('mini.tabline').setup()
-    require('mini.notify').setup()
-    require('mini.icons').setup()
-    add({
-        source = "shaunsingh/nord.nvim",
-        name = "nord"
-    })
-    vim.cmd('colorscheme nord')
-end)
-
--- regarding to mini
-later(function()
-    require('mini.completion').setup()
-    require('mini.snippets').setup()
-    require('mini.diff').setup()
-    require('mini.git').setup()
-    require('mini.pick').setup()
-    require('mini.fuzzy').setup()
-end)
-
--- leap.nvim
-later(function()
-    add({
-        source = 'https://codeberg.org/andyg/leap.nvim'
-    })
-end)
-
--- undotree
-later(function()
-    add({
-        source = 'mbbill/undotree'
-    })
-end)
-
--- lsp config
-later(function()
-    vim.lsp.config("clangd", {
-        cmd = { 'clangd' },
-        filetypes = { 'c', 'cpp' },
-        root_markers = { '.git' },
-    })
-    vim.lsp.config("zuban", {
-        cmd = { 'zuban', 'server' },
-        filetypes = { 'python' },
-        root_markers = { 'pyproject.toml', '.git' },
-    })
-    vim.lsp.config("ruff", {
-        cmd = { 'ruff', 'server' },
-        filetypes = { 'python' },
-        root_markers = { 'pyproject.toml', '.git' },
-    })
-    vim.lsp.config("lua_ls", {
-        cmd = { 'lua-language-server' },
-        filetypes = { 'lua' },
-        root_markers = { '.git' }
-    })
-    vim.lsp.config("texlab", {
-        cmd = { 'texlab' },
-        filetypes = { 'tex', 'plaintex' },
-        root_markers = { '.git' }
-    })
-    vim.lsp.config("jdtls", {
-        cmd = { 'jdtls' },
-        filetypes = { 'java' },
-        root_markers = { '.git' }
-    })
-    vim.lsp.enable("clangd")
-    vim.lsp.enable("zuban")
-    vim.lsp.enable("ruff")
-    vim.lsp.enable("lua_ls")
-    vim.lsp.enable("texlab")
-    vim.lsp.enable("jdtls")
-    vim.api.nvim_create_autocmd("BufWritePre", {
-        callback = function()
-            vim.lsp.buf.format({ async = false })
-        end,
-    })
-end)
-
--- nvim-treesitter
-later(function()
-    add({
-        source = "nvim-treesitter/nvim-treesitter",
-        hooks = { post_checkout = function() vim.cmd("TSUpdate") end }
-    })
-    require 'nvim-treesitter'.setup {
-        -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
-        install_dir = vim.fn.stdpath('data') .. '/site'
-    }
-    require 'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
-        { generate = true, summary = true })
-    vim.api.nvim_create_autocmd('FileType', {
-        pattern = { 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
-        callback = function()
-            vim.treesitter.start()
-            vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-        end,
-    })
-end)
-
--- grapple
-later(function()
-    add({
-        source = "cbochs/grapple.nvim",
-        depends = {
-            "nvim-tree/nvim-web-devicons"
-        },
-    })
-end)
+local ShowPackageList = function()
+    local pack_list = ""
+    for _, pack in pairs(vim.pack.get()) do
+        pack_list = pack_list .. pack.spec.name .. "\n"
+    end
+    print("Installed packages:\n", pack_list)
+end
 
 -- keybindings
-later(function()
-    local mini_pick_hidden = function()
-        MiniPick.builtin.cli({
-            command = { 'fd', '--hidden', '--type', 'f', '--type', 'd', '-I', '-i' }
-        })
-    end
-    -- leader key fall back
-    vim.keymap.set({ 'n', 'v' }, "<leader><leader>", " ", { desc = "just insert the space" })
+-- leader key fall back
+vim.keymap.set({ 'n', 'v' }, "<leader><leader>", " ", { desc = "just insert the space" })
 
-    -- leap
-    vim.keymap.set({ 'n', 'x', 'o' }, 's', '<Plug>(leap)', { desc = "leap" })
-    vim.keymap.set('n', 'S', '<Plug>(leap-from-window)', { desc = "leap from window" })
+-- package update and package clean
+vim.keymap.set('n', "<leader>pu", function() vim.pack.update() end, { desc = "update plugins" })
+vim.keymap.set('n', "<leader>pc", CleanPackage, { desc = "clean up packages" })
+vim.keymap.set('n', "<leader>pp", ShowPackageList, { desc = "show packages" })
 
-    vim.keymap.set({ 'n' }, '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic in float window" })
+-- grapple
+vim.keymap.set("n", "<leader>a", require("grapple").toggle, { desc = "toggle grapple here" })
+vim.keymap.set("n", "<leader>e", require("grapple").toggle_tags, { desc = "show the tag list" })
+vim.keymap.set("n", "<leader>1", "<cmd>Grapple select index=1<cr>", { desc = "goto first tag" })
+vim.keymap.set("n", "<leader>2", "<cmd>Grapple select index=2<cr>", { desc = "goto second tag" })
+vim.keymap.set("n", "<leader>3", "<cmd>Grapple select index=3<cr>", { desc = "goto third tag" })
+vim.keymap.set("n", "<leader>4", "<cmd>Grapple select index=4<cr>", { desc = "goto forth tag" })
 
-    -- grapple
-    vim.keymap.set("n", "<leader>a", require("grapple").toggle, { desc = "toggle grapple here" })
-    vim.keymap.set("n", "<leader>e", require("grapple").toggle_tags, { desc = "show the tag list" })
-    vim.keymap.set("n", "<leader>1", "<cmd>Grapple select index=1<cr>", { desc = "goto first tag" })
-    vim.keymap.set("n", "<leader>2", "<cmd>Grapple select index=2<cr>", { desc = "goto second tag" })
-    vim.keymap.set("n", "<leader>3", "<cmd>Grapple select index=3<cr>", { desc = "goto third tag" })
-    vim.keymap.set("n", "<leader>4", "<cmd>Grapple select index=4<cr>", { desc = "goto forth tag" })
+-- deal with lsp
+vim.keymap.set('n', "<leader>h", vim.diagnostic.open_float, { desc = "open diagnostic message under cursor" })
 
-    -- deal with file
-    vim.keymap.set('n', '<leader>f', mini_pick_hidden, { desc = 'Open file finder' })
-    vim.keymap.set('n', '<leader>u', ':UndotreeToggle<cr>', { desc = 'Open undotree', silent = true })
-    vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
-
-    -- deal with git
-    vim.keymap.set('n', '<leader>g', ':Git ', { desc = "Open git" })
-end)
-
--- mini.clue
-later(function()
-    local miniclue = require('mini.clue')
-    require('mini.clue').setup({
-        triggers = {
-            -- Leader triggers
-            { mode = 'n', keys = '<Leader>' },
-            { mode = 'x', keys = '<Leader>' },
-
-            -- Built-in completion
-            { mode = 'i', keys = '<C-x>' },
-
-            -- `g` key
-            { mode = 'n', keys = 'g' },
-            { mode = 'x', keys = 'g' },
-
-            -- Marks
-            { mode = 'n', keys = "'" },
-            { mode = 'n', keys = '`' },
-            { mode = 'x', keys = "'" },
-            { mode = 'x', keys = '`' },
-
-            -- Registers
-            { mode = 'n', keys = '"' },
-            { mode = 'x', keys = '"' },
-            { mode = 'i', keys = '<C-r>' },
-            { mode = 'c', keys = '<C-r>' },
-
-            -- Window commands
-            { mode = 'n', keys = '<C-w>' },
-
-            -- `z` key
-            { mode = 'n', keys = 'z' },
-            { mode = 'x', keys = 'z' },
-        },
-
-        clues = {
-            -- Enhance this by adding descriptions for <Leader> mapping groups
-            miniclue.gen_clues.builtin_completion(),
-            miniclue.gen_clues.g(),
-            miniclue.gen_clues.marks(),
-            miniclue.gen_clues.registers(),
-            miniclue.gen_clues.windows(),
-            miniclue.gen_clues.z(),
-        },
-    })
-end)
+-- deal with file
+vim.keymap.set('n', '<leader>f', ':FzfLua files<cr>', { desc = 'Open file picker' })
+vim.keymap.set('n', '<leader>u', ':UndotreeToggle<cr>', { desc = 'Open undotree', silent = true })
+vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
