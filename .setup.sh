@@ -3,6 +3,10 @@ stow -v -R *
 mkdir $HOME/.ssh
 cp ssh/.ssh/* $HOME/.ssh
 
+echo "Download tmux plugins"
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+echo "Tmux plugins installation finished"
+
 echo "Decrypting id_rsa"
 ansible-vault decrypt $HOME/.ssh/id_rsa
 echo "Decrypting id_rsa_1"
@@ -26,4 +30,4 @@ gpg --list-keys
 echo "Deleting copied keys..."
 rm $HOME/.prv.key
 rm $HOME/.pub.key
-echo "Finished!"
+echo 'Finished!'
