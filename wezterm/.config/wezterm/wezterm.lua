@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()
 
-config.color_scheme = 'Rosé Pine (Gogh)'
+config.color_scheme = 'Nord (Gogh)'
 
 config.font = wezterm.font 'FiraCode Nerd Font Mono'
 config.font_size = 10
