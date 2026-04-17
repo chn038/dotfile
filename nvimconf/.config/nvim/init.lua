@@ -49,8 +49,6 @@ end)
 
 -- regarding to mini
 later(function()
-    require('mini.completion').setup()
-    require('mini.snippets').setup()
     require('mini.diff').setup()
     require('mini.git').setup()
     require('mini.pick').setup()
@@ -62,6 +60,23 @@ later(function()
     add({
         source = 'mbbill/undotree'
     })
+end)
+
+-- snippets and completion
+later(function()
+    local gen_loader = require('mini.snippets').gen_loader
+    add({
+        source = "rafamadriz/friendly-snippets"
+    })
+    require('mini.snippets').setup({
+        snippets = {
+            -- Load snippets based on current language by reading files from
+            -- "snippets/" subdirectories from 'runtimepath' directories.
+            gen_loader.from_lang(),
+        },
+    })
+    MiniSnippets.start_lsp_server()
+    require('mini.completion').setup()
 end)
 
 -- lsp config
