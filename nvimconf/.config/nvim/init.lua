@@ -160,6 +160,9 @@ later(function()
     -- leader key fall back
     vim.keymap.set({ 'n', 'v' }, "<leader><leader>", " ", { desc = "just insert the space" })
 
+    -- lsp diagnose
+    vim.keymap.set('n', '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic info" })
+
     -- grapple
     vim.keymap.set("n", "<leader>a", require("grapple").toggle, { desc = "toggle grapple here" })
     vim.keymap.set("n", "<leader>e", require("grapple").toggle_tags, { desc = "show the tag list" })
