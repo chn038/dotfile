@@ -120,7 +120,6 @@ require 'blink.cmp'.setup {
         documentation = { auto_show = false },
         accept = { auto_brackets = { enabled = false }, },
         menu = { auto_show = false },
-        list = { selection = { preselect = false } },
         ghost_text = { enabled = true },
     },
 
