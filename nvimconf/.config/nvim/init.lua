@@ -108,12 +108,29 @@ require 'fzf-lua'.setup {
 }
 
 require 'blink.cmp'.setup {
-    keymap = { preset = 'super-tab' },
-    appearance = { nerd_font_variant = "mono" },
-    completion = { documentation = { auto_show = false } },
+    keymap = { preset = 'enter' },
+
+    appearance = {
+        nerd_font_variant = 'mono'
+    },
+
+    completion = {
+        keyword = { range = 'full' },
+        trigger = { show_on_keyword = true },
+        documentation = { auto_show = false },
+        accept = { auto_brackets = { enabled = false }, },
+        menu = { auto_show = false },
+        list = { selection = { preselect = false } },
+        ghost_text = { enabled = true },
+    },
+
     sources = {
         default = { 'lsp', 'path', 'snippets', 'buffer' },
     },
+
+    fuzzy = {
+        implementation = "prefer_rust_with_warning"
+    }
 }
 
 require('lualine').setup {
