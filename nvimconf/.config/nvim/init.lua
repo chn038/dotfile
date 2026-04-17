@@ -106,11 +106,6 @@ later(function()
         filetypes = { 'tex', 'plaintex' },
         root_markers = { '.git' }
     })
-    vim.lsp.config("jdtls", {
-        cmd = { 'jdtls' },
-        filetypes = { 'java' },
-        root_markers = { '.git' }
-    })
     vim.lsp.enable("clangd")
     vim.lsp.enable("zuban")
     vim.lsp.enable("ruff")
