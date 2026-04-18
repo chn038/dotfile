@@ -81,7 +81,6 @@ vim.lsp.enable("zuban")
 vim.lsp.enable("ruff")
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("texlab")
-vim.lsp.enable("jdtls")
 vim.api.nvim_create_autocmd("BufWritePre", {
     callback = function()
         vim.lsp.buf.format({ async = false })
