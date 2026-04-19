@@ -68,7 +68,7 @@ end)
 -- codediff
 later(function()
     add({
-        source = 'esmuellert/codediff.nvim'
+        source = 'sindrets/diffview.nvim'
     })
 end)
 
