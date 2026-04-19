@@ -62,6 +62,13 @@ later(function()
     })
 end)
 
+-- codediff
+later(function()
+    add({
+        source = 'esmuellert/codediff.nvim'
+    })
+end)
+
 -- snippets and completion
 later(function()
     local gen_loader = require('mini.snippets').gen_loader
