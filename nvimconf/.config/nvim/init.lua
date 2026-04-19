@@ -53,6 +53,9 @@ later(function()
     require('mini.git').setup()
     require('mini.pick').setup()
     require('mini.fuzzy').setup()
+    require('mini.visits').setup()
+    -- only use visits as manual labeling
+    vim.g.minivisits_disable = true
 end)
 
 -- undotree
@@ -146,15 +149,6 @@ later(function()
     })
 end)
 
--- grapple
-later(function()
-    add({
-        source = "cbochs/grapple.nvim",
-        depends = {
-            "nvim-tree/nvim-web-devicons"
-        },
-    })
-end)
 
 -- keybindings
 later(function()
@@ -169,13 +163,11 @@ later(function()
     -- lsp diagnose
     vim.keymap.set('n', '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic info" })
 
-    -- grapple
-    vim.keymap.set("n", "<leader>a", require("grapple").toggle, { desc = "toggle grapple here" })
-    vim.keymap.set("n", "<leader>e", require("grapple").toggle_tags, { desc = "show the tag list" })
-    vim.keymap.set("n", "<leader>1", "<cmd>Grapple select index=1<cr>", { desc = "goto first tag" })
-    vim.keymap.set("n", "<leader>2", "<cmd>Grapple select index=2<cr>", { desc = "goto second tag" })
-    vim.keymap.set("n", "<leader>3", "<cmd>Grapple select index=3<cr>", { desc = "goto third tag" })
-    vim.keymap.set("n", "<leader>4", "<cmd>Grapple select index=4<cr>", { desc = "goto forth tag" })
+    -- mini.visit
+    vim.keymap.set("n", "<leader>a", function() MiniVisits.add_label("core") end, { desc = "add label" })
+    vim.keymap.set("n", "<leader>d", function() MiniVisits.remove_label("core") end, { desc = "delete label" })
+    vim.keymap.set("n", "<leader>e", function() MiniVisits.select_path(nil, { filter = "core" }) end,
+        { desc = "select label" })
 
     -- deal with file
     vim.keymap.set('n', '<leader>f', mini_pick_hidden, { desc = 'Open file finder' })
