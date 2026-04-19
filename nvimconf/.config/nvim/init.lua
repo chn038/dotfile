@@ -44,7 +44,13 @@ now(function()
     require('mini.tabline').setup()
     require('mini.notify').setup()
     require('mini.icons').setup()
-    vim.cmd('colorscheme catppuccin')
+end)
+
+-- colorscheme
+now(function()
+    add({ source = "rose-pine/neovim", name = 'rose-pine' })
+    require('rose-pine').setup()
+    vim.cmd('colorscheme rose-pine')
 end)
 
 -- regarding to mini
