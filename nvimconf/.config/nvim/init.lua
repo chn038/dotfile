@@ -55,8 +55,6 @@ end)
 
 -- regarding to mini
 later(function()
-    require('mini.diff').setup()
-    require('mini.git').setup()
     require('mini.pick').setup()
     require('mini.fuzzy').setup()
     require('mini.visits').setup()
@@ -68,13 +66,6 @@ end)
 later(function()
     add({
         source = 'mbbill/undotree'
-    })
-end)
-
--- codediff
-later(function()
-    add({
-        source = 'sindrets/diffview.nvim'
     })
 end)
 
