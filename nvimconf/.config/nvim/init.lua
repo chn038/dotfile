@@ -97,41 +97,18 @@ end)
 
 -- lsp config
 later(function()
-    vim.lsp.config("clangd", {
-        cmd = { 'clangd' },
-        filetypes = { 'c', 'cpp' },
-        root_markers = { '.git' },
+    add({
+        source = "mason-org/mason-lspconfig.nvim"
     })
-    vim.lsp.config("zuban", {
-        cmd = { 'zuban', 'server' },
-        filetypes = { 'python' },
-        root_markers = { 'pyproject.toml', '.git' },
+    add({
+        source = "mason-org/mason.nvim"
     })
-    vim.lsp.config("ruff", {
-        cmd = { 'ruff', 'server' },
-        filetypes = { 'python' },
-        root_markers = { 'pyproject.toml', '.git' },
+    add({
+        source = "neovim/nvim-lspconfig"
     })
-    vim.lsp.config("lua_ls", {
-        cmd = { 'lua-language-server' },
-        filetypes = { 'lua' },
-        root_markers = { '.git' }
-    })
-    vim.lsp.config("texlab", {
-        cmd = { 'texlab' },
-        filetypes = { 'tex', 'plaintex' },
-        root_markers = { '.git' }
-    })
-    vim.lsp.enable("clangd")
-    vim.lsp.enable("zuban")
-    vim.lsp.enable("ruff")
-    vim.lsp.enable("lua_ls")
-    vim.lsp.enable("texlab")
-    vim.api.nvim_create_autocmd("BufWritePre", {
-        callback = function()
-            vim.lsp.buf.format({ async = false })
-        end,
-    })
+
+    require("mason-lspconfig").setup()
+    require("mason").setup()
 end)
 
 -- nvim-treesitter
