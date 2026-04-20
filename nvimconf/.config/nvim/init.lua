@@ -28,7 +28,8 @@ vim.pack.add({
     },
     { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
     { src = "https://github.com/cbochs/grapple.nvim" },
-    { src = "https://github.com/sontungexpt/witch-line" },
+    { src = 'https://github.com/nvim-tree/nvim-web-devicons' },
+    { src = 'https://github.com/nvim-lualine/lualine.nvim' },
     { src = "https://github.com/mason-org/mason.nvim" },
     { src = "https://github.com/mason-org/mason-lspconfig.nvim" },
     { src = "https://github.com/neovim/nvim-lspconfig" },
@@ -98,8 +99,7 @@ vim.api.nvim_create_autocmd('FileType', {
     end,
 })
 
-require 'witch-line'.setup {
-}
+require 'lualine'.setup()
 
 require("mason").setup()
 require("mason-lspconfig").setup()
