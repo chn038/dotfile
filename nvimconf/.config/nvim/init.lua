@@ -26,7 +26,7 @@ vim.pack.add({
         src = "https://github.com/saghen/blink.cmp",
         version = vim.version.range('1.*')
     },
-    { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
+    { src = "https://github.com/arborist-ts/arborist.nvim" },
     { src = "https://github.com/cbochs/grapple.nvim" },
     { src = 'https://github.com/nvim-tree/nvim-web-devicons' },
     { src = 'https://github.com/nvim-lualine/lualine.nvim' },
@@ -36,25 +36,9 @@ vim.pack.add({
 })
 vim.cmd('packadd nvim.undotree')
 
--- all hooks should be defined here
-local hooks = function(ev)
-    -- Use available |event-data|
-    local name, kind = ev.data.spec.name, ev.data.kind
-    if name == 'nvim-treesitter' and (kind == 'install' or kind == 'update') then
-        if not ev.data.active then
-            vim.cmd.packadd('nvim-treesitter')
-        end
-        vim.cmd('TSUpdate')
-    end
-end
-
-vim.api.nvim_create_autocmd('PackChanged', { callback = hooks })
-
-
 -- package setups
 require('rose-pine').setup()
 vim.cmd('colorscheme rose-pine')
-
 require('fzf-lua').setup({
     files = {
         hidden = true,
@@ -67,7 +51,6 @@ require('fzf-lua').setup({
         glob_flag = '--iglob'
     }
 })
-
 require('blink.cmp').setup({
     keymap = { preset = 'super-tab' },
     appearance = {
@@ -84,23 +67,8 @@ require('blink.cmp').setup({
         implementation = "prefer_rust"
     },
 })
-
-require 'nvim-treesitter'.setup {
-    -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
-    install_dir = vim.fn.stdpath('data') .. '/site'
-}
-require 'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown', 'java' },
-    { generate = true, summary = true })
-vim.api.nvim_create_autocmd('FileType', {
-    pattern = { 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown', 'java' },
-    callback = function()
-        vim.treesitter.start()
-        vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-    end,
-})
-
+require('arborist').setup()
 require 'lualine'.setup()
-
 require("mason").setup()
 require("mason-lspconfig").setup()
 vim.api.nvim_create_autocmd("BufWritePre", {
