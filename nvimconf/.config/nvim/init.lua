@@ -107,8 +107,8 @@ later(function()
         source = "neovim/nvim-lspconfig"
     })
 
-    require("mason-lspconfig").setup()
     require("mason").setup()
+    require("mason-lspconfig").setup()
 end)
 
 -- nvim-treesitter
