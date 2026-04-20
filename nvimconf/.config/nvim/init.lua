@@ -67,7 +67,9 @@ require('blink.cmp').setup({
         implementation = "prefer_rust"
     },
 })
-require('arborist').setup()
+require('arborist').setup({
+    ensure_installed = { "c", "cpp", "cuda", "python", "java", "lua", "markdown" }
+})
 require 'lualine'.setup()
 require("mason").setup()
 require("mason-lspconfig").setup()
