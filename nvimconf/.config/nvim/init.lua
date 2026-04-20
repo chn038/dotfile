@@ -1,201 +1,150 @@
--- Put this at the top of 'init.lua'
-local path_package = vim.fn.stdpath('data') .. '/site'
-local mini_path = path_package .. '/pack/deps/start/mini.nvim'
-if not vim.loop.fs_stat(mini_path) then
-    vim.cmd('echo "Installing `mini.nvim`" | redraw')
-    local clone_cmd = {
-        'git', 'clone', '--filter=blob:none',
-        -- Uncomment next line to use 'stable' branch
-        -- '--branch', 'stable',
-        'https://github.com/nvim-mini/mini.nvim', mini_path
-    }
-    vim.fn.system(clone_cmd)
-    vim.cmd('packadd mini.nvim | helptags ALL')
-    vim.cmd('echo "Installed `mini.nvim`" | redraw')
+-- general settings
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+vim.opt.colorcolumn = "80"
+vim.opt.expandtab = true
+vim.opt.smarttab = true
+vim.opt.splitright = true
+vim.opt.swapfile = false
+vim.opt.undofile = true
+vim.opt.smartindent = true
+vim.opt.shiftwidth = 4
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.incsearch = true
+vim.opt.cursorline = true
+vim.opt.cursorcolumn = true
+vim.opt.laststatus = 3 -- for each window has its own status line
+
+-- package installation
+vim.pack.add({
+    { src = "https://github.com/rose-pine/neovim",            name = "rose-pine" },
+    { src = "https://github.com/ibhagwan/fzf-lua" },
+    { src = "https://github.com/nvim-tree/nvim-web-devicons" },
+    { src = "https://github.com/rafamadriz/friendly-snippets" },
+    {
+        src = "https://github.com/saghen/blink.cmp",
+        version = vim.version.range('1.*')
+    },
+    { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
+    { src = "https://github.com/cbochs/grapple.nvim" },
+    { src = "https://github.com/sontungexpt/witch-line" },
+    { src = "https://github.com/mason-org/mason.nvim" },
+    { src = "https://github.com/mason-org/mason-lspconfig.nvim" },
+    { src = "https://github.com/neovim/nvim-lspconfig" },
+})
+vim.cmd('packadd nvim.undotree')
+
+-- all hooks should be defined here
+local hooks = function(ev)
+    -- Use available |event-data|
+    local name, kind = ev.data.spec.name, ev.data.kind
+    if name == 'nvim-treesitter' and (kind == 'install' or kind == 'update') then
+        if not ev.data.active then
+            vim.cmd.packadd('nvim-treesitter')
+        end
+        vim.cmd('TSUpdate')
+    end
 end
 
--- Set up 'mini.deps' (customize to your liking)
-require('mini.deps').setup()
-
-local add, now, later = MiniDeps.add, MiniDeps.now, MiniDeps.later
-
--- general settings
-now(function()
-    vim.g.mapleader = " "
-    vim.g.maplocalleader = "\\"
-    vim.opt.colorcolumn = "80"
-    vim.opt.expandtab = true
-    vim.opt.smarttab = true
-    vim.opt.splitright = true
-    vim.opt.swapfile = false
-    vim.opt.undofile = true
-    vim.opt.smartindent = true
-    vim.opt.shiftwidth = 4
-    vim.opt.number = true
-    vim.opt.relativenumber = true
-    vim.opt.incsearch = true
-    vim.opt.cursorline = true
-    vim.opt.cursorcolumn = true
-end)
-
--- initial call
-now(function()
-    require('mini.statusline').setup()
-    require('mini.tabline').setup()
-    require('mini.notify').setup()
-    require('mini.icons').setup()
-end)
-
--- colorscheme
-now(function()
-    add({ source = "rose-pine/neovim", name = 'rose-pine' })
-    require('rose-pine').setup()
-    vim.cmd('colorscheme rose-pine')
-end)
-
--- regarding to mini
-later(function()
-    require('mini.pick').setup()
-    require('mini.fuzzy').setup()
-    require('mini.visits').setup()
-    -- only use visits as manual labeling
-    vim.g.minivisits_disable = true
-end)
-
--- undotree, use neovim builtin undotree plugin
-later(function()
-    vim.cmd("packadd nvim.undotree")
-end)
-
--- snippets and completion
-later(function()
-    local gen_loader = require('mini.snippets').gen_loader
-    add({
-        source = "rafamadriz/friendly-snippets"
-    })
-    require('mini.snippets').setup({
-        snippets = {
-            -- Load snippets based on current language by reading files from
-            -- "snippets/" subdirectories from 'runtimepath' directories.
-            gen_loader.from_lang(),
-        },
-    })
-    MiniSnippets.start_lsp_server()
-    require('mini.completion').setup()
-end)
-
--- lsp config
-later(function()
-    add({
-        source = "mason-org/mason-lspconfig.nvim"
-    })
-    add({
-        source = "mason-org/mason.nvim"
-    })
-    add({
-        source = "neovim/nvim-lspconfig"
-    })
-
-    require("mason").setup()
-    require("mason-lspconfig").setup()
-    vim.api.nvim_create_autocmd("BufWritePre", {
-        callback = function()
-            vim.lsp.buf.format()
-        end
-    })
-end)
-
--- nvim-treesitter
-later(function()
-    add({
-        source = "nvim-treesitter/nvim-treesitter",
-        hooks = { post_checkout = function() vim.cmd("TSUpdate") end }
-    })
-    require 'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown', 'java' },
-        { generate = true, summary = true })
-    vim.api.nvim_create_autocmd('FileType', {
-        pattern = { 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
-        callback = function()
-            vim.treesitter.start()
-            vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-        end,
-    })
-end)
+vim.api.nvim_create_autocmd('PackChanged', { callback = hooks })
 
 
--- keybindings
-later(function()
-    local mini_pick_hidden = function()
-        MiniPick.builtin.cli({
-            command = { 'fd', '--hidden', '--type', 'f', '--type', 'd', '-I', '-i' }
-        })
+-- package setups
+require('rose-pine').setup()
+vim.cmd('colorscheme rose-pine')
+
+require('fzf-lua').setup({
+    files = {
+        hidden = true,
+        follow = false,
+        no_ignore = true,
+        absolute_path = true
+    },
+    grep = {
+        rg_glob = true,
+        glob_flag = '--iglob'
+    }
+})
+
+require('blink.cmp').setup({
+    keymap = { preset = 'super-tab' },
+    appearance = {
+        nerd_font_variant = 'mono'
+    },
+    completion = {
+        documentation = { auto_show = false },
+        accept = { auto_brackets = { enabled = false } }
+    },
+    sources = {
+        default = { 'lsp', 'path', 'snippets', 'buffer' },
+    },
+    fuzzy = {
+        implementation = "prefer_rust"
+    },
+})
+
+require 'nvim-treesitter'.setup {
+    -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
+    install_dir = vim.fn.stdpath('data') .. '/site'
+}
+require 'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown', 'java' },
+    { generate = true, summary = true })
+vim.api.nvim_create_autocmd('FileType', {
+    pattern = { 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown', 'java' },
+    callback = function()
+        vim.treesitter.start()
+        vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+    end,
+})
+
+require 'witch-line'.setup {
+}
+
+require("mason").setup()
+require("mason-lspconfig").setup()
+vim.api.nvim_create_autocmd("BufWritePre", {
+    callback = function()
+        vim.lsp.buf.format()
     end
-    -- leader key fall back
-    vim.keymap.set({ 'n', 'v' }, "<leader><leader>", " ", { desc = "just insert the space" })
+})
 
-    -- lsp diagnose
-    vim.keymap.set('n', '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic info" })
+local ClearPack = function()
+    local orphanPacks = vim.iter(vim.pack.get())
+        :filter(function(x) return not x.active end)
+        :map(function(x) return x.spec.name end)
+        :totable()
+    local infoString = "The following packages are cleaned:\n"
+    for _, value in pairs(orphanPacks) do
+        infoString = infoString .. value .. "\n"
+    end
+    vim.pack.del(orphanPacks)
+    print(infoString)
+end
 
-    -- mini.visit
-    vim.keymap.set("n", "<leader>a", function() MiniVisits.add_label("core") end, { desc = "add label" })
-    vim.keymap.set("n", "<leader>d", function() MiniVisits.remove_label("core") end, { desc = "delete label" })
-    vim.keymap.set("n", "<leader>e", function() MiniVisits.select_path(nil, { filter = "core" }) end,
-        { desc = "select label" })
+-- keymaps
 
-    -- deal with file
-    vim.keymap.set('n', '<leader>f', mini_pick_hidden, { desc = 'Open file finder' })
-    vim.keymap.set('n', '<leader>u', ':Undotree<cr>', { desc = 'Open undotree', silent = true })
-    vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
-    vim.keymap.set('n', '<leader>?', ':Pick grep<cr>', { desc = 'Use fzf style grep to search string' })
+-- leader key fall back
+vim.keymap.set({ 'n', 'v' }, "<leader><leader>", " ", { desc = "just insert the space" })
 
-    -- deal with git
-    vim.keymap.set('n', '<leader>g', ':Git ', { desc = "Open git" })
-end)
+-- lsp diagnose
+vim.keymap.set('n', '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic info" })
 
--- mini.clue
-later(function()
-    local miniclue = require('mini.clue')
-    require('mini.clue').setup({
-        triggers = {
-            -- Leader triggers
-            { mode = 'n', keys = '<Leader>' },
-            { mode = 'x', keys = '<Leader>' },
+-- vim.pack specific
+vim.keymap.set('n', '<leader>pu', vim.pack.update, { desc = 'Update plugins' })
+vim.keymap.set('n', '<leader>pp', function() vim.pack.update(nil, { offline = true }) end, { desc = 'Explore plugins' })
+vim.keymap.set('n', '<leader>pc', ClearPack, { desc = 'Clear packages' })
 
-            -- Built-in completion
-            { mode = 'i', keys = '<C-x>' },
+-- grapple
+vim.keymap.set("n", "<leader>a", require("grapple").toggle, { desc = "toggle grapple here" })
+vim.keymap.set("n", "<leader>e", require("grapple").toggle_tags, { desc = "show the tag list" })
+vim.keymap.set("n", "<leader>1", "<cmd>Grapple select index=1<cr>", { desc = "goto first tag" })
+vim.keymap.set("n", "<leader>2", "<cmd>Grapple select index=2<cr>", { desc = "goto second tag" })
+vim.keymap.set("n", "<leader>3", "<cmd>Grapple select index=3<cr>", { desc = "goto third tag" })
+vim.keymap.set("n", "<leader>4", "<cmd>Grapple select index=4<cr>", { desc = "goto forth tag" })
 
-            -- `g` key
-            { mode = 'n', keys = 'g' },
-            { mode = 'x', keys = 'g' },
-
-            -- Marks
-            { mode = 'n', keys = "'" },
-            { mode = 'n', keys = '`' },
-            { mode = 'x', keys = "'" },
-            { mode = 'x', keys = '`' },
-
-            -- Registers
-            { mode = 'n', keys = '"' },
-            { mode = 'x', keys = '"' },
-            { mode = 'i', keys = '<C-r>' },
-            { mode = 'c', keys = '<C-r>' },
-
-            -- Window commands
-            { mode = 'n', keys = '<C-w>' },
-
-            -- `z` key
-            { mode = 'n', keys = 'z' },
-            { mode = 'x', keys = 'z' },
-        },
-
-        clues = {
-            -- Enhance this by adding descriptions for <Leader> mapping groups
-            miniclue.gen_clues.builtin_completion(),
-            miniclue.gen_clues.g(),
-            miniclue.gen_clues.marks(),
-            miniclue.gen_clues.registers(),
-            miniclue.gen_clues.windows(),
-            miniclue.gen_clues.z(),
-        },
-    })
-end)
+-- deal with file
+vim.keymap.set('n', '<leader>f', ':FzfLua files<cr>', { desc = 'Open file finder' })
+vim.keymap.set('n', '<leader>u', ':Undotree<cr>', { desc = 'Open undotree', silent = true })
+vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
+vim.keymap.set('n', '<leader>?', ':FzfLua grep<cr>', { desc = 'Use fzf lua grep for fuzzy finder' })

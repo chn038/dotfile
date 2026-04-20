@@ -44,22 +44,27 @@ now(function()
     require('mini.tabline').setup()
     require('mini.notify').setup()
     require('mini.icons').setup()
-    vim.cmd('colorscheme catppuccin')
+end)
+
+-- colorscheme
+now(function()
+    add({ source = "rose-pine/neovim", name = 'rose-pine' })
+    require('rose-pine').setup()
+    vim.cmd('colorscheme rose-pine')
 end)
 
 -- regarding to mini
 later(function()
-    require('mini.diff').setup()
-    require('mini.git').setup()
     require('mini.pick').setup()
     require('mini.fuzzy').setup()
+    require('mini.visits').setup()
+    -- only use visits as manual labeling
+    vim.g.minivisits_disable = true
 end)
 
--- undotree
+-- undotree, use neovim builtin undotree plugin
 later(function()
-    add({
-        source = 'mbbill/undotree'
-    })
+    vim.cmd("packadd nvim.undotree")
 end)
 
 -- snippets and completion
@@ -81,41 +86,22 @@ end)
 
 -- lsp config
 later(function()
-    vim.lsp.config("clangd", {
-        cmd = { 'clangd' },
-        filetypes = { 'c', 'cpp' },
-        root_markers = { '.git' },
+    add({
+        source = "mason-org/mason-lspconfig.nvim"
     })
-    vim.lsp.config("zuban", {
-        cmd = { 'zuban', 'server' },
-        filetypes = { 'python' },
-        root_markers = { 'pyproject.toml', '.git' },
+    add({
+        source = "mason-org/mason.nvim"
     })
-    vim.lsp.config("ruff", {
-        cmd = { 'ruff', 'server' },
-        filetypes = { 'python' },
-        root_markers = { 'pyproject.toml', '.git' },
+    add({
+        source = "neovim/nvim-lspconfig"
     })
-    vim.lsp.config("lua_ls", {
-        cmd = { 'lua-language-server' },
-        filetypes = { 'lua' },
-        root_markers = { '.git' }
-    })
-    vim.lsp.config("texlab", {
-        cmd = { 'texlab' },
-        filetypes = { 'tex', 'plaintex' },
-        root_markers = { '.git' }
-    })
-    vim.lsp.enable("clangd")
-    vim.lsp.enable("zuban")
-    vim.lsp.enable("ruff")
-    vim.lsp.enable("lua_ls")
-    vim.lsp.enable("texlab")
-    vim.lsp.enable("jdtls")
+
+    require("mason").setup()
+    require("mason-lspconfig").setup()
     vim.api.nvim_create_autocmd("BufWritePre", {
         callback = function()
-            vim.lsp.buf.format({ async = false })
-        end,
+            vim.lsp.buf.format()
+        end
     })
 end)
 
@@ -125,11 +111,7 @@ later(function()
         source = "nvim-treesitter/nvim-treesitter",
         hooks = { post_checkout = function() vim.cmd("TSUpdate") end }
     })
-    require 'nvim-treesitter'.setup {
-        -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
-        install_dir = vim.fn.stdpath('data') .. '/site'
-    }
-    require 'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
+    require 'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown', 'java' },
         { generate = true, summary = true })
     vim.api.nvim_create_autocmd('FileType', {
         pattern = { 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
@@ -140,15 +122,6 @@ later(function()
     })
 end)
 
--- grapple
-later(function()
-    add({
-        source = "cbochs/grapple.nvim",
-        depends = {
-            "nvim-tree/nvim-web-devicons"
-        },
-    })
-end)
 
 -- keybindings
 later(function()
@@ -163,18 +136,17 @@ later(function()
     -- lsp diagnose
     vim.keymap.set('n', '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic info" })
 
-    -- grapple
-    vim.keymap.set("n", "<leader>a", require("grapple").toggle, { desc = "toggle grapple here" })
-    vim.keymap.set("n", "<leader>e", require("grapple").toggle_tags, { desc = "show the tag list" })
-    vim.keymap.set("n", "<leader>1", "<cmd>Grapple select index=1<cr>", { desc = "goto first tag" })
-    vim.keymap.set("n", "<leader>2", "<cmd>Grapple select index=2<cr>", { desc = "goto second tag" })
-    vim.keymap.set("n", "<leader>3", "<cmd>Grapple select index=3<cr>", { desc = "goto third tag" })
-    vim.keymap.set("n", "<leader>4", "<cmd>Grapple select index=4<cr>", { desc = "goto forth tag" })
+    -- mini.visit
+    vim.keymap.set("n", "<leader>a", function() MiniVisits.add_label("core") end, { desc = "add label" })
+    vim.keymap.set("n", "<leader>d", function() MiniVisits.remove_label("core") end, { desc = "delete label" })
+    vim.keymap.set("n", "<leader>e", function() MiniVisits.select_path(nil, { filter = "core" }) end,
+        { desc = "select label" })
 
     -- deal with file
     vim.keymap.set('n', '<leader>f', mini_pick_hidden, { desc = 'Open file finder' })
-    vim.keymap.set('n', '<leader>u', ':UndotreeToggle<cr>', { desc = 'Open undotree', silent = true })
+    vim.keymap.set('n', '<leader>u', ':Undotree<cr>', { desc = 'Open undotree', silent = true })
     vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
+    vim.keymap.set('n', '<leader>?', ':Pick grep<cr>', { desc = 'Use fzf style grep to search string' })
 
     -- deal with git
     vim.keymap.set('n', '<leader>g', ':Git ', { desc = "Open git" })
