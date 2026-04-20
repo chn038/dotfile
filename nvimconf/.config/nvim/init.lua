@@ -68,7 +68,8 @@ require('blink.cmp').setup({
     },
 })
 require('arborist').setup({
-    ensure_installed = { "c", "cpp", "cuda", "python", "java", "lua", "markdown" }
+    prefer_wasm = false,
+    ensure_installed = { "c", "cpp", "cuda", "python", "java", "lua", "markdown" },
 })
 require 'lualine'.setup()
 require("mason").setup()
