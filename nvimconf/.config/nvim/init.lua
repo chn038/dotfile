@@ -109,6 +109,11 @@ later(function()
 
     require("mason").setup()
     require("mason-lspconfig").setup()
+    vim.api.nvim_create_autocmd("BufWritePre", {
+        callback = function()
+            vim.lsp.buf.format()
+        end
+    })
 end)
 
 -- nvim-treesitter
@@ -117,11 +122,7 @@ later(function()
         source = "nvim-treesitter/nvim-treesitter",
         hooks = { post_checkout = function() vim.cmd("TSUpdate") end }
     })
-    require 'nvim-treesitter'.setup {
-        -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
-        install_dir = vim.fn.stdpath('data') .. '/site'
-    }
-    require 'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
+    require 'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown', 'java' },
         { generate = true, summary = true })
     vim.api.nvim_create_autocmd('FileType', {
         pattern = { 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
