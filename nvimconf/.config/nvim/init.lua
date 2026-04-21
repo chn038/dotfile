@@ -18,17 +18,13 @@ vim.opt.laststatus = 3 -- for each window has its own status line
 
 -- package installation
 vim.pack.add({
-    { src = "https://github.com/rose-pine/neovim",            name = "rose-pine" },
+    { src = "https://github.com/rose-pine/neovim",              name = "rose-pine" },
     { src = "https://github.com/ibhagwan/fzf-lua" },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
     { src = "https://github.com/rafamadriz/friendly-snippets" },
-    {
-        src = "https://github.com/saghen/blink.cmp",
-        version = vim.version.range('1.*')
-    },
+    { src = "https://github.com/saghen/blink.cmp",              version = vim.version.range('1.*') },
     { src = "https://github.com/arborist-ts/arborist.nvim" },
     { src = "https://github.com/cbochs/grapple.nvim" },
-    { src = 'https://github.com/nvim-tree/nvim-web-devicons' },
     { src = 'https://github.com/nvim-lualine/lualine.nvim' },
     { src = "https://github.com/mason-org/mason.nvim" },
     { src = "https://github.com/mason-org/mason-lspconfig.nvim" },
