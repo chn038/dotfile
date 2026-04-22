@@ -18,8 +18,13 @@ vim.opt.laststatus = 3 -- for each window has its own status line
 
 vim.opt.foldmethod = 'expr'
 vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.opt.foldminlines = 3
+vim.opt.foldnestmax = 2
+vim.opt.foldcolumn = 'auto'
 
--- package installation
+vim.opt.foldtext = vim.fn.getline(vim.v.foldstart)
+
+-- package installaion
 vim.pack.add({
     { src = "https://github.com/rose-pine/neovim",              name = "rose-pine" },
     { src = "https://github.com/ibhagwan/fzf-lua" },
