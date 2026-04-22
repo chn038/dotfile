@@ -16,6 +16,9 @@ vim.opt.cursorline = true
 vim.opt.cursorcolumn = true
 vim.opt.laststatus = 3 -- for each window has its own status line
 
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+
 -- package installation
 vim.pack.add({
     { src = "https://github.com/rose-pine/neovim",              name = "rose-pine" },
