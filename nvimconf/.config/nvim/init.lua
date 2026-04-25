@@ -118,7 +118,7 @@ require('fzf-lua').setup({
         hidden = true,
         follow = false,
         no_ignore = true,
-        absolute_path = true
+        absolute_path = false
     },
     grep = {
         rg_glob = true,
