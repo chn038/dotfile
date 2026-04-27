@@ -23,76 +23,6 @@ vim.opt.foldnestmax = 2
 vim.opt.foldcolumn = 'auto'
 
 vim.opt.foldtext = vim.fn.getline(vim.v.foldstart)
-vim.diagnostic.config({
-    virtual_lines = {
-        current_line = true
-    }
-})
-
----- java specific package
-vim.pack.add({
-    {
-        src = 'https://github.com/JavaHello/spring-boot.nvim',
-        version = '218c0c26c14d99feca778e4d13f5ec3e8b1b60f0',
-    },
-    'https://github.com/MunifTanjim/nui.nvim',
-    'https://github.com/mfussenegger/nvim-dap',
-
-    'https://github.com/nvim-java/nvim-java',
-})
-
-require('java').setup({
-    -- Startup checks
-    checks = {
-        nvim_version = true,        -- Check Neovim version
-        nvim_jdtls_conflict = true, -- Check for nvim-jdtls conflict
-    },
-
-    -- JDTLS configuration
-    jdtls = {
-        version = '1.43.0',
-    },
-
-    -- Extensions
-    lombok = {
-        enable = true,
-        version = '1.18.40',
-    },
-
-    java_test = {
-        enable = true,
-        version = '0.40.1',
-    },
-
-    java_debug_adapter = {
-        enable = true,
-        version = '0.58.2',
-    },
-
-    spring_boot_tools = {
-        enable = true,
-        version = '1.55.1',
-    },
-
-    -- JDK installation
-    jdk = {
-        auto_install = true,
-        version = '17',
-    },
-
-    -- Logging
-    log = {
-        use_console = true,
-        use_file = true,
-        level = 'info',
-        log_file = vim.fn.stdpath('state') .. '/nvim-java.log',
-        max_lines = 1000,
-        show_location = false,
-    },
-})
-
-vim.lsp.enable('jdtls')
-----
 
 -- package installaion
 vim.pack.add({
@@ -107,12 +37,17 @@ vim.pack.add({
     { src = "https://github.com/mason-org/mason.nvim" },
     { src = "https://github.com/mason-org/mason-lspconfig.nvim" },
     { src = "https://github.com/neovim/nvim-lspconfig" },
+    { src = "https://codeberg.org/mfussenegger/nvim-dap" },
+    { src = "https://github.com/igorlfs/nvim-dap-view",         version = vim.version.range('1.*') },
+    { src = "https://github.com/jay-babu/mason-nvim-dap.nvim" }
 })
 vim.cmd('packadd nvim.undotree')
 
 -- package setups
+-- basic settings
 require('rose-pine').setup()
 vim.cmd('colorscheme rose-pine')
+require 'lualine'.setup()
 require('fzf-lua').setup({
     files = {
         hidden = true,
@@ -125,6 +60,8 @@ require('fzf-lua').setup({
         glob_flag = '--iglob'
     }
 })
+
+-- auto completion
 require('blink.cmp').setup({
     keymap = { preset = 'super-tab' },
     appearance = {
@@ -141,11 +78,14 @@ require('blink.cmp').setup({
         implementation = "prefer_rust"
     },
 })
+
+-- treesitter
 require('arborist').setup({
     prefer_wasm = false,
     ensure_installed = { "c", "cpp", "cuda", "python", "java", "lua", "markdown" },
 })
-require 'lualine'.setup()
+
+-- lsp settings
 require("mason").setup()
 require("mason-lspconfig").setup()
 vim.api.nvim_create_autocmd("BufWritePre", {
@@ -153,7 +93,43 @@ vim.api.nvim_create_autocmd("BufWritePre", {
         vim.lsp.buf.format()
     end
 })
+---- java specific package
+vim.pack.add({ "https://codeberg.org/mfussenegger/nvim-jdtls" })
+local mason_root = require('mason.settings').current.install_root_dir
+local bundles = {
+    vim.fn.glob(mason_root ..
+        '/packages/java-debug-adapter/extension/server/com.microsoft.java.debug.plugin-*.jar') }
+vim.list_extend(bundles,
+    vim.fn.glob(mason_root .. '/packages/java-test/extension/server/*.jar', false, true))
+require('jdtls').start_or_attach({
+    cmd = { 'jdtls' },
+    settings = {
+        java = {
+            configuration = {
+                runtimes = {
+                    name = "JavaSE-17",
+                    path = "/usr/lib/jvm/java-17-openjdk/",
+                    default = true,
+                }
+            }
+        },
+    },
+    init_options = {
+        bundles = bundles
+    },
+    on_attach = function(client, bufnr)
+        require('jdtls').setup_dap({ hotcodereplace = 'auto' })
+        require('jdtls.dap').setup_dap_main_class_configs()
+    end
+})
+----
 
+-- debugger setting
+require("mason-nvim-dap").setup({
+    handlers = {}
+})
+--
+-- helper function for increasing readability of vim.pack
 local ClearPack = function()
     local orphanPacks = vim.iter(vim.pack.get())
         :filter(function(x) return not x.active end)
@@ -191,3 +167,20 @@ vim.keymap.set('n', '<leader>u', ':Undotree<cr>', { desc = 'Open undotree', sile
 vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
 vim.keymap.set('n', '<leader>?', ':FzfLua grep<cr>', { desc = 'Use fzf lua grep for fuzzy finder' })
 vim.keymap.set('n', '<leader>r', ':FzfLua resume<cr>', { desc = 'Reuse last fzf picker' })
+
+-- debugging
+vim.keymap.set("n", "<leader>h", vim.diagnostic.open_float, { desc = "open debug message" })
+vim.keymap.set('n', '<leader>db', require('dap').toggle_breakpoint, { desc = 'Toggle breakpoint' })
+vim.keymap.set('n', '<leader>dd', function()
+    require('dap').continue()
+    require('dap-view').open()
+end, { desc = 'Start debugging' })
+vim.keymap.set('n', '<leader>dc', require('dap').continue, { desc = 'Resume debugging' })
+vim.keymap.set('n', '<leader>dt', function()
+    require('dap-view').close()
+    require('dap').terminate()
+end, { desc = 'Stop debugging' })
+vim.keymap.set('n', '<leader>dj', require('dap').step_over, { desc = 'Step over the line' })
+vim.keymap.set('n', '<leader>dk', require('dap').restart_frame, { desc = 'Restart frame' })
+vim.keymap.set('n', '<leader>dh', require('dap').step_out, { desc = 'Step out the line' })
+vim.keymap.set('n', '<leader>dl', require('dap').step_into, { desc = 'Step into the line' })
