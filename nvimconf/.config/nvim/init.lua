@@ -167,6 +167,7 @@ vim.keymap.set('n', '<leader>u', ':Undotree<cr>', { desc = 'Open undotree', sile
 vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
 vim.keymap.set('n', '<leader>?', ':FzfLua grep<cr>', { desc = 'Use fzf lua grep for fuzzy finder' })
 vim.keymap.set('n', '<leader>r', ':FzfLua resume<cr>', { desc = 'Reuse last fzf picker' })
+vim.keympa.set('n', '-', ':Ex<cr>', { desc = 'Open Netrw' })
 
 -- debugging
 vim.keymap.set("n", "<leader>h", vim.diagnostic.open_float, { desc = "open debug message" })
