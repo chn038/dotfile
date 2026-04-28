@@ -30,6 +30,8 @@ now(function()
     vim.opt.splitright = true
     vim.opt.swapfile = false
     vim.opt.undofile = true
+    vim.opt.ignorecase = true
+    vim.opt.smartcase = true
     vim.opt.smartindent = true
     vim.opt.shiftwidth = 4
     vim.opt.number = true
@@ -173,7 +175,7 @@ end)
 later(function()
     local mini_pick_hidden = function()
         require('mini.pick').builtin.cli({
-            command = { 'fd', '--hidden', '--type', 'f', '--type', 'd', '-I', '-i' }
+            command = { 'fd', '-u', '--type', 'f', '--type', 'd', '-I', '-i' }
         })
     end
     -- leader key fall back
