@@ -1,187 +1,262 @@
--- general settings
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-vim.opt.colorcolumn = "80"
-vim.opt.expandtab = true
-vim.opt.smarttab = true
-vim.opt.splitright = true
-vim.opt.swapfile = false
-vim.opt.undofile = true
-vim.opt.smartindent = true
-vim.opt.shiftwidth = 4
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.incsearch = true
-vim.opt.cursorline = true
-vim.opt.cursorcolumn = true
-vim.opt.laststatus = 3 -- for each window has its own status line
-
-vim.opt.foldmethod = 'expr'
-vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
-vim.opt.foldminlines = 3
-vim.opt.foldnestmax = 2
-vim.opt.foldcolumn = 'auto'
-
-vim.opt.foldtext = vim.fn.getline(vim.v.foldstart)
-
--- package installaion
-vim.pack.add({
-    { src = "https://github.com/rose-pine/neovim",              name = "rose-pine" },
-    { src = "https://github.com/ibhagwan/fzf-lua" },
-    { src = "https://github.com/nvim-tree/nvim-web-devicons" },
-    { src = "https://github.com/rafamadriz/friendly-snippets" },
-    { src = "https://github.com/saghen/blink.cmp",              version = vim.version.range('1.*') },
-    { src = "https://github.com/arborist-ts/arborist.nvim" },
-    { src = "https://github.com/cbochs/grapple.nvim" },
-    { src = 'https://github.com/nvim-lualine/lualine.nvim' },
-    { src = "https://github.com/mason-org/mason.nvim" },
-    { src = "https://github.com/mason-org/mason-lspconfig.nvim" },
-    { src = "https://github.com/neovim/nvim-lspconfig" },
-    { src = "https://codeberg.org/mfussenegger/nvim-dap" },
-    { src = "https://github.com/igorlfs/nvim-dap-view",         version = vim.version.range('1.*') },
-    { src = "https://github.com/jay-babu/mason-nvim-dap.nvim" }
-})
-vim.cmd('packadd nvim.undotree')
-
--- package setups
--- basic settings
-require('rose-pine').setup()
-vim.cmd('colorscheme rose-pine')
-require 'lualine'.setup()
-require('fzf-lua').setup({
-    files = {
-        hidden = true,
-        follow = false,
-        no_ignore = true,
-        absolute_path = false
-    },
-    grep = {
-        rg_glob = true,
-        glob_flag = '--iglob'
+-- Put this at the top of 'init.lua'
+local path_package = vim.fn.stdpath('data') .. '/site'
+local mini_path = path_package .. '/pack/deps/start/mini.nvim'
+if not vim.loop.fs_stat(mini_path) then
+    vim.cmd('echo "Installing `mini.nvim`" | redraw')
+    local clone_cmd = {
+        'git', 'clone', '--filter=blob:none',
+        -- Uncomment next line to use 'stable' branch
+        -- '--branch', 'stable',
+        'https://github.com/nvim-mini/mini.nvim', mini_path
     }
-})
-
--- auto completion
-require('blink.cmp').setup({
-    keymap = { preset = 'super-tab' },
-    appearance = {
-        nerd_font_variant = 'mono'
-    },
-    completion = {
-        documentation = { auto_show = false },
-        accept = { auto_brackets = { enabled = false } }
-    },
-    sources = {
-        default = { 'lsp', 'path', 'snippets', 'buffer' },
-    },
-    fuzzy = {
-        implementation = "prefer_rust"
-    },
-})
-
--- treesitter
-require('arborist').setup({
-    prefer_wasm = false,
-    ensure_installed = { "c", "cpp", "cuda", "python", "java", "lua", "markdown" },
-})
-
--- lsp settings
-require("mason").setup()
-require("mason-lspconfig").setup()
-vim.api.nvim_create_autocmd("BufWritePre", {
-    callback = function()
-        vim.lsp.buf.format()
-    end
-})
----- java specific package
-vim.pack.add({ "https://codeberg.org/mfussenegger/nvim-jdtls" })
-local mason_root = require('mason.settings').current.install_root_dir
-local bundles = {
-    vim.fn.glob(mason_root ..
-        '/packages/java-debug-adapter/extension/server/com.microsoft.java.debug.plugin-*.jar') }
-vim.list_extend(bundles,
-    vim.fn.glob(mason_root .. '/packages/java-test/extension/server/*.jar', false, true))
-require('jdtls').start_or_attach({
-    cmd = { 'jdtls' },
-    settings = {
-        java = {
-            configuration = {
-                runtimes = {
-                    name = "JavaSE-17",
-                    path = "/usr/lib/jvm/java-17-openjdk/",
-                    default = true,
-                }
-            }
-        },
-    },
-    init_options = {
-        bundles = bundles
-    },
-    on_attach = function(client, bufnr)
-        require('jdtls').setup_dap({ hotcodereplace = 'auto' })
-        require('jdtls.dap').setup_dap_main_class_configs()
-    end
-})
-----
-
--- debugger setting
-require("mason-nvim-dap").setup({
-    handlers = {}
-})
---
--- helper function for increasing readability of vim.pack
-local ClearPack = function()
-    local orphanPacks = vim.iter(vim.pack.get())
-        :filter(function(x) return not x.active end)
-        :map(function(x) return x.spec.name end)
-        :totable()
-    local infoString = "The following packages are cleaned:\n"
-    for _, value in pairs(orphanPacks) do
-        infoString = infoString .. value .. "\n"
-    end
-    vim.pack.del(orphanPacks)
-    print(infoString)
+    vim.fn.system(clone_cmd)
+    vim.cmd('packadd mini.nvim | helptags ALL')
+    vim.cmd('echo "Installed `mini.nvim`" | redraw')
 end
 
--- keymaps
+-- Set up 'mini.deps' (customize to your liking)
+require('mini.deps').setup()
 
--- leader key fall back
-vim.keymap.set({ 'n', 'v' }, "<leader><leader>", " ", { desc = "just insert the space" })
+local add, now, later = require('mini.deps').add, require('mini.deps').now, require('mini.deps').later
 
--- vim.pack specific
-vim.keymap.set('n', '<leader>pu', vim.pack.update, { desc = 'Update plugins' })
-vim.keymap.set('n', '<leader>pp', function() vim.pack.update(nil, { offline = true }) end, { desc = 'Explore plugins' })
-vim.keymap.set('n', '<leader>pc', ClearPack, { desc = 'Clear packages' })
+-- general settings
+now(function()
+    -- general settings
+    vim.g.mapleader = " "
+    vim.g.maplocalleader = "\\"
+    vim.opt.colorcolumn = "80"
+    vim.opt.expandtab = true
+    vim.opt.smarttab = true
+    vim.opt.splitright = true
+    vim.opt.swapfile = false
+    vim.opt.undofile = true
+    vim.opt.smartindent = true
+    vim.opt.shiftwidth = 4
+    vim.opt.number = true
+    vim.opt.relativenumber = true
+    vim.opt.incsearch = true
+    vim.opt.cursorline = true
+    vim.opt.cursorcolumn = true
+    vim.opt.laststatus = 3 -- for each window has its own status line
 
--- grapple
-vim.keymap.set("n", "<leader>a", require("grapple").toggle, { desc = "toggle grapple here" })
-vim.keymap.set("n", "<leader>e", require("grapple").toggle_tags, { desc = "show the tag list" })
-vim.keymap.set("n", "<leader>1", "<cmd>Grapple select index=1<cr>", { desc = "goto first tag" })
-vim.keymap.set("n", "<leader>2", "<cmd>Grapple select index=2<cr>", { desc = "goto second tag" })
-vim.keymap.set("n", "<leader>3", "<cmd>Grapple select index=3<cr>", { desc = "goto third tag" })
-vim.keymap.set("n", "<leader>4", "<cmd>Grapple select index=4<cr>", { desc = "goto forth tag" })
+    vim.opt.foldmethod = 'expr'
+    vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+    vim.opt.foldminlines = 3
+    vim.opt.foldnestmax = 2
+    vim.opt.foldcolumn = 'auto'
 
--- deal with file
-vim.keymap.set('n', '<leader>f', ':FzfLua files<cr>', { desc = 'Open file finder' })
-vim.keymap.set('n', '<leader>u', ':Undotree<cr>', { desc = 'Open undotree', silent = true })
-vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
-vim.keymap.set('n', '<leader>?', ':FzfLua grep<cr>', { desc = 'Use fzf lua grep for fuzzy finder' })
-vim.keymap.set('n', '<leader>r', ':FzfLua resume<cr>', { desc = 'Reuse last fzf picker' })
-vim.keymap.set('n', '-', ':Ex<cr>', { desc = 'Open Netrw' })
+    vim.opt.foldtext = vim.fn.getline(vim.v.foldstart)
+end)
 
--- debugging
-vim.keymap.set("n", "<leader>h", vim.diagnostic.open_float, { desc = "open debug message" })
-vim.keymap.set('n', '<leader>db', require('dap').toggle_breakpoint, { desc = 'Toggle breakpoint' })
-vim.keymap.set('n', '<leader>dd', function()
-    require('dap').continue()
-    require('dap-view').open()
-end, { desc = 'Start debugging' })
-vim.keymap.set('n', '<leader>dc', require('dap').continue, { desc = 'Resume debugging' })
-vim.keymap.set('n', '<leader>dt', function()
-    require('dap-view').close()
-    require('dap').terminate()
-end, { desc = 'Stop debugging' })
-vim.keymap.set('n', '<leader>dj', require('dap').step_over, { desc = 'Step over the line' })
-vim.keymap.set('n', '<leader>dk', require('dap').restart_frame, { desc = 'Restart frame' })
-vim.keymap.set('n', '<leader>dh', require('dap').step_out, { desc = 'Step out the line' })
-vim.keymap.set('n', '<leader>dl', require('dap').step_into, { desc = 'Step into the line' })
+-- initial call
+now(function()
+    require('mini.statusline').setup()
+    require('mini.tabline').setup()
+    require('mini.notify').setup()
+    require('mini.icons').setup()
+end)
+
+-- colorscheme
+now(function()
+    add({ source = "rose-pine/neovim", name = 'rose-pine' })
+    require('rose-pine').setup()
+    vim.cmd('colorscheme rose-pine')
+end)
+
+-- regarding to mini
+later(function()
+    require('mini.pick').setup()
+    require('mini.fuzzy').setup()
+    require('mini.visits').setup()
+    require('mini.diff').setup()
+    -- only use visits as manual labeling
+    vim.g.minivisits_disable = true
+end)
+
+-- undotree, use neovim builtin undotree plugin
+later(function()
+    vim.cmd("packadd nvim.undotree")
+end)
+
+-- snippets and completion
+later(function()
+    local gen_loader = require('mini.snippets').gen_loader
+    add({
+        source = "rafamadriz/friendly-snippets"
+    })
+    require('mini.snippets').setup({
+        snippets = {
+            -- Load snippets based on current language by reading files from
+            -- "snippets/" subdirectories from 'runtimepath' directories.
+            gen_loader.from_lang(),
+        },
+    })
+    require('mini.snippets').start_lsp_server()
+    require('mini.completion').setup()
+end)
+
+-- lsp config
+later(function()
+    add({
+        source = "mason-org/mason-lspconfig.nvim"
+    })
+    add({
+        source = "mason-org/mason.nvim"
+    })
+    add({
+        source = "neovim/nvim-lspconfig"
+    })
+
+    require("mason").setup()
+    require("mason-lspconfig").setup()
+    vim.api.nvim_create_autocmd("BufWritePre", {
+        callback = function()
+            vim.lsp.buf.format()
+        end
+    })
+end)
+
+-- dap config
+later(function()
+    add({ source = "https://codeberg.org/mfussenegger/nvim-dap" })
+    add({ source = "https://github.com/igorlfs/nvim-dap-view", tag = '1.*' })
+    add({ source = "https://github.com/jay-babu/mason-nvim-dap.nvim" })
+    require("mason-nvim-dap").setup({
+        handlers = {}
+    })
+end)
+
+-- java specific package
+later(function()
+    add({ source = "https://codeberg.org/mfussenegger/nvim-jdtls" })
+    local mason_root = require('mason.settings').current.install_root_dir
+    local bundles = {
+        vim.fn.glob(mason_root ..
+            '/packages/java-debug-adapter/extension/server/com.microsoft.java.debug.plugin-*.jar') }
+    vim.list_extend(bundles,
+        vim.fn.glob(mason_root .. '/packages/java-test/extension/server/*.jar', false, true))
+    require('jdtls').start_or_attach({
+        cmd = { 'jdtls' },
+        settings = {
+            java = {
+                configuration = {
+                    runtimes = {
+                        name = "JavaSE-17",
+                        path = "/usr/lib/jvm/java-17-openjdk/",
+                        default = true,
+                    }
+                }
+            },
+        },
+        init_options = {
+            bundles = bundles
+        },
+        on_attach = function(client, bufnr)
+            require('jdtls').setup_dap({ hotcodereplace = 'auto' })
+            require('jdtls.dap').setup_dap_main_class_configs()
+        end
+    })
+end)
+
+-- nvim-treesitter
+later(function()
+    add({
+        source = "arborist-ts/arborist.nvim",
+    })
+    require('arborist').setup({
+        prefer_wasm = false,
+        ensure_installed = { "c", "cpp", "cuda", "python", "java", "lua", "markdown" },
+    })
+end)
+
+-- keybindings
+later(function()
+    local mini_pick_hidden = function()
+        require('mini.pick').builtin.cli({
+            command = { 'fd', '--hidden', '--type', 'f', '--type', 'd', '-I', '-i' }
+        })
+    end
+    -- leader key fall back
+    vim.keymap.set({ 'n', 'v' }, "<leader><leader>", " ", { desc = "just insert the space" })
+
+    -- lsp diagnose
+    vim.keymap.set('n', '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic info" })
+
+    -- mini.visit
+    vim.keymap.set("n", "<leader>a", function() require('mini.visit').add_label("core") end, { desc = "add label" })
+    vim.keymap.set("n", "<leader>d", function() require('mini.visit').remove_label("core") end, { desc = "delete label" })
+    vim.keymap.set("n", "<leader>e", function() require('mini.visit').select_path(nil, { filter = "core" }) end,
+        { desc = "select label" })
+
+    -- deal with file
+    vim.keymap.set('n', '<leader>f', mini_pick_hidden, { desc = 'Open file finder' })
+    vim.keymap.set('n', '<leader>u', ':Undotree<cr>', { desc = 'Open undotree', silent = true })
+    vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
+    vim.keymap.set('n', '<leader>?', ':Pick grep<cr>', { desc = 'Use fzf style grep to search string' })
+    vim.keymap.set('n', '<leader>r', ':Pick resume<cr>', { desc = 'Reuse last fzf picker' })
+
+    -- debugging
+    vim.keymap.set("n", "<leader>h", vim.diagnostic.open_float, { desc = "open debug message" })
+    vim.keymap.set('n', '<leader>db', require('dap').toggle_breakpoint, { desc = 'Toggle breakpoint' })
+    vim.keymap.set('n', '<leader>dd', function()
+        require('dap').continue()
+        require('dap-view').open()
+    end, { desc = 'Start debugging' })
+    vim.keymap.set('n', '<leader>dc', require('dap').continue, { desc = 'Resume debugging' })
+    vim.keymap.set('n', '<leader>dt', function()
+        require('dap-view').close()
+        require('dap').terminate()
+    end, { desc = 'Stop debugging' })
+    vim.keymap.set('n', '<leader>dj', require('dap').step_over, { desc = 'Step over the line' })
+    vim.keymap.set('n', '<leader>dk', require('dap').restart_frame, { desc = 'Restart frame' })
+    vim.keymap.set('n', '<leader>dh', require('dap').step_out, { desc = 'Step out the line' })
+    vim.keymap.set('n', '<leader>dl', require('dap').step_into, { desc = 'Step into the line' })
+end)
+
+-- mini.clue
+later(function()
+    local miniclue = require('mini.clue')
+    require('mini.clue').setup({
+        triggers = {
+            -- Leader triggers
+            { mode = 'n', keys = '<Leader>' },
+            { mode = 'x', keys = '<Leader>' },
+
+            -- Built-in completion
+            { mode = 'i', keys = '<C-x>' },
+
+            -- `g` key
+            { mode = 'n', keys = 'g' },
+            { mode = 'x', keys = 'g' },
+
+            -- Marks
+            { mode = 'n', keys = "'" },
+            { mode = 'n', keys = '`' },
+            { mode = 'x', keys = "'" },
+            { mode = 'x', keys = '`' },
+
+            -- Registers
+            { mode = 'n', keys = '"' },
+            { mode = 'x', keys = '"' },
+            { mode = 'i', keys = '<C-r>' },
+            { mode = 'c', keys = '<C-r>' },
+
+            -- Window commands
+            { mode = 'n', keys = '<C-w>' },
+
+            -- `z` key
+            { mode = 'n', keys = 'z' },
+            { mode = 'x', keys = 'z' },
+        },
+
+        clues = {
+            -- Enhance this by adding descriptions for <Leader> mapping groups
+            miniclue.gen_clues.builtin_completion(),
+            miniclue.gen_clues.g(),
+            miniclue.gen_clues.marks(),
+            miniclue.gen_clues.registers(),
+            miniclue.gen_clues.windows(),
+            miniclue.gen_clues.z(),
+        },
+    })
+end)

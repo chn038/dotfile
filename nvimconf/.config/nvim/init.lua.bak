@@ -21,6 +21,7 @@ local add, now, later = MiniDeps.add, MiniDeps.now, MiniDeps.later
 
 -- general settings
 now(function()
+    -- general settings
     vim.g.mapleader = " "
     vim.g.maplocalleader = "\\"
     vim.opt.colorcolumn = "80"
@@ -36,6 +37,15 @@ now(function()
     vim.opt.incsearch = true
     vim.opt.cursorline = true
     vim.opt.cursorcolumn = true
+    vim.opt.laststatus = 3 -- for each window has its own status line
+
+    vim.opt.foldmethod = 'expr'
+    vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+    vim.opt.foldminlines = 3
+    vim.opt.foldnestmax = 2
+    vim.opt.foldcolumn = 'auto'
+
+    vim.opt.foldtext = vim.fn.getline(vim.v.foldstart)
 end)
 
 -- initial call
@@ -105,20 +115,57 @@ later(function()
     })
 end)
 
+-- dap config
+later(function()
+    add({ source = "https://codeberg.org/mfussenegger/nvim-dap" })
+    add({ source = "https://github.com/igorlfs/nvim-dap-view", checkout = '1.*' })
+    add({ source = "https://github.com/jay-babu/mason-nvim-dap.nvim" })
+    require("mason-nvim-dap").setup({
+        handlers = {}
+    })
+end)
+
+
+-- java specific package
+later(function()
+    add({ source = "https://codeberg.org/mfussenegger/nvim-jdtls" })
+    local mason_root = require('mason.settings').current.install_root_dir
+    local bundles = {
+        vim.fn.glob(mason_root ..
+            '/packages/java-debug-adapter/extension/server/com.microsoft.java.debug.plugin-*.jar') }
+    vim.list_extend(bundles,
+        vim.fn.glob(mason_root .. '/packages/java-test/extension/server/*.jar', false, true))
+    require('jdtls').start_or_attach({
+        cmd = { 'jdtls' },
+        settings = {
+            java = {
+                configuration = {
+                    runtimes = {
+                        name = "JavaSE-17",
+                        path = "/usr/lib/jvm/java-17-openjdk/",
+                        default = true,
+                    }
+                }
+            },
+        },
+        init_options = {
+            bundles = bundles
+        },
+        on_attach = function(client, bufnr)
+            require('jdtls').setup_dap({ hotcodereplace = 'auto' })
+            require('jdtls.dap').setup_dap_main_class_configs()
+        end
+    })
+end)
+
 -- nvim-treesitter
 later(function()
     add({
-        source = "nvim-treesitter/nvim-treesitter",
-        hooks = { post_checkout = function() vim.cmd("TSUpdate") end }
+        source = "arborist-ts/arborist.nvim",
     })
-    require 'nvim-treesitter'.install({ 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown', 'java' },
-        { generate = true, summary = true })
-    vim.api.nvim_create_autocmd('FileType', {
-        pattern = { 'python', 'c', 'cpp', 'cuda', 'lua', 'markdown' },
-        callback = function()
-            vim.treesitter.start()
-            vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-        end,
+    require('arborist').setup({
+        prefer_wasm = false,
+        ensure_installed = { "c", "cpp", "cuda", "python", "java", "lua", "markdown" },
     })
 end)
 
@@ -147,9 +194,24 @@ later(function()
     vim.keymap.set('n', '<leader>u', ':Undotree<cr>', { desc = 'Open undotree', silent = true })
     vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
     vim.keymap.set('n', '<leader>?', ':Pick grep<cr>', { desc = 'Use fzf style grep to search string' })
+    vim.keymap.set('n', '<leader>r', ':Pick resume<cr>', { desc = 'Reuse last fzf picker' })
 
-    -- deal with git
-    vim.keymap.set('n', '<leader>g', ':Git ', { desc = "Open git" })
+    -- debugging
+    vim.keymap.set("n", "<leader>h", vim.diagnostic.open_float, { desc = "open debug message" })
+    vim.keymap.set('n', '<leader>db', require('dap').toggle_breakpoint, { desc = 'Toggle breakpoint' })
+    vim.keymap.set('n', '<leader>dd', function()
+        require('dap').continue()
+        require('dap-view').open()
+    end, { desc = 'Start debugging' })
+    vim.keymap.set('n', '<leader>dc', require('dap').continue, { desc = 'Resume debugging' })
+    vim.keymap.set('n', '<leader>dt', function()
+        require('dap-view').close()
+        require('dap').terminate()
+    end, { desc = 'Stop debugging' })
+    vim.keymap.set('n', '<leader>dj', require('dap').step_over, { desc = 'Step over the line' })
+    vim.keymap.set('n', '<leader>dk', require('dap').restart_frame, { desc = 'Restart frame' })
+    vim.keymap.set('n', '<leader>dh', require('dap').step_out, { desc = 'Step out the line' })
+    vim.keymap.set('n', '<leader>dl', require('dap').step_into, { desc = 'Step into the line' })
 end)
 
 -- mini.clue
