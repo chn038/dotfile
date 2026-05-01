@@ -130,15 +130,50 @@ end)
 
 -- java specific package
 later(function()
-    add({ source = "https://codeberg.org/mfussenegger/nvim-jdtls" })
-    local mason_root = require('mason.settings').current.install_root_dir
-    local bundles = {
-        vim.fn.glob(mason_root ..
-            '/packages/java-debug-adapter/extension/server/com.microsoft.java.debug.plugin-*.jar') }
-    vim.list_extend(bundles,
-        vim.fn.glob(mason_root .. '/packages/java-test/extension/server/*.jar', false, true))
-    require('jdtls').start_or_attach({
-        cmd = { 'jdtls' },
+    add({
+        source = 'https://github.com/JavaHello/spring-boot.nvim',
+        tag = '218c0c26c14d99feca778e4d13f5ec3e8b1b60f0',
+    })
+    add({ source = 'https://github.com/MunifTanjim/nui.nvim', })
+    add({ source = 'https://github.com/mfussenegger/nvim-dap', })
+    add({ source = 'https://github.com/nvim-java/nvim-java', })
+
+    require('java').setup({
+        -- Startup checks
+        checks = {
+            nvim_version = true,        -- Check Neovim version
+            nvim_jdtls_conflict = true, -- Check for nvim-jdtls conflict
+        },
+
+        -- Extensions
+        lombok = {
+            enable = true,
+        },
+
+        java_test = {
+            enable = true,
+        },
+
+        java_debug_adapter = {
+            enable = true,
+        },
+
+        spring_boot_tools = {
+            enable = true,
+        },
+
+        -- Logging
+        log = {
+            use_console = true,
+            use_file = true,
+            level = 'info',
+            log_file = vim.fn.stdpath('state') .. '/nvim-java.log',
+            max_lines = 1000,
+            show_location = false,
+        },
+    })
+
+    vim.lsp.config('jdtls', {
         settings = {
             java = {
                 configuration = {
@@ -150,14 +185,8 @@ later(function()
                 }
             },
         },
-        init_options = {
-            bundles = bundles
-        },
-        on_attach = function(client, bufnr)
-            require('jdtls').setup_dap({ hotcodereplace = 'auto' })
-            require('jdtls.dap').setup_dap_main_class_configs()
-        end
     })
+    vim.lsp.enable('jdtls')
 end)
 
 -- nvim-treesitter
