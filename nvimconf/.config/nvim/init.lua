@@ -95,6 +95,11 @@ later(function()
     })
     require('mini.snippets').start_lsp_server()
     require('mini.completion').setup()
+    -- remap keymaps for mini.completion, tab is actually acting really nice
+    local map_multistep = require('mini.keymap').map_multistep
+    map_multistep('i', '<Tab>', { 'pmenu_next' })
+    map_multistep('i', '<S-Tab>', { 'pmenu_prev' })
+    map_multistep('i', '<CR>', { 'pmenu_accept' })
 end)
 
 -- lsp config
