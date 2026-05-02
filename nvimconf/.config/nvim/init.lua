@@ -116,11 +116,6 @@ later(function()
 
     require("mason").setup()
     require("mason-lspconfig").setup()
-    vim.api.nvim_create_autocmd("BufWritePre", {
-        callback = function()
-            vim.lsp.buf.format()
-        end
-    })
 end)
 
 -- dap config
@@ -217,6 +212,7 @@ later(function()
 
     -- lsp diagnose
     vim.keymap.set('n', '<leader>h', vim.diagnostic.open_float, { desc = "open diagnostic info" })
+    vim.keymap.set('n', '<leader>l', vim.lsp.buf.format, { desc = "format buffer with lsp" })
 
     -- mini.visit
     vim.keymap.set("n", "<leader>a", function() require('mini.visit').add_label("core") end, { desc = "add label" })
@@ -232,7 +228,6 @@ later(function()
     vim.keymap.set('n', '<leader>r', ':Pick resume<cr>', { desc = 'Reuse last fzf picker' })
 
     -- debugging
-    vim.keymap.set("n", "<leader>h", vim.diagnostic.open_float, { desc = "open debug message" })
     vim.keymap.set('n', '<leader>db', require('dap').toggle_breakpoint, { desc = 'Toggle breakpoint' })
     vim.keymap.set('n', '<leader>dd', function()
         require('dap').continue()
