@@ -215,9 +215,9 @@ later(function()
     vim.keymap.set('n', '<leader>l', vim.lsp.buf.format, { desc = "format buffer with lsp" })
 
     -- mini.visit
-    vim.keymap.set("n", "<leader>a", function() require('mini.visit').add_label("core") end, { desc = "add label" })
-    vim.keymap.set("n", "<leader>d", function() require('mini.visit').remove_label("core") end, { desc = "delete label" })
-    vim.keymap.set("n", "<leader>e", function() require('mini.visit').select_path(nil, { filter = "core" }) end,
+    vim.keymap.set("n", "<leader>a", function() require('mini.visits').add_label("core") end, { desc = "add label" })
+    vim.keymap.set("n", "<leader>d", function() require('mini.visits').remove_label("core") end, { desc = "delete label" })
+    vim.keymap.set("n", "<leader>e", function() require('mini.visits').select_path(nil, { filter = "core" }) end,
         { desc = "select label" })
 
     -- deal with file
