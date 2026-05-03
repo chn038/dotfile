@@ -82,6 +82,7 @@ end)
 
 -- snippets and completion
 later(function()
+    vim.o.completeopt = "menuone,noselect,fuzzy,nosort"
     local gen_loader = require('mini.snippets').gen_loader
     add({
         source = "rafamadriz/friendly-snippets"
