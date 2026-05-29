@@ -46,6 +46,7 @@ now(function()
     vim.opt.foldminlines = 3
     vim.opt.foldnestmax = 2
     vim.opt.foldcolumn = 'auto'
+    vim.opt.foldlevel = 3
 
     vim.opt.foldtext = vim.fn.getline(vim.v.foldstart)
 end)
@@ -215,11 +216,13 @@ later(function()
 
     -- mini.visit
     vim.keymap.set("n", "<leader>a", function() require('mini.visits').add_label("core") end, { desc = "add label" })
-    vim.keymap.set("n", "<leader>d", function() require('mini.visits').remove_label("core") end, { desc = "delete label" })
+    vim.keymap.set("n", "<leader>d", function() require('mini.visits').remove_label("core") end,
+        { desc = "delete label" })
     vim.keymap.set("n", "<leader>e", function() require('mini.visits').select_path(nil, { filter = "core" }) end,
         { desc = "select label" })
 
     -- deal with file
+    vim.keymap.set('n', '-', ':Ex<cr>', { desc = 'Open file explorer' })
     vim.keymap.set('n', '<leader>f', mini_pick_hidden, { desc = 'Open file finder' })
     vim.keymap.set('n', '<leader>u', ':Undotree<cr>', { desc = 'Open undotree', silent = true })
     vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
