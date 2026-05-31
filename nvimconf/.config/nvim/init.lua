@@ -223,11 +223,12 @@ later(function()
 
     -- deal with file
     vim.keymap.set('n', '-', ':Ex<cr>', { desc = 'Open file explorer' })
-    vim.keymap.set('n', '<leader>f', mini_pick_hidden, { desc = 'Open file finder' })
+    vim.keymap.set('n', '<leader>f', mini_pick_hidden, { desc = 'Open raw file finder' })
     vim.keymap.set('n', '<leader>u', ':Undotree<cr>', { desc = 'Open undotree', silent = true })
     vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
     vim.keymap.set('n', '<leader>?', ':Pick grep<cr>', { desc = 'Use fzf style grep to search string' })
     vim.keymap.set('n', '<leader>r', ':Pick resume<cr>', { desc = 'Reuse last fzf picker' })
+    vim.keymap.set('n', '<leader>g', ':Pick files<cr>', { desc = 'Open file finder' })
 
     -- debugging
     vim.keymap.set('n', '<leader>db', require('dap').toggle_breakpoint, { desc = 'Toggle breakpoint' })
