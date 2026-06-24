@@ -61,7 +61,10 @@ end)
 
 -- colorscheme
 now(function()
-    vim.cmd('colorscheme catppuccin')
+    add({
+        source = "folke/tokyonight.nvim"
+    })
+    vim.cmd('colorscheme tokyonight')
 end)
 
 -- regarding to mini
