@@ -77,9 +77,11 @@ later(function()
     vim.g.minivisits_disable = true
 end)
 
--- undotree, use neovim builtin undotree plugin
+-- undotree
 later(function()
-    vim.cmd("packadd nvim.undotree")
+    add({
+        source = "jiaoshijie/undotree"
+    })
 end)
 
 -- snippets and completion
@@ -227,7 +229,7 @@ later(function()
     -- deal with file
     vim.keymap.set('n', '-', ':Ex<cr>', { desc = 'Open file explorer' })
     vim.keymap.set('n', '<leader>f', mini_pick_hidden, { desc = 'Open raw file finder' })
-    vim.keymap.set('n', '<leader>u', ':Undotree<cr>', { desc = 'Open undotree', silent = true })
+    vim.keymap.set('n', '<leader>u', require('undotree').toggle, { desc = 'Open undotree', silent = true })
     vim.keymap.set('n', '<leader>/', ':grep ', { desc = 'Use grep to search string' })
     vim.keymap.set('n', '<leader>?', ':Pick grep<cr>', { desc = 'Use fzf style grep to search string' })
     vim.keymap.set('n', '<leader>r', ':Pick resume<cr>', { desc = 'Reuse last fzf picker' })
