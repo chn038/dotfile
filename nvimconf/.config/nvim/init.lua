@@ -31,7 +31,9 @@ vim.pack.add({
     { src = "https://github.com/ibhagwan/fzf-lua" },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
     { src = "https://github.com/rafamadriz/friendly-snippets" },
-    { src = "https://github.com/saghen/blink.cmp",              version = vim.version.range('1.*') },
+    { src = "https://github.com/L3MON4D3/LuaSnip" },
+    { src = "https://github.com/saghen/blink.lib" },
+    { src = "https://github.com/saghen/blink.cmp" },
     { src = "https://github.com/arborist-ts/arborist.nvim" },
     { src = "https://github.com/cbochs/grapple.nvim" },
     { src = 'https://github.com/nvim-lualine/lualine.nvim' },
@@ -65,9 +67,12 @@ require('fzf-lua').setup({
     }
 })
 
+-- luasnip
+require("luasnip.loaders.from_vscode").lazy_load()
+
 -- auto completion
+require('blink.cmp').build():pwait()
 require('blink.cmp').setup({
-    keymap = { preset = 'enter' },
     appearance = {
         nerd_font_variant = 'mono'
     },
@@ -75,9 +80,12 @@ require('blink.cmp').setup({
         documentation = { auto_show = false },
         accept = { auto_brackets = { enabled = false } }
     },
+    keymap = { preset = 'enter' },
+    signature = { enabled = true },
     sources = {
         default = { 'lsp', 'path', 'snippets', 'buffer' },
     },
+    snippets = { preset = 'luasnip' },
     fuzzy = {
         implementation = "prefer_rust"
     },
@@ -92,11 +100,6 @@ require('arborist').setup({
 -- lsp settings
 require("mason").setup()
 require("mason-lspconfig").setup()
-vim.api.nvim_create_autocmd("BufWritePre", {
-    callback = function()
-        vim.lsp.buf.format()
-    end
-})
 
 ---- java specific package
 vim.pack.add({
@@ -207,6 +210,7 @@ vim.keymap.set('n', '-', ':Ex<cr>', { desc = 'Open Netrw' })
 
 -- debugging
 vim.keymap.set("n", "<leader>h", vim.diagnostic.open_float, { desc = "open debug message" })
+vim.keymap.set('n', '<leader>l', vim.lsp.buf.format, { desc = "format buffer with lsp" })
 vim.keymap.set('n', '<leader>db', require('dap').toggle_breakpoint, { desc = 'Toggle breakpoint' })
 vim.keymap.set('n', '<leader>dd', function()
     require('dap').continue()
@@ -221,3 +225,16 @@ vim.keymap.set('n', '<leader>dj', require('dap').step_over, { desc = 'Step over 
 vim.keymap.set('n', '<leader>dk', require('dap').restart_frame, { desc = 'Restart frame' })
 vim.keymap.set('n', '<leader>dh', require('dap').step_out, { desc = 'Step out the line' })
 vim.keymap.set('n', '<leader>dl', require('dap').step_into, { desc = 'Step into the line' })
+
+-- luasnip keymaps
+local ls = require("luasnip")
+
+vim.keymap.set({ "i" }, "<C-K>", function() ls.expand() end, { silent = true })
+vim.keymap.set({ "i", "s" }, "<C-L>", function() ls.jump(1) end, { silent = true })
+vim.keymap.set({ "i", "s" }, "<C-J>", function() ls.jump(-1) end, { silent = true })
+
+vim.keymap.set({ "i", "s" }, "<C-E>", function()
+    if ls.choice_active() then
+        ls.change_choice(1)
+    end
+end, { silent = true })
