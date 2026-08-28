@@ -27,7 +27,7 @@ vim.opt.foldtext = vim.fn.getline(vim.v.foldstart)
 
 -- package installaion
 vim.pack.add({
-    { src = "https://github.com/shaunsingh/nord.nvim",          name = "nord" },
+    { src = "https://github.com/neanias/everforest-nvim" },
     { src = "https://github.com/ibhagwan/fzf-lua" },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
     { src = "https://github.com/rafamadriz/friendly-snippets" },
@@ -47,11 +47,14 @@ vim.pack.add({
 })
 
 -- package setups
--- basic settings
-vim.cmd('colorscheme nord')
+require("everforest").setup({
+    -- Your config here
+    background = "hard"
+})
+vim.cmd('colorscheme everforest')
 require 'lualine'.setup({
     options = {
-        theme = "nord"
+        theme = "auto"
     },
 })
 require('fzf-lua').setup({
