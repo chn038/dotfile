@@ -27,7 +27,7 @@ vim.opt.foldtext = vim.fn.getline(vim.v.foldstart)
 
 -- package installaion
 vim.pack.add({
-    { src = "https://github.com/neanias/everforest-nvim" },
+    { src = "https://github.com/dracula/vim" },
     { src = "https://github.com/ibhagwan/fzf-lua" },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
     { src = "https://github.com/rafamadriz/friendly-snippets" },
@@ -47,11 +47,7 @@ vim.pack.add({
 })
 
 -- package setups
-require("everforest").setup({
-    -- Your config here
-    background = "hard"
-})
-vim.cmd('colorscheme everforest')
+vim.cmd('colorscheme dracula')
 require 'lualine'.setup({
     options = {
         theme = "auto"
