@@ -55,7 +55,7 @@ require 'lualine'.setup({
 })
 require('fzf-lua').setup({
     files = {
-        hidden = true,
+        hidden = false,
         follow = false,
         no_ignore = true,
         absolute_path = false
