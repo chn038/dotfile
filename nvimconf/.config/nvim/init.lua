@@ -27,7 +27,7 @@ vim.opt.foldtext = vim.fn.getline(vim.v.foldstart)
 
 -- package installaion
 vim.pack.add({
-    { src = "https://github.com/dracula/vim" },
+    { src = "https://github.com/rose-pine/neovim",              name = "rose-pine", },
     { src = "https://github.com/ibhagwan/fzf-lua" },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
     { src = "https://github.com/rafamadriz/friendly-snippets" },
@@ -47,7 +47,8 @@ vim.pack.add({
 })
 
 -- package setups
-vim.cmd('colorscheme dracula')
+require 'rose-pine'.setup()
+vim.cmd('colorscheme rose-pine-moon')
 require 'lualine'.setup({
     options = {
         theme = "auto"
