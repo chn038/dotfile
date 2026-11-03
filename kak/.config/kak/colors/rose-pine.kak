@@ -1,3 +1,102 @@
+# Rosé Pine palette — main/dark
+declare-option str rp_base           "rgb:191724"
+declare-option str rp_surface        "rgb:1f1d2e"
+declare-option str rp_overlay        "rgb:26233a"
+declare-option str rp_muted          "rgb:6e6a86"
+declare-option str rp_subtle         "rgb:908caa"
+declare-option str rp_text           "rgb:e0def4"
+declare-option str rp_love           "rgb:eb6f92"
+declare-option str rp_gold           "rgb:f6c177"
+declare-option str rp_rose           "rgb:ebbcba"
+declare-option str rp_pine           "rgb:31748f"
+declare-option str rp_foam           "rgb:9ccfd8"
+declare-option str rp_iris           "rgb:c4a7e7"
+declare-option str rp_highlight_low  "rgb:21202e"
+declare-option str rp_highlight_med  "rgb:403d52"
+declare-option str rp_highlight_high "rgb:524f67"
+
+# Tree-sitter faces
+set-face global ts_attribute                    "%opt{rp_gold}"
+set-face global ts_comment                      "%opt{rp_muted}+i"
+set-face global ts_comment_unused               "%opt{rp_muted}+is"
+set-face global ts_conceal                      "%opt{rp_iris}+i"
+set-face global ts_constant                     "%opt{rp_gold}"
+set-face global ts_constant_builtin_boolean     "%opt{rp_foam}"
+set-face global ts_constant_character           "%opt{rp_rose}"
+set-face global ts_constant_macro               "%opt{rp_iris}"
+set-face global ts_constructor                  "%opt{rp_foam}"
+set-face global ts_diff_plus                    "%opt{rp_foam}"
+set-face global ts_diff_minus                   "%opt{rp_love}"
+set-face global ts_diff_delta                   "%opt{rp_pine}"
+set-face global ts_diff_delta_moved             "%opt{rp_iris}"
+set-face global ts_error                        "%opt{rp_love}+b"
+set-face global ts_function                     "%opt{rp_rose}"
+set-face global ts_function_builtin             "%opt{rp_rose}+i"
+set-face global ts_function_macro               "%opt{rp_iris}"
+set-face global ts_hint                         "%opt{rp_foam}+b"
+set-face global ts_info                         "%opt{rp_foam}+b"
+set-face global ts_keyword                      "%opt{rp_iris}"
+set-face global ts_keyword_conditional          "%opt{rp_iris}+i"
+set-face global ts_keyword_control_conditional  "%opt{rp_iris}+i"
+set-face global ts_keyword_control_directive    "%opt{rp_iris}+i"
+set-face global ts_keyword_control_import       "%opt{rp_iris}+i"
+set-face global ts_keyword_directive            "%opt{rp_iris}+i"
+set-face global ts_keyword_storage              "%opt{rp_iris}"
+set-face global ts_keyword_storage_modifier     "%opt{rp_iris}"
+set-face global ts_keyword_storage_modifier_mut "%opt{rp_iris}"
+set-face global ts_keyword_storage_modifier_ref "%opt{rp_foam}"
+set-face global ts_label                        "%opt{rp_foam}+i"
+set-face global ts_namespace                    "%opt{rp_pine}+i"
+set-face global ts_operator                     "%opt{rp_foam}"
+set-face global ts_property                     "%opt{rp_foam}"
+set-face global ts_punctuation                  "%opt{rp_subtle}"
+set-face global ts_punctuation_special          "%opt{rp_foam}"
+set-face global ts_special                      "%opt{rp_iris}"
+set-face global ts_string                       "%opt{rp_foam}"
+set-face global ts_string_regex                 "%opt{rp_rose}"
+set-face global ts_string_regexp                "%opt{rp_rose}"
+set-face global ts_string_escape                "%opt{rp_gold}"
+set-face global ts_string_special               "%opt{rp_iris}"
+set-face global ts_string_special_path          "%opt{rp_foam}"
+set-face global ts_string_special_symbol        "%opt{rp_iris}"
+set-face global ts_string_symbol                "%opt{rp_rose}"
+set-face global ts_tag                          "%opt{rp_iris}"
+set-face global ts_tag_error                    "%opt{rp_love}"
+set-face global ts_text                         "%opt{rp_text}"
+set-face global ts_type                         "%opt{rp_foam}"
+set-face global ts_type_enum_variant            "%opt{rp_rose}"
+set-face global ts_type_enum_variant_builtin    "%opt{rp_rose}+i"
+set-face global ts_variable                     "%opt{rp_text}"
+set-face global ts_variable_builtin             "%opt{rp_rose}"
+set-face global ts_variable_other_member        "%opt{rp_pine}"
+set-face global ts_variable_parameter           "%opt{rp_rose}+i"
+set-face global ts_warning                      "%opt{rp_gold}+b"
+
+# Markup
+set-face global ts_markup_bold                  "%opt{rp_gold}+b"
+set-face global ts_markup_heading               "%opt{rp_iris}"
+set-face global ts_markup_heading_1             "%opt{rp_iris}"
+set-face global ts_markup_heading_2             "%opt{rp_foam}"
+set-face global ts_markup_heading_3             "%opt{rp_rose}"
+set-face global ts_markup_heading_4             "%opt{rp_gold}"
+set-face global ts_markup_heading_5             "%opt{rp_pine}"
+set-face global ts_markup_heading_6             "%opt{rp_foam}"
+set-face global ts_markup_heading_marker        "%opt{rp_gold}+b"
+set-face global ts_markup_italic                "%opt{rp_rose}+i"
+set-face global ts_markup_list_checked          "%opt{rp_foam}"
+set-face global ts_markup_list_numbered         "%opt{rp_pine}+i"
+set-face global ts_markup_list_unchecked        "%opt{rp_foam}"
+set-face global ts_markup_list_unnumbered       "%opt{rp_iris}"
+set-face global ts_markup_link_label            "%opt{rp_pine}"
+set-face global ts_markup_link_url              "%opt{rp_foam}+u"
+set-face global ts_markup_link_uri              "%opt{rp_foam}+u"
+set-face global ts_markup_link_text             "%opt{rp_pine}"
+set-face global ts_markup_quote                 "%opt{rp_muted}"
+set-face global ts_markup_raw                   "%opt{rp_foam}"
+set-face global ts_markup_strikethrough         "%opt{rp_muted}+s"
+set-face global ts_spell                        "%opt{rp_iris}"
+
+
 # rose-pine theme for Kakoune
 #
 # Ported from the fresh-editor palette (palettes/fresh/rose-pine.json), shared across the justaperlhacker editor themes.
@@ -67,4 +166,16 @@ face global DiffRm                 rgb:eb6f92,rgb:2e1f2a
 face global DiffMeta               rgb:31748f,rgb:2a2440
 face global MercurialCommitComment rgb:908caa
 
-
+face global InfoDefault               Information
+face global InfoBlock                 Information
+face global InfoBlockQuote            Information
+face global InfoBullet                Information
+face global InfoHeader                Information
+face global InfoLink                  Information
+face global InfoLinkMono              Information
+face global InfoMono                  Information
+face global InfoRule                  Information
+face global InfoDiagnosticError       Information
+face global InfoDiagnosticHint        Information
+face global InfoDiagnosticInformation Information
+face global InfoDiagnosticWarning     Information

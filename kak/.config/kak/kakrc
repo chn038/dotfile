@@ -1,3 +1,4 @@
+eval %sh{kak-tree-sitter -dks --init $kak_session -vv}
 colorscheme rose-pine
 
 set-option global tabstop 4
@@ -16,7 +17,6 @@ complete-command find-file shell-script-candidates %{fd . -H -I -s -t f}
 
 map global user f ':find-file '
 
-eval %sh{kak-tree-sitter -dks --init $kak_session}
 eval %sh{kak-lsp}
 lsp-enable
 
@@ -58,34 +58,7 @@ hook -group lsp-filetype-python global BufSetOption filetype=python %{
     }
 }
 
-hook global WinSetOption filetype=python %{
-  hook window -group semantic-tokens BufReload .* lsp-semantic-tokens
-  hook window -group semantic-tokens NormalIdle .* lsp-semantic-tokens
-  hook window -group semantic-tokens InsertIdle .* lsp-semantic-tokens
-  hook -once -always window WinSetOption filetype=.* %{
-    remove-hooks window semantic-tokens
-  }
-}
-
-hook global WinSetOption filetype=c-family %{
-  hook window -group semantic-tokens BufReload .* lsp-semantic-tokens
-  hook window -group semantic-tokens NormalIdle .* lsp-semantic-tokens
-  hook window -group semantic-tokens InsertIdle .* lsp-semantic-tokens
-  hook -once -always window WinSetOption filetype=.* %{
-    remove-hooks window semantic-tokens
-  }
-}
-
-hook global WinSetOption filetype=markdown %{
-  hook window -group semantic-tokens BufReload .* lsp-semantic-tokens
-  hook window -group semantic-tokens NormalIdle .* lsp-semantic-tokens
-  hook window -group semantic-tokens InsertIdle .* lsp-semantic-tokens
-  hook -once -always window WinSetOption filetype=.* %{
-    remove-hooks window semantic-tokens
-  }
-}
-
-hook global WinSetOption filetype=latex %{
+hook global WinSetOption filetype=(c-family|python|markdown|latex) %{
   hook window -group semantic-tokens BufReload .* lsp-semantic-tokens
   hook window -group semantic-tokens NormalIdle .* lsp-semantic-tokens
   hook window -group semantic-tokens InsertIdle .* lsp-semantic-tokens
