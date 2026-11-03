@@ -2,9 +2,10 @@ eval %sh{kak-tree-sitter -dks --init $kak_session -vv}
 colorscheme rose-pine
 
 set-option global tabstop 4
-set-option global indentwidth 0
+set-option global indentwidth 4
 set-option global scrolloff 5,5
 set-option global autoreload no
+set-option global aligntab false
 add-highlighter global/ number-lines -hlcursor -relative
 add-highlighter global/ wrap -word -indent -marker ↵
 add-highlighter global/ show-whitespaces -only-trailing
