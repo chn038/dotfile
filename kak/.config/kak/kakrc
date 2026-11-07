@@ -18,6 +18,8 @@ complete-command find-file shell-script-candidates %{fd . -H -I -s -t f}
 
 map global user f ':find-file '
 
+map global user b ':b '
+
 eval %sh{kak-lsp}
 lsp-enable
 
