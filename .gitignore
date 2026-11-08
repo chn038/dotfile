@@ -1,2 +1,4 @@
 nvimconf/.config/nvim/nvim-pack-lock.json
 helix/.config/helix/runtime
+mango/.config/mango/monitors.conf
+mango/.config/mango/noctalia.conf
