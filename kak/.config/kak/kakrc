@@ -54,7 +54,7 @@ hook -group lsp-filetype-python global BufSetOption filetype=python %{
     }
 
     set-option -add buffer lsp_servers %{
-        [ty]
+        [zuban]
         args = ["server"]
         root_globs = ["pyproject.toml", "setup.py", "poetry.lock", ".git", ".hg"]
         settings_section = "_"

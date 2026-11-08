@@ -22,8 +22,8 @@ blur_params_noise = 0.02
 blur_params_brightness = 0.9
 blur_params_contrast = 0.9
 blur_params_saturation = 1.2
-shadows = 1
-layer_shadows = 1
+shadows = 0
+layer_shadows = 0
 shadow_only_floating = 1
 shadows_size = 4
 shadows_blur = 15
@@ -72,7 +72,7 @@ scroller_prefer_center = 0
 edge_scroller_pointer_focus = 1
 edge_scroller_focus_allow_speed = 0.0
 scroller_default_proportion_single = 1.0
-scroller_proportion_preset = [0.5, 0.8, 1.0]
+scroller_proportion_preset = [0.2,0.3,0.4,0.5,0.6,0.7,0.8,1.0]
 
 # Master-Stack Layout Setting
 new_is_master = 0
@@ -149,13 +149,13 @@ swipe_min_threshold = 1
 mouse_natural_scrolling = 0
 
 # Appearance
-gap_inner_horizontal = 5
-gap_inner_vertical = 5
-gap_outer_horizontal = 10
-gap_outer_vertical = 10
+gap_inner_horizontal = 2
+gap_inner_vertical = 2
+gap_outer_horizontal = 4
+gap_outer_vertical = 4
 scratchpad_width_ratio = 0.8
 scratchpad_height_ratio = 0.9
-border_px = 4
+border_px = 2
 root_color = 0x201b14ff
 border_color = 0x444444ff
 drop_color = 0x8FBA7C55
@@ -173,7 +173,6 @@ overlay_color = 0x14a57cff
 # mod keys name: super,ctrl,alt,shift,none
 # reload config
 "SUPER+r" = "reload_config"
-"SUPER+p" = "spawn,noctalia msg screenshot-region"
 "Print" = "spawn,noctalia msg screenshot-region"
 
 # menu and terminal
@@ -192,7 +191,7 @@ overlay_color = 0x14a57cff
 "none+XF86MonBrightnessDown" = "spawn,noctalia msg brightness-down"
 
 # exit
-"SUPER+m" = "quit"
+"SUPER+SHIFT+CTRL+q" = "quit"
 "SUPER+c" = "killclient,"
 
 # switch window focus
@@ -215,21 +214,31 @@ overlay_color = 0x14a57cff
 "SUPER+f" = "togglemaximizescreen,"
 "SUPER+SHIFT+f" = "togglefullscreen,"
 "SUPER+CTRL+f" = "togglefakefullscreen,"
-"SUPER+i" = "minimized,"
-"SUPER+o" = "toggleoverlay,"
-"SUPER+SHIFT+I" = "restore_minimized"
-"SUPER+SHIFT+z" = "toggle_scratchpad"
+"SUPER+m" = "minimized,"
+"SUPER+shift+t" = "toggleoverlay,"
+"SUPER+SHIFT+m" = "restore_minimized"
+"SUPER+CTRL+m" = "toggle_scratchpad"
+
+# group
+"SUPER+CTRL+SHIFT+h" = "groupjoin,left"
+"SUPER+CTRL+SHIFT+l" = "groupjoin,right"
+"SUPER+CTRL+SHIFT+k" = "groupjoin,up"
+"SUPER+CTRL+SHIFT+j" = "groupjoin,down"
+"SUPER+u" = "groupfocus,prev"
+"SUPER+p" = "groupfocus,next"
+"SUPER+shift+u" = "groupleave"
+"SUPER+shift+p" = "groupleave"
 
 # scroller layout
 "super+e" = "set_proportion,1.0"
-"super+x" = "switch_proportion_preset,"
-"alt+super+ctrl+Left" = "scroller_stack,left"
-"alt+super+ctrl+Right" = "scroller_stack,right"
-"alt+super+ctrl+Up" = "scroller_stack,up"
-"alt+super+ctrl+Down" = "scroller_stack,down"
+"super+shift+e" = "switch_proportion_preset,"
+"super+i" = "scroller_stack,left"
+"super+o" = "scroller_stack,right"
+"super+shift+i" = "scroller_stack,up"
+"super+shift+o" = "scroller_stack,down"
 
 #dwindle layout(manual split mode)
-"alt+super+Return" = "dwindle_toggle_split_direction"
+"super+x" = "dwindle_toggle_split_direction"
 
 # switch layout
 "SUPER+n" = "switch_layout"
@@ -294,16 +303,16 @@ overlay_color = 0x14a57cff
 "ALT+SUPER+R" = "togglegaps"
 
 # movewin
-"CTRL+SUPER+Up" = "movewin,+0,-50"
-"CTRL+SUPER+Down" = "movewin,+0,+50"
-"CTRL+SUPER+Left" = "movewin,-50,+0"
-"CTRL+SUPER+Right" = "movewin,+50,+0"
+"CTRL+SUPER+k" = "movewin,+0,-50"
+"CTRL+SUPER+j" = "movewin,+0,+50"
+"CTRL+SUPER+h" = "movewin,-50,+0"
+"CTRL+SUPER+l" = "movewin,+50,+0"
 
 # resizewin
-"SUPER+ALT+Up" = "resizewin,+0,-50"
-"SUPER+ALT+Down" = "resizewin,+0,+50"
-"SUPER+ALT+Left" = "resizewin,-50,+0"
-"SUPER+ALT+Right" = "resizewin,+50,+0"
+"SUPER+ALT+k" = "resizewin,+0,-50"
+"SUPER+ALT+j" = "resizewin,+0,+50"
+"SUPER+ALT+h" = "resizewin,-50,+0"
+"SUPER+ALT+l" = "resizewin,+50,+0"
 
 [mousebind.default]
 
