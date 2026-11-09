@@ -30,7 +30,7 @@ shadows_blur = 15
 shadows_position_x = 0
 shadows_position_y = 0
 shadows_color = 0x000000ff
-border_radius = 6
+border_radius = 0
 no_radius_when_single = 0
 focused_opacity = 1.0
 unfocused_opacity = 1.0
@@ -102,7 +102,7 @@ deck_tab_mode = 1
 hotarea_size = 10
 enable_hotarea = 0
 hotarea_disable_on_fullscreen = 1
-overview_gap_inner = 5
+overview_gap_inner = 2
 overview_gap_outer = 30
 overcircle_center_ratio = 0.5
 title_message_bar_height = 52
@@ -178,7 +178,7 @@ overlay_color = 0x14a57cff
 # menu and terminal
 "SUPER+d" = "spawn,noctalia msg panel-toggle launcher"
 "SUPER+s" = "spawn,noctalia msg panel-toggle control-center"
-"SUPER+comma" = "spawn,noctalia msg settings-toggle"
+"SUPER+slash" = "spawn,noctalia msg settings-toggle"
 "SUPER+Return" = "spawn,wezterm"
 
 # media keys
@@ -196,6 +196,7 @@ overlay_color = 0x14a57cff
 
 # switch window focus
 "SUPER+Tab" = "focusstack,next"
+"SUPER+SHIFT+Tab" = "focusstack,prev"
 "SUPER+h" = "focusdir,left"
 "SUPER+l" = "focusdir,right"
 "SUPER+k" = "focusdir,up"
@@ -209,15 +210,15 @@ overlay_color = 0x14a57cff
 
 # switch window status
 "SUPER+g" = "toggleglobal,"
-"SUPER+SHIFT+Tab" = "togglejump,"
+"SUPER+a" = "togglejump,"
 "SUPER+t" = "togglefloating,"
 "SUPER+f" = "togglemaximizescreen,"
 "SUPER+SHIFT+f" = "togglefullscreen,"
 "SUPER+CTRL+f" = "togglefakefullscreen,"
-"SUPER+m" = "minimized,"
+"SUPER+period" = "minimized,"
 "SUPER+shift+t" = "toggleoverlay,"
-"SUPER+SHIFT+m" = "restore_minimized"
-"SUPER+CTRL+m" = "toggle_scratchpad"
+"SUPER+SHIFT+period" = "restore_minimized"
+"SUPER+CTRL+period" = "toggle_scratchpad"
 
 # group
 "SUPER+CTRL+SHIFT+h" = "groupjoin,left"
@@ -241,7 +242,13 @@ overlay_color = 0x14a57cff
 "super+x" = "dwindle_toggle_split_direction"
 
 # switch layout
-"SUPER+n" = "switch_layout"
+"SUPER+backslash" = "switch_layout"
+"SUPER+n" = "setlayout,scroller"
+"SUPER+SHIFT+n" = "setlayout,vertical_scroller"
+"SUPER+m" = "setlayout,monocle"
+"SUPER+SHIFT+m" = "setlayout,tile"
+"SUPER+comma" = "setlayout,deck"
+"SUPER+SHIFT+comma" = "setlayout,vertical_deck"
 
 # tag switch
 "SUPER+Left" = "viewtoleft,0"
