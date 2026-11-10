@@ -6,6 +6,16 @@
 # Complete reference: https://docs.noctalia.dev/umbriel/
 #
 # Commented settings below are examples, not built-in defaults.
+#
+[environment]
+GTK_IM_MODULE = "fcitx"
+QT_IM_MODULE = "fcitx"
+QT_IM_MODULES = "wayland;fcitx"
+SQL_IM_MODULE = "fcitx"
+XMODIFIERS = "@im=fcitx"
+GLFW_IM_MODULE = "ibus"
+QT_QPA_PLATFORMTHEME = "qt6ct"
+
 
 # ==============================================================================
 # Includes
@@ -16,7 +26,7 @@
 files = ["outputs.toml"]
 
 [include.optional]
-files = []
+files = ["noctalia.toml"]
 
 # ==============================================================================
 # General
@@ -24,7 +34,15 @@ files = []
 # https://docs.noctalia.dev/umbriel/configuration/#general
 #
 [general]
-autostart = ["noctalia", "fcitx5 -d", "kdeconnectd", "nm-applet", "blueman-applet", "rog-control-center"]
+autostart = [
+    "/usr/lib/pam_kwallet_init",
+    "noctalia",
+    "fcitx5 -d",
+    "kdeconnectd",
+    "nm-applet",
+    "blueman-applet",
+    "rog-control-center",
+    ]
 # xwayland = false
 # Sharp X11 apps and games on scaled outputs; they see physical resolutions.
 xwayland_native_resolution = true
