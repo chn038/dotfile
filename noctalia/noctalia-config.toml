@@ -1,0 +1,151 @@
+[bar.default]
+contact_shadow = false
+end = [
+    "media",
+    "tray",
+    "notifications",
+    "clipboard",
+    "bar",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "control-center",
+    "session"
+]
+margin_ends = 0
+padding = 0
+shadow = false
+start = [ "launcher", "wallpaper", "workspaces", "bar_2" ]
+thickness = 30
+
+[bluetooth]
+connect_when_enabled = true
+connection_notifications = true
+
+[calendar]
+
+[control_center.calendar]
+show_events_card = false
+
+[dock]
+shadow = false
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
+[lockscreen]
+tint_intensity = 0.23999999463558197
+
+[lockscreen_widgets]
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[nightlight]
+enabled = true
+force = true
+temperature_day = 5200
+temperature_night = 5000
+
+[notification]
+follow_focused_output = true
+
+[plugin_settings."prponkshe/umbriel-displays"]
+outputs_path = "~/.config/umbriel/outputs.toml"
+
+[plugins]
+enabled = [ "noctalia/umbriel-companion", "prponkshe/umbriel-displays" ]
+
+[shell]
+font_family = "Noto Sans CJK TC"
+polkit_agent = true
+
+    [shell.greeter_sync]
+    auto_sync = true
+
+    [shell.panel]
+    shadow = false
+
+    [shell.screenshot]
+    annotate = true
+    confirm_region = true
+    copy_on_close = true
+    show_cursor = true
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Oxocarbon"
+mode = "dark"
+source = "builtin"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4", "kcolorscheme", "qt", "umbriel" ]
+    community_ids = [ "rofi" ]
+
+[wallpaper.default]
+path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+
+[wallpaper.last]
+path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+
+[widget.bar]
+type = "prponkshe/umbriel-displays:bar"
+
+[widget.bar_2]
+type = "noctalia/umbriel-companion:bar"
+
+[widget.clock]
+format = "{:%D:%H:%M}"
+
+[widget.workspaces]
+active_pill_size = 2.0
