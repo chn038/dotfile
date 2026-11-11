@@ -208,6 +208,7 @@ accel_profile = "flat"
 "Mod+slash" = "spawn noctalia msg settings-toggle"
 "Mod+C" = { action = "window-close", repeat = false }
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+"Mod+Shift+Slash" = "cheatsheet-toggle"
 
 # Media, volume and brightness keys from any input device, routed through the
 # Noctalia shell so its OSDs show. Safe while the session is locked.
@@ -269,8 +270,8 @@ accel_profile = "flat"
 
 # Workspaces
 # Move the whole workspace, retaining its name, layout, and windows.
-# "Mod+Ctrl+Page_Down" = "workspace-move-to-output-next"
-# "Mod+Ctrl+Page_Up" = "workspace-move-to-output-previous"
+"Mod+Comma" = "workspace-move-to-output-next"
+"Mod+Period" = "workspace-move-to-output-previous"
 # "Mod+Ctrl+W" = "workspace-move-to-output current WEB --output DP-1"
 "Mod+1" = "workspace-switch 1"
 "Mod+2" = "workspace-switch 2"
