@@ -4,6 +4,6 @@
 
 [output."BOE NE156FHM-NX6 Unknown"]
 position = [0, 0]
-sdr_white = 205
+sdr_white = 200
 workspaces = 9
 workspace_axis = "vertical"
