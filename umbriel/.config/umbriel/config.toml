@@ -250,7 +250,6 @@ accel_profile = "flat"
 # Window state and layout
 "Mod+T" = { action = "window-toggle-floating", repeat = false }
 "Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }
-"Mod+P" = { action = "window-toggle-pinned", repeat = false }
 "Mod+SHIFT+F" = { action = "window-toggle-fullscreen", repeat = false }
 "Mod+F" = { action = "window-toggle-maximize", repeat = false }
 "Mod+R" = "window-cycle-primary-extent"
@@ -262,8 +261,8 @@ accel_profile = "flat"
 # Needs layout.mode = "dwindle".
 "Mod+SHIFT+B" = "layout-toggle-split"
 "Mod+W" = { action = "column-toggle-tabbed", repeat = false }
-"Mod+E" = "column-focus-tab-next"
-"Mod+Q" = "column-focus-tab-previous"
+"Mod+U" = "column-focus-tab-previous"
+"Mod+P" = "column-focus-tab-next"
 "Mod+WheelUp" = "window-focus-left"
 "Mod+WheelDown" = "window-focus-right"
 "Mod+SHIFT+W" = { action = "overview-toggle", repeat = false }
@@ -273,6 +272,10 @@ accel_profile = "flat"
 "Mod+Comma" = "workspace-move-to-output-next"
 "Mod+Period" = "workspace-move-to-output-previous"
 # "Mod+Ctrl+W" = "workspace-move-to-output current WEB --output DP-1"
+"Mod+Q" = "workspace-previous"
+"Mod+E" = "workspace-next"
+"Mod+Shift+Q" = "window-move-to-workspace-previous"
+"Mod+Shift+E" = "window-move-to-workspace-next"
 "Mod+1" = "workspace-switch 1"
 "Mod+2" = "workspace-switch 2"
 "Mod+3" = "workspace-switch 3"
