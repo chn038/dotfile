@@ -1,24 +1,22 @@
 [bar.default]
 contact_shadow = false
-end = [
-    "media",
-    "tray",
-    "notifications",
-    "clipboard",
-    "bar",
-    "network",
-    "bluetooth",
-    "volume",
-    "brightness",
-    "battery",
-    "control-center",
-    "session"
-]
 margin_ends = 0
 padding = 0
+radius = 0
 shadow = false
-start = [ "launcher", "wallpaper", "workspaces", "bar_2" ]
-thickness = 30
+start = [ "launcher", "workspaces", "bar_3", "bar", "group:g1" ]
+thickness = 25
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border_width = 1.0
+    enabled = true
+    fill = "surface_container"
+    id = "g1"
+    members = [ "network_rx", "network_tx", "ram", "cpu", "sysmon" ]
+    opacity = 1.0
+    padding = 6.0
 
 [bluetooth]
 connect_when_enabled = true
@@ -141,11 +139,20 @@ path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
 [widget.bar]
 type = "prponkshe/umbriel-displays:bar"
 
-[widget.bar_2]
+[widget.bar_3]
 type = "noctalia/umbriel-companion:bar"
 
 [widget.clock]
 format = "{:%D:%H:%M}"
+
+[widget.network_rx]
+network_speed_compact = true
+
+[widget.network_tx]
+network_speed_compact = true
+
+[widget.sysmon]
+stat = "gpu_usage"
 
 [widget.workspaces]
 active_pill_size = 2.0
