@@ -4,4 +4,6 @@
 [pull]
 	rebase = false
 [merge]
-	tool = nvimdiff
+	tool = kakoune
+[mergetool "kakoune"]
+	cmd = kak \"$LOCAL\" \"$REMOTE\"
