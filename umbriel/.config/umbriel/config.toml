@@ -39,6 +39,7 @@ autostart = [
     "noctalia",
     "fcitx5 -d",
     "kdeconnectd",
+    "kdeconnect-indicator",
     "nm-applet",
     "blueman-applet",
     "rog-control-center",
@@ -200,7 +201,8 @@ accel_profile = "flat"
 [keybinds]
 
 # Applications and session
-"Mod+Return" = { action = "spawn wezterm", repeat = false }
+"Mod+Return" = { action = "spawn zellij terminal", repeat = false }
+"Mod+Shift+Return" = { action = "spawn zellij terminal --sessions", repeat = false }
 "Mod+D" = "spawn noctalia msg panel-toggle launcher"
 "Mod+V" = "spawn noctalia msg panel-toggle clipboard"
 "Print" = "spawn noctalia msg screenshot-region"

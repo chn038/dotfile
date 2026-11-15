@@ -3,7 +3,6 @@ colorscheme rose-pine
 
 set-option global tabstop 4
 set-option global indentwidth 4
-set-option global scrolloff 5,5
 set-option global autoreload no
 set-option global aligntab false
 add-highlighter global/ number-lines -hlcursor -relative

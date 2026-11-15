@@ -3,7 +3,11 @@
 	name = chn038
 [pull]
 	rebase = false
+[diff]
+	tool = kakoune
+[difftool "kakoune"]
+	cmd = kak \"$LOCAL\" \"$REMOTE\"
 [merge]
 	tool = kakoune
 [mergetool "kakoune"]
-	cmd = kak \"$LOCAL\" \"$REMOTE\"
+	cmd = kak \"$LOCAL\" \"$REMOTE\" \"$MERGE\"
