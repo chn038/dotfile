@@ -30,7 +30,7 @@ lsp-enable
 set-option global modelinefmt "%opt{lsp_modeline} %opt{modelinefmt}"
 
 map global user l ':enter-user-mode lsp<ret>' -docstring 'LSP mode'
-map global insert <c-s> '<a-;>:lsp-signature-help<ret>i' -docstring 'LSP signature help'
+map global insert <c-s> '<a-;>:lsp-signature-help<ret>' -docstring 'LSP signature help'
 
 map global goto d <esc>:lsp-definition<ret> -docstring 'LSP definition'
 map global goto r <esc>:lsp-references<ret> -docstring 'LSP references'
