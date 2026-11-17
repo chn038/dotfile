@@ -1,5 +1,5 @@
 eval %sh{kak-tree-sitter -dks --init $kak_session -vv}
-colorscheme rose-pine
+colorscheme tokyo-night
 
 set-option global tabstop 4
 set-option global indentwidth 4
@@ -15,7 +15,12 @@ map global insert <c-[> <esc>
 define-command find-file -params 1 %{ edit %arg{1} }
 complete-command find-file shell-script-candidates %{fd . -H -I -s -t f}
 
+define-command sh -params .. %{fifo -name '*SHELL*' -script %{ eval "$@"} -- %arg{@} }
+complete-command sh shell
+
 map global user f ':find-file '
+
+map global user y '<a-|>wl-copy<ret>'
 
 map global user b ':b '
 
@@ -25,6 +30,7 @@ lsp-enable
 set-option global modelinefmt "%opt{lsp_modeline} %opt{modelinefmt}"
 
 map global user l ':enter-user-mode lsp<ret>' -docstring 'LSP mode'
+map global insert <c-s> '<a-;>:lsp-signature-help<ret>i' -docstring 'LSP signature help'
 
 map global goto d <esc>:lsp-definition<ret> -docstring 'LSP definition'
 map global goto r <esc>:lsp-references<ret> -docstring 'LSP references'
@@ -53,7 +59,7 @@ hook -group lsp-filetype-python global BufSetOption filetype=python %{
     }
 
     set-option -add buffer lsp_servers %{
-        [zuban]
+        [ty]
         args = ["server"]
         root_globs = ["pyproject.toml", "setup.py", "poetry.lock", ".git", ".hg"]
         settings_section = "_"
