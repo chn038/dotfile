@@ -43,6 +43,7 @@ autostart = [
     "nm-applet",
     "blueman-applet",
     "rog-control-center",
+    "firewall-applet"
     ]
 # xwayland = false
 # Sharp X11 apps and games on scaled outputs; they see physical resolutions.
